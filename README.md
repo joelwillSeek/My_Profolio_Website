@@ -1,2 +1,2 @@
 # Ntatus
-A website that gives you the status of your nation
+A website that shows of what i can do
