@@ -1,0 +1,16 @@
+.landingPage {
+  height: 100vh;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingList {
+  list-style: none;
+  font-weight: bold;
+  text-align: center;
+}

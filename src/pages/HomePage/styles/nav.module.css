@@ -1,0 +1,46 @@
+.navigation {
+  padding: 1rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1rem;
+  padding: 2rem;
+  position: absolute;
+}
+
+.svgMenu {
+  width: 40px;
+  height: fit-content;
+}
+
+.dropDownButton {
+  background: transparent;
+  height: auto;
+  border: 0;
+}
+
+.dropDown {
+  background-color: #151515;
+}
+
+.dropDown ol {
+  list-style: none;
+}
+
+.dropDown ol li {
+  padding: 1rem 1.5rem;
+  border: 0;
+  font-weight: bold;
+  transition: background-color ease-in-out 300ms;
+  border-radius: 20px;
+}
+
+.dropDown ol li:hover {
+  background-color: var(--bright-blue-color);
+}
+
+.svgMenu path {
+  stroke: #fff;
+}

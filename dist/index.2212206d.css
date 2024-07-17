@@ -1,0 +1,70 @@
+body {
+  color: #fff;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.KKfQeG_navigation {
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 1rem;
+  padding: 2rem;
+  display: flex;
+  position: absolute;
+}
+
+.KKfQeG_svgMenu {
+  width: 40px;
+  height: fit-content;
+}
+
+.KKfQeG_dropDownButton {
+  background: none;
+  border: 0;
+  height: auto;
+}
+
+.KKfQeG_dropDown {
+  background-color: #151515;
+}
+
+.KKfQeG_dropDown ol {
+  list-style: none;
+}
+
+.KKfQeG_dropDown ol li {
+  border: 0;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  transition: background-color .3s ease-in-out;
+}
+
+.KKfQeG_dropDown ol li:hover {
+  background-color: var(--bright-blue-color);
+}
+
+.KKfQeG_svgMenu path {
+  stroke: #fff;
+}
+
+.kN-f3W_landingPage {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.kN-f3W_landingList {
+  text-align: center;
+  font-weight: bold;
+  list-style: none;
+}
+/*# sourceMappingURL=index.2212206d.css.map */

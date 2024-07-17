@@ -1,2 +1,3 @@
-# Ntatus
-A website that shows of what i can do
+<h1>My Profile Website</h1>
+
+<p>A website that shows My Skills</p>
