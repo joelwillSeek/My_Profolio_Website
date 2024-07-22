@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 22rem));
+  grid-template-rows: auto;
+}
+
+.header {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 7rem;
+}
+
+.textDescription {
+  text-align: center;
+  margin: 1rem;
+}
+
+.card {
+  margin: 1rem 0;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

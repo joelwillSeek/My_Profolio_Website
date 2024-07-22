@@ -1,8 +1,21 @@
 {
+  "dependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^18.3.1"
+  },
   "name": "my_profolio_website",
+  "description": "<h1>My Profile Website</h1>",
   "version": "1.0.0",
-  "description": "A website that shows of what i can do",
   "main": "index.js",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "typescript": "^5.5.3"
+  },
   "scripts": {
     "dev": "parcel src/index.html"
   },
@@ -16,21 +29,5 @@
   "bugs": {
     "url": "https://github.com/joelwillSeek/My_Profolio_Website/issues"
   },
-  "homepage": "https://github.com/joelwillSeek/My_Profolio_Website#readme",
-  "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/base": "^5.0.0-beta.40",
-    "@mui/material": "^5.16.4",
-    "parcel": "^2.12.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.25.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@types/react-router-dom": "^5.3.3",
-    "process": "^0.11.10"
-  }
+  "homepage": "https://github.com/joelwillSeek/My_Profolio_Website#readme"
 }

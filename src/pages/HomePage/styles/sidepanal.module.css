@@ -1,0 +1,18 @@
+.background {
+  background: rgb(37, 37, 37) !important;
+  color: white !important;
+}
+
+.menuIcon {
+  width: 30px;
+  filter: invert(1);
+}
+
+.menuButton {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.menuButton:hover {
+  scale: 1.2;
+}

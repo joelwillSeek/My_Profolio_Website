@@ -1,6 +1,21 @@
+:root {
+  --bright-blue-color: #0000ff;
+  --dark-blue-color: #002db3;
+  --darkish-white: #eff3ff;
+  --bright-orange-color: #ff9900;
+  --dark-orange-color: #b36b00;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: #fff;
   max-width: 100vw;
+}
+
+.btn-close,
+.btn-close::after,
+.btn-close::before {
+  color: white !important ;
+  background-color: white !important;
 }

@@ -1,13 +1,14 @@
 .navigation {
   padding: 1rem 0;
-  width: 100%;
+  min-width: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 1rem;
   padding: 2rem;
-  position: absolute;
+  position: fixed;
+  color: white;
 }
 
 .svgMenu {

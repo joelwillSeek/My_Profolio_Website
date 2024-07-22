@@ -1,16 +1,51 @@
 .landingPage {
-  height: 100vh;
+  height: 50vh;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center !important;
+  align-items: center !important;
+  color: #fff;
+  text-align: center;
+  width: 100%;
 }
 
 .landingList {
   list-style: none;
   font-weight: bold;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.landingList li {
+  margin: 1rem;
+}
+
+.seeMore {
+  background-color: var(--dark-blue-color) !important;
+  border-radius: 0px !important;
+  border: 0 !important;
+  transition: background-color ease-in-out 300ms;
+}
+
+.seeMore:hover {
+  background-color: var(--bright-orange-color) !important;
+}
+
+.contactMe {
+  background-color: transparent !important;
+  border: 3px solid var(--dark-blue-color) !important;
+  border-radius: 0px !important;
+  transition: background-color ease-in-out 300ms;
+}
+
+.contactMe:hover {
+  border-color: transparent !important;
+  background-color: var(--bright-orange-color) !important;
 }
