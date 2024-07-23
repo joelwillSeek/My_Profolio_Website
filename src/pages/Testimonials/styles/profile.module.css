@@ -1,0 +1,21 @@
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.profilePic {
+  margin: 1rem;
+}
+
+.workplace {
+  font-size: x-small;
+}
+
+.comment {
+  font-weight: 100;
+  font-size: small;
+}

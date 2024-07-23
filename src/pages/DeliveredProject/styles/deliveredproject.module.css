@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.platformContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin: 5rem 0;
+}
+
+.subHeading {
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}

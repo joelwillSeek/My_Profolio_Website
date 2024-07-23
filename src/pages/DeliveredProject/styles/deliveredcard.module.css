@@ -1,0 +1,21 @@
+.card {
+  margin: 1rem 0;
+  border: 2px solid var(--bright-blue-color) !important;
+  transition: border-color ease-in-out 300ms;
+}
+
+.card:hover {
+  border-color: var(--bright-orange-color) !important;
+}
+
+.button {
+  background: transparent !important;
+  color: black !important;
+  border: 2px solid var(--bright-blue-color) !important;
+}
+
+.button:hover {
+  background: var(--bright-orange-color) !important;
+  border-color: var(--bright-orange-color) !important;
+  color: white !important;
+}

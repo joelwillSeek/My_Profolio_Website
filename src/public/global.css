@@ -19,3 +19,11 @@ body {
   color: white !important ;
   background-color: white !important;
 }
+
+.Warning {
+  color: var(--bright-blue-color);
+}
+
+.Warning:hover {
+  color: var(--bright-orange-color);
+}

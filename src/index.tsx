@@ -4,6 +4,9 @@ import "./public/global.css";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutMe from "./pages/AboutMePage/AboutMe";
 import OfferingServices from "./pages/OfferingServices/OfferingServices";
+import DeliveredProject from "./pages/DeliveredProject/DeliveredProject";
+import Testimonials from "./pages/Testimonials/Testimonials";
+import FrequentlyAskedQuestion from "./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion";
 
 function Index() {
   return (
@@ -11,6 +14,9 @@ function Index() {
       <HomePage />
       <AboutMe />
       <OfferingServices />
+      <DeliveredProject />
+      <Testimonials />
+      <FrequentlyAskedQuestion />
     </>
   );
 }
