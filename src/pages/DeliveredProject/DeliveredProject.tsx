@@ -82,7 +82,9 @@ export default function DeliveredProject() {
   return (
     <>
       <div className={deliveredProjectCss.container}>
-        <h1 className={deliveredProjectCss.heading}>Some Of My Projects</h1>
+        <h1 className={deliveredProjectCss.heading}>
+          Some Of My Projects<div className={"hr"}></div>
+        </h1>
         <h1 className={deliveredProjectCss.subHeading}>
           Cross Platform Development Projects
         </h1>

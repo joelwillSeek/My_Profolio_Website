@@ -27,7 +27,7 @@ export default function Testimonials() {
     <>
       <div id="testimonials" className={testimonials.overAllContainer}>
         <h1 className={testimonials.heading}>
-          Testimonials <div className={testimonials.hr}></div>
+          Testimonials <div className={"hr"}></div>
         </h1>
         <div className={testimonials.container}>
           {profileDetails.length <= 0 ? (

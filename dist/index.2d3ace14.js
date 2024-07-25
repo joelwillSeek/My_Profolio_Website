@@ -2969,37 +2969,44 @@ var _testimonials = require("./pages/Testimonials/Testimonials");
 var _testimonialsDefault = parcelHelpers.interopDefault(_testimonials);
 var _frequentlyAskedQuestion = require("./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion");
 var _frequentlyAskedQuestionDefault = parcelHelpers.interopDefault(_frequentlyAskedQuestion);
+var _information = require("./pages/Information/Information");
+var _informationDefault = parcelHelpers.interopDefault(_information);
 function Index() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutMeDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offeringServicesDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredProjectDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _testimonialsDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frequentlyAskedQuestionDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 19,
+                lineNumber: 20,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _informationDefault.default), {}, void 0, false, {
+                fileName: "src/index.tsx",
+                lineNumber: 21,
                 columnNumber: 7
             }, this)
         ]
@@ -3010,12 +3017,12 @@ const root = document.getElementById("root");
 if (root) (0, _client.createRoot)(root).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.StrictMode), {
     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Index, {}, void 0, false, {
         fileName: "src/index.tsx",
-        lineNumber: 29,
+        lineNumber: 31,
         columnNumber: 7
     }, undefined)
 }, void 0, false, {
     fileName: "src/index.tsx",
-    lineNumber: 28,
+    lineNumber: 30,
     columnNumber: 5
 }, undefined));
 else {
@@ -3031,7 +3038,7 @@ $RefreshReg$(_c, "Index");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./public/global.css":"8cP8p","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./pages/OfferingServices/OfferingServices":"2NTxc","./pages/HomePage/HomePage":"8lu1h","./pages/AboutMePage/AboutMe":"b5ZjB","./pages/DeliveredProject/DeliveredProject":"jgkI7","./pages/Testimonials/Testimonials":"jhDTU","./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion":"jrWOl"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./public/global.css":"8cP8p","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./pages/OfferingServices/OfferingServices":"2NTxc","./pages/HomePage/HomePage":"8lu1h","./pages/AboutMePage/AboutMe":"b5ZjB","./pages/DeliveredProject/DeliveredProject":"jgkI7","./pages/Testimonials/Testimonials":"jhDTU","./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion":"jrWOl","./pages/Information/Information":"6G1wt"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27472,8 +27479,17 @@ function OfferingServices() {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             className: (0, _offeringservicesModuleCssDefault.default).header,
-                            children: "Offered Services"
-                        }, void 0, false, {
+                            children: [
+                                "Offered Services",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "hr"
+                                }, void 0, false, {
+                                    fileName: "src/pages/OfferingServices/OfferingServices.tsx",
+                                    lineNumber: 27,
+                                    columnNumber: 29
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
                             lineNumber: 26,
                             columnNumber: 11
@@ -27483,7 +27499,7 @@ function OfferingServices() {
                             children: "The services that i can offer are listed below start from app dev to a start up company full stack website"
                         }, void 0, false, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 27,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this)
                     ]
@@ -27519,19 +27535,19 @@ function OfferingServices() {
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                    lineNumber: 48,
+                                                    lineNumber: 50,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Cross Platform Development"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                            lineNumber: 47,
+                                            lineNumber: 49,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 41,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Subtitle, {
@@ -27539,14 +27555,14 @@ function OfferingServices() {
                                         children: "Android, Linux, Windows, Web ..."
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 54,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
                                         children: "Using flutter to develop once and deploy. This convince can help a start up company And/Or Client to build a product with minimal build and maintenance cost."
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 57,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27554,7 +27570,7 @@ function OfferingServices() {
                                         children: "See Some Projects"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 62,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27562,18 +27578,18 @@ function OfferingServices() {
                                         children: "More On Flutter"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 63,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                lineNumber: 38,
+                                lineNumber: 40,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 34,
+                            lineNumber: 36,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card), {
@@ -27602,19 +27618,19 @@ function OfferingServices() {
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                    lineNumber: 79,
+                                                    lineNumber: 81,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Full Stack Web Development"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                            lineNumber: 78,
+                                            lineNumber: 80,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 72,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Subtitle, {
@@ -27622,14 +27638,14 @@ function OfferingServices() {
                                         children: "MERN ( MongoDB, ExpressJS, React, NodeJs), will to learn more like Laravel (PHP)"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 92,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
                                         children: "Some times its best to develop natively for a client and the most used platform is cloud, Seeing this i can deliver a fulling working full stack website"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 94,
+                                        lineNumber: 96,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27637,7 +27653,7 @@ function OfferingServices() {
                                         children: "See Some Projects"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 99,
+                                        lineNumber: 101,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27645,7 +27661,7 @@ function OfferingServices() {
                                         children: "React"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27653,7 +27669,7 @@ function OfferingServices() {
                                         children: "NodeJs"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 103,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27661,7 +27677,7 @@ function OfferingServices() {
                                         children: "ExpressJS"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 104,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27669,18 +27685,18 @@ function OfferingServices() {
                                         children: "MongoDB"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 103,
+                                        lineNumber: 105,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                lineNumber: 69,
+                                lineNumber: 71,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 65,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card), {
@@ -27708,19 +27724,19 @@ function OfferingServices() {
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                    lineNumber: 121,
+                                                    lineNumber: 123,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Android Development"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                            lineNumber: 120,
+                                            lineNumber: 122,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 114,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Subtitle, {
@@ -27728,7 +27744,7 @@ function OfferingServices() {
                                         children: "Natively Develop Android Apps using android studio and java OR Kotlin"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 127,
+                                        lineNumber: 129,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
@@ -27739,14 +27755,14 @@ function OfferingServices() {
                                                 children: "NOTE:"
                                             }, void 0, false, {
                                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                lineNumber: 134,
+                                                lineNumber: 136,
                                                 columnNumber: 17
                                             }, this),
                                             " We Recommend cross platform for the easy of use and many platform support."
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 131,
+                                        lineNumber: 133,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27754,7 +27770,7 @@ function OfferingServices() {
                                         children: "See Some Projects"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 139,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27762,18 +27778,18 @@ function OfferingServices() {
                                         children: "Android Studio"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 138,
+                                        lineNumber: 140,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                lineNumber: 111,
+                                lineNumber: 113,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 107,
+                            lineNumber: 109,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card), {
@@ -27801,19 +27817,19 @@ function OfferingServices() {
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                    lineNumber: 156,
+                                                    lineNumber: 158,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Game Development"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                            lineNumber: 155,
+                                            lineNumber: 157,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 147,
+                                        lineNumber: 149,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Subtitle, {
@@ -27821,7 +27837,7 @@ function OfferingServices() {
                                         children: "I Have learned to use unity and godot for game development"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 162,
+                                        lineNumber: 164,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
@@ -27832,14 +27848,14 @@ function OfferingServices() {
                                                 children: "Note: "
                                             }, void 0, false, {
                                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                lineNumber: 168,
+                                                lineNumber: 170,
                                                 columnNumber: 17
                                             }, this),
                                             " One person Can't build the next GTA Or Call Of Duty"
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 165,
+                                        lineNumber: 167,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27847,7 +27863,7 @@ function OfferingServices() {
                                         children: "See Some Projects"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 173,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27855,24 +27871,24 @@ function OfferingServices() {
                                         children: "Android Studio"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 172,
+                                        lineNumber: 174,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                lineNumber: 146,
+                                lineNumber: 148,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 142,
+                            lineNumber: 144,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                    lineNumber: 33,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, this)
             ]
@@ -28230,7 +28246,7 @@ var _toggleButtonGroupDefault = parcelHelpers.interopDefault(_toggleButtonGroup)
 var _tooltip = require("./Tooltip");
 var _tooltipDefault = parcelHelpers.interopDefault(_tooltip);
 
-},{"./Accordion":"1m6xp","./AccordionContext":false,"./AccordionCollapse":false,"./AccordionButton":false,"./AccordionBody":false,"./AccordionHeader":false,"./AccordionItem":false,"./Alert":false,"./AlertHeading":false,"./AlertLink":false,"./Anchor":false,"./Badge":false,"./Breadcrumb":false,"./BreadcrumbItem":false,"./Button":"aPzUt","./ButtonGroup":false,"./ButtonToolbar":false,"./Card":"lAynp","./CardBody":false,"./CardFooter":false,"./CardGroup":false,"./CardHeader":false,"./CardImg":false,"./CardImgOverlay":false,"./CardLink":false,"./CardSubtitle":false,"./CardText":false,"./CardTitle":false,"./Carousel":false,"./CarouselCaption":false,"./CarouselItem":false,"./CloseButton":false,"./Col":false,"./Collapse":false,"./Container":false,"./Dropdown":false,"./DropdownButton":false,"./DropdownDivider":false,"./DropdownHeader":false,"./DropdownItem":false,"./DropdownItemText":false,"./DropdownMenu":false,"./DropdownToggle":false,"./Fade":false,"./Figure":false,"./FigureCaption":false,"./FigureImage":false,"./Form":false,"./FormControl":false,"./FormCheck":false,"./FormFloating":false,"./FloatingLabel":false,"./FormGroup":false,"./FormLabel":false,"./FormText":false,"./FormSelect":false,"./Image":false,"./InputGroup":false,"./ListGroup":false,"./ListGroupItem":false,"./Modal":false,"./ModalBody":false,"./ModalDialog":false,"./ModalFooter":false,"./ModalHeader":false,"./ModalTitle":false,"./Nav":false,"./Navbar":false,"./NavbarBrand":false,"./NavbarCollapse":false,"./NavbarOffcanvas":false,"./NavbarText":false,"./NavbarToggle":false,"./NavDropdown":false,"./NavItem":false,"./NavLink":false,"./Offcanvas":"eC3RS","./OffcanvasBody":false,"./OffcanvasHeader":false,"./OffcanvasTitle":false,"./OffcanvasToggling":false,"./Overlay":false,"./OverlayTrigger":false,"./PageItem":false,"./Pagination":false,"./Placeholder":false,"./PlaceholderButton":false,"./Popover":false,"./PopoverBody":false,"./PopoverHeader":false,"./ProgressBar":false,"./Ratio":false,"./Row":false,"./Spinner":false,"./SplitButton":false,"./SSRProvider":false,"./Stack":false,"./Tab":false,"./TabContainer":false,"./TabContent":false,"./Table":false,"./TabPane":false,"./Tabs":false,"./ThemeProvider":false,"./Toast":false,"./ToastBody":false,"./ToastContainer":false,"./ToastHeader":false,"./ToggleButton":false,"./ToggleButtonGroup":false,"./Tooltip":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1m6xp":[function(require,module,exports) {
+},{"./Accordion":"1m6xp","./AccordionContext":false,"./AccordionCollapse":false,"./AccordionButton":false,"./AccordionBody":false,"./AccordionHeader":false,"./AccordionItem":false,"./Alert":false,"./AlertHeading":false,"./AlertLink":false,"./Anchor":false,"./Badge":false,"./Breadcrumb":false,"./BreadcrumbItem":false,"./Button":"aPzUt","./ButtonGroup":false,"./ButtonToolbar":false,"./Card":"lAynp","./CardBody":false,"./CardFooter":false,"./CardGroup":false,"./CardHeader":false,"./CardImg":false,"./CardImgOverlay":false,"./CardLink":false,"./CardSubtitle":false,"./CardText":false,"./CardTitle":false,"./Carousel":false,"./CarouselCaption":false,"./CarouselItem":false,"./CloseButton":false,"./Col":false,"./Collapse":false,"./Container":false,"./Dropdown":false,"./DropdownButton":false,"./DropdownDivider":false,"./DropdownHeader":false,"./DropdownItem":false,"./DropdownItemText":false,"./DropdownMenu":false,"./DropdownToggle":false,"./Fade":false,"./Figure":false,"./FigureCaption":false,"./FigureImage":false,"./Form":false,"./FormControl":false,"./FormCheck":false,"./FormFloating":false,"./FloatingLabel":false,"./FormGroup":false,"./FormLabel":false,"./FormText":false,"./FormSelect":false,"./Image":false,"./InputGroup":false,"./ListGroup":"4tGXh","./ListGroupItem":false,"./Modal":false,"./ModalBody":false,"./ModalDialog":false,"./ModalFooter":false,"./ModalHeader":false,"./ModalTitle":false,"./Nav":false,"./Navbar":false,"./NavbarBrand":false,"./NavbarCollapse":false,"./NavbarOffcanvas":false,"./NavbarText":false,"./NavbarToggle":false,"./NavDropdown":false,"./NavItem":false,"./NavLink":false,"./Offcanvas":"eC3RS","./OffcanvasBody":false,"./OffcanvasHeader":false,"./OffcanvasTitle":false,"./OffcanvasToggling":false,"./Overlay":false,"./OverlayTrigger":false,"./PageItem":false,"./Pagination":false,"./Placeholder":false,"./PlaceholderButton":false,"./Popover":false,"./PopoverBody":false,"./PopoverHeader":false,"./ProgressBar":false,"./Ratio":false,"./Row":false,"./Spinner":false,"./SplitButton":false,"./SSRProvider":false,"./Stack":false,"./Tab":false,"./TabContainer":false,"./TabContent":false,"./Table":false,"./TabPane":false,"./Tabs":false,"./ThemeProvider":false,"./Toast":false,"./ToastBody":false,"./ToastContainer":false,"./ToastHeader":false,"./ToggleButton":false,"./ToggleButtonGroup":false,"./Tooltip":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1m6xp":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _classnames = require("classnames");
@@ -32222,7 +32238,465 @@ const Fade = /*#__PURE__*/ _react.forwardRef(({ className, children, transitionC
 Fade.displayName = "Fade";
 exports.default = Fade;
 
-},{"classnames":"jocGM","react":"21dqq","react-transition-group/Transition":"cKsrS","./transitionEndListener":"68oh7","./triggerBrowserReflow":"eWjs5","./TransitionWrapper":"jKUqZ","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eC3RS":[function(require,module,exports) {
+},{"classnames":"jocGM","react":"21dqq","react-transition-group/Transition":"cKsrS","./transitionEndListener":"68oh7","./triggerBrowserReflow":"eWjs5","./TransitionWrapper":"jKUqZ","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4tGXh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _react = require("react");
+var _warning = require("warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _uncontrollable = require("uncontrollable");
+var _nav = require("@restart/ui/Nav");
+var _navDefault = parcelHelpers.interopDefault(_nav);
+var _themeProvider = require("./ThemeProvider");
+var _listGroupItem = require("./ListGroupItem");
+var _listGroupItemDefault = parcelHelpers.interopDefault(_listGroupItem);
+var _jsxRuntime = require("react/jsx-runtime");
+"use client";
+const ListGroup = /*#__PURE__*/ _react.forwardRef((props, ref)=>{
+    const { className, bsPrefix: initialBsPrefix, variant, horizontal, numbered, // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
+    as = "div", ...controlledProps } = (0, _uncontrollable.useUncontrolled)(props, {
+        activeKey: "onSelect"
+    });
+    const bsPrefix = (0, _themeProvider.useBootstrapPrefix)(initialBsPrefix, "list-group");
+    let horizontalVariant;
+    if (horizontal) horizontalVariant = horizontal === true ? "horizontal" : `horizontal-${horizontal}`;
+    (0, _warningDefault.default)(!(horizontal && variant === "flush"), '`variant="flush"` and `horizontal` should not be used together.');
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _navDefault.default), {
+        ref: ref,
+        ...controlledProps,
+        as: as,
+        className: (0, _classnamesDefault.default)(className, bsPrefix, variant && `${bsPrefix}-${variant}`, horizontalVariant && `${bsPrefix}-${horizontalVariant}`, numbered && `${bsPrefix}-numbered`)
+    });
+});
+ListGroup.displayName = "ListGroup";
+exports.default = Object.assign(ListGroup, {
+    Item: (0, _listGroupItemDefault.default)
+});
+
+},{"classnames":"jocGM","react":"21dqq","warning":"eUVzU","uncontrollable":"b3yWY","@restart/ui/Nav":"fZdNd","./ThemeProvider":"dVixI","./ListGroupItem":"9U5b8","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eUVzU":[function(require,module,exports) {
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+/**
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */ var __DEV__ = true;
+var warning = function() {};
+if (__DEV__) {
+    var printWarning = function printWarning(format, args) {
+        var len = arguments.length;
+        args = new Array(len > 1 ? len - 1 : 0);
+        for(var key = 1; key < len; key++)args[key - 1] = arguments[key];
+        var argIndex = 0;
+        var message = "Warning: " + format.replace(/%s/g, function() {
+            return args[argIndex++];
+        });
+        if (typeof console !== "undefined") console.error(message);
+        try {
+            // --- Welcome to debugging React ---
+            // This error was thrown as a convenience so that you can use this stack
+            // to find the callsite that caused this warning to fire.
+            throw new Error(message);
+        } catch (x) {}
+    };
+    warning = function(condition, format, args) {
+        var len = arguments.length;
+        args = new Array(len > 2 ? len - 2 : 0);
+        for(var key = 2; key < len; key++)args[key - 2] = arguments[key];
+        if (format === undefined) throw new Error("`warning(condition, format, ...args)` requires a warning message argument");
+        if (!condition) printWarning.apply(null, [
+            format
+        ].concat(args));
+    };
+}
+module.exports = warning;
+
+},{}],"fZdNd":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _querySelectorAll = require("dom-helpers/querySelectorAll");
+var _querySelectorAllDefault = parcelHelpers.interopDefault(_querySelectorAll);
+var _react = require("react");
+var _useForceUpdate = require("@restart/hooks/useForceUpdate");
+var _useForceUpdateDefault = parcelHelpers.interopDefault(_useForceUpdate);
+var _useMergedRefs = require("@restart/hooks/useMergedRefs");
+var _useMergedRefsDefault = parcelHelpers.interopDefault(_useMergedRefs);
+var _navContext = require("./NavContext");
+var _navContextDefault = parcelHelpers.interopDefault(_navContext);
+var _selectableContext = require("./SelectableContext");
+var _selectableContextDefault = parcelHelpers.interopDefault(_selectableContext);
+var _tabContext = require("./TabContext");
+var _tabContextDefault = parcelHelpers.interopDefault(_tabContext);
+var _dataKey = require("./DataKey");
+var _navItem = require("./NavItem");
+var _navItemDefault = parcelHelpers.interopDefault(_navItem);
+var _jsxRuntime = require("react/jsx-runtime");
+const _excluded = [
+    "as",
+    "onSelect",
+    "activeKey",
+    "role",
+    "onKeyDown"
+];
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+// eslint-disable-next-line @typescript-eslint/no-empty-function
+const noop = ()=>{};
+const EVENT_KEY_ATTR = (0, _dataKey.dataAttr)("event-key");
+const Nav = /*#__PURE__*/ _react.forwardRef((_ref, ref)=>{
+    let { // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
+    as: Component = "div", onSelect, activeKey, role, onKeyDown } = _ref, props = _objectWithoutPropertiesLoose(_ref, _excluded);
+    // A ref and forceUpdate for refocus, b/c we only want to trigger when needed
+    // and don't want to reset the set in the effect
+    const forceUpdate = (0, _useForceUpdateDefault.default)();
+    const needsRefocusRef = (0, _react.useRef)(false);
+    const parentOnSelect = (0, _react.useContext)((0, _selectableContextDefault.default));
+    const tabContext = (0, _react.useContext)((0, _tabContextDefault.default));
+    let getControlledId, getControllerId;
+    if (tabContext) {
+        role = role || "tablist";
+        activeKey = tabContext.activeKey;
+        // TODO: do we need to duplicate these?
+        getControlledId = tabContext.getControlledId;
+        getControllerId = tabContext.getControllerId;
+    }
+    const listNode = (0, _react.useRef)(null);
+    const getNextActiveTab = (offset)=>{
+        const currentListNode = listNode.current;
+        if (!currentListNode) return null;
+        const items = (0, _querySelectorAllDefault.default)(currentListNode, `[${EVENT_KEY_ATTR}]:not([aria-disabled=true])`);
+        const activeChild = currentListNode.querySelector("[aria-selected=true]");
+        if (!activeChild || activeChild !== document.activeElement) return null;
+        const index = items.indexOf(activeChild);
+        if (index === -1) return null;
+        let nextIndex = index + offset;
+        if (nextIndex >= items.length) nextIndex = 0;
+        if (nextIndex < 0) nextIndex = items.length - 1;
+        return items[nextIndex];
+    };
+    const handleSelect = (key, event)=>{
+        if (key == null) return;
+        onSelect == null || onSelect(key, event);
+        parentOnSelect == null || parentOnSelect(key, event);
+    };
+    const handleKeyDown = (event)=>{
+        onKeyDown == null || onKeyDown(event);
+        if (!tabContext) return;
+        let nextActiveChild;
+        switch(event.key){
+            case "ArrowLeft":
+            case "ArrowUp":
+                nextActiveChild = getNextActiveTab(-1);
+                break;
+            case "ArrowRight":
+            case "ArrowDown":
+                nextActiveChild = getNextActiveTab(1);
+                break;
+            default:
+                return;
+        }
+        if (!nextActiveChild) return;
+        event.preventDefault();
+        handleSelect(nextActiveChild.dataset[(0, _dataKey.dataProp)("EventKey")] || null, event);
+        needsRefocusRef.current = true;
+        forceUpdate();
+    };
+    (0, _react.useEffect)(()=>{
+        if (listNode.current && needsRefocusRef.current) {
+            const activeChild = listNode.current.querySelector(`[${EVENT_KEY_ATTR}][aria-selected=true]`);
+            activeChild == null || activeChild.focus();
+        }
+        needsRefocusRef.current = false;
+    });
+    const mergedRef = (0, _useMergedRefsDefault.default)(ref, listNode);
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _selectableContextDefault.default).Provider, {
+        value: handleSelect,
+        children: /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _navContextDefault.default).Provider, {
+            value: {
+                role,
+                // used by NavLink to determine it's role
+                activeKey: (0, _selectableContext.makeEventKey)(activeKey),
+                getControlledId: getControlledId || noop,
+                getControllerId: getControllerId || noop
+            },
+            children: /*#__PURE__*/ (0, _jsxRuntime.jsx)(Component, Object.assign({}, props, {
+                onKeyDown: handleKeyDown,
+                ref: mergedRef,
+                role: role
+            }))
+        })
+    });
+});
+Nav.displayName = "Nav";
+exports.default = Object.assign(Nav, {
+    Item: (0, _navItemDefault.default)
+});
+
+},{"dom-helpers/querySelectorAll":"g5Sx6","react":"21dqq","@restart/hooks/useForceUpdate":"3Y4bz","@restart/hooks/useMergedRefs":"6hhuo","./NavContext":"j1SMA","./SelectableContext":"8zLqy","./TabContext":"cI3G3","./DataKey":"9vwZh","./NavItem":"2cGYS","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g5Sx6":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>qsa);
+var toArray = Function.prototype.bind.call(Function.prototype.call, [].slice);
+function qsa(element, selector) {
+    return toArray(element.querySelectorAll(selector));
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3Y4bz":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useForceUpdate);
+var _react = require("react");
+function useForceUpdate() {
+    // The toggling state value is designed to defeat React optimizations for skipping
+    // updates when they are strictly equal to the last state value
+    const [, dispatch] = (0, _react.useReducer)((state)=>!state, false);
+    return dispatch;
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"j1SMA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+const NavContext = /*#__PURE__*/ _react.createContext(null);
+NavContext.displayName = "NavContext";
+exports.default = NavContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8zLqy":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "makeEventKey", ()=>makeEventKey);
+var _react = require("react");
+const SelectableContext = /*#__PURE__*/ _react.createContext(null);
+const makeEventKey = (eventKey, href = null)=>{
+    if (eventKey != null) return String(eventKey);
+    return href || null;
+};
+exports.default = SelectableContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cI3G3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+const TabContext = /*#__PURE__*/ _react.createContext(null);
+exports.default = TabContext;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9vwZh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ATTRIBUTE_PREFIX", ()=>ATTRIBUTE_PREFIX);
+parcelHelpers.export(exports, "PROPERTY_PREFIX", ()=>PROPERTY_PREFIX);
+parcelHelpers.export(exports, "dataAttr", ()=>dataAttr);
+parcelHelpers.export(exports, "dataProp", ()=>dataProp);
+const ATTRIBUTE_PREFIX = `data-rr-ui-`;
+const PROPERTY_PREFIX = `rrUi`;
+function dataAttr(property) {
+    return `${ATTRIBUTE_PREFIX}${property}`;
+}
+function dataProp(property) {
+    return `${PROPERTY_PREFIX}${property}`;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2cGYS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useNavItem", ()=>useNavItem);
+var _react = require("react");
+var _useEventCallback = require("@restart/hooks/useEventCallback");
+var _useEventCallbackDefault = parcelHelpers.interopDefault(_useEventCallback);
+var _navContext = require("./NavContext");
+var _navContextDefault = parcelHelpers.interopDefault(_navContext);
+var _selectableContext = require("./SelectableContext");
+var _selectableContextDefault = parcelHelpers.interopDefault(_selectableContext);
+var _button = require("./Button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+var _dataKey = require("./DataKey");
+var _tabContext = require("./TabContext");
+var _tabContextDefault = parcelHelpers.interopDefault(_tabContext);
+var _jsxRuntime = require("react/jsx-runtime");
+const _excluded = [
+    "as",
+    "active",
+    "eventKey"
+];
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+function useNavItem({ key, onClick, active, id, role, disabled }) {
+    const parentOnSelect = (0, _react.useContext)((0, _selectableContextDefault.default));
+    const navContext = (0, _react.useContext)((0, _navContextDefault.default));
+    const tabContext = (0, _react.useContext)((0, _tabContextDefault.default));
+    let isActive = active;
+    const props = {
+        role
+    };
+    if (navContext) {
+        if (!role && navContext.role === "tablist") props.role = "tab";
+        const contextControllerId = navContext.getControllerId(key != null ? key : null);
+        const contextControlledId = navContext.getControlledId(key != null ? key : null);
+        // @ts-ignore
+        props[(0, _dataKey.dataAttr)("event-key")] = key;
+        props.id = contextControllerId || id;
+        isActive = active == null && key != null ? navContext.activeKey === key : active;
+        /**
+     * Simplified scenario for `mountOnEnter`.
+     *
+     * While it would make sense to keep 'aria-controls' for tabs that have been mounted at least
+     * once, it would also complicate the code quite a bit, for very little gain.
+     * The following implementation is probably good enough.
+     *
+     * @see https://github.com/react-restart/ui/pull/40#issuecomment-1009971561
+     */ if (isActive || !(tabContext != null && tabContext.unmountOnExit) && !(tabContext != null && tabContext.mountOnEnter)) props["aria-controls"] = contextControlledId;
+    }
+    if (props.role === "tab") {
+        props["aria-selected"] = isActive;
+        if (!isActive) props.tabIndex = -1;
+        if (disabled) {
+            props.tabIndex = -1;
+            props["aria-disabled"] = true;
+        }
+    }
+    props.onClick = (0, _useEventCallbackDefault.default)((e)=>{
+        if (disabled) return;
+        onClick == null || onClick(e);
+        if (key == null) return;
+        if (parentOnSelect && !e.isPropagationStopped()) parentOnSelect(key, e);
+    });
+    return [
+        props,
+        {
+            isActive
+        }
+    ];
+}
+const NavItem = /*#__PURE__*/ _react.forwardRef((_ref, ref)=>{
+    let { as: Component = (0, _buttonDefault.default), active, eventKey } = _ref, options = _objectWithoutPropertiesLoose(_ref, _excluded);
+    const [props, meta] = useNavItem(Object.assign({
+        key: (0, _selectableContext.makeEventKey)(eventKey, options.href),
+        active
+    }, options));
+    // @ts-ignore
+    props[(0, _dataKey.dataAttr)("active")] = meta.isActive;
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(Component, Object.assign({}, options, props, {
+        ref: ref
+    }));
+});
+NavItem.displayName = "NavItem";
+exports.default = NavItem;
+
+},{"react":"21dqq","@restart/hooks/useEventCallback":"7ONdq","./NavContext":"j1SMA","./SelectableContext":"8zLqy","./Button":"8YUbR","./DataKey":"9vwZh","./TabContext":"cI3G3","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7ONdq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useEventCallback);
+var _react = require("react");
+var _useCommittedRef = require("./useCommittedRef");
+var _useCommittedRefDefault = parcelHelpers.interopDefault(_useCommittedRef);
+function useEventCallback(fn) {
+    const ref = (0, _useCommittedRefDefault.default)(fn);
+    return (0, _react.useCallback)(function(...args) {
+        return ref.current && ref.current(...args);
+    }, [
+        ref
+    ]);
+}
+
+},{"react":"21dqq","./useCommittedRef":"g5BYG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g5BYG":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+/**
+ * Creates a `Ref` whose value is updated in an effect, ensuring the most recent
+ * value is the one rendered with. Generally only required for Concurrent mode usage
+ * where previous work in `render()` may be discarded before being used.
+ *
+ * This is safe to access in an event handler.
+ *
+ * @param value The `Ref` value
+ */ function useCommittedRef(value) {
+    const ref = (0, _react.useRef)(value);
+    (0, _react.useEffect)(()=>{
+        ref.current = value;
+    }, [
+        value
+    ]);
+    return ref;
+}
+exports.default = useCommittedRef;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9U5b8":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _react = require("react");
+var _warning = require("warning");
+var _warningDefault = parcelHelpers.interopDefault(_warning);
+var _useEventCallback = require("@restart/hooks/useEventCallback");
+var _useEventCallbackDefault = parcelHelpers.interopDefault(_useEventCallback);
+var _navItem = require("@restart/ui/NavItem");
+var _selectableContext = require("@restart/ui/SelectableContext");
+var _themeProvider = require("./ThemeProvider");
+var _jsxRuntime = require("react/jsx-runtime");
+"use client";
+const ListGroupItem = /*#__PURE__*/ _react.forwardRef(({ bsPrefix, active, disabled, eventKey, className, variant, action, as, ...props }, ref)=>{
+    bsPrefix = (0, _themeProvider.useBootstrapPrefix)(bsPrefix, "list-group-item");
+    const [navItemProps, meta] = (0, _navItem.useNavItem)({
+        key: (0, _selectableContext.makeEventKey)(eventKey, props.href),
+        active,
+        ...props
+    });
+    const handleClick = (0, _useEventCallbackDefault.default)((event)=>{
+        if (disabled) {
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+        }
+        navItemProps.onClick(event);
+    });
+    if (disabled && props.tabIndex === undefined) {
+        props.tabIndex = -1;
+        props["aria-disabled"] = true;
+    }
+    // eslint-disable-next-line no-nested-ternary
+    const Component = as || (action ? props.href ? "a" : "button" : "div");
+    (0, _warningDefault.default)(as || !(!action && props.href), "`action=false` and `href` should not be used together.");
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(Component, {
+        ref: ref,
+        ...props,
+        ...navItemProps,
+        onClick: handleClick,
+        className: (0, _classnamesDefault.default)(className, bsPrefix, meta.isActive && "active", disabled && "disabled", variant && `${bsPrefix}-${variant}`, action && `${bsPrefix}-action`)
+    });
+});
+ListGroupItem.displayName = "ListGroupItem";
+exports.default = ListGroupItem;
+
+},{"classnames":"jocGM","react":"21dqq","warning":"eUVzU","@restart/hooks/useEventCallback":"7ONdq","@restart/ui/NavItem":"2cGYS","@restart/ui/SelectableContext":"8zLqy","./ThemeProvider":"dVixI","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eC3RS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _classnames = require("classnames");
@@ -32535,45 +33009,6 @@ const isDOM = typeof document !== "undefined";
  *
  * @category effects
  */ exports.default = isDOM || isReactNative ? (0, _react.useLayoutEffect) : (0, _react.useEffect);
-
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7ONdq":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>useEventCallback);
-var _react = require("react");
-var _useCommittedRef = require("./useCommittedRef");
-var _useCommittedRefDefault = parcelHelpers.interopDefault(_useCommittedRef);
-function useEventCallback(fn) {
-    const ref = (0, _useCommittedRefDefault.default)(fn);
-    return (0, _react.useCallback)(function(...args) {
-        return ref.current && ref.current(...args);
-    }, [
-        ref
-    ]);
-}
-
-},{"react":"21dqq","./useCommittedRef":"g5BYG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g5BYG":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-/**
- * Creates a `Ref` whose value is updated in an effect, ensuring the most recent
- * value is the one rendered with. Generally only required for Concurrent mode usage
- * where previous work in `render()` may be discarded before being used.
- *
- * This is safe to access in an event handler.
- *
- * @param value The `Ref` value
- */ function useCommittedRef(value) {
-    const ref = (0, _react.useRef)(value);
-    (0, _react.useEffect)(()=>{
-        ref.current = value;
-    }, [
-        value
-    ]);
-    return ref;
-}
-exports.default = useCommittedRef;
 
 },{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"crj1M":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -33001,23 +33436,7 @@ const OPEN_DATA_ATTRIBUTE = (0, _dataKey.dataAttr)("modal-open");
 }
 exports.default = ModalManager;
 
-},{"dom-helpers/css":"klmhr","./DataKey":"9vwZh","./getScrollbarWidth":"9IxEN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9vwZh":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "ATTRIBUTE_PREFIX", ()=>ATTRIBUTE_PREFIX);
-parcelHelpers.export(exports, "PROPERTY_PREFIX", ()=>PROPERTY_PREFIX);
-parcelHelpers.export(exports, "dataAttr", ()=>dataAttr);
-parcelHelpers.export(exports, "dataProp", ()=>dataProp);
-const ATTRIBUTE_PREFIX = `data-rr-ui-`;
-const PROPERTY_PREFIX = `rrUi`;
-function dataAttr(property) {
-    return `${ATTRIBUTE_PREFIX}${property}`;
-}
-function dataProp(property) {
-    return `${PROPERTY_PREFIX}${property}`;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9IxEN":[function(require,module,exports) {
+},{"dom-helpers/css":"klmhr","./DataKey":"9vwZh","./getScrollbarWidth":"9IxEN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9IxEN":[function(require,module,exports) {
 /**
  * Get the width of the vertical window scrollbar if it's visible
  */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -33589,15 +34008,6 @@ function hasClass(element, className) {
     return (" " + (element.className.baseVal || element.className) + " ").indexOf(" " + className + " ") !== -1;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g5Sx6":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>qsa);
-var toArray = Function.prototype.bind.call(Function.prototype.call, [].slice);
-function qsa(element, selector) {
-    return toArray(element.querySelectorAll(selector));
-}
-
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"66hgg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -33802,33 +34212,43 @@ var _landingpageModuleCssDefault = parcelHelpers.interopDefault(_landingpageModu
 var _sidepanal = require("./components/Sidepanal");
 var _sidepanalDefault = parcelHelpers.interopDefault(_sidepanal);
 var _reactBootstrap = require("react-bootstrap");
+var _s = $RefreshSig$();
 function HomePage() {
-    function openOrCloseDropdown() {}
+    _s();
+    const navRef = (0, _react.useRef)(null);
+    const rootElement = document.getElementById("root");
+    window.addEventListener("scroll", (event)=>{
+        if (rootElement == null || navRef.current == null) return;
+        const scrollVal = window.scrollY || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        if (scrollVal > 10) navRef.current.style.backgroundColor = "var(--dark-blue-color)";
+        else navRef.current.style.backgroundColor = "transparent";
+    });
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                className: `${(0, _navModuleCssDefault.default).navigation}`,
+                className: (0, _navModuleCssDefault.default).navigation,
+                ref: navRef,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                         children: "Eyoel"
                     }, void 0, false, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 14,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sidepanalDefault.default), {}, void 0, false, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 15,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/HomePage/HomePage.tsx",
-                lineNumber: 13,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                id: "Landing Page",
+                id: "Landing_Page",
                 style: {
                     background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${(0, _bgJpgDefault.default)})`
                 },
@@ -33838,7 +34258,7 @@ function HomePage() {
                         children: "I Love To Code"
                     }, void 0, false, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 25,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -33850,12 +34270,12 @@ function HomePage() {
                                     children: "See More"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/HomePage.tsx",
-                                    lineNumber: 28,
+                                    lineNumber: 43,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/pages/HomePage/HomePage.tsx",
-                                lineNumber: 27,
+                                lineNumber: 42,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -33864,29 +34284,30 @@ function HomePage() {
                                     children: "Contact Me"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/HomePage.tsx",
-                                    lineNumber: 31,
+                                    lineNumber: 46,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/pages/HomePage/HomePage.tsx",
-                                lineNumber: 30,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 26,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/HomePage/HomePage.tsx",
-                lineNumber: 18,
+                lineNumber: 33,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
+_s(HomePage, "rHA/vuAAXoiUfw/iUIRJEHlIXI0=");
 _c = HomePage;
 var _c;
 $RefreshReg$(_c, "HomePage");
@@ -33896,7 +34317,7 @@ $RefreshReg$(_c, "HomePage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/nav.module.css":"baKse","../../assets/bg.jpg":"ea1HM","./styles/landingpage.module.css":"7OxB3","./components/Sidepanal":"cD1Zv","react-bootstrap":"3AD9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"baKse":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/nav.module.css":"baKse","../../assets/bg.jpg":"ea1HM","./styles/landingpage.module.css":"7OxB3","react-bootstrap":"3AD9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Sidepanal":"cD1Zv"}],"baKse":[function(require,module,exports) {
 module.exports["dropDown"] = `KKfQeG_dropDown`;
 module.exports["dropDownButton"] = `KKfQeG_dropDownButton`;
 module.exports["navigation"] = `KKfQeG_navigation`;
@@ -33939,6 +34360,10 @@ function Sidepanal() {
     function closeNavigationDrawer() {
         setShowNavigationDrawer(false);
     }
+    function goToSection(path) {
+        window.location.replace(`/#${path}`);
+        closeNavigationDrawer();
+    }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
@@ -33951,16 +34376,16 @@ function Sidepanal() {
                     className: (0, _sidepanalModuleCssDefault.default).menuIcon
                 }, void 0, false, {
                     fileName: "src/pages/HomePage/components/Sidepanal.tsx",
-                    lineNumber: 24,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/pages/HomePage/components/Sidepanal.tsx",
-                lineNumber: 19,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Offcanvas), {
-                responsive: "lg",
+                responsive: "md",
                 className: (0, _sidepanalModuleCssDefault.default).background,
                 show: showNavigationDrawer,
                 onHide: closeNavigationDrawer,
@@ -33968,28 +34393,72 @@ function Sidepanal() {
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Offcanvas).Header, {
                         closeButton: true,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Offcanvas).Title, {
-                            children: "Offcanvas"
+                            children: "Contents"
                         }, void 0, false, {
                             fileName: "src/pages/HomePage/components/Sidepanal.tsx",
-                            lineNumber: 38,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/pages/HomePage/components/Sidepanal.tsx",
-                        lineNumber: 37,
+                        lineNumber: 42,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Offcanvas).Body, {
-                        children: "Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc."
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup), {
+                            className: (0, _sidepanalModuleCssDefault.default).list,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
+                                    onClick: ()=>goToSection("Landing_Page"),
+                                    children: "Landing Page"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
+                                    lineNumber: 47,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
+                                    children: "About Us"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
+                                    lineNumber: 50,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
+                                    children: "Offered Services"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
+                                    lineNumber: 51,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
+                                    children: "Some Of My Projects"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
+                                    lineNumber: 52,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
+                                    children: "Testimonials"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
+                                    lineNumber: 53,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/HomePage/components/Sidepanal.tsx",
+                            lineNumber: 46,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "src/pages/HomePage/components/Sidepanal.tsx",
-                        lineNumber: 40,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/HomePage/components/Sidepanal.tsx",
-                lineNumber: 31,
+                lineNumber: 36,
                 columnNumber: 7
             }, this)
         ]
@@ -34007,6 +34476,7 @@ $RefreshReg$(_c, "Sidepanal");
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/sidepanal.module.css":"20j8u","react-bootstrap":"3AD9A","../../../assets/menu.svg":"avrGv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"20j8u":[function(require,module,exports) {
 module.exports["background"] = `M0CgXq_background`;
+module.exports["list"] = `M0CgXq_list`;
 module.exports["menuButton"] = `M0CgXq_menuButton`;
 module.exports["menuIcon"] = `M0CgXq_menuIcon`;
 
@@ -34034,27 +34504,44 @@ function AboutMe() {
             className: (0, _containerModuleCssDefault.default).container,
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: `${(0, _containerModuleCssDefault.default).header} ${(0, _containerModuleCssDefault.default).leftMargin}`,
-                    children: "Hi There I'M Eyoel"
-                }, void 0, false, {
+                    className: (0, _containerModuleCssDefault.default).about,
+                    children: [
+                        "About Me ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "hr"
+                        }, void 0, false, {
+                            fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                            lineNumber: 9,
+                            columnNumber: 20
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
                     lineNumber: 8,
                     columnNumber: 9
                 }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: `${(0, _containerModuleCssDefault.default).header} ${(0, _containerModuleCssDefault.default).leftMargin}`,
+                    children: "Hi There I'M Eyoel"
+                }, void 0, false, {
+                    fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    className: (0, _containerModuleCssDefault.default).leftMargin,
+                    className: `${(0, _containerModuleCssDefault.default).leftMargin}`,
                     children: [
                         "I have been coding since i was 13.",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 15,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this),
                         " I love to create app, games and websites. Going thorough the process of learning to code is so satisfying and Fulfilling"
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 13,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34062,46 +34549,101 @@ function AboutMe() {
                     className: (0, _containerModuleCssDefault.default).contactInfo,
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: (0, _containerModuleCssDefault.default).headerContactInfo,
+                            className: `${(0, _containerModuleCssDefault.default).headerContactInfo} ${(0, _containerModuleCssDefault.default).leftMargin}`,
                             children: "Contact Info"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 19,
+                            lineNumber: 22,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: "Email (1): joelthousend@gmail.com"
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: (0, _containerModuleCssDefault.default).contact,
+                                            children: "Telegram: "
+                                        }, void 0, false, {
+                                            fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                                            lineNumber: 30,
+                                            columnNumber: 15
+                                        }, this),
+                                        "https://t.me/Eyoelsel ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "Warning",
+                                            children: "Recommended"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                                            lineNumber: 31,
+                                            columnNumber: 37
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 21,
+                                    lineNumber: 29,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: "Email (2): eyoelseleshizeyohannes@gmail.com"
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: (0, _containerModuleCssDefault.default).contact,
+                                            children: "Email (1): "
+                                        }, void 0, false, {
+                                            fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                                            lineNumber: 34,
+                                            columnNumber: 15
+                                        }, this),
+                                        "joelthousend@gmail.com"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 22,
+                                    lineNumber: 33,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: "Phone Number: 251944032128"
-                                }, void 0, false, {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: (0, _containerModuleCssDefault.default).contact,
+                                            children: "Email (2): "
+                                        }, void 0, false, {
+                                            fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                                            lineNumber: 38,
+                                            columnNumber: 15
+                                        }, this),
+                                        "eyoelseleshizeyohannes@gmail.com"
+                                    ]
+                                }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 23,
+                                    lineNumber: 37,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: (0, _containerModuleCssDefault.default).contact,
+                                            children: "Phone Number: "
+                                        }, void 0, false, {
+                                            fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                                            lineNumber: 42,
+                                            columnNumber: 15
+                                        }, this),
+                                        "251944032128"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                                    lineNumber: 41,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 20,
+                            lineNumber: 28,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 18,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, this)
             ]
@@ -34122,6 +34664,8 @@ $RefreshReg$(_c, "AboutMe");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/container.module.css":"h1a1w","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"h1a1w":[function(require,module,exports) {
+module.exports["about"] = `_06dn2q_about`;
+module.exports["contact"] = `_06dn2q_contact`;
 module.exports["contactInfo"] = `_06dn2q_contactInfo`;
 module.exports["container"] = `_06dn2q_container`;
 module.exports["header"] = `_06dn2q_header`;
@@ -34223,8 +34767,17 @@ function DeliveredProject() {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     className: (0, _deliveredprojectModuleCssDefault.default).heading,
-                    children: "Some Of My Projects"
-                }, void 0, false, {
+                    children: [
+                        "Some Of My Projects",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "hr"
+                        }, void 0, false, {
+                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                            lineNumber: 86,
+                            columnNumber: 30
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
                     lineNumber: 85,
                     columnNumber: 9
@@ -34234,7 +34787,7 @@ function DeliveredProject() {
                     children: "Cross Platform Development Projects"
                 }, void 0, false, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 86,
+                    lineNumber: 88,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34244,7 +34797,7 @@ function DeliveredProject() {
                         children: "Coming Soon"
                     }, void 0, false, {
                         fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                        lineNumber: 94,
+                        lineNumber: 96,
                         columnNumber: 13
                     }, this) : crossPlatformProjects.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
                             Name: oneProject.Name,
@@ -34254,12 +34807,12 @@ function DeliveredProject() {
                             description: oneProject.description
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 97,
+                            lineNumber: 99,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 89,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -34267,7 +34820,7 @@ function DeliveredProject() {
                     children: "Full Stack Web Development Projects"
                 }, void 0, false, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 108,
+                    lineNumber: 110,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34277,7 +34830,7 @@ function DeliveredProject() {
                         children: "Coming Soon"
                     }, void 0, false, {
                         fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                        lineNumber: 117,
+                        lineNumber: 119,
                         columnNumber: 13
                     }, this) : fullStackWebDev.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
                             Name: oneProject.Name,
@@ -34287,12 +34840,12 @@ function DeliveredProject() {
                             description: oneProject.description
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 120,
+                            lineNumber: 122,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 112,
+                    lineNumber: 114,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -34300,7 +34853,7 @@ function DeliveredProject() {
                     children: "Android Development Projects"
                 }, void 0, false, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 131,
+                    lineNumber: 133,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34310,7 +34863,7 @@ function DeliveredProject() {
                         children: "Coming Soon"
                     }, void 0, false, {
                         fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                        lineNumber: 140,
+                        lineNumber: 142,
                         columnNumber: 13
                     }, this) : androidDevelopment.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
                             Name: oneProject.Name,
@@ -34320,12 +34873,12 @@ function DeliveredProject() {
                             description: oneProject.description
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 143,
+                            lineNumber: 145,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 135,
+                    lineNumber: 137,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -34333,7 +34886,7 @@ function DeliveredProject() {
                     children: "Game Development Projects"
                 }, void 0, false, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 154,
+                    lineNumber: 156,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34343,7 +34896,7 @@ function DeliveredProject() {
                         children: "Coming Soon"
                     }, void 0, false, {
                         fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                        lineNumber: 163,
+                        lineNumber: 165,
                         columnNumber: 13
                     }, this) : gameDevelopment.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
                             Name: oneProject.Name,
@@ -34353,12 +34906,12 @@ function DeliveredProject() {
                             description: oneProject.description
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 166,
+                            lineNumber: 168,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 158,
+                    lineNumber: 160,
                     columnNumber: 9
                 }, this)
             ]
@@ -34547,7 +35100,7 @@ function Testimonials() {
                     children: [
                         "Testimonials ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: (0, _testimonialsModuleCssDefault.default).hr
+                            className: "hr"
                         }, void 0, false, {
                             fileName: "src/pages/Testimonials/Testimonials.tsx",
                             lineNumber: 30,
@@ -34684,7 +35237,6 @@ module.exports["workplace"] = `uV3_Ta_workplace`;
 },{}],"iUHbK":[function(require,module,exports) {
 module.exports["container"] = `qTmjFa_container`;
 module.exports["heading"] = `qTmjFa_heading`;
-module.exports["hr"] = `qTmjFa_hr`;
 module.exports["overAllContainer"] = `qTmjFa_overAllContainer`;
 
 },{}],"jrWOl":[function(require,module,exports) {
@@ -34745,49 +35297,74 @@ function FrequentlyAskedQuestion() {
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            id: "Frequently Asked Question",
-            className: (0, _frequentlyaskedquestionModuleCssDefault.default).container,
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion), {
-                children: questionsAndAnswer.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Coming Soon"
-                }, void 0, false, {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: (0, _frequentlyaskedquestionModuleCssDefault.default).overallContainer,
+                    children: [
+                        "Frequently Asked Questions",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "hr"
+                        }, void 0, false, {
+                            fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
+                            lineNumber: 40,
+                            columnNumber: 37
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                    lineNumber: 44,
-                    columnNumber: 13
-                }, this) : questionsAndAnswer.map((oneOfIt, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion).Item, {
-                        eventKey: index.toString(),
-                        className: (0, _frequentlyaskedquestionModuleCssDefault.default).questions,
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion).Header, {
-                                children: oneOfIt.question
-                            }, void 0, false, {
+                    lineNumber: 39,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    id: "Frequently Asked Question",
+                    className: (0, _frequentlyaskedquestionModuleCssDefault.default).container,
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion), {
+                        children: questionsAndAnswer.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            children: "Coming Soon"
+                        }, void 0, false, {
+                            fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
+                            lineNumber: 48,
+                            columnNumber: 15
+                        }, this) : questionsAndAnswer.map((oneOfIt, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion).Item, {
+                                eventKey: index.toString(),
+                                className: (0, _frequentlyaskedquestionModuleCssDefault.default).questions,
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion).Header, {
+                                        children: oneOfIt.question
+                                    }, void 0, false, {
+                                        fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
+                                        lineNumber: 55,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion).Body, {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(oneOfIt.answer, {}, void 0, false, {
+                                            fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
+                                            lineNumber: 56,
+                                            columnNumber: 36
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
                                 lineNumber: 51,
                                 columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion).Body, {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(oneOfIt.answer, {}, void 0, false, {
-                                    fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                                    lineNumber: 52,
-                                    columnNumber: 34
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                                lineNumber: 52,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                            }, this))
+                    }, void 0, false, {
                         fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                        lineNumber: 47,
-                        columnNumber: 15
-                    }, this))
-            }, void 0, false, {
-                fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                lineNumber: 42,
-                columnNumber: 9
-            }, this)
-        }, void 0, false, {
+                        lineNumber: 46,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
             lineNumber: 38,
             columnNumber: 7
@@ -34805,7 +35382,139 @@ $RefreshReg$(_c, "FrequentlyAskedQuestion");
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-bootstrap":"3AD9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./styles/frequentlyaskedquestion.module.css":"bnl8M"}],"bnl8M":[function(require,module,exports) {
 module.exports["container"] = `He7iqG_container`;
+module.exports["overallContainer"] = `He7iqG_overallContainer`;
 module.exports["questions"] = `He7iqG_questions`;
+
+},{}],"6G1wt":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$727f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$727f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Information);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _informationModuleCss = require("./styles/information.module.css");
+var _informationModuleCssDefault = parcelHelpers.interopDefault(_informationModuleCss);
+function Information() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            id: "footer",
+            className: (0, _informationModuleCssDefault.default).footer,
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    id: "container",
+                    className: (0, _informationModuleCssDefault.default).container,
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        className: (0, _informationModuleCssDefault.default).list,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                    children: "Resources Used:"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Information/Information.tsx",
+                                    lineNumber: 11,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/pages/Information/Information.tsx",
+                                lineNumber: 10,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "https://icons8.com/",
+                                    children: "Icons8"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Information/Information.tsx",
+                                    lineNumber: 14,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/pages/Information/Information.tsx",
+                                lineNumber: 13,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "https://www.pexels.com/",
+                                    children: "Pexels"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Information/Information.tsx",
+                                    lineNumber: 17,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/pages/Information/Information.tsx",
+                                lineNumber: 16,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "https://react-bootstrap.netlify.app/",
+                                    children: "Bootstrap"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Information/Information.tsx",
+                                    lineNumber: 20,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/pages/Information/Information.tsx",
+                                lineNumber: 19,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/Information/Information.tsx",
+                        lineNumber: 9,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/pages/Information/Information.tsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    id: "copyright",
+                    className: (0, _informationModuleCssDefault.default).copyright,
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "Copyright \xa9 Eyoel Seleshi"
+                    }, void 0, false, {
+                        fileName: "src/pages/Information/Information.tsx",
+                        lineNumber: 25,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/pages/Information/Information.tsx",
+                    lineNumber: 24,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/pages/Information/Information.tsx",
+            lineNumber: 7,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+}
+_c = Information;
+var _c;
+$RefreshReg$(_c, "Information");
+
+  $parcel$ReactRefreshHelpers$727f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./styles/information.module.css":"fxmZP"}],"fxmZP":[function(require,module,exports) {
+module.exports["container"] = `kD4KYW_container`;
+module.exports["copyright"] = `kD4KYW_copyright`;
+module.exports["footer"] = `kD4KYW_footer`;
+module.exports["list"] = `kD4KYW_list`;
 
 },{}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire813e")
 

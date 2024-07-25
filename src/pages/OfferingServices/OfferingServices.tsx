@@ -23,7 +23,9 @@ export default function OfferingServices() {
     <>
       <div>
         <div id="Top Text">
-          <h1 className={offeringServicesStyle.header}>Offered Services</h1>
+          <h1 className={offeringServicesStyle.header}>
+            Offered Services<div className={"hr"}></div>
+          </h1>
           <p className={offeringServicesStyle.textDescription}>
             The services that i can offer are listed below start from app dev to
             a start up company full stack website

@@ -1,5 +1,7 @@
 .navigation {
   padding: 1rem 0;
+  top: 0;
+  left: 0;
   min-width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -7,8 +9,10 @@
   align-items: center;
   height: 1rem;
   padding: 2rem;
-  position: fixed;
+  position: fixed !important;
   color: white;
+  z-index: 20;
+  transition: background-color ease-in-out 300ms;
 }
 
 .svgMenu {

@@ -5,7 +5,22 @@
 
 .container {
   display: flex;
+  padding: 3rem 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.overallContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 4rem;
+  transition: color ease-in-out 300ms;
+}
+
+.overallContainer {
+  color: var(--bright-orange-color);
 }

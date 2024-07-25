@@ -1,0 +1,60 @@
+.list a,
+.list h1 {
+  color: #fff;
+  transition: color ease-in-out 300ms;
+  text-decoration: none;
+}
+
+.list a:hover,
+.list h1:hover {
+  color: var(--bright-orange-color);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: var(--bright-blue-color);
+  transition: background-color ease-in-out 300ms;
+  height: 100%;
+}
+
+.container:hover {
+  background-color: var(--bright-orange-color);
+}
+
+.container:hover a,
+.container:hover h1 {
+  color: var(--bright-blue-color);
+}
+
+.copyright {
+  background-color: var(--dark-blue-color);
+  transition: background-color ease-in-out 300ms;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  margin: 1rem;
+}
+
+.copyright:hover {
+  background-color: var(--bright-orange-color);
+  color: var(--bright-blue-color);
+}

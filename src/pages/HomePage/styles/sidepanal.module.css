@@ -1,6 +1,17 @@
 .background {
   background: rgb(37, 37, 37) !important;
   color: white !important;
+  width: 100% !important;
+}
+
+.list div {
+  background-color: var(--bright-blue-color);
+  transition: background-color ease-in-out 300ms;
+  color: #fff;
+}
+
+.list div:hover {
+  background-color: var(--bright-orange-color);
 }
 
 .menuIcon {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SidepanalStyle from "../styles/sidepanal.module.css";
-import { Button, Offcanvas } from "react-bootstrap";
+import { Button, ListGroup, NavLink, Offcanvas } from "react-bootstrap";
 import menuIconSvg from "../../../assets/menu.svg";
 
 export default function Sidepanal() {
@@ -12,6 +12,11 @@ export default function Sidepanal() {
 
   function closeNavigationDrawer() {
     setShowNavigationDrawer(false);
+  }
+
+  function goToSection(path: string) {
+    window.location.replace(`/#${path}`);
+    closeNavigationDrawer();
   }
 
   return (
@@ -29,17 +34,24 @@ export default function Sidepanal() {
       </Button>
 
       <Offcanvas
-        responsive="lg"
+        responsive="md"
         className={SidepanalStyle.background}
         show={showNavigationDrawer}
         onHide={closeNavigationDrawer}
       >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Contents</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          <ListGroup className={SidepanalStyle.list}>
+            <ListGroup.Item onClick={() => goToSection("Landing_Page")}>
+              Landing Page
+            </ListGroup.Item>
+            <ListGroup.Item>About Us</ListGroup.Item>
+            <ListGroup.Item>Offered Services</ListGroup.Item>
+            <ListGroup.Item>Some Of My Projects</ListGroup.Item>
+            <ListGroup.Item>Testimonials</ListGroup.Item>
+          </ListGroup>
         </Offcanvas.Body>
       </Offcanvas>
     </>

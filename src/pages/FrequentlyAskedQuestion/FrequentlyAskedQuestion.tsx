@@ -35,25 +35,30 @@ export default function FrequentlyAskedQuestion() {
   ];
   return (
     <>
-      <div
-        id="Frequently Asked Question"
-        className={frequentlyAskedStyle.container}
-      >
-        <Accordion>
-          {questionsAndAnswer.length <= 0 ? (
-            <h1>Coming Soon</h1>
-          ) : (
-            questionsAndAnswer.map((oneOfIt, index) => (
-              <Accordion.Item
-                eventKey={index.toString()}
-                className={frequentlyAskedStyle.questions}
-              >
-                <Accordion.Header>{oneOfIt.question}</Accordion.Header>
-                <Accordion.Body>{<oneOfIt.answer />}</Accordion.Body>
-              </Accordion.Item>
-            ))
-          )}
-        </Accordion>
+      <div>
+        <h1 className={frequentlyAskedStyle.overallContainer}>
+          Frequently Asked Questions<div className={"hr"}></div>
+        </h1>
+        <div
+          id="Frequently Asked Question"
+          className={frequentlyAskedStyle.container}
+        >
+          <Accordion>
+            {questionsAndAnswer.length <= 0 ? (
+              <h1>Coming Soon</h1>
+            ) : (
+              questionsAndAnswer.map((oneOfIt, index) => (
+                <Accordion.Item
+                  eventKey={index.toString()}
+                  className={frequentlyAskedStyle.questions}
+                >
+                  <Accordion.Header>{oneOfIt.question}</Accordion.Header>
+                  <Accordion.Body>{<oneOfIt.answer />}</Accordion.Body>
+                </Accordion.Item>
+              ))
+            )}
+          </Accordion>
+        </div>
       </div>
     </>
   );

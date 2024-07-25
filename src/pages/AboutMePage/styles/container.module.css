@@ -5,8 +5,31 @@
   background-color: var(--darkish-white);
 }
 
+.contact {
+  color: var(--bright-blue-color);
+}
+
+.about {
+  padding-top: 4rem;
+  text-align: center;
+  font-weight: bold;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.about:hover {
+  color: var(--bright-orange-color);
+}
+
+.contact:hover {
+  color: var(--bright-orange-color);
+}
+
 .header {
-  margin-top: 7rem;
+  margin-top: 2rem;
   font-size: xx-large;
   font-weight: bolder;
 }
@@ -23,6 +46,10 @@
 .contactInfo {
   margin-bottom: 7rem;
   margin-top: 3rem;
+}
+
+.contactInfo li {
+  list-style: none;
 }
 
 .contactInfo ul {

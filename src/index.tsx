@@ -7,6 +7,7 @@ import OfferingServices from "./pages/OfferingServices/OfferingServices";
 import DeliveredProject from "./pages/DeliveredProject/DeliveredProject";
 import Testimonials from "./pages/Testimonials/Testimonials";
 import FrequentlyAskedQuestion from "./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion";
+import Information from "./pages/Information/Information";
 
 function Index() {
   return (
@@ -17,6 +18,7 @@ function Index() {
       <DeliveredProject />
       <Testimonials />
       <FrequentlyAskedQuestion />
+      <Information />
     </>
   );
 }

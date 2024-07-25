@@ -21,13 +21,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-weight: bold;
+  color: #000;
+  transition: color ease-in-out 300ms;
 }
 
-.hr {
-  width: 3rem;
-  height: 5px;
-  border: 0;
-  margin: 1rem 0;
-  background-color: #000 !important;
-  border-radius: 20px;
+.heading:hover {
+  color: var(--bright-orange-color);
 }
