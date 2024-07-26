@@ -1,10 +1,9 @@
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: nowrap;
   text-align: center;
+  overflow-x: scroll;
 }
 
 .overAllContainer {
@@ -28,4 +27,18 @@
 
 .heading:hover {
   color: var(--bright-orange-color);
+}
+
+.hr {
+  width: 3rem;
+  height: 5px;
+  border: 0;
+  margin: 1rem 0;
+  background-color: var(--bright-blue-color) !important;
+  border-radius: 20px;
+  transition: background-color ease-in-out 300ms;
+}
+
+.heading:hover .hr {
+  background-color: var(--bright-orange-color) !important;
 }

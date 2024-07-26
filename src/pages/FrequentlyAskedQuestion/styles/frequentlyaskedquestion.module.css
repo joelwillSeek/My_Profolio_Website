@@ -3,9 +3,19 @@
   max-width: 30rem;
 }
 
+.contact {
+  color: var(--bright-blue-color);
+  transition: color ease-in-out 300ms;
+}
+
+.contact:hover {
+  color: var(--bright-orange-color);
+}
+
 .container {
   display: flex;
-  padding: 3rem 0;
+  padding: 1rem 0 8rem 0;
+
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -22,5 +32,34 @@
 }
 
 .overallContainer {
+  color: var(--bright-orange-color);
+}
+
+.hr {
+  width: 3rem;
+  height: 5px;
+  border: 0;
+  margin: 1rem 0;
+  background-color: var(--bright-blue-color) !important;
+  border-radius: 20px;
+  transition: background-color ease-in-out 300ms;
+}
+
+.heading:hover .hr {
+  background-color: var(--bright-orange-color) !important;
+}
+
+.heading {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: #000;
+  transition: color ease-in-out 300ms;
+}
+
+.heading:hover {
   color: var(--bright-orange-color);
 }

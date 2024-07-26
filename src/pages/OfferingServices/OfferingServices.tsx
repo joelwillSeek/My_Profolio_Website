@@ -21,10 +21,10 @@ const {
 export default function OfferingServices() {
   return (
     <>
-      <div>
+      <div id="offeringServices">
         <div id="Top Text">
           <h1 className={offeringServicesStyle.header}>
-            Offered Services<div className={"hr"}></div>
+            Services Offered<div className={offeringServicesStyle.hr}></div>
           </h1>
           <p className={offeringServicesStyle.textDescription}>
             The services that i can offer are listed below start from app dev to
@@ -33,10 +33,7 @@ export default function OfferingServices() {
         </div>
 
         <div id="services" className={offeringServicesStyle.container}>
-          <Card
-            className={offeringServicesStyle.card}
-            style={{ width: "100%" }}
-          >
+          <Card className={offeringServicesStyle.card}>
             <Card.Body>
               <Card.Title
                 style={{

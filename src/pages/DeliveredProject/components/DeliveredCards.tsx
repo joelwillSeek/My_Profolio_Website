@@ -22,25 +22,29 @@ export default function DeliveredCards({
         <Card.Img
           variant="top"
           style={{ maxHeight: "20rem" }}
+          className={deliveredCard.img}
           src={image == "#" ? comingSoon : image}
         />
         <Card.Body>
           <Card.Title>{Name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          <Button
-            className={deliveredCard.button}
-            variant="primary"
-            href={githubLink}
-          >
-            {githubLink.trim().length > 0 ? "Github" : "Coming Soon"}
-          </Button>
-          <Button
-            className={deliveredCard.button}
-            variant="primary"
-            href={previewLink == "#" ? "#" : previewLink}
-          >
-            {previewLink.trim().length > 0 ? "Preview" : "Coming Soon"}
-          </Button>
+          <div id="center" className={deliveredCard.center}>
+            {" "}
+            <Button
+              className={deliveredCard.button}
+              variant="primary"
+              href={githubLink}
+            >
+              {githubLink.trim().length > 0 ? "Github" : "Coming Soon"}
+            </Button>
+            <Button
+              className={deliveredCard.button}
+              variant="primary"
+              href={previewLink == "#" ? "#" : previewLink}
+            >
+              {previewLink.trim().length > 0 ? "Preview" : "Coming Soon"}
+            </Button>
+          </div>
         </Card.Body>
       </Card>
     </>

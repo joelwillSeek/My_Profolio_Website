@@ -5,7 +5,8 @@
     "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-spinners": "^0.14.1"
   },
   "name": "my_profolio_website",
   "description": "<h1>My Profile Website</h1>",
@@ -17,7 +18,7 @@
     "typescript": "^5.5.3"
   },
   "scripts": {
-    "dev": "parcel --open chrome src/index.html"
+    "dev": "parcel --open firefox src/index.html"
   },
   "repository": {
     "type": "git",

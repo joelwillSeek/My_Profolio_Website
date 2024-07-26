@@ -7,6 +7,12 @@
 
 .contact {
   color: var(--bright-blue-color);
+  transition: color ease-in-out 300ms;
+  text-decoration: none;
+}
+
+.contact:hover {
+  color: var(--bright-orange-color) !important;
 }
 
 .about {
@@ -18,13 +24,10 @@
   justify-content: center;
   align-items: center;
   color: #000;
+  transition: color ease-in-out 300ms;
 }
 
 .about:hover {
-  color: var(--bright-orange-color);
-}
-
-.contact:hover {
   color: var(--bright-orange-color);
 }
 
@@ -54,4 +57,18 @@
 
 .contactInfo ul {
   list-style: none;
+}
+
+.hr {
+  width: 3rem;
+  height: 5px;
+  border: 0;
+  margin: 1rem 0;
+  background-color: var(--bright-blue-color) !important;
+  border-radius: 20px;
+  transition: background-color ease-in-out 300ms;
+}
+
+.about:hover .hr {
+  background-color: var(--bright-orange-color) !important;
 }

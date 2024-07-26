@@ -1,22 +1,33 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: auto;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .platformContainer {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 22rem));
+  grid-template-rows: auto;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+.overallPlatformContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .heading {
   font-size: xx-large;
   font-weight: bolder;
-  margin: 1rem 0;
+
+  padding-top: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +40,22 @@
 }
 
 .subHeading {
-  font-size: medium;
+  font-size: x-large;
   font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.hr {
+  width: 3rem;
+  height: 5px;
+  border: 0;
   margin: 1rem 0;
+  background-color: var(--bright-blue-color) !important;
+  border-radius: 20px;
+  transition: background-color ease-in-out 300ms;
+}
+
+.heading:hover .hr {
+  background-color: var(--bright-orange-color) !important;
 }

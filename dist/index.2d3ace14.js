@@ -27473,6 +27473,7 @@ const { flutterIcon, expressJsIcon, nodeJSIcon, reactIcon, mongoIcon, androidIco
 function OfferingServices() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            id: "offeringServices",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     id: "Top Text",
@@ -27480,9 +27481,9 @@ function OfferingServices() {
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             className: (0, _offeringservicesModuleCssDefault.default).header,
                             children: [
-                                "Offered Services",
+                                "Services Offered",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "hr"
+                                    className: (0, _offeringservicesModuleCssDefault.default).hr
                                 }, void 0, false, {
                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
                                     lineNumber: 27,
@@ -27514,9 +27515,6 @@ function OfferingServices() {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card), {
                             className: (0, _offeringservicesModuleCssDefault.default).card,
-                            style: {
-                                width: "100%"
-                            },
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Body, {
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Title, {
@@ -27535,19 +27533,19 @@ function OfferingServices() {
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                    lineNumber: 50,
+                                                    lineNumber: 47,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Cross Platform Development"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                            lineNumber: 49,
+                                            lineNumber: 46,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 41,
+                                        lineNumber: 38,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Subtitle, {
@@ -27555,14 +27553,14 @@ function OfferingServices() {
                                         children: "Android, Linux, Windows, Web ..."
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 51,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
                                         children: "Using flutter to develop once and deploy. This convince can help a start up company And/Or Client to build a product with minimal build and maintenance cost."
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 54,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27570,7 +27568,7 @@ function OfferingServices() {
                                         children: "See Some Projects"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 59,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27578,13 +27576,13 @@ function OfferingServices() {
                                         children: "More On Flutter"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 60,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                lineNumber: 40,
+                                lineNumber: 37,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
@@ -27618,19 +27616,19 @@ function OfferingServices() {
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                    lineNumber: 81,
+                                                    lineNumber: 78,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Full Stack Web Development"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 77,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 69,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Subtitle, {
@@ -27638,14 +27636,14 @@ function OfferingServices() {
                                         children: "MERN ( MongoDB, ExpressJS, React, NodeJs), will to learn more like Laravel (PHP)"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 92,
+                                        lineNumber: 89,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
                                         children: "Some times its best to develop natively for a client and the most used platform is cloud, Seeing this i can deliver a fulling working full stack website"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 96,
+                                        lineNumber: 93,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27653,7 +27651,7 @@ function OfferingServices() {
                                         children: "See Some Projects"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 98,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27661,7 +27659,7 @@ function OfferingServices() {
                                         children: "React"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 99,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27669,7 +27667,7 @@ function OfferingServices() {
                                         children: "NodeJs"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 103,
+                                        lineNumber: 100,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27677,7 +27675,7 @@ function OfferingServices() {
                                         children: "ExpressJS"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 101,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27685,18 +27683,18 @@ function OfferingServices() {
                                         children: "MongoDB"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 105,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                lineNumber: 71,
+                                lineNumber: 68,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 67,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card), {
@@ -27724,19 +27722,19 @@ function OfferingServices() {
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                    lineNumber: 123,
+                                                    lineNumber: 120,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Android Development"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                            lineNumber: 122,
+                                            lineNumber: 119,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 114,
+                                        lineNumber: 111,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Subtitle, {
@@ -27744,7 +27742,7 @@ function OfferingServices() {
                                         children: "Natively Develop Android Apps using android studio and java OR Kotlin"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 126,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
@@ -27755,14 +27753,14 @@ function OfferingServices() {
                                                 children: "NOTE:"
                                             }, void 0, false, {
                                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                lineNumber: 136,
+                                                lineNumber: 133,
                                                 columnNumber: 17
                                             }, this),
                                             " We Recommend cross platform for the easy of use and many platform support."
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 130,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27770,7 +27768,7 @@ function OfferingServices() {
                                         children: "See Some Projects"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 139,
+                                        lineNumber: 136,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27778,18 +27776,18 @@ function OfferingServices() {
                                         children: "Android Studio"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 140,
+                                        lineNumber: 137,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                lineNumber: 113,
+                                lineNumber: 110,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 109,
+                            lineNumber: 106,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card), {
@@ -27817,19 +27815,19 @@ function OfferingServices() {
                                                     ]
                                                 }, void 0, false, {
                                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                    lineNumber: 158,
+                                                    lineNumber: 155,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Game Development"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                            lineNumber: 157,
+                                            lineNumber: 154,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 146,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Subtitle, {
@@ -27837,7 +27835,7 @@ function OfferingServices() {
                                         children: "I Have learned to use unity and godot for game development"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 164,
+                                        lineNumber: 161,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
@@ -27848,14 +27846,14 @@ function OfferingServices() {
                                                 children: "Note: "
                                             }, void 0, false, {
                                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                                lineNumber: 170,
+                                                lineNumber: 167,
                                                 columnNumber: 17
                                             }, this),
                                             " One person Can't build the next GTA Or Call Of Duty"
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 164,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27863,7 +27861,7 @@ function OfferingServices() {
                                         children: "See Some Projects"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 173,
+                                        lineNumber: 170,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -27871,18 +27869,18 @@ function OfferingServices() {
                                         children: "Android Studio"
                                     }, void 0, false, {
                                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                        lineNumber: 174,
+                                        lineNumber: 171,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                lineNumber: 148,
+                                lineNumber: 145,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 144,
+                            lineNumber: 141,
                             columnNumber: 11
                         }, this)
                     ]
@@ -34080,6 +34078,7 @@ module.exports["imgIcon"] = `BB-Etq_imgIcon`;
 module.exports["card"] = `-un0tq_card`;
 module.exports["container"] = `-un0tq_container`;
 module.exports["header"] = `-un0tq_header`;
+module.exports["hr"] = `-un0tq_hr`;
 module.exports["textDescription"] = `-un0tq_textDescription`;
 module.exports["titleContainer"] = `-un0tq_titleContainer`;
 
@@ -34205,60 +34204,100 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _navModuleCss = require("./styles/nav.module.css");
 var _navModuleCssDefault = parcelHelpers.interopDefault(_navModuleCss);
-var _bgJpg = require("../../assets/bg.jpg");
-var _bgJpgDefault = parcelHelpers.interopDefault(_bgJpg);
+var _logoBgPng = require("../../assets/logo/logoBg.png");
+var _logoBgPngDefault = parcelHelpers.interopDefault(_logoBgPng);
 var _landingpageModuleCss = require("./styles/landingpage.module.css");
 var _landingpageModuleCssDefault = parcelHelpers.interopDefault(_landingpageModuleCss);
 var _sidepanal = require("./components/Sidepanal");
 var _sidepanalDefault = parcelHelpers.interopDefault(_sidepanal);
 var _reactBootstrap = require("react-bootstrap");
+var _logoPng = require("../../assets/logo/logo.png");
+var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
+var _bounceLoader = require("react-spinners/BounceLoader");
+var _bounceLoaderDefault = parcelHelpers.interopDefault(_bounceLoader);
 var _s = $RefreshSig$();
 function HomePage() {
     _s();
     const navRef = (0, _react.useRef)(null);
     const rootElement = document.getElementById("root");
+    const [loading, setLoading] = (0, _react.useState)(true);
     window.addEventListener("scroll", (event)=>{
         if (rootElement == null || navRef.current == null) return;
         const scrollVal = window.scrollY || (document.documentElement || document.body.parentNode || document.body).scrollTop;
         if (scrollVal > 10) navRef.current.style.backgroundColor = "var(--dark-blue-color)";
         else navRef.current.style.backgroundColor = "transparent";
     });
+    function loadingComponent() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: (0, _landingpageModuleCssDefault.default).loading,
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bounceLoaderDefault.default), {
+                color: "#ff9900",
+                loading: true,
+                size: 150,
+                "aria-label": "Loading Spinner",
+                "data-testid": "loader"
+            }, void 0, false, {
+                fileName: "src/pages/HomePage/HomePage.tsx",
+                lineNumber: 33,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "src/pages/HomePage/HomePage.tsx",
+            lineNumber: 32,
+            columnNumber: 7
+        }, this);
+    }
+    window.addEventListener("load", ()=>setLoading((value)=>false));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
+            loading ? loadingComponent() : null,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
                 className: (0, _navModuleCssDefault.default).navigation,
                 ref: navRef,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Eyoel"
+                        className: (0, _navModuleCssDefault.default).logoBackground,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: (0, _navModuleCssDefault.default).logoImage,
+                            src: (0, _logoPngDefault.default),
+                            alt: "logo"
+                        }, void 0, false, {
+                            fileName: "src/pages/HomePage/HomePage.tsx",
+                            lineNumber: 52,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 29,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sidepanalDefault.default), {}, void 0, false, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 30,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/HomePage/HomePage.tsx",
-                lineNumber: 28,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 id: "Landing_Page",
                 style: {
-                    background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${(0, _bgJpgDefault.default)})`
+                    background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${(0, _logoBgPngDefault.default)})`
                 },
                 className: `${(0, _landingpageModuleCssDefault.default).landingPage}`,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        style: {
+                            color: "#fff",
+                            fontWeight: "bold"
+                        },
                         children: "I Love To Code"
                     }, void 0, false, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 40,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -34267,47 +34306,49 @@ function HomePage() {
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
                                     className: (0, _landingpageModuleCssDefault.default).seeMore,
-                                    children: "See More"
+                                    href: "/#offeringServices",
+                                    children: "Service Offered"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/HomePage.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/pages/HomePage/HomePage.tsx",
-                                lineNumber: 42,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
                                     className: (0, _landingpageModuleCssDefault.default).contactMe,
+                                    href: "/#contactInfo",
                                     children: "Contact Me"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/HomePage.tsx",
-                                    lineNumber: 46,
+                                    lineNumber: 75,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/pages/HomePage/HomePage.tsx",
-                                lineNumber: 45,
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 41,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/HomePage/HomePage.tsx",
-                lineNumber: 33,
+                lineNumber: 57,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(HomePage, "rHA/vuAAXoiUfw/iUIRJEHlIXI0=");
+_s(HomePage, "sNaB7XyHbaHoJARDMmlDfwetB9M=");
 _c = HomePage;
 var _c;
 $RefreshReg$(_c, "HomePage");
@@ -34317,19 +34358,19 @@ $RefreshReg$(_c, "HomePage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/nav.module.css":"baKse","../../assets/bg.jpg":"ea1HM","./styles/landingpage.module.css":"7OxB3","react-bootstrap":"3AD9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Sidepanal":"cD1Zv"}],"baKse":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/nav.module.css":"baKse","./styles/landingpage.module.css":"7OxB3","react-bootstrap":"3AD9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Sidepanal":"cD1Zv","../../assets/logo/logo.png":"eqbTu","../../assets/logo/logoBg.png":"ee8II","react-spinners/BounceLoader":"9JeCc"}],"baKse":[function(require,module,exports) {
 module.exports["dropDown"] = `KKfQeG_dropDown`;
 module.exports["dropDownButton"] = `KKfQeG_dropDownButton`;
+module.exports["logoBackground"] = `KKfQeG_logoBackground`;
+module.exports["logoImage"] = `KKfQeG_logoImage`;
 module.exports["navigation"] = `KKfQeG_navigation`;
 module.exports["svgMenu"] = `KKfQeG_svgMenu`;
 
-},{}],"ea1HM":[function(require,module,exports) {
-module.exports = require("65425044df97b94a").getBundleURL("6EXJA") + "bg.577eee2d.jpg" + "?" + Date.now();
-
-},{"65425044df97b94a":"lgJ39"}],"7OxB3":[function(require,module,exports) {
+},{}],"7OxB3":[function(require,module,exports) {
 module.exports["contactMe"] = `kN-f3W_contactMe`;
 module.exports["landingList"] = `kN-f3W_landingList`;
 module.exports["landingPage"] = `kN-f3W_landingPage`;
+module.exports["loading"] = `kN-f3W_loading`;
 module.exports["seeMore"] = `kN-f3W_seeMore`;
 
 },{}],"cD1Zv":[function(require,module,exports) {
@@ -34417,6 +34458,7 @@ function Sidepanal() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
+                                    onClick: ()=>goToSection("AboutUs"),
                                     children: "About Us"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/components/Sidepanal.tsx",
@@ -34424,24 +34466,43 @@ function Sidepanal() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
-                                    children: "Offered Services"
-                                }, void 0, false, {
-                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
-                                    lineNumber: 51,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
-                                    children: "Some Of My Projects"
-                                }, void 0, false, {
-                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
-                                    lineNumber: 52,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
-                                    children: "Testimonials"
+                                    onClick: ()=>goToSection("offeringServices"),
+                                    children: "Services Offered"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/components/Sidepanal.tsx",
                                     lineNumber: 53,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
+                                    onClick: ()=>goToSection("deliveredProject"),
+                                    children: "Some Of My Projects"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
+                                    lineNumber: 56,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
+                                    onClick: ()=>goToSection("Landing_Page"),
+                                    children: "Testimonials"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
+                                    lineNumber: 59,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
+                                    onClick: ()=>goToSection("frequentlyAskedQuestion"),
+                                    children: "Frequently Asked Questions"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
+                                    lineNumber: 63,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
+                                    onClick: ()=>goToSection("footer"),
+                                    children: "More Information"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/components/Sidepanal.tsx",
+                                    lineNumber: 69,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -34483,7 +34544,192 @@ module.exports["menuIcon"] = `M0CgXq_menuIcon`;
 },{}],"avrGv":[function(require,module,exports) {
 module.exports = require("cbdf8de4de1f3e52").getBundleURL("6EXJA") + "menu.7280074f.svg" + "?" + Date.now();
 
-},{"cbdf8de4de1f3e52":"lgJ39"}],"b5ZjB":[function(require,module,exports) {
+},{"cbdf8de4de1f3e52":"lgJ39"}],"eqbTu":[function(require,module,exports) {
+module.exports = require("89f8b9cfc3b1948f").getBundleURL("6EXJA") + "logo.b8e9910f.png" + "?" + Date.now();
+
+},{"89f8b9cfc3b1948f":"lgJ39"}],"ee8II":[function(require,module,exports) {
+module.exports = require("3094b6470fc985ae").getBundleURL("6EXJA") + "logoBg.3d883e7c.png" + "?" + Date.now();
+
+},{"3094b6470fc985ae":"lgJ39"}],"9JeCc":[function(require,module,exports) {
+"use strict";
+var __assign = this && this.__assign || function() {
+    __assign = Object.assign || function(t) {
+        for(var s, i = 1, n = arguments.length; i < n; i++){
+            s = arguments[i];
+            for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __createBinding = this && this.__createBinding || (Object.create ? function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) desc = {
+        enumerable: true,
+        get: function() {
+            return m[k];
+        }
+    };
+    Object.defineProperty(o, k2, desc);
+} : function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+});
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function(o, v) {
+    Object.defineProperty(o, "default", {
+        enumerable: true,
+        value: v
+    });
+} : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = this && this.__importStar || function(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) {
+        for(var k in mod)if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    }
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __rest = this && this.__rest || function(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") {
+        for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++)if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+};
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var React = __importStar(require("aa3708f680a7d3ff"));
+var unitConverter_1 = require("d74a123a540741a0");
+var animation_1 = require("63a39a28b96f10a4");
+var bounce = (0, animation_1.createAnimation)("BounceLoader", "0% {transform: scale(0)} 50% {transform: scale(1.0)} 100% {transform: scale(0)}", "bounce");
+function BounceLoader(_a) {
+    var _b = _a.loading, loading = _b === void 0 ? true : _b, _c = _a.color, color = _c === void 0 ? "#000000" : _c, _d = _a.speedMultiplier, speedMultiplier = _d === void 0 ? 1 : _d, _e = _a.cssOverride, cssOverride = _e === void 0 ? {} : _e, _f = _a.size, size = _f === void 0 ? 60 : _f, additionalprops = __rest(_a, [
+        "loading",
+        "color",
+        "speedMultiplier",
+        "cssOverride",
+        "size"
+    ]);
+    var style = function(i) {
+        var animationTiming = i === 1 ? "".concat(1 / speedMultiplier, "s") : "0s";
+        return {
+            position: "absolute",
+            height: (0, unitConverter_1.cssValue)(size),
+            width: (0, unitConverter_1.cssValue)(size),
+            backgroundColor: color,
+            borderRadius: "100%",
+            opacity: 0.6,
+            top: 0,
+            left: 0,
+            animationFillMode: "both",
+            animation: "".concat(bounce, " ").concat(2.1 / speedMultiplier, "s ").concat(animationTiming, " infinite ease-in-out")
+        };
+    };
+    var wrapper = __assign({
+        display: "inherit",
+        position: "relative",
+        width: (0, unitConverter_1.cssValue)(size),
+        height: (0, unitConverter_1.cssValue)(size)
+    }, cssOverride);
+    if (!loading) return null;
+    return React.createElement("span", __assign({
+        style: wrapper
+    }, additionalprops), React.createElement("span", {
+        style: style(1)
+    }), React.createElement("span", {
+        style: style(2)
+    }));
+}
+exports.default = BounceLoader;
+
+},{"aa3708f680a7d3ff":"21dqq","d74a123a540741a0":"jr6ix","63a39a28b96f10a4":"lv1JM"}],"jr6ix":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.cssValue = exports.parseLengthAndUnit = void 0;
+var cssUnit = {
+    cm: true,
+    mm: true,
+    in: true,
+    px: true,
+    pt: true,
+    pc: true,
+    em: true,
+    ex: true,
+    ch: true,
+    rem: true,
+    vw: true,
+    vh: true,
+    vmin: true,
+    vmax: true,
+    "%": true
+};
+/**
+ * If size is a number, append px to the value as default unit.
+ * If size is a string, validate against list of valid units.
+ * If unit is valid, return size as is.
+ * If unit is invalid, console warn issue, replace with px as the unit.
+ *
+ * @param {(number | string)} size
+ * @return {LengthObject} LengthObject
+ */ function parseLengthAndUnit(size) {
+    if (typeof size === "number") return {
+        value: size,
+        unit: "px"
+    };
+    var value;
+    var valueString = (size.match(/^[0-9.]*/) || "").toString();
+    if (valueString.includes(".")) value = parseFloat(valueString);
+    else value = parseInt(valueString, 10);
+    var unit = (size.match(/[^0-9]*$/) || "").toString();
+    if (cssUnit[unit]) return {
+        value: value,
+        unit: unit
+    };
+    console.warn("React Spinners: ".concat(size, " is not a valid css value. Defaulting to ").concat(value, "px."));
+    return {
+        value: value,
+        unit: "px"
+    };
+}
+exports.parseLengthAndUnit = parseLengthAndUnit;
+/**
+ * Take value as an input and return valid css value
+ *
+ * @param {(number | string)} value
+ * @return {string} valid css value
+ */ function cssValue(value) {
+    var lengthWithunit = parseLengthAndUnit(value);
+    return "".concat(lengthWithunit.value).concat(lengthWithunit.unit);
+}
+exports.cssValue = cssValue;
+
+},{}],"lv1JM":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.createAnimation = void 0;
+var createAnimation = function(loaderName, frames, suffix) {
+    var animationName = "react-spinners-".concat(loaderName, "-").concat(suffix);
+    if (typeof window == "undefined" || !window.document) return animationName;
+    var styleEl = document.createElement("style");
+    document.head.appendChild(styleEl);
+    var styleSheet = styleEl.sheet;
+    var keyFrames = "\n    @keyframes ".concat(animationName, " {\n      ").concat(frames, "\n    }\n  ");
+    if (styleSheet) styleSheet.insertRule(keyFrames, 0);
+    return animationName;
+};
+exports.createAnimation = createAnimation;
+
+},{}],"b5ZjB":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$45ae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34502,13 +34748,14 @@ function AboutMe() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: (0, _containerModuleCssDefault.default).container,
+            id: "AboutUs",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     className: (0, _containerModuleCssDefault.default).about,
                     children: [
                         "About Me ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "hr"
+                            className: (0, _containerModuleCssDefault.default).hr
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
                             lineNumber: 9,
@@ -34545,7 +34792,7 @@ function AboutMe() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    id: "contact info",
+                    id: "contactInfo",
                     className: (0, _containerModuleCssDefault.default).contactInfo,
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -34568,14 +34815,22 @@ function AboutMe() {
                                             lineNumber: 30,
                                             columnNumber: 15
                                         }, this),
-                                        "https://t.me/Eyoelsel ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: " https://t.me/Eyoelsel",
+                                            className: (0, _containerModuleCssDefault.default).contact,
+                                            children: "Click Here"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                                            lineNumber: 31,
+                                            columnNumber: 15
+                                        }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                             className: "Warning",
                                             children: "Recommended"
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 31,
-                                            columnNumber: 37
+                                            lineNumber: 38,
+                                            columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
@@ -34587,17 +34842,42 @@ function AboutMe() {
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             className: (0, _containerModuleCssDefault.default).contact,
+                                            children: "Github: "
+                                        }, void 0, false, {
+                                            fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                                            lineNumber: 42,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "https://github.com/",
+                                            className: (0, _containerModuleCssDefault.default).contact,
+                                            children: "Click Here"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                                            lineNumber: 43,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/AboutMePage/AboutMe.tsx",
+                                    lineNumber: 41,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: (0, _containerModuleCssDefault.default).contact,
                                             children: "Email (1): "
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 34,
+                                            lineNumber: 48,
                                             columnNumber: 15
                                         }, this),
                                         "joelthousend@gmail.com"
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34607,14 +34887,14 @@ function AboutMe() {
                                             children: "Email (2): "
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 38,
+                                            lineNumber: 52,
                                             columnNumber: 15
                                         }, this),
                                         "eyoelseleshizeyohannes@gmail.com"
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 37,
+                                    lineNumber: 51,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34624,14 +34904,14 @@ function AboutMe() {
                                             children: "Phone Number: "
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 42,
+                                            lineNumber: 56,
                                             columnNumber: 15
                                         }, this),
                                         "251944032128"
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -34670,6 +34950,7 @@ module.exports["contactInfo"] = `_06dn2q_contactInfo`;
 module.exports["container"] = `_06dn2q_container`;
 module.exports["header"] = `_06dn2q_header`;
 module.exports["headerContactInfo"] = `_06dn2q_headerContactInfo`;
+module.exports["hr"] = `_06dn2q_hr`;
 module.exports["leftMargin"] = `_06dn2q_leftMargin`;
 
 },{}],"jgkI7":[function(require,module,exports) {
@@ -34764,13 +35045,14 @@ function DeliveredProject() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: (0, _deliveredprojectModuleCssDefault.default).container,
+            id: "deliveredProject",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     className: (0, _deliveredprojectModuleCssDefault.default).heading,
                     children: [
                         "Some Of My Projects",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "hr"
+                            className: (0, _deliveredprojectModuleCssDefault.default).hr
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
                             lineNumber: 86,
@@ -34782,136 +35064,176 @@ function DeliveredProject() {
                     lineNumber: 85,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
-                    children: "Cross Platform Development Projects"
-                }, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    id: "crossPlatform",
+                    className: (0, _deliveredprojectModuleCssDefault.default).overallPlatformContainer,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
+                            children: "Cross Platform Development Projects"
+                        }, void 0, false, {
+                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                            lineNumber: 92,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            id: "Cross_Platform",
+                            className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
+                            children: crossPlatformProjects.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                children: "Coming Soon"
+                            }, void 0, false, {
+                                fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                                lineNumber: 100,
+                                columnNumber: 15
+                            }, this) : crossPlatformProjects.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
+                                    Name: oneProject.Name,
+                                    githubLink: oneProject.githubLink,
+                                    previewLink: oneProject.previewLink,
+                                    image: oneProject.image,
+                                    description: oneProject.description
+                                }, void 0, false, {
+                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                                    lineNumber: 103,
+                                    columnNumber: 17
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                            lineNumber: 95,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
                     lineNumber: 88,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    id: "Cross_Platform",
-                    className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
-                    children: crossPlatformProjects.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Coming Soon"
-                    }, void 0, false, {
-                        fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                        lineNumber: 96,
-                        columnNumber: 13
-                    }, this) : crossPlatformProjects.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
-                            Name: oneProject.Name,
-                            githubLink: oneProject.githubLink,
-                            previewLink: oneProject.previewLink,
-                            image: oneProject.image,
-                            description: oneProject.description
+                    className: (0, _deliveredprojectModuleCssDefault.default).overallPlatformContainer,
+                    id: "fullStackWeb",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
+                            children: "Full Stack Web Development Projects"
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 99,
-                            columnNumber: 15
-                        }, this))
-                }, void 0, false, {
+                            lineNumber: 119,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            id: "Full_Stack_Platform",
+                            className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
+                            children: fullStackWebDev.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                children: "Coming Soon"
+                            }, void 0, false, {
+                                fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                                lineNumber: 128,
+                                columnNumber: 15
+                            }, this) : fullStackWebDev.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
+                                    Name: oneProject.Name,
+                                    githubLink: oneProject.githubLink,
+                                    previewLink: oneProject.previewLink,
+                                    image: oneProject.image,
+                                    description: oneProject.description
+                                }, void 0, false, {
+                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                                    lineNumber: 131,
+                                    columnNumber: 17
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                            lineNumber: 123,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 91,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
-                    children: "Full Stack Web Development Projects"
-                }, void 0, false, {
-                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 110,
+                    lineNumber: 115,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    id: "Full_Stack_Platform",
-                    className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
-                    children: fullStackWebDev.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Coming Soon"
-                    }, void 0, false, {
-                        fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                        lineNumber: 119,
-                        columnNumber: 13
-                    }, this) : fullStackWebDev.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
-                            Name: oneProject.Name,
-                            githubLink: oneProject.githubLink,
-                            previewLink: oneProject.previewLink,
-                            image: oneProject.image,
-                            description: oneProject.description
+                    id: "androidDev",
+                    className: (0, _deliveredprojectModuleCssDefault.default).overallPlatformContainer,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
+                            children: "Android Development Projects"
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 122,
-                            columnNumber: 15
-                        }, this))
-                }, void 0, false, {
+                            lineNumber: 147,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            id: "Android_Development",
+                            className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
+                            children: androidDevelopment.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                children: "Coming Soon"
+                            }, void 0, false, {
+                                fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                                lineNumber: 156,
+                                columnNumber: 15
+                            }, this) : androidDevelopment.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
+                                    Name: oneProject.Name,
+                                    githubLink: oneProject.githubLink,
+                                    previewLink: oneProject.previewLink,
+                                    image: oneProject.image,
+                                    description: oneProject.description
+                                }, void 0, false, {
+                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                                    lineNumber: 159,
+                                    columnNumber: 17
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                            lineNumber: 151,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 114,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
-                    children: "Android Development Projects"
-                }, void 0, false, {
-                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 133,
+                    lineNumber: 143,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    id: "Android_Development",
-                    className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
-                    children: androidDevelopment.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Coming Soon"
-                    }, void 0, false, {
-                        fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                        lineNumber: 142,
-                        columnNumber: 13
-                    }, this) : androidDevelopment.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
-                            Name: oneProject.Name,
-                            githubLink: oneProject.githubLink,
-                            previewLink: oneProject.previewLink,
-                            image: oneProject.image,
-                            description: oneProject.description
+                    id: "deliveredProject",
+                    className: (0, _deliveredprojectModuleCssDefault.default).overallPlatformContainer,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
+                            children: "Game Development Projects"
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 145,
-                            columnNumber: 15
-                        }, this))
-                }, void 0, false, {
-                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 137,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
-                    children: "Game Development Projects"
-                }, void 0, false, {
-                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 156,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    id: "Game_Development",
-                    className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
-                    children: gameDevelopment.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Coming Soon"
-                    }, void 0, false, {
-                        fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                        lineNumber: 165,
-                        columnNumber: 13
-                    }, this) : gameDevelopment.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
-                            Name: oneProject.Name,
-                            githubLink: oneProject.githubLink,
-                            previewLink: oneProject.previewLink,
-                            image: oneProject.image,
-                            description: oneProject.description
+                            lineNumber: 175,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            id: "Game_Development",
+                            className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
+                            children: gameDevelopment.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                children: "Coming Soon"
+                            }, void 0, false, {
+                                fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                                lineNumber: 184,
+                                columnNumber: 15
+                            }, this) : gameDevelopment.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
+                                    Name: oneProject.Name,
+                                    githubLink: oneProject.githubLink,
+                                    previewLink: oneProject.previewLink,
+                                    image: oneProject.image,
+                                    description: oneProject.description
+                                }, void 0, false, {
+                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                                    lineNumber: 187,
+                                    columnNumber: 17
+                                }, this))
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 168,
-                            columnNumber: 15
-                        }, this))
-                }, void 0, false, {
+                            lineNumber: 179,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 160,
+                    lineNumber: 171,
                     columnNumber: 9
                 }, this)
             ]
@@ -34934,6 +35256,8 @@ $RefreshReg$(_c, "DeliveredProject");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/deliveredproject.module.css":"4MxaS","../../assets/DeliveredProject/matchmaking.png":"9xhEH","../../assets/DeliveredProject/flutterWeatherAPp.jpg":"1v7RX","../../assets/DeliveredProject/calculator app.jpg":"1tbK9","../../assets/DeliveredProject/clubhouseWebsite.png":"jvssm","./components/DeliveredCards":"fLOGe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4MxaS":[function(require,module,exports) {
 module.exports["container"] = `N0LtEq_container`;
 module.exports["heading"] = `N0LtEq_heading`;
+module.exports["hr"] = `N0LtEq_hr`;
+module.exports["overallPlatformContainer"] = `N0LtEq_overallPlatformContainer`;
 module.exports["platformContainer"] = `N0LtEq_platformContainer`;
 module.exports["subHeading"] = `N0LtEq_subHeading`;
 
@@ -34980,6 +35304,7 @@ function DeliveredCards({ Name, githubLink, previewLink, image, description }) {
                     style: {
                         maxHeight: "20rem"
                     },
+                    className: (0, _deliveredcardModuleCssDefault.default).img,
                     src: image == "#" ? (0, _commingSoonPngDefault.default) : image
                 }, void 0, false, {
                     fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
@@ -34992,40 +35317,51 @@ function DeliveredCards({ Name, githubLink, previewLink, image, description }) {
                             children: Name
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                            lineNumber: 28,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
                             children: description
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                            lineNumber: 29,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
-                            className: (0, _deliveredcardModuleCssDefault.default).button,
-                            variant: "primary",
-                            href: githubLink,
-                            children: githubLink.trim().length > 0 ? "Github" : "Coming Soon"
-                        }, void 0, false, {
-                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
                             lineNumber: 30,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
-                            className: (0, _deliveredcardModuleCssDefault.default).button,
-                            variant: "primary",
-                            href: previewLink == "#" ? "#" : previewLink,
-                            children: previewLink.trim().length > 0 ? "Preview" : "Coming Soon"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            id: "center",
+                            className: (0, _deliveredcardModuleCssDefault.default).center,
+                            children: [
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
+                                    className: (0, _deliveredcardModuleCssDefault.default).button,
+                                    variant: "primary",
+                                    href: githubLink,
+                                    children: githubLink.trim().length > 0 ? "Github" : "Coming Soon"
+                                }, void 0, false, {
+                                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                    lineNumber: 33,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
+                                    className: (0, _deliveredcardModuleCssDefault.default).button,
+                                    variant: "primary",
+                                    href: previewLink == "#" ? "#" : previewLink,
+                                    children: previewLink.trim().length > 0 ? "Preview" : "Coming Soon"
+                                }, void 0, false, {
+                                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                    lineNumber: 40,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
                             fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                            lineNumber: 37,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this)
             ]
@@ -35051,6 +35387,8 @@ module.exports = require("9660ce975abcc629").getBundleURL("6EXJA") + "commingSoo
 },{"9660ce975abcc629":"lgJ39"}],"dg07L":[function(require,module,exports) {
 module.exports["button"] = `hlG3ma_button`;
 module.exports["card"] = `hlG3ma_card`;
+module.exports["center"] = `hlG3ma_center`;
+module.exports["img"] = `hlG3ma_img`;
 
 },{}],"jhDTU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9751 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -35100,7 +35438,7 @@ function Testimonials() {
                     children: [
                         "Testimonials ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "hr"
+                            className: (0, _testimonialsModuleCssDefault.default).hr
                         }, void 0, false, {
                             fileName: "src/pages/Testimonials/Testimonials.tsx",
                             lineNumber: 30,
@@ -35237,6 +35575,7 @@ module.exports["workplace"] = `uV3_Ta_workplace`;
 },{}],"iUHbK":[function(require,module,exports) {
 module.exports["container"] = `qTmjFa_container`;
 module.exports["heading"] = `qTmjFa_heading`;
+module.exports["hr"] = `qTmjFa_hr`;
 module.exports["overAllContainer"] = `qTmjFa_overAllContainer`;
 
 },{}],"jrWOl":[function(require,module,exports) {
@@ -35272,7 +35611,25 @@ function FrequentlyAskedQuestion() {
                                     lineNumber: 13,
                                     columnNumber: 13
                                 }, this),
-                                " I prefer Telegram"
+                                " I prefer Telegram",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    style: {
+                                        listStyle: "none"
+                                    },
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        className: (0, _frequentlyaskedquestionModuleCssDefault.default).contact,
+                                        href: " https://t.me/Eyoelsel",
+                                        children: "Telegram Link"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
+                                        lineNumber: 15,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
+                                    lineNumber: 14,
+                                    columnNumber: 13
+                                }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
@@ -35297,22 +35654,24 @@ function FrequentlyAskedQuestion() {
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            id: "frequentlyAskedQuestion",
+            className: (0, _frequentlyaskedquestionModuleCssDefault.default).overallContainer,
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: (0, _frequentlyaskedquestionModuleCssDefault.default).overallContainer,
+                    className: (0, _frequentlyaskedquestionModuleCssDefault.default).heading,
                     children: [
                         "Frequently Asked Questions",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "hr"
+                            className: (0, _frequentlyaskedquestionModuleCssDefault.default).hr
                         }, void 0, false, {
                             fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                            lineNumber: 40,
-                            columnNumber: 37
+                            lineNumber: 52,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                    lineNumber: 39,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35323,7 +35682,7 @@ function FrequentlyAskedQuestion() {
                             children: "Coming Soon"
                         }, void 0, false, {
                             fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                            lineNumber: 48,
+                            lineNumber: 60,
                             columnNumber: 15
                         }, this) : questionsAndAnswer.map((oneOfIt, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion).Item, {
                                 eventKey: index.toString(),
@@ -35333,40 +35692,40 @@ function FrequentlyAskedQuestion() {
                                         children: oneOfIt.question
                                     }, void 0, false, {
                                         fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 67,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion).Body, {
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(oneOfIt.answer, {}, void 0, false, {
                                             fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                                            lineNumber: 56,
+                                            lineNumber: 68,
                                             columnNumber: 36
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 68,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                                lineNumber: 51,
+                                lineNumber: 63,
                                 columnNumber: 17
                             }, this))
                     }, void 0, false, {
                         fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                        lineNumber: 46,
+                        lineNumber: 58,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                    lineNumber: 42,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-            lineNumber: 38,
+            lineNumber: 46,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -35381,7 +35740,10 @@ $RefreshReg$(_c, "FrequentlyAskedQuestion");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-bootstrap":"3AD9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./styles/frequentlyaskedquestion.module.css":"bnl8M"}],"bnl8M":[function(require,module,exports) {
+module.exports["contact"] = `He7iqG_contact`;
 module.exports["container"] = `He7iqG_container`;
+module.exports["heading"] = `He7iqG_heading`;
+module.exports["hr"] = `He7iqG_hr`;
 module.exports["overallContainer"] = `He7iqG_overallContainer`;
 module.exports["questions"] = `He7iqG_questions`;
 

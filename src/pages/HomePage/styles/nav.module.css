@@ -49,3 +49,11 @@
 .svgMenu path {
   stroke: #fff;
 }
+
+.logoImage {
+  width: 5rem;
+}
+
+.logoBackground {
+  padding: 0.4rem;
+}

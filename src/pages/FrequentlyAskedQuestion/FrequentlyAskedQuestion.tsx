@@ -11,6 +11,14 @@ export default function FrequentlyAskedQuestion() {
           In the about page there is a bunch of was to contact me.
           <p>
             <span className="Warning">Note:</span> I prefer Telegram
+            <li style={{ listStyle: "none" }}>
+              <a
+                className={frequentlyAskedStyle.contact}
+                href=" https://t.me/Eyoelsel"
+              >
+                Telegram Link
+              </a>
+            </li>
           </p>
         </>
       ),
@@ -35,9 +43,13 @@ export default function FrequentlyAskedQuestion() {
   ];
   return (
     <>
-      <div>
-        <h1 className={frequentlyAskedStyle.overallContainer}>
-          Frequently Asked Questions<div className={"hr"}></div>
+      <div
+        id="frequentlyAskedQuestion"
+        className={frequentlyAskedStyle.overallContainer}
+      >
+        <h1 className={frequentlyAskedStyle.heading}>
+          Frequently Asked Questions
+          <div className={frequentlyAskedStyle.hr}></div>
         </h1>
         <div
           id="Frequently Asked Question"

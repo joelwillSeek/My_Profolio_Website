@@ -47,10 +47,28 @@ export default function Sidepanal() {
             <ListGroup.Item onClick={() => goToSection("Landing_Page")}>
               Landing Page
             </ListGroup.Item>
-            <ListGroup.Item>About Us</ListGroup.Item>
-            <ListGroup.Item>Offered Services</ListGroup.Item>
-            <ListGroup.Item>Some Of My Projects</ListGroup.Item>
-            <ListGroup.Item>Testimonials</ListGroup.Item>
+            <ListGroup.Item onClick={() => goToSection("AboutUs")}>
+              About Us
+            </ListGroup.Item>
+            <ListGroup.Item onClick={() => goToSection("offeringServices")}>
+              Services Offered
+            </ListGroup.Item>
+            <ListGroup.Item onClick={() => goToSection("deliveredProject")}>
+              Some Of My Projects
+            </ListGroup.Item>
+            <ListGroup.Item onClick={() => goToSection("Landing_Page")}>
+              Testimonials
+            </ListGroup.Item>
+
+            <ListGroup.Item
+              onClick={() => goToSection("frequentlyAskedQuestion")}
+            >
+              Frequently Asked Questions
+            </ListGroup.Item>
+
+            <ListGroup.Item onClick={() => goToSection("footer")}>
+              More Information
+            </ListGroup.Item>
           </ListGroup>
         </Offcanvas.Body>
       </Offcanvas>

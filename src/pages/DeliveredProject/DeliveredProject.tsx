@@ -81,99 +81,119 @@ export default function DeliveredProject() {
 
   return (
     <>
-      <div className={deliveredProjectCss.container}>
+      <div className={deliveredProjectCss.container} id="deliveredProject">
         <h1 className={deliveredProjectCss.heading}>
-          Some Of My Projects<div className={"hr"}></div>
-        </h1>
-        <h1 className={deliveredProjectCss.subHeading}>
-          Cross Platform Development Projects
+          Some Of My Projects<div className={deliveredProjectCss.hr}></div>
         </h1>
         <div
-          id="Cross_Platform"
-          className={deliveredProjectCss.platformContainer}
+          id="crossPlatform"
+          className={deliveredProjectCss.overallPlatformContainer}
         >
-          {crossPlatformProjects.length <= 0 ? (
-            <h1>Coming Soon</h1>
-          ) : (
-            crossPlatformProjects.map((oneProject) => (
-              <DeliveredCards
-                Name={oneProject.Name}
-                githubLink={oneProject.githubLink}
-                previewLink={oneProject.previewLink}
-                image={oneProject.image}
-                description={oneProject.description}
-              />
-            ))
-          )}
+          <h1 className={deliveredProjectCss.subHeading}>
+            Cross Platform Development Projects
+          </h1>
+          <div
+            id="Cross_Platform"
+            className={deliveredProjectCss.platformContainer}
+          >
+            {crossPlatformProjects.length <= 0 ? (
+              <h1>Coming Soon</h1>
+            ) : (
+              crossPlatformProjects.map((oneProject) => (
+                <DeliveredCards
+                  Name={oneProject.Name}
+                  githubLink={oneProject.githubLink}
+                  previewLink={oneProject.previewLink}
+                  image={oneProject.image}
+                  description={oneProject.description}
+                />
+              ))
+            )}
+          </div>
         </div>
 
-        <h1 className={deliveredProjectCss.subHeading}>
-          Full Stack Web Development Projects
-        </h1>
-
         <div
-          id="Full_Stack_Platform"
-          className={deliveredProjectCss.platformContainer}
+          className={deliveredProjectCss.overallPlatformContainer}
+          id="fullStackWeb"
         >
-          {fullStackWebDev.length <= 0 ? (
-            <h1>Coming Soon</h1>
-          ) : (
-            fullStackWebDev.map((oneProject) => (
-              <DeliveredCards
-                Name={oneProject.Name}
-                githubLink={oneProject.githubLink}
-                previewLink={oneProject.previewLink}
-                image={oneProject.image}
-                description={oneProject.description}
-              />
-            ))
-          )}
+          <h1 className={deliveredProjectCss.subHeading}>
+            Full Stack Web Development Projects
+          </h1>
+
+          <div
+            id="Full_Stack_Platform"
+            className={deliveredProjectCss.platformContainer}
+          >
+            {fullStackWebDev.length <= 0 ? (
+              <h1>Coming Soon</h1>
+            ) : (
+              fullStackWebDev.map((oneProject) => (
+                <DeliveredCards
+                  Name={oneProject.Name}
+                  githubLink={oneProject.githubLink}
+                  previewLink={oneProject.previewLink}
+                  image={oneProject.image}
+                  description={oneProject.description}
+                />
+              ))
+            )}
+          </div>
         </div>
 
-        <h1 className={deliveredProjectCss.subHeading}>
-          Android Development Projects
-        </h1>
-
         <div
-          id="Android_Development"
-          className={deliveredProjectCss.platformContainer}
+          id="androidDev"
+          className={deliveredProjectCss.overallPlatformContainer}
         >
-          {androidDevelopment.length <= 0 ? (
-            <h1>Coming Soon</h1>
-          ) : (
-            androidDevelopment.map((oneProject) => (
-              <DeliveredCards
-                Name={oneProject.Name}
-                githubLink={oneProject.githubLink}
-                previewLink={oneProject.previewLink}
-                image={oneProject.image}
-                description={oneProject.description}
-              />
-            ))
-          )}
+          <h1 className={deliveredProjectCss.subHeading}>
+            Android Development Projects
+          </h1>
+
+          <div
+            id="Android_Development"
+            className={deliveredProjectCss.platformContainer}
+          >
+            {androidDevelopment.length <= 0 ? (
+              <h1>Coming Soon</h1>
+            ) : (
+              androidDevelopment.map((oneProject) => (
+                <DeliveredCards
+                  Name={oneProject.Name}
+                  githubLink={oneProject.githubLink}
+                  previewLink={oneProject.previewLink}
+                  image={oneProject.image}
+                  description={oneProject.description}
+                />
+              ))
+            )}
+          </div>
         </div>
 
-        <h1 className={deliveredProjectCss.subHeading}>
-          Game Development Projects
-        </h1>
-
         <div
-          id="Game_Development"
-          className={deliveredProjectCss.platformContainer}
+          id="deliveredProject"
+          className={deliveredProjectCss.overallPlatformContainer}
         >
-          {gameDevelopment.length <= 0 ? (
-            <h1>Coming Soon</h1>
-          ) : (
-            gameDevelopment.map((oneProject) => (
-              <DeliveredCards
-                Name={oneProject.Name}
-                githubLink={oneProject.githubLink}
-                previewLink={oneProject.previewLink}
-                image={oneProject.image}
-                description={oneProject.description}
-              />
-            ))
-          )}
+          <h1 className={deliveredProjectCss.subHeading}>
+            Game Development Projects
+          </h1>
+
+          <div
+            id="Game_Development"
+            className={deliveredProjectCss.platformContainer}
+          >
+            {gameDevelopment.length <= 0 ? (
+              <h1>Coming Soon</h1>
+            ) : (
+              gameDevelopment.map((oneProject) => (
+                <DeliveredCards
+                  Name={oneProject.Name}
+                  githubLink={oneProject.githubLink}
+                  previewLink={oneProject.previewLink}
+                  image={oneProject.image}
+                  description={oneProject.description}
+                />
+              ))
+            )}
+          </div>
         </div>
       </div>
     </>
