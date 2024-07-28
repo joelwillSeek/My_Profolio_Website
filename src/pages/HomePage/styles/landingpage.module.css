@@ -68,3 +68,26 @@
   border-color: transparent !important;
   background-color: var(--bright-orange-color) !important;
 }
+
+@media screen and (min-width: 768px) {
+  .landingPage {
+    height: 100vh;
+    justify-content: center !important;
+  }
+
+  .heading {
+    font-size: 10rem;
+  }
+
+  .seeMore {
+    padding: 2rem !important;
+    font-size: xx-large !important;
+    font-weight: bolder !important;
+  }
+
+  .contactMe {
+    padding: 1.8rem !important;
+    font-size: xx-large !important;
+    font-weight: bolder !important;
+  }
+}

@@ -4,6 +4,17 @@
   --darkish-white: #eff3ff;
   --bright-orange-color: #ff9900;
   --dark-orange-color: #b36b00;
+  --min-table-screen: 789px;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--dark-blue-color) !important;
+  border: 0 !important;
+  outline: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bright-orange-color) !important;
 }
 
 body {

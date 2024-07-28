@@ -18,7 +18,7 @@
     "typescript": "^5.5.3"
   },
   "scripts": {
-    "dev": "parcel --open firefox src/index.html"
+    "dev": "parcel --open chrome src/index.html"
   },
   "repository": {
     "type": "git",

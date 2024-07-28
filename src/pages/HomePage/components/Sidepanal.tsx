@@ -42,7 +42,7 @@ export default function Sidepanal() {
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Contents</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body className={SidepanalStyle.body}>
           <ListGroup className={SidepanalStyle.list}>
             <ListGroup.Item onClick={() => goToSection("Landing_Page")}>
               Landing Page
@@ -51,10 +51,10 @@ export default function Sidepanal() {
               About Us
             </ListGroup.Item>
             <ListGroup.Item onClick={() => goToSection("offeringServices")}>
-              Services Offered
+              Services
             </ListGroup.Item>
             <ListGroup.Item onClick={() => goToSection("deliveredProject")}>
-              Some Of My Projects
+              Projects
             </ListGroup.Item>
             <ListGroup.Item onClick={() => goToSection("Landing_Page")}>
               Testimonials
@@ -63,11 +63,11 @@ export default function Sidepanal() {
             <ListGroup.Item
               onClick={() => goToSection("frequentlyAskedQuestion")}
             >
-              Frequently Asked Questions
+              FAQ
             </ListGroup.Item>
 
             <ListGroup.Item onClick={() => goToSection("footer")}>
-              More Information
+              Information
             </ListGroup.Item>
           </ListGroup>
         </Offcanvas.Body>

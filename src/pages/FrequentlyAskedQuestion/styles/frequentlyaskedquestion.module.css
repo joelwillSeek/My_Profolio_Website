@@ -1,6 +1,4 @@
 .questions {
-  margin: 1rem;
-  max-width: 30rem;
 }
 
 .contact {
@@ -15,10 +13,14 @@
 .container {
   display: flex;
   padding: 1rem 0 8rem 0;
-
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100% !important;
+}
+
+.container div {
+  width: 100% !important;
 }
 
 .overallContainer {
@@ -27,6 +29,7 @@
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  max-width: 100% !important;
   margin-top: 4rem;
   transition: color ease-in-out 300ms;
 }

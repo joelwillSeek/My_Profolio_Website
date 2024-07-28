@@ -27,3 +27,43 @@
 .menuButton:hover {
   scale: 1.2;
 }
+
+@media screen and (min-width: 767px) {
+  .list {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    align-items: end;
+  }
+
+  .list div {
+    background-color: transparent !important;
+    padding: 0.4rem !important;
+    transition: background-color ease-in-out 300ms;
+    height: 50px !important;
+    font-size: small;
+    border: 1px solid #fff !important;
+    border-radius: 0 !important;
+    font-weight: bold;
+    display: flex;
+    padding: 1rem !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list div:hover {
+    background-color: var(--bright-orange-color) !important;
+    border-color: transparent !important;
+  }
+
+  .body {
+    align-items: flex-end !important;
+    justify-content: flex-end;
+  }
+
+  .menuButton {
+    display: none !important;
+  }
+}

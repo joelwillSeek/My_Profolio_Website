@@ -27,9 +27,9 @@ const root = document.getElementById("root");
 
 if (root) {
   createRoot(root).render(
-    <StrictMode>
-      <Index />
-    </StrictMode>
+    //<StrictMode>
+    <Index />
+    // </StrictMode>
   );
 } else {
   const ErrorElement = document.createElement("h1");

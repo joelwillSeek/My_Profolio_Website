@@ -7,18 +7,32 @@ import Sidepanal from "./components/Sidepanal";
 import { Button } from "react-bootstrap";
 import logoImage from "../../assets/logo/logo.png";
 import BounceLoading from "react-spinners/BounceLoader";
+import CodingLikeText from "./components/CodingLikeText";
 
 export default function HomePage() {
   const navRef = useRef<HTMLDivElement>(null);
+  const pageScrollProgressRef = useRef<HTMLDivElement>(null);
+
   const rootElement = document.getElementById("root");
   const [loading, setLoading] = useState(true);
+
+  window.addEventListener("load", () => {
+    setLoading(() => false);
+  });
 
   window.addEventListener("scroll", (event) => {
     if (rootElement == null || navRef.current == null) return;
     const scrollVal =
-      window.scrollY ||
+      window.screenY ||
       (document.documentElement || document.body.parentNode || document.body)
         .scrollTop;
+
+    const height = document.body.offsetHeight - window.innerHeight;
+
+    const getScrollProgress = Math.round((100 * scrollVal) / height).toString();
+
+    if (pageScrollProgressRef.current != null)
+      pageScrollProgressRef.current.style.width = `${getScrollProgress}%`;
 
     if (scrollVal > 10) {
       navRef.current!.style.backgroundColor = "var(--dark-blue-color)";
@@ -41,17 +55,22 @@ export default function HomePage() {
     );
   }
 
-  window.addEventListener("load", () => setLoading((value) => false));
-
   return (
     <>
       {loading ? loadingComponent() : null}
 
       <nav className={navStyle.navigation} ref={navRef}>
-        <h1 className={navStyle.logoBackground}>
-          <img className={navStyle.logoImage} src={logoImage} alt="logo" />
-        </h1>
-        <Sidepanal />
+        <div className={navStyle.mainNav}>
+          <h1 className={navStyle.logoBackground}>
+            <img className={navStyle.logoImage} src={logoImage} alt="logo" />
+          </h1>
+          <Sidepanal />
+        </div>
+
+        <div
+          ref={pageScrollProgressRef}
+          className={navStyle.pageProgress}
+        ></div>
       </nav>
 
       <div
@@ -61,7 +80,12 @@ export default function HomePage() {
         }}
         className={`${landingpageStyle.landingPage}`}
       >
-        <h1 style={{ color: "#fff", fontWeight: "bold" }}>I Love To Code</h1>
+        <h1
+          style={{ color: "#fff", fontWeight: "bold" }}
+          className={landingpageStyle.heading}
+        >
+          I Love To <CodingLikeText delay={200} />
+        </h1>
         <ul className={landingpageStyle.landingList}>
           <li>
             <Button

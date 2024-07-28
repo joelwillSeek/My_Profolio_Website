@@ -1,18 +1,34 @@
 .navigation {
-  padding: 1rem 0;
+  padding: 0.5rem !important;
   top: 0;
   left: 0;
   min-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 1rem;
-  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between !important;
+
   position: fixed !important;
   color: white;
   z-index: 20;
   transition: background-color ease-in-out 300ms;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  width: 100% !important;
+}
+
+.pageProgress {
+  content: " ";
+  background-color: var(--bright-orange-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.2rem;
 }
 
 .svgMenu {
@@ -56,4 +72,11 @@
 
 .logoBackground {
   padding: 0.4rem;
+}
+
+@media screen and (min-width: 767px) {
+  .navigation {
+    padding: 1rem;
+    min-height: 4rem;
+  }
 }

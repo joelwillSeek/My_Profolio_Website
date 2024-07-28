@@ -3014,15 +3014,10 @@ function Index() {
 }
 _c = Index;
 const root = document.getElementById("root");
-if (root) (0, _client.createRoot)(root).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.StrictMode), {
-    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Index, {}, void 0, false, {
-        fileName: "src/index.tsx",
-        lineNumber: 31,
-        columnNumber: 7
-    }, undefined)
-}, void 0, false, {
+if (root) (0, _client.createRoot)(root).render(//<StrictMode>
+/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Index, {}, void 0, false, {
     fileName: "src/index.tsx",
-    lineNumber: 30,
+    lineNumber: 31,
     columnNumber: 5
 }, undefined));
 else {
@@ -34215,15 +34210,24 @@ var _logoPng = require("../../assets/logo/logo.png");
 var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
 var _bounceLoader = require("react-spinners/BounceLoader");
 var _bounceLoaderDefault = parcelHelpers.interopDefault(_bounceLoader);
+var _codingLikeText = require("./components/CodingLikeText");
+var _codingLikeTextDefault = parcelHelpers.interopDefault(_codingLikeText);
 var _s = $RefreshSig$();
 function HomePage() {
     _s();
     const navRef = (0, _react.useRef)(null);
+    const pageScrollProgressRef = (0, _react.useRef)(null);
     const rootElement = document.getElementById("root");
     const [loading, setLoading] = (0, _react.useState)(true);
+    window.addEventListener("load", ()=>{
+        setLoading(()=>false);
+    });
     window.addEventListener("scroll", (event)=>{
         if (rootElement == null || navRef.current == null) return;
-        const scrollVal = window.scrollY || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        const scrollVal = window.screenY || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        const height = document.body.offsetHeight - window.innerHeight;
+        const getScrollProgress = Math.round(100 * scrollVal / height).toString();
+        if (pageScrollProgressRef.current != null) pageScrollProgressRef.current.style.width = `${getScrollProgress}%`;
         if (scrollVal > 10) navRef.current.style.backgroundColor = "var(--dark-blue-color)";
         else navRef.current.style.backgroundColor = "transparent";
     });
@@ -34238,16 +34242,15 @@ function HomePage() {
                 "data-testid": "loader"
             }, void 0, false, {
                 fileName: "src/pages/HomePage/HomePage.tsx",
-                lineNumber: 33,
+                lineNumber: 47,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "src/pages/HomePage/HomePage.tsx",
-            lineNumber: 32,
+            lineNumber: 46,
             columnNumber: 7
         }, this);
     }
-    window.addEventListener("load", ()=>setLoading((value)=>false));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             loading ? loadingComponent() : null,
@@ -34255,31 +34258,48 @@ function HomePage() {
                 className: (0, _navModuleCssDefault.default).navigation,
                 ref: navRef,
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: (0, _navModuleCssDefault.default).logoBackground,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: (0, _navModuleCssDefault.default).logoImage,
-                            src: (0, _logoPngDefault.default),
-                            alt: "logo"
-                        }, void 0, false, {
-                            fileName: "src/pages/HomePage/HomePage.tsx",
-                            lineNumber: 52,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _navModuleCssDefault.default).mainNav,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: (0, _navModuleCssDefault.default).logoBackground,
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: (0, _navModuleCssDefault.default).logoImage,
+                                    src: (0, _logoPngDefault.default),
+                                    alt: "logo"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/HomePage.tsx",
+                                    lineNumber: 65,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/pages/HomePage/HomePage.tsx",
+                                lineNumber: 64,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sidepanalDefault.default), {}, void 0, false, {
+                                fileName: "src/pages/HomePage/HomePage.tsx",
+                                lineNumber: 67,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 51,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sidepanalDefault.default), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        ref: pageScrollProgressRef,
+                        className: (0, _navModuleCssDefault.default).pageProgress
+                    }, void 0, false, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 54,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/HomePage/HomePage.tsx",
-                lineNumber: 50,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34294,10 +34314,20 @@ function HomePage() {
                             color: "#fff",
                             fontWeight: "bold"
                         },
-                        children: "I Love To Code"
-                    }, void 0, false, {
+                        className: (0, _landingpageModuleCssDefault.default).heading,
+                        children: [
+                            "I Love To ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _codingLikeTextDefault.default), {
+                                delay: 200
+                            }, void 0, false, {
+                                fileName: "src/pages/HomePage/HomePage.tsx",
+                                lineNumber: 87,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 64,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -34310,12 +34340,12 @@ function HomePage() {
                                     children: "Service Offered"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/HomePage.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 91,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/pages/HomePage/HomePage.tsx",
-                                lineNumber: 66,
+                                lineNumber: 90,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34325,30 +34355,30 @@ function HomePage() {
                                     children: "Contact Me"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/HomePage.tsx",
-                                    lineNumber: 75,
+                                    lineNumber: 99,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/pages/HomePage/HomePage.tsx",
-                                lineNumber: 74,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 65,
+                        lineNumber: 89,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/HomePage/HomePage.tsx",
-                lineNumber: 57,
+                lineNumber: 76,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(HomePage, "sNaB7XyHbaHoJARDMmlDfwetB9M=");
+_s(HomePage, "3dHZqcPOgNMr/wzL0Xzet0quHYM=");
 _c = HomePage;
 var _c;
 $RefreshReg$(_c, "HomePage");
@@ -34358,16 +34388,19 @@ $RefreshReg$(_c, "HomePage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/nav.module.css":"baKse","./styles/landingpage.module.css":"7OxB3","react-bootstrap":"3AD9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Sidepanal":"cD1Zv","../../assets/logo/logo.png":"eqbTu","../../assets/logo/logoBg.png":"ee8II","react-spinners/BounceLoader":"9JeCc"}],"baKse":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/nav.module.css":"baKse","./styles/landingpage.module.css":"7OxB3","react-bootstrap":"3AD9A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Sidepanal":"cD1Zv","../../assets/logo/logo.png":"eqbTu","../../assets/logo/logoBg.png":"ee8II","react-spinners/BounceLoader":"9JeCc","./components/CodingLikeText":"lMsx3"}],"baKse":[function(require,module,exports) {
 module.exports["dropDown"] = `KKfQeG_dropDown`;
 module.exports["dropDownButton"] = `KKfQeG_dropDownButton`;
 module.exports["logoBackground"] = `KKfQeG_logoBackground`;
 module.exports["logoImage"] = `KKfQeG_logoImage`;
+module.exports["mainNav"] = `KKfQeG_mainNav`;
 module.exports["navigation"] = `KKfQeG_navigation`;
+module.exports["pageProgress"] = `KKfQeG_pageProgress`;
 module.exports["svgMenu"] = `KKfQeG_svgMenu`;
 
 },{}],"7OxB3":[function(require,module,exports) {
 module.exports["contactMe"] = `kN-f3W_contactMe`;
+module.exports["heading"] = `kN-f3W_heading`;
 module.exports["landingList"] = `kN-f3W_landingList`;
 module.exports["landingPage"] = `kN-f3W_landingPage`;
 module.exports["loading"] = `kN-f3W_loading`;
@@ -34446,6 +34479,7 @@ function Sidepanal() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Offcanvas).Body, {
+                        className: (0, _sidepanalModuleCssDefault.default).body,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup), {
                             className: (0, _sidepanalModuleCssDefault.default).list,
                             children: [
@@ -34467,7 +34501,7 @@ function Sidepanal() {
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
                                     onClick: ()=>goToSection("offeringServices"),
-                                    children: "Services Offered"
+                                    children: "Services"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/components/Sidepanal.tsx",
                                     lineNumber: 53,
@@ -34475,7 +34509,7 @@ function Sidepanal() {
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
                                     onClick: ()=>goToSection("deliveredProject"),
-                                    children: "Some Of My Projects"
+                                    children: "Projects"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/components/Sidepanal.tsx",
                                     lineNumber: 56,
@@ -34491,7 +34525,7 @@ function Sidepanal() {
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
                                     onClick: ()=>goToSection("frequentlyAskedQuestion"),
-                                    children: "Frequently Asked Questions"
+                                    children: "FAQ"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/components/Sidepanal.tsx",
                                     lineNumber: 63,
@@ -34499,7 +34533,7 @@ function Sidepanal() {
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.ListGroup).Item, {
                                     onClick: ()=>goToSection("footer"),
-                                    children: "More Information"
+                                    children: "Information"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/components/Sidepanal.tsx",
                                     lineNumber: 69,
@@ -34537,6 +34571,7 @@ $RefreshReg$(_c, "Sidepanal");
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/sidepanal.module.css":"20j8u","react-bootstrap":"3AD9A","../../../assets/menu.svg":"avrGv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"20j8u":[function(require,module,exports) {
 module.exports["background"] = `M0CgXq_background`;
+module.exports["body"] = `M0CgXq_body`;
 module.exports["list"] = `M0CgXq_list`;
 module.exports["menuButton"] = `M0CgXq_menuButton`;
 module.exports["menuIcon"] = `M0CgXq_menuIcon`;
@@ -34728,6 +34763,94 @@ var createAnimation = function(loaderName, frames, suffix) {
     return animationName;
 };
 exports.createAnimation = createAnimation;
+
+},{}],"lMsx3":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$682b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$682b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>CodingLikeText);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _codingliketextModuleCss = require("../styles/codingliketext.module.css");
+var _codingliketextModuleCssDefault = parcelHelpers.interopDefault(_codingliketextModuleCss);
+var _s = $RefreshSig$();
+function CodingLikeText({ delay }) {
+    _s();
+    let wordsToShow = [
+        "Coding",
+        "Creating",
+        "Designing",
+        "Cooperating",
+        "end"
+    ];
+    let [showText, setShowText] = (0, _react.useState)("");
+    let [wordPicked, setWordPicked] = (0, _react.useState)(0);
+    let [letterPointer, setLetterPointer] = (0, _react.useState)(0);
+    let [updated, setUpdated] = (0, _react.useState)(0);
+    function displayText() {
+        setInterval(()=>{
+            setUpdated((prev)=>prev + 1);
+        }, delay);
+    }
+    function resetStates() {
+        setLetterPointer(0);
+        setShowText("|");
+    }
+    (0, _react.useEffect)(()=>{
+        displayText();
+    }, []);
+    function deleteLettersOneByOne() {
+        setShowText((prevValue)=>{
+            let newText = prevValue.substring(0, prevValue.length - 2);
+            return newText + "|";
+        });
+    }
+    (0, _react.useEffect)(()=>{
+        let theWord = wordsToShow[wordPicked];
+        if (theWord == "end") {
+            setWordPicked(0);
+            resetStates();
+        } else if (letterPointer <= theWord.length - 1) {
+            let theLetter = theWord[letterPointer];
+            let newText = showText.replace("|", "");
+            newText += theLetter + "|";
+            setShowText(newText);
+            setLetterPointer((prevVal)=>++prevVal);
+        } else if (letterPointer > theWord.length - 1 && showText.length > 1) deleteLettersOneByOne();
+        else if (wordPicked < wordsToShow.length) {
+            setWordPicked((prevVal)=>++prevVal);
+            resetStates();
+        }
+    }, [
+        updated
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        className: (0, _codingliketextModuleCssDefault.default).heading,
+        children: showText
+    }, void 0, false, {
+        fileName: "src/pages/HomePage/components/CodingLikeText.tsx",
+        lineNumber: 55,
+        columnNumber: 10
+    }, this);
+}
+_s(CodingLikeText, "+iHgbPFEpcWE8odhpDTpUs5p8/o=");
+_c = CodingLikeText;
+var _c;
+$RefreshReg$(_c, "CodingLikeText");
+
+  $parcel$ReactRefreshHelpers$682b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../styles/codingliketext.module.css":"1F34Z"}],"1F34Z":[function(require,module,exports) {
+module.exports["heading"] = `r7f9eW_heading`;
 
 },{}],"b5ZjB":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$45ae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -35745,7 +35868,6 @@ module.exports["container"] = `He7iqG_container`;
 module.exports["heading"] = `He7iqG_heading`;
 module.exports["hr"] = `He7iqG_hr`;
 module.exports["overallContainer"] = `He7iqG_overallContainer`;
-module.exports["questions"] = `He7iqG_questions`;
 
 },{}],"6G1wt":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$727f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
