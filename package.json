@@ -18,7 +18,7 @@
   },
   "scripts": {
     "dev": "parcel --open chrome src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
     "live": "git subtree push --prefix=dist origin gh-pages"
   },
   "repository": {
