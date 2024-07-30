@@ -40,14 +40,14 @@ npm install
     <p>To run development</p>
     
   ```bash
-    npm run dev
+  npm run dev
   ```
   </li>
   <li>
     <p>To build</p>
     
    ```bash
-    npm run build
+   npm run build
    ```
   </li>
   <li>
