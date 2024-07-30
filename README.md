@@ -30,26 +30,25 @@ git clone git@github.com:joelwillSeek/My_Profolio_Website.git
   <li>
     <p>Npm</p>
     
-    ```bash
+```bash
     
     npm install
-    
-    ```
+```
     
   </li>
   <li>
     <p>To run development</p>
     
-    ```bash
+  ```bash
     npm run dev
-    ```
+  ```
   </li>
   <li>
     <p>To build</p>
     
-    ```bash
+   ```bash
     npm run build
-    ```
+   ```
   </li>
   <li>
     Hosted Website <a href="#">Website</a>
