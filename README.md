@@ -28,18 +28,21 @@ git clone git@github.com:joelwillSeek/My_Profolio_Website.git
   </li>
   <li>
     <p>Npm</p>
+    
     ```bash
     npm install
     ```
   </li>
   <li>
     <p>To run development</p>
+    
     ```bash
     npm run dev
     ```
   </li>
   <li>
     <p>To build</p>
+    
     ```bash
     npm run build
     ```
