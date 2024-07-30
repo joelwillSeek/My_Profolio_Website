@@ -31,7 +31,6 @@ git clone git@github.com:joelwillSeek/My_Profolio_Website.git
     <p>Npm</p>
     
 ```bash
-    
 npm install
 ```
     
