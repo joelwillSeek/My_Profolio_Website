@@ -32,7 +32,7 @@ git clone git@github.com:joelwillSeek/My_Profolio_Website.git
     
 ```bash
     
-    npm install
+npm install
 ```
     
   </li>
