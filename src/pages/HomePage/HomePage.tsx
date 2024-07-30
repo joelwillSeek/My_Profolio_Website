@@ -22,11 +22,13 @@ export default function HomePage() {
   window.addEventListener("scroll", (event) => {
     if (rootElement == null || navRef.current == null) return;
     const scrollVal =
-      window.screenY ||
+      window.scrollY ||
       (document.documentElement || document.body.parentNode || document.body)
         .scrollTop;
 
     const height = document.body.offsetHeight - window.innerHeight;
+
+    console.log(scrollVal);
 
     const getScrollProgress = Math.round((100 * scrollVal) / height).toString();
 
