@@ -91,6 +91,7 @@ export default function DeliveredProject() {
         >
           <h1 className={deliveredProjectCss.subHeading}>
             Cross Platform Development Projects
+            <div className={deliveredProjectCss.hr}></div>
           </h1>
           <div
             id="Cross_Platform"
@@ -118,6 +119,7 @@ export default function DeliveredProject() {
         >
           <h1 className={deliveredProjectCss.subHeading}>
             Full Stack Web Development Projects
+            <div className={deliveredProjectCss.hr}></div>
           </h1>
 
           <div
@@ -146,6 +148,7 @@ export default function DeliveredProject() {
         >
           <h1 className={deliveredProjectCss.subHeading}>
             Android Development Projects
+            <div className={deliveredProjectCss.hr}></div>
           </h1>
 
           <div
@@ -174,6 +177,7 @@ export default function DeliveredProject() {
         >
           <h1 className={deliveredProjectCss.subHeading}>
             Game Development Projects
+            <div className={deliveredProjectCss.hr}></div>
           </h1>
 
           <div

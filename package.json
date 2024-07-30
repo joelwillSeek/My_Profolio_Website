@@ -11,14 +11,14 @@
   "name": "my_profolio_website",
   "description": "<h1>My Profile Website</h1>",
   "version": "1.0.0",
-  "main": "index.js",
   "devDependencies": {
     "parcel": "^2.12.0",
     "process": "^0.11.10",
     "typescript": "^5.5.3"
   },
   "scripts": {
-    "dev": "parcel --open chrome src/index.html"
+    "dev": "parcel --open chrome src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",

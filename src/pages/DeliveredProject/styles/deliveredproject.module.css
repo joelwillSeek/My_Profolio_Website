@@ -13,6 +13,7 @@
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .overallPlatformContainer {
@@ -26,7 +27,6 @@
 .heading {
   font-size: xx-large;
   font-weight: bolder;
-
   padding-top: 8rem;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,12 @@
   font-size: x-large;
   font-weight: bold;
   text-align: center;
+  padding-bottom: 3rem;
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hr {
@@ -58,4 +63,14 @@
 
 .heading:hover .hr {
   background-color: var(--bright-orange-color) !important;
+}
+
+@media screen and (min-width: 767px) {
+  .platformContainer {
+    gap: 1rem;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
 }

@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import navStyle from "./styles/nav.module.css";
 import backgroundImage from "../../assets/bg.jpg";
-import newBackgroundImage from "../../assets/logo/logoBg.png";
 import landingpageStyle from "./styles/landingpage.module.css";
 import Sidepanal from "./components/Sidepanal";
 import { Button } from "react-bootstrap";
@@ -76,7 +75,7 @@ export default function HomePage() {
       <div
         id="Landing_Page"
         style={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${newBackgroundImage})`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 50, 0.8)), url(${backgroundImage})`,
         }}
         className={`${landingpageStyle.landingPage}`}
       >

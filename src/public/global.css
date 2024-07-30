@@ -1,6 +1,6 @@
 :root {
-  --bright-blue-color: #0000ff;
-  --dark-blue-color: #002db3;
+  --bright-blue-color: rgb(0, 0, 255);
+  --dark-blue-color: #002699;
   --darkish-white: #eff3ff;
   --bright-orange-color: #ff9900;
   --dark-orange-color: #b36b00;

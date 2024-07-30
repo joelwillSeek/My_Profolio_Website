@@ -64,3 +64,9 @@
 .header:hover .hr {
   background-color: var(--bright-orange-color) !important;
 }
+
+@media screen and (min-width: 767px) {
+  .header {
+    font-size: 4rem;
+  }
+}

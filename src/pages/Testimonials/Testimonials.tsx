@@ -22,6 +22,18 @@ export default function Testimonials() {
       comment: "Coming Soon",
       image: "#",
     },
+    {
+      name: "Coming Soon",
+      workplace: "Coming Soon",
+      comment: "Coming Soon",
+      image: "#",
+    },
+    {
+      name: "Coming Soon",
+      workplace: "Coming Soon",
+      comment: "Coming Soon",
+      image: "#",
+    },
   ];
   return (
     <>

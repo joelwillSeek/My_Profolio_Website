@@ -19,3 +19,17 @@
   font-weight: 100;
   font-size: small;
 }
+
+@media screen and (min-width: 767px) {
+  .comment {
+    font-size: large;
+  }
+
+  .workplace {
+    font-size: medium;
+  }
+
+  .profilePic {
+    width: 15rem;
+  }
+}

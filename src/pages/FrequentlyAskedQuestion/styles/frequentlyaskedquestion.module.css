@@ -1,6 +1,3 @@
-.questions {
-}
-
 .contact {
   color: var(--bright-blue-color);
   transition: color ease-in-out 300ms;
@@ -65,4 +62,15 @@
 
 .heading:hover {
   color: var(--bright-orange-color);
+}
+
+@media screen and (min-width: 767px) {
+  .questions h2 button {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+  }
+
+  .questions div {
+    font-weight: normal;
+  }
 }

@@ -25,7 +25,7 @@ export default function DeliveredCards({
           className={deliveredCard.img}
           src={image == "#" ? comingSoon : image}
         />
-        <Card.Body>
+        <Card.Body className={deliveredCard.card_body}>
           <Card.Title>{Name}</Card.Title>
           <Card.Text>{description}</Card.Text>
           <div id="center" className={deliveredCard.center}>

@@ -3,6 +3,13 @@
   transition: border-color ease-in-out 300ms;
   width: 100% !important;
   margin: 1rem 0;
+  height: 100% !important;
+}
+
+.card_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card:hover {
