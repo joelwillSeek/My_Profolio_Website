@@ -1,6 +1,6 @@
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./public/global.css";
+import "./global/global.css";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutMe from "./pages/AboutMePage/AboutMe";
 import OfferingServices from "./pages/OfferingServices/OfferingServices";

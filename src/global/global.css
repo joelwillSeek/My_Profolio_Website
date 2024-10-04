@@ -1,16 +1,17 @@
 :root {
-  --bright-blue-color: rgb(0, 0, 255);
-  --dark-blue-color: #002699;
+  --bright-blue-color: #ffbf5e;
+  --dark-blue-color: rgb(199, 139, 49);
   --darkish-white: #eff3ff;
-  --bright-orange-color: #ff9900;
+  --bright-orange-color: rgb(255, 153, 0);
   --dark-orange-color: #b36b00;
   --min-table-screen: 789px;
 }
 
 ::-webkit-scrollbar {
-  background-color: var(--dark-blue-color) !important;
+  background-color:transparent!important;
   border: 0 !important;
   outline: none;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -22,6 +23,7 @@ body {
   padding: 0;
   border: 0;
   color: #fff;
+  max-width: 100vw;
   max-width: 100vw;
 }
 

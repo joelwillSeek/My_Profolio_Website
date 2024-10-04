@@ -2956,7 +2956,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
-var _globalCss = require("./public/global.css");
+var _globalCss = require("./global/global.css");
 var _homePage = require("./pages/HomePage/HomePage");
 var _homePageDefault = parcelHelpers.interopDefault(_homePage);
 var _aboutMe = require("./pages/AboutMePage/AboutMe");
@@ -3033,7 +3033,7 @@ $RefreshReg$(_c, "Index");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./public/global.css":"8cP8p","./pages/HomePage/HomePage":"8lu1h","./pages/AboutMePage/AboutMe":"b5ZjB","./pages/OfferingServices/OfferingServices":"2NTxc","./pages/DeliveredProject/DeliveredProject":"jgkI7","./pages/Testimonials/Testimonials":"jhDTU","./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion":"jrWOl","./pages/Information/Information":"6G1wt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./pages/HomePage/HomePage":"8lu1h","./pages/AboutMePage/AboutMe":"b5ZjB","./pages/OfferingServices/OfferingServices":"2NTxc","./pages/DeliveredProject/DeliveredProject":"jgkI7","./pages/Testimonials/Testimonials":"jhDTU","./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion":"jrWOl","./pages/Information/Information":"6G1wt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./global/global.css":"doKRF"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27276,7 +27276,7 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"8cP8p":[function() {},{}],"8lu1h":[function(require,module,exports) {
+},{}],"8lu1h":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ea6e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27398,29 +27398,36 @@ function HomePage() {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 id: "Landing_Page",
                 style: {
-                    background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 50, 0.8)), url(${(0, _bgJpgDefault.default)})`
+                    background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 50, 0.5)), url(${(0, _bgJpgDefault.default)})`
                 },
                 className: `${(0, _landingpageModuleCssDefault.default).landingPage}`,
                 children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        style: {
+                            marginLeft: "1rem"
+                        },
+                        children: "I Love To "
+                    }, void 0, false, {
+                        fileName: "src/pages/HomePage/HomePage.tsx",
+                        lineNumber: 84,
+                        columnNumber: 8
+                    }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                         style: {
                             color: "#fff",
                             fontWeight: "bold"
                         },
                         className: (0, _landingpageModuleCssDefault.default).heading,
-                        children: [
-                            "I Love To ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _codingLikeTextDefault.default), {
-                                delay: 200
-                            }, void 0, false, {
-                                fileName: "src/pages/HomePage/HomePage.tsx",
-                                lineNumber: 88,
-                                columnNumber: 21
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _codingLikeTextDefault.default), {
+                            delay: 200
+                        }, void 0, false, {
+                            fileName: "src/pages/HomePage/HomePage.tsx",
+                            lineNumber: 89,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 84,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27433,12 +27440,12 @@ function HomePage() {
                                     children: "Service Offered"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/HomePage.tsx",
-                                    lineNumber: 92,
+                                    lineNumber: 93,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/pages/HomePage/HomePage.tsx",
-                                lineNumber: 91,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27448,18 +27455,33 @@ function HomePage() {
                                     children: "Contact Me"
                                 }, void 0, false, {
                                     fileName: "src/pages/HomePage/HomePage.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 101,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "src/pages/HomePage/HomePage.tsx",
-                                lineNumber: 99,
+                                lineNumber: 100,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
+                                    className: (0, _landingpageModuleCssDefault.default).contactMe,
+                                    href: "/#contactInfo",
+                                    children: "Products"
+                                }, void 0, false, {
+                                    fileName: "src/pages/HomePage/HomePage.tsx",
+                                    lineNumber: 106,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "src/pages/HomePage/HomePage.tsx",
+                                lineNumber: 105,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/pages/HomePage/HomePage.tsx",
-                        lineNumber: 90,
+                        lineNumber: 91,
                         columnNumber: 9
                     }, this)
                 ]
@@ -34186,69 +34208,38 @@ parcelHelpers.export(exports, "default", ()=>CodingLikeText);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _codingliketextModuleCss = require("../styles/codingliketext.module.css");
-var _codingliketextModuleCssDefault = parcelHelpers.interopDefault(_codingliketextModuleCss);
-var _s = $RefreshSig$();
+var _reactSimpleTypewriter = require("react-simple-typewriter");
 function CodingLikeText({ delay }) {
-    _s();
     let wordsToShow = [
         "Coding",
         "Creating",
-        "Designing",
-        "Cooperating",
-        "end"
+        "Design",
+        "Cooperating"
     ];
-    let [showText, setShowText] = (0, _react.useState)("");
-    let [wordPicked, setWordPicked] = (0, _react.useState)(0);
-    let [letterPointer, setLetterPointer] = (0, _react.useState)(0);
-    let [updated, setUpdated] = (0, _react.useState)(0);
-    function displayText() {
-        setInterval(()=>{
-            setUpdated((prev)=>prev + 1);
-        }, delay);
-    }
-    function resetStates() {
-        setLetterPointer(0);
-        setShowText("|");
-    }
-    (0, _react.useEffect)(()=>{
-        displayText();
-    }, []);
-    function deleteLettersOneByOne() {
-        setShowText((prevValue)=>{
-            let newText = prevValue.substring(0, prevValue.length - 2);
-            return newText + "|";
-        });
-    }
-    (0, _react.useEffect)(()=>{
-        let theWord = wordsToShow[wordPicked];
-        if (theWord == "end") {
-            setWordPicked(0);
-            resetStates();
-        } else if (letterPointer <= theWord.length - 1) {
-            let theLetter = theWord[letterPointer];
-            let newText = showText.replace("|", "");
-            newText += theLetter + "|";
-            setShowText(newText);
-            setLetterPointer((prevVal)=>++prevVal);
-        } else if (letterPointer > theWord.length - 1 && showText.length > 1) deleteLettersOneByOne();
-        else if (wordPicked < wordsToShow.length) {
-            setWordPicked((prevVal)=>++prevVal);
-            resetStates();
-        }
-    }, [
-        updated
-    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        className: (0, _codingliketextModuleCssDefault.default).heading,
-        children: showText
+        style: {
+            color: "#ffbf5e"
+        },
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactSimpleTypewriter.Typewriter), {
+            words: wordsToShow,
+            loop: 0,
+            cursor: true,
+            cursorStyle: "|",
+            typeSpeed: 100,
+            deleteSpeed: 50,
+            delaySpeed: 1000,
+            cursorColor: "#ffbf5e"
+        }, void 0, false, {
+            fileName: "src/pages/HomePage/components/CodingLikeText.tsx",
+            lineNumber: 14,
+            columnNumber: 1
+        }, this)
     }, void 0, false, {
         fileName: "src/pages/HomePage/components/CodingLikeText.tsx",
-        lineNumber: 55,
-        columnNumber: 10
+        lineNumber: 12,
+        columnNumber: 6
     }, this);
 }
-_s(CodingLikeText, "+iHgbPFEpcWE8odhpDTpUs5p8/o=");
 _c = CodingLikeText;
 var _c;
 $RefreshReg$(_c, "CodingLikeText");
@@ -34258,10 +34249,154 @@ $RefreshReg$(_c, "CodingLikeText");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/codingliketext.module.css":"1F34Z","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1F34Z":[function(require,module,exports) {
-module.exports["heading"] = `r7f9eW_heading`;
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-simple-typewriter":"ksF8A"}],"ksF8A":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: !0
+});
+var e = require("b67c0ed2394f6743"), t = require("70745242d63fc679"), r = function() {
+    return r = Object.assign || function(e) {
+        for(var t, r = 1, o = arguments.length; r < o; r++)for(var n in t = arguments[r])Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);
+        return e;
+    }, r.apply(this, arguments);
+};
+function o(e, t) {
+    var o, n;
+    switch(t.type){
+        case "TYPE":
+            return r(r({}, e), {
+                speed: t.speed,
+                text: null === (o = t.payload) || void 0 === o ? void 0 : o.substring(0, e.text.length + 1)
+            });
+        case "DELAY":
+            return r(r({}, e), {
+                speed: t.payload
+            });
+        case "DELETE":
+            return r(r({}, e), {
+                speed: t.speed,
+                text: null === (n = t.payload) || void 0 === n ? void 0 : n.substring(0, e.text.length - 1)
+            });
+        case "COUNT":
+            return r(r({}, e), {
+                count: e.count + 1
+            });
+        default:
+            return e;
+    }
+}
+var n = function(e) {
+    var r = e.words, n = void 0 === r ? [
+        "Hello World!",
+        "This is",
+        "a simple Typewriter"
+    ] : r, i = e.loop, s = void 0 === i ? 1 : i, u = e.typeSpeed, l = void 0 === u ? 80 : u, c = e.deleteSpeed, d = void 0 === c ? 50 : c, a = e.delaySpeed, p = void 0 === a ? 1500 : a, y = e.onLoopDone, f = e.onType, v = e.onDelete, m = e.onDelay, h = t.useReducer(o, {
+        speed: l,
+        text: "",
+        count: 0
+    }), T = h[0], g = T.speed, _ = T.text, x = T.count, D = h[1], C = t.useRef(0), E = t.useRef(!1), S = t.useRef(!1), b = t.useRef(!1), k = t.useRef(!1), w = t.useCallback(function() {
+        var e = x % n.length, t = n[e];
+        S.current ? (D({
+            type: "DELETE",
+            payload: t,
+            speed: d
+        }), "" === _ && (S.current = !1, D({
+            type: "COUNT"
+        }))) : (D({
+            type: "TYPE",
+            payload: t,
+            speed: l
+        }), b.current = !0, _ === t && (D({
+            type: "DELAY",
+            payload: p
+        }), b.current = !1, k.current = !0, setTimeout(function() {
+            k.current = !1, S.current = !0;
+        }, p), s > 0 && (C.current += 1, C.current / n.length === s && (k.current = !1, E.current = !0)))), b.current && f && f(C.current), S.current && v && v(), k.current && m && m();
+    }, [
+        x,
+        p,
+        d,
+        s,
+        l,
+        n,
+        _,
+        f,
+        v,
+        m
+    ]);
+    return t.useEffect(function() {
+        var e = setTimeout(w, g);
+        return E.current && clearTimeout(e), function() {
+            return clearTimeout(e);
+        };
+    }, [
+        w,
+        g
+    ]), t.useEffect(function() {
+        y && E.current && y();
+    }, [
+        y
+    ]), [
+        _,
+        {
+            isType: b.current,
+            isDelay: k.current,
+            isDelete: S.current,
+            isDone: E.current
+        }
+    ];
+};
+var i = "styles-module_blinkingCursor__yugAC", s = "styles-module_blinking__9VXRT";
+!function(e, t) {
+    void 0 === t && (t = {});
+    var r = t.insertAt;
+    if (e && "undefined" != typeof document) {
+        var o = document.head || document.getElementsByTagName("head")[0], n = document.createElement("style");
+        n.type = "text/css", "top" === r && o.firstChild ? o.insertBefore(n, o.firstChild) : o.appendChild(n), n.styleSheet ? n.styleSheet.cssText = e : n.appendChild(document.createTextNode(e));
+    }
+}(".styles-module_blinkingCursor__yugAC{color:inherit;font:inherit;left:3px;line-height:inherit;opacity:1;position:relative;top:0}.styles-module_blinking__9VXRT{animation-duration:.8s;animation-iteration-count:infinite;animation-name:styles-module_blink__rqfaf}@keyframes styles-module_blink__rqfaf{0%{opacity:1}to{opacity:0}}");
+var u = t.memo(function(t) {
+    var o = t.cursorBlinking, n = void 0 === o || o, u = t.cursorStyle, l = void 0 === u ? "|" : u, c = t.cursorColor, d = void 0 === c ? "inherit" : c;
+    return e.jsx("span", r({
+        style: {
+            color: d
+        },
+        className: "".concat(i, " ").concat(n ? s : "")
+    }, {
+        children: l
+    }));
+});
+exports.Cursor = u, exports.Typewriter = function(t) {
+    var r = t.words, o = void 0 === r ? [
+        "Hello World!",
+        "This is",
+        "a simple Typewriter"
+    ] : r, i = t.loop, s = void 0 === i ? 1 : i, l = t.typeSpeed, c = void 0 === l ? 80 : l, d = t.deleteSpeed, a = void 0 === d ? 50 : d, p = t.delaySpeed, y = void 0 === p ? 1500 : p, f = t.cursor, v = void 0 !== f && f, m = t.cursorStyle, h = void 0 === m ? "|" : m, T = t.cursorColor, g = void 0 === T ? "inherit" : T, _ = t.cursorBlinking, x = void 0 === _ || _, D = t.onLoopDone, C = t.onType, E = t.onDelay, S = t.onDelete, b = n({
+        words: o,
+        loop: s,
+        typeSpeed: c,
+        deleteSpeed: a,
+        delaySpeed: y,
+        onLoopDone: D,
+        onType: C,
+        onDelay: E,
+        onDelete: S
+    })[0];
+    return e.jsxs(e.Fragment, {
+        children: [
+            e.jsx("span", {
+                children: b
+            }),
+            v && e.jsx(u, {
+                cursorStyle: h,
+                cursorColor: g,
+                cursorBlinking: x
+            })
+        ]
+    });
+}, exports.useTypewriter = n;
 
-},{}],"b5ZjB":[function(require,module,exports) {
+},{"b67c0ed2394f6743":"6AEwr","70745242d63fc679":"21dqq"}],"b5ZjB":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$45ae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36052,6 +36187,6 @@ module.exports["copyright"] = `kD4KYW_copyright`;
 module.exports["footer"] = `kD4KYW_footer`;
 module.exports["list"] = `kD4KYW_list`;
 
-},{}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire813e")
+},{}],"doKRF":[function() {},{}]},["94b1M","1xC6H","4aBH6"], "4aBH6", "parcelRequire813e")
 
 //# sourceMappingURL=index.2d3ace14.js.map

@@ -59,7 +59,7 @@ export default function HomePage() {
   return (
     <>
       {loading ? loadingComponent() : null}
-
+{/* navigation bar */}
       <nav className={navStyle.navigation} ref={navRef}>
         <div className={navStyle.mainNav}>
           <h1 className={navStyle.logoBackground}>
@@ -77,15 +77,16 @@ export default function HomePage() {
       <div
         id="Landing_Page"
         style={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 50, 0.8)), url(${backgroundImage})`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 50, 0.5)), url(${backgroundImage})`,
         }}
         className={`${landingpageStyle.landingPage}`}
       >
+       <h1 style={{marginLeft:"1rem"}}>I Love To </h1> 
         <h1
           style={{ color: "#fff", fontWeight: "bold" }}
           className={landingpageStyle.heading}
         >
-          I Love To <CodingLikeText delay={200} />
+          <CodingLikeText delay={200} />
         </h1>
         <ul className={landingpageStyle.landingList}>
           <li>
@@ -99,6 +100,11 @@ export default function HomePage() {
           <li>
             <Button className={landingpageStyle.contactMe} href="/#contactInfo">
               Contact Me
+            </Button>
+          </li>
+          <li>
+            <Button className={landingpageStyle.contactMe} href="/#contactInfo">
+              Products
             </Button>
           </li>
         </ul>
