@@ -1,14 +1,23 @@
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  background-color: var(--darkish-white);
+  height: 50vh;
+  gap: 20px;
+  padding: 0rem 2.5rem;
+  margin: 6rem 0;
 }
 
 .contact {
-  color: var(--bright-blue-color);
+  color: var(--dark-orange-color);
   transition: color ease-in-out 300ms;
   text-decoration: none;
+}
+
+.myFace {
+  --image-size: 200px;
+  max-width: var(--image-size);
+  max-height: var(--image-size);
 }
 
 .contact:hover {
@@ -16,14 +25,13 @@
 }
 
 .about {
-  padding-top: 4rem;
-  text-align: center;
-  font-weight: bold;
-  flex-direction: column;
+  color: black;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  color: #000;
+  justify-content: center;
+  font-weight: bold;
+  padding-top: 5rem;
   transition: color ease-in-out 300ms;
 }
 
@@ -37,10 +45,6 @@
   font-weight: bolder;
 }
 
-.leftMargin {
-  margin-left: 1rem;
-}
-
 .headerContactInfo {
   font-weight: bolder;
   font-size: xx-large;
@@ -48,7 +52,6 @@
 
 .contactInfo {
   margin-bottom: 7rem;
-  margin-top: 3rem;
 }
 
 .contactInfo li {
@@ -69,12 +72,10 @@
   transition: background-color ease-in-out 300ms;
 }
 
-.about:hover .hr {
-  background-color: var(--bright-orange-color) !important;
-}
-
-@media screen and (min-width: 767px) {
-  .about {
-    font-size: 4rem;
-  }
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  max-width: 40%;
 }

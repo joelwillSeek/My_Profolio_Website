@@ -54,11 +54,11 @@ html {
 }
 
 .Warning {
-  color: red !important;
+  color: #ca0000 !important;
 }
 
 .Warning:hover {
-  color: var(--bright-orange-color) !important;
+  color: red !important;
 }
 
 .kN-f3W_landingPage {
@@ -93,7 +93,7 @@ html {
 
 .kN-f3W_seeMore, .kN-f3W_contactMe {
   border-color: var(--bright-orange-color) !important;
-  color: var(--bright-orange-color) !important;
+  color: #fff !important;
   border-radius: 7px !important;
 }
 
@@ -125,16 +125,25 @@ html {
 }
 
 ._06dn2q_container {
-  background-color: var(--darkish-white);
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  gap: 20px;
+  height: 50vh;
+  margin: 6rem 0;
+  padding: 0 2.5rem;
   display: flex;
 }
 
 ._06dn2q_contact {
-  color: var(--bright-blue-color);
+  color: var(--dark-orange-color);
   text-decoration: none;
   transition: color .3s ease-in-out;
+}
+
+._06dn2q_myFace {
+  --image-size: 200px;
+  max-width: var(--image-size);
+  max-height: var(--image-size);
 }
 
 ._06dn2q_contact:hover {
@@ -142,12 +151,11 @@ html {
 }
 
 ._06dn2q_about {
-  text-align: center;
   color: #000;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 5rem;
   font-weight: bold;
   transition: color .3s ease-in-out;
   display: flex;
@@ -163,17 +171,12 @@ html {
   font-weight: bolder;
 }
 
-._06dn2q_leftMargin {
-  margin-left: 1rem;
-}
-
 ._06dn2q_headerContactInfo {
   font-size: xx-large;
   font-weight: bolder;
 }
 
 ._06dn2q_contactInfo {
-  margin-top: 3rem;
   margin-bottom: 7rem;
 }
 
@@ -191,14 +194,12 @@ html {
   background-color: var(--bright-blue-color) !important;
 }
 
-._06dn2q_about:hover ._06dn2q_hr {
-  background-color: var(--bright-orange-color) !important;
-}
-
-@media screen and (width >= 767px) {
-  ._06dn2q_about {
-    font-size: 4rem;
-  }
+._06dn2q_col {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  max-width: 40%;
+  display: flex;
 }
 
 .-un0tq_container {
@@ -234,11 +235,24 @@ html {
 }
 
 .-un0tq_card {
+  text-align: center;
   margin: 1rem 0;
   transition: border .3s ease-in-out;
-  border: 2px solid var(--bright-blue-color) !important;
-  width: 100% !important;
-  min-height: 26rem !important;
+  border: 2px solid #000 !important;
+  border-radius: 0 !important;
+  width: 70% !important;
+}
+
+.-un0tq_cardTitle {
+  font-size: medium !important;
+}
+
+.-un0tq_cardSubDescription {
+  font-size: small !important;
+}
+
+.-un0tq_cardDescription {
+  font-size: small;
 }
 
 .-un0tq_card:hover {
@@ -262,18 +276,27 @@ html {
   background-color: var(--bright-blue-color) !important;
 }
 
-.-un0tq_header:hover .-un0tq_hr {
-  background-color: var(--bright-orange-color) !important;
+.-un0tq_cardLinkGroup {
+  text-align: center;
+  flex-wrap: wrap;
+  place-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
 }
 
-@media screen and (width >= 767px) {
-  .-un0tq_header {
-    font-size: 4rem;
-  }
+.-un0tq_cardLink {
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+  display: inline-block;
+}
+
+.-un0tq_cardLink:hover {
+  color: var(--bright-orange-color);
 }
 
 .BB-Etq_background {
-  background-color: var(--bright-blue-color);
+  background-color: #000;
   border-radius: 100%;
   margin: 0 1rem;
   transition: background-color .3s ease-in-out;
@@ -284,7 +307,7 @@ html {
 }
 
 .BB-Etq_imgIcon {
-  width: 30px;
+  width: 20px;
   margin: .5rem;
 }
 
@@ -292,7 +315,8 @@ html {
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  gap: 10px;
+  margin: 1rem 0;
   display: flex;
 }
 
@@ -622,6 +646,172 @@ html {
 
 .kD4KYW_copyright:hover {
   background-color: var(--bright-orange-color);
+  color: var(--bright-blue-color);
+}
+
+.QobLya_background {
+  color: #fff !important;
+  background: #252525 !important;
+  width: 100% !important;
+}
+
+.QobLya_list div {
+  background-color: var(--bright-blue-color);
+  color: #fff;
+  transition: background-color .3s ease-in-out;
+}
+
+.QobLya_list div:hover {
+  background-color: var(--bright-orange-color);
+}
+
+.QobLya_menuIcon {
+  filter: invert();
+  width: 30px;
+}
+
+.QobLya_menuButton {
+  background: none !important;
+  border: 0 !important;
+}
+
+.QobLya_menuButton:hover {
+  scale: 1.2;
+}
+
+@media screen and (width >= 767px) {
+  .QobLya_list {
+    text-align: center;
+    background-color: #0000;
+    justify-content: center;
+    align-items: end;
+    flex-direction: row !important;
+    display: flex !important;
+  }
+
+  .QobLya_list div {
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .2rem;
+    font-size: small;
+    font-weight: bold;
+    transition: background-color .3s ease-in-out;
+    display: flex;
+    background-color: #0000 !important;
+    border-radius: 50px !important;
+    padding: 1rem !important;
+  }
+
+  .QobLya_list div:hover {
+    background-color: var(--bright-orange-color) !important;
+    border-color: #0000 !important;
+  }
+
+  .QobLya_body {
+    justify-content: flex-end;
+    align-items: flex-end !important;
+  }
+
+  .QobLya_menuButton {
+    display: none !important;
+  }
+}
+
+.FYDXsG_navigation {
+  box-sizing: border-box;
+  color: #fff;
+  z-index: 20;
+  flex-direction: column;
+  width: 100%;
+  height: 5rem;
+  transition: background-color .3s ease-in-out;
+  display: flex;
+  justify-content: space-between !important;
+  font-size: medium !important;
+  position: fixed !important;
+}
+
+.FYDXsG_bebas_neue_regular {
+  font-family: Bebas Neue, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.FYDXsG_mainNav {
+  padding: .5rem 2rem;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.FYDXsG_pageProgress {
+  content: " ";
+  background-color: var(--bright-orange-color);
+  height: .2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.FYDXsG_svgMenu {
+  width: 40px;
+  height: fit-content;
+}
+
+.FYDXsG_dropDownButton {
+  background: none;
+  border: 0;
+  height: auto;
+}
+
+.FYDXsG_dropDown {
+  background-color: #151515;
+}
+
+.FYDXsG_dropDown ol {
+  list-style: none;
+}
+
+.FYDXsG_dropDown ol li {
+  border: 0;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  transition: background-color .3s ease-in-out;
+}
+
+.FYDXsG_dropDown ol li:hover {
+  background-color: var(--bright-blue-color);
+}
+
+.FYDXsG_svgMenu path {
+  stroke: #fff;
+}
+
+.FYDXsG_logoBackground {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  place-content: center;
+  font-size: xx-large;
+  display: flex;
+}
+
+.FYDXsG_logoBackground h1 {
+  transition: color .3s ease-in-out, text-shadow .1s ease-in-out;
+  font-size: xx-large !important;
+}
+
+.FYDXsG_logoBackground:hover h1 {
+  text-shadow: 0px 0px 40px var(--bright-orange-color);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.FYDXsG_logoBackground:hover {
   color: var(--bright-blue-color);
 }
 /*# sourceMappingURL=index.2212206d.css.map */

@@ -1,8 +1,4 @@
 .navigation {
-  padding: 0 !important;
-  top: 0;
-  left: 0;
-  min-width: 100%;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -10,14 +6,23 @@
   justify-content: space-between !important;
   position: fixed !important;
   color: white;
+  font-size: medium !important;
   z-index: 20;
+  height: 5rem;
   transition: background-color ease-in-out 300ms;
+}
+
+.bebas_neue_regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .mainNav {
   display: flex;
   justify-content: space-between !important;
-  align-items: center;
+  align-items: center !important;
+  padding: 0.5rem 2rem;
   width: 100% !important;
 }
 
@@ -65,19 +70,32 @@
   stroke: #fff;
 }
 
-.logoImage {
+/* .logoImage {
   width: 5rem;
-}
+} */
 
 .logoBackground {
-  padding: 0.4rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: xx-large;
 }
 
-@media screen and (min-width: 767px) {
-  .navigation {
-    min-height: 4rem;
-  }
+.logoBackground h1 {
+  transition: color ease-in-out 300ms, text-shadow ease-in-out 100ms;
+  font-size: xx-large !important ;
+}
+
+.logoBackground:hover h1 {
+  text-shadow: 0px 0px 40px var(--bright-orange-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoBackground:hover {
+  color: var(--bright-blue-color);
 }

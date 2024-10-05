@@ -7,7 +7,6 @@ import androidIcon from "../../assets/Offering Services/icons8-android-studio.sv
 import javaIcon from "../../assets/Offering Services/icons8-java.svg";
 import kotlinIcon from "../../assets/Offering Services/icons8-kotlin.svg";
 import unityIcon from "../../assets/Offering Services/icons8-unity.svg";
-import cSharpIcon from "../../assets/Offering Services/icons8-c.svg";
 import godotIcon from "../../assets/Offering Services/icons8-godot.svg";
 
 export default {
@@ -20,6 +19,5 @@ export default {
   javaIcon,
   kotlinIcon,
   unityIcon,
-  cSharpIcon,
   godotIcon,
 };

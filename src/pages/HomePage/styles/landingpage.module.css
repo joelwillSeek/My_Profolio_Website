@@ -28,16 +28,18 @@
   margin: 1rem;
 }
 
-.seeMore,.contactMe {
+.seeMore,
+.contactMe {
   border-color: var(--bright-orange-color) !important;
-  color: var(--bright-orange-color) !important;
+  color: #fff !important;
   border-radius: 7px !important;
 }
 
-.seeMore:hover,.contactMe:hover {
+.seeMore:hover,
+.contactMe:hover {
   background-color: var(--bright-orange-color) !important;
   color: #fff !important;
-} 
+}
 
 @media screen and (min-width: 768px) {
   .landingPage {
@@ -46,11 +48,10 @@
     padding-left: 8rem;
   }
 
-
-  .seeMore, .contactMe {
+  .seeMore,
+  .contactMe {
     padding: 1rem !important;
     font-size: small !important;
     font-weight: bolder !important;
   }
-
 }

@@ -14,7 +14,6 @@ const {
   javaIcon,
   kotlinIcon,
   unityIcon,
-  cSharpIcon,
   godotIcon,
 } = imageImports;
 
@@ -33,146 +32,164 @@ export default function OfferingServices() {
         </div>
 
         <div id="services" className={offeringServicesStyle.container}>
-          <Card className={offeringServicesStyle.card}>
-            <Card.Body>
-              <Card.Title
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <div className={offeringServicesStyle.titleContainer}>
-                  <CardiconList imagePaths={[flutterIcon]} />
-                  Cross Platform Development
-                </div>
-              </Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
-                Android, Linux, Windows, Web ...
-              </Card.Subtitle>
-              <Card.Text>
-                Using flutter to develop once and deploy. This convince can help
-                a start up company And/Or Client to build a product with minimal
-                build and maintenance cost.
-              </Card.Text>
-              <Card.Link href="#">See Some Projects</Card.Link>
-              <Card.Link href="#">More On Flutter</Card.Link>
-            </Card.Body>
-          </Card>
+          {bootstrapCardCustomized(
+            "Cross Platform Development",
+            "Android, Linux, Windows, Web ...",
+            ` 
+            Using flutter to develop once and deploy. This convince can help a+
+            start up company And/Or Client to build a product with minimal build+
+            and maintenance cost.
+            
+            `,
+            [
+              {
+                nameOfTool: "flutter",
+                linkToDocumentation:
+                  "`https://flutter.dev/?gad_source=1&gclid=CjwKCAjwx4O4BhAnEiwA42SbVIKbHKHq2d0z3BX3OTd9uNTCFFqLyZdKwUWuuLWXYLy0h0jaoyXlrRoC2DYQAvD_BwE&gclsrc=aw.ds`",
+              },
+            ],
+            [flutterIcon]
+          )}
 
-          <Card
-            style={{ width: "100%" }}
-            className={offeringServicesStyle.card}
-          >
-            <Card.Body>
-              <Card.Title
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <div className={offeringServicesStyle.titleContainer}>
-                  <CardiconList
-                    imagePaths={[
-                      mongoIcon,
-                      reactIcon,
-                      nodeJSIcon,
-                      expressJsIcon,
-                    ]}
-                  />
-                  Full Stack Web Development
-                </div>
-              </Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
-                MERN ( MongoDB, ExpressJS, React, NodeJs), will to learn more
-                like Laravel (PHP)
-              </Card.Subtitle>
-              <Card.Text>
-                Some times its best to develop natively for a client and the
+          {bootstrapCardCustomized(
+            "Full Stack Web Development",
+            `MERN ( MongoDB, ExpressJS, React, NodeJs), will to learn more
+                like Laravel (PHP)`,
+            ` 
+           Some times its best to develop natively for a client and the
                 most used platform is cloud, Seeing this i can deliver a fulling
-                working full stack website
-              </Card.Text>
-              <Card.Link href="#">See Some Projects</Card.Link>
-              <Card.Link href="#">React</Card.Link>
-              <Card.Link href="#">NodeJs</Card.Link>
-              <Card.Link href="#">ExpressJS</Card.Link>
-              <Card.Link href="#">MongoDB</Card.Link>
-            </Card.Body>
-          </Card>
+                working full stack websites
+            
+            `,
+            [
+              {
+                nameOfTool: "React",
+                linkToDocumentation: `https://react.dev/`,
+              },
+              {
+                nameOfTool: "NodeJs",
+                linkToDocumentation: `https://nodejs.org/en`,
+              },
+              {
+                nameOfTool: "ExpressJS",
+                linkToDocumentation: `https://expressjs.com/`,
+              },
+              {
+                nameOfTool: "MongoDB",
+                linkToDocumentation: `https://www.mongodb.com/`,
+              },
+            ],
+            [mongoIcon, reactIcon, nodeJSIcon, expressJsIcon]
+          )}
 
-          <Card
-            style={{ width: "100%" }}
-            className={offeringServicesStyle.card}
-          >
-            <Card.Body>
-              <Card.Title
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <div className={offeringServicesStyle.titleContainer}>
-                  <CardiconList
-                    imagePaths={[androidIcon, javaIcon, kotlinIcon]}
-                  />
-                  Android Development
-                </div>
-              </Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
-                Natively Develop Android Apps using android studio and java OR
-                Kotlin
-              </Card.Subtitle>
-              <Card.Text>
-                Sometimes a natively built app is more performance and
+          {bootstrapCardCustomized(
+            "Android Development",
+            ` Natively Develop Android Apps using android studio and java OR
+                Kotlin`,
+            ` 
+          Sometimes a natively built app is more performance and
                 preferable for a client, Seeing this we can offer this services
-                <p id="Warning">NOTE:</p> We Recommend cross platform for the
+               We Recommend cross platform for the
                 easy of use and many platform support.
-              </Card.Text>
-              <Card.Link href="#">See Some Projects</Card.Link>
-              <Card.Link href="#">Android Studio</Card.Link>
-            </Card.Body>
-          </Card>
+            
+            `,
+            [
+              {
+                nameOfTool: "Android Studio",
+                linkToDocumentation: `https://developer.android.com/studio?gad_source=1&gclid=CjwKCAjwx4O4BhAnEiwA42SbVIxgd1P_CllH6jXD7EXuFFd8Fetjv-8ZOqmTd0eM4M59nNJjaB1kIBoCQ74QAvD_BwE&gclsrc=aw.ds`,
+              },
+            ],
+            [androidIcon, javaIcon, kotlinIcon]
+          )}
 
-          <Card
-            style={{ width: "100%" }}
-            className={offeringServicesStyle.card}
-          >
-            <Card.Body>
-              <Card.Title
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <div className={offeringServicesStyle.titleContainer}>
-                  <CardiconList
-                    imagePaths={[godotIcon, unityIcon, cSharpIcon]}
-                  />
-                  Game Development
-                </div>
-              </Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
-                I Have learned to use unity and godot for game development
-              </Card.Subtitle>
-              <Card.Text>
-                For those out there that have an idea or want help in there
+          {bootstrapCardCustomized(
+            " Game Development",
+            ` I Have learned to use unity and godot for game development`,
+            ` 
+           For those out there that have an idea or want help in there
                 projects,
-                <p id="Warning">Note: </p> One person Can't build the next GTA
+                One person Can't build the next GTA
                 Or Call Of Duty
-              </Card.Text>
-              <Card.Link href="#">See Some Projects</Card.Link>
-              <Card.Link href="#">Android Studio</Card.Link>
-            </Card.Body>
-          </Card>
+            
+            `,
+            [
+              {
+                nameOfTool: "Unity Game Engine",
+                linkToDocumentation: `https://unity.com/`,
+              },
+
+              {
+                nameOfTool: "Godot Game Engine",
+                linkToDocumentation: `https://godotengine.org/`,
+              },
+            ],
+            [godotIcon, unityIcon]
+          )}
         </div>
       </div>
+    </>
+  );
+}
+
+function bootstrapCardCustomized(
+  title: string = "not assigned",
+  canDeploy: string = "not assigned",
+  description: string = "not assigned",
+  documentations: Array<{
+    nameOfTool: string;
+    linkToDocumentation: string;
+  }>,
+  listOfImagesOfTools: Array<string> = []
+) {
+  return (
+    <>
+      <Card className={offeringServicesStyle.card}>
+        <Card.Body>
+          <Card.Title
+            className={offeringServicesStyle.cardTitle}
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              fontWeight: "bold",
+            }}
+          >
+            <div className={offeringServicesStyle.titleContainer}>
+              <CardiconList imagePaths={listOfImagesOfTools} />
+              {title}
+            </div>
+          </Card.Title>
+          <Card.Subtitle
+            className={`mb-2 text-muted ${offeringServicesStyle.cardSubDescription}`}
+          >
+            {canDeploy}
+          </Card.Subtitle>
+          <Card.Text className={offeringServicesStyle.cardDescription}>
+            {description}
+          </Card.Text>
+
+          <Card.Link
+            href="/#deliveredProject"
+            className={offeringServicesStyle.cardLink}
+            style={{ textAlign: "center" }}
+          >
+            See Projects
+          </Card.Link>
+
+          <div className={offeringServicesStyle.cardLinkGroup}>
+            {documentations.map((tool, index) => (
+              <Card.Link
+                key={index}
+                href={tool.linkToDocumentation}
+                className={offeringServicesStyle.cardLink}
+              >
+                {tool.nameOfTool}
+              </Card.Link>
+            ))}
+          </div>
+        </Card.Body>
+      </Card>
     </>
   );
 }

@@ -9,21 +9,18 @@ import Testimonials from "./pages/Testimonials/Testimonials";
 import FrequentlyAskedQuestion from "./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion";
 import Information from "./pages/Information/Information";
 import { BounceLoader } from "react-spinners";
-
+import TopNavigationBar from "./pages/FixedNavigationBar/TopNavigationBar";
 
 function Index() {
   const [loading, setLoading] = useState(true);
   function loadingComponent() {
-
     window.addEventListener("load", () => {
       setLoading(() => false);
     });
-  
 
     return (
       <div className={"loading"}>
         <BounceLoader
-
           color={"#ff9900"}
           loading={true}
           size={150}
@@ -36,8 +33,8 @@ function Index() {
 
   return (
     <>
-
-{loading ? loadingComponent() : null}
+      {loading ? loadingComponent() : null}
+      <TopNavigationBar />
       <HomePage />
       <AboutMe />
       <OfferingServices />
