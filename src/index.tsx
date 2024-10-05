@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React, { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./global/global.css";
 import HomePage from "./pages/HomePage/HomePage";
@@ -8,10 +8,36 @@ import DeliveredProject from "./pages/DeliveredProject/DeliveredProject";
 import Testimonials from "./pages/Testimonials/Testimonials";
 import FrequentlyAskedQuestion from "./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion";
 import Information from "./pages/Information/Information";
+import { BounceLoader } from "react-spinners";
+
 
 function Index() {
+  const [loading, setLoading] = useState(true);
+  function loadingComponent() {
+
+    window.addEventListener("load", () => {
+      setLoading(() => false);
+    });
+  
+
+    return (
+      <div className={"loading"}>
+        <BounceLoader
+
+          color={"#ff9900"}
+          loading={true}
+          size={150}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        ></BounceLoader>
+      </div>
+    );
+  }
+
   return (
     <>
+
+{loading ? loadingComponent() : null}
       <HomePage />
       <AboutMe />
       <OfferingServices />
