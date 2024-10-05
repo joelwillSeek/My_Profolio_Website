@@ -44290,80 +44290,27 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _deliveredprojectModuleCss = require("./styles/deliveredproject.module.css");
 var _deliveredprojectModuleCssDefault = parcelHelpers.interopDefault(_deliveredprojectModuleCss);
-var _matchmakingPng = require("../../assets/DeliveredProject/matchmaking.png");
-var _matchmakingPngDefault = parcelHelpers.interopDefault(_matchmakingPng);
-var _flutterWeatherAPpJpg = require("../../assets/DeliveredProject/flutterWeatherAPp.jpg");
-var _flutterWeatherAPpJpgDefault = parcelHelpers.interopDefault(_flutterWeatherAPpJpg);
-var _calculatorAppJpg = require("../../assets/DeliveredProject/calculator app.jpg");
-var _calculatorAppJpgDefault = parcelHelpers.interopDefault(_calculatorAppJpg);
-var _clubhouseWebsitePng = require("../../assets/DeliveredProject/clubhouseWebsite.png");
-var _clubhouseWebsitePngDefault = parcelHelpers.interopDefault(_clubhouseWebsitePng);
-var _deliveredCards = require("./components/DeliveredCards");
-var _deliveredCardsDefault = parcelHelpers.interopDefault(_deliveredCards);
+var _1Jpg = require("../../assets/DeliveredProject/ApsireMe/1.jpg");
+var _1JpgDefault = parcelHelpers.interopDefault(_1Jpg);
+var _2Jpg = require("../../assets/DeliveredProject/ApsireMe/2.jpg");
+var _2JpgDefault = parcelHelpers.interopDefault(_2Jpg);
+var _3Jpg = require("../../assets/DeliveredProject/ApsireMe/3.jpg");
+var _3JpgDefault = parcelHelpers.interopDefault(_3Jpg);
+var _4Jpg = require("../../assets/DeliveredProject/ApsireMe/4.jpg");
+var _4JpgDefault = parcelHelpers.interopDefault(_4Jpg);
 function DeliveredProject() {
-    const crossPlatformProjects = [
+    const deliverdProjects = [
         {
-            Name: "Habeshaly (Match Making App)",
-            githubLink: "https://github.com/joelwillSeek/Flutter_MatchMaking_app",
-            previewLink: " ",
-            image: (0, _matchmakingPngDefault.default),
-            description: "A tinder like app clone for ethiopian"
-        },
-        {
-            Name: "Weather App",
-            githubLink: "https://github.com/joelwillSeek/Flutter_Weather_App",
-            previewLink: " ",
-            image: (0, _flutterWeatherAPpJpgDefault.default),
-            description: "Weather App"
-        },
-        {
-            Name: "Calculator App",
-            githubLink: "https://github.com/joelwillSeek/Flutter_Calculator",
-            previewLink: " ",
-            image: (0, _calculatorAppJpgDefault.default),
-            description: "Calculator App"
+            Name: "AspireMe",
+            description: "A full app about flashcard based on a document structure, focusing on android but can be built for any platform",
+            demoImages: [
+                (0, _1JpgDefault.default),
+                (0, _2JpgDefault.default),
+                (0, _3JpgDefault.default),
+                (0, _4JpgDefault.default)
+            ]
         }
     ];
-    const fullStackWebDev = [
-        {
-            Name: "Blog Website",
-            githubLink: "https://github.com/joelwillSeek/BlogApi_FrontEnd_ExpressJS_OdinProject",
-            previewLink: "",
-            image: "#",
-            description: "A website where you can post blogs public or private and also see other public posts"
-        },
-        {
-            Name: "Clubhouse Website",
-            previewLink: "https://expressjs-clubhouse.onrender.com/",
-            githubLink: "https://github.com/joelwillSeek/ExpressJS_clubhouse",
-            image: (0, _clubhouseWebsitePngDefault.default),
-            description: "A website where you can post blogs public or private and also see other public posts"
-        }
-    ];
-    const androidDevelopment = [
-        {
-            Name: "Zender",
-            githubLink: "https://github.com/joelwillSeek/Zender_Xender_UI",
-            previewLink: "",
-            image: "#",
-            description: "An app that mimic xender application ui and some functionality"
-        },
-        {
-            Name: "Fake_Gmail",
-            githubLink: "https://github.com/joelwillSeek/Fake_Gmail",
-            previewLink: "",
-            image: "#",
-            description: "An app that mimic Gmail application ui and some functionality"
-        },
-        {
-            Name: "Firebase Android",
-            githubLink: "https://github.com/joelwillSeek/Fire_Store_Android_Dev",
-            previewLink: "",
-            image: "#",
-            description: "An app that uses firebase to authenticate user login"
-        }
-    ];
-    const gameDevelopment = [];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: (0, _deliveredprojectModuleCssDefault.default).container,
@@ -44372,232 +44319,68 @@ function DeliveredProject() {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     className: (0, _deliveredprojectModuleCssDefault.default).heading,
                     children: [
-                        "Some Of My Projects",
+                        "Delivered Projects",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: (0, _deliveredprojectModuleCssDefault.default).hr
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 86,
-                            columnNumber: 30
-                        }, this)
+                            lineNumber: 22,
+                            columnNumber: 29
+                        }, this),
+                        " "
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 85,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    id: "crossPlatform",
-                    className: (0, _deliveredprojectModuleCssDefault.default).overallPlatformContainer,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
-                            children: [
-                                "Cross Platform Development Projects",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: (0, _deliveredprojectModuleCssDefault.default).hr
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                    lineNumber: 94,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 92,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            id: "Cross_Platform",
-                            className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
-                            children: crossPlatformProjects.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                children: "Coming Soon"
-                            }, void 0, false, {
+                deliverdProjects.map((project, index)=>{
+                    const listOfImage = project.demoImages[0];
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            backgroundImage: `url(${listOfImage})`
+                        },
+                        className: (0, _deliveredprojectModuleCssDefault.default).projectDiv,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            id: "showOnHover",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: (0, _deliveredprojectModuleCssDefault.default).info,
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
+                                        children: project.Name
+                                    }, void 0, false, {
+                                        fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                                        lineNumber: 37,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: project.description
+                                    }, void 0, false, {
+                                        fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                                        lineNumber: 38,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                lineNumber: 101,
-                                columnNumber: 15
-                            }, this) : crossPlatformProjects.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
-                                    Name: oneProject.Name,
-                                    githubLink: oneProject.githubLink,
-                                    previewLink: oneProject.previewLink,
-                                    image: oneProject.image,
-                                    description: oneProject.description
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                    lineNumber: 104,
-                                    columnNumber: 17
-                                }, this))
+                                lineNumber: 36,
+                                columnNumber: 17
+                            }, this)
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 96,
-                            columnNumber: 11
+                            lineNumber: 35,
+                            columnNumber: 15
                         }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 88,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: (0, _deliveredprojectModuleCssDefault.default).overallPlatformContainer,
-                    id: "fullStackWeb",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
-                            children: [
-                                "Full Stack Web Development Projects",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: (0, _deliveredprojectModuleCssDefault.default).hr
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                    lineNumber: 122,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 120,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            id: "Full_Stack_Platform",
-                            className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
-                            children: fullStackWebDev.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                children: "Coming Soon"
-                            }, void 0, false, {
-                                fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                lineNumber: 130,
-                                columnNumber: 15
-                            }, this) : fullStackWebDev.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
-                                    Name: oneProject.Name,
-                                    githubLink: oneProject.githubLink,
-                                    previewLink: oneProject.previewLink,
-                                    image: oneProject.image,
-                                    description: oneProject.description
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                    lineNumber: 133,
-                                    columnNumber: 17
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 125,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 116,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    id: "androidDev",
-                    className: (0, _deliveredprojectModuleCssDefault.default).overallPlatformContainer,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
-                            children: [
-                                "Android Development Projects",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: (0, _deliveredprojectModuleCssDefault.default).hr
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                    lineNumber: 151,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 149,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            id: "Android_Development",
-                            className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
-                            children: androidDevelopment.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                children: "Coming Soon"
-                            }, void 0, false, {
-                                fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                lineNumber: 159,
-                                columnNumber: 15
-                            }, this) : androidDevelopment.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
-                                    Name: oneProject.Name,
-                                    githubLink: oneProject.githubLink,
-                                    previewLink: oneProject.previewLink,
-                                    image: oneProject.image,
-                                    description: oneProject.description
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                    lineNumber: 162,
-                                    columnNumber: 17
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 154,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 145,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    id: "deliveredProject",
-                    className: (0, _deliveredprojectModuleCssDefault.default).overallPlatformContainer,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: (0, _deliveredprojectModuleCssDefault.default).subHeading,
-                            children: [
-                                "Game Development Projects",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: (0, _deliveredprojectModuleCssDefault.default).hr
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                    lineNumber: 180,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 178,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            id: "Game_Development",
-                            className: (0, _deliveredprojectModuleCssDefault.default).platformContainer,
-                            children: gameDevelopment.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                children: "Coming Soon"
-                            }, void 0, false, {
-                                fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                lineNumber: 188,
-                                columnNumber: 15
-                            }, this) : gameDevelopment.map((oneProject)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
-                                    Name: oneProject.Name,
-                                    githubLink: oneProject.githubLink,
-                                    previewLink: oneProject.previewLink,
-                                    image: oneProject.image,
-                                    description: oneProject.description
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                    lineNumber: 191,
-                                    columnNumber: 17
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 183,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 174,
-                    columnNumber: 9
-                }, this)
+                    }, index, false, {
+                        fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                        lineNumber: 30,
+                        columnNumber: 13
+                    }, this);
+                })
             ]
         }, void 0, true, {
             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-            lineNumber: 84,
+            lineNumber: 20,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -44611,146 +44394,25 @@ $RefreshReg$(_c, "DeliveredProject");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/deliveredproject.module.css":"4MxaS","../../assets/DeliveredProject/matchmaking.png":"9xhEH","../../assets/DeliveredProject/flutterWeatherAPp.jpg":"1v7RX","../../assets/DeliveredProject/calculator app.jpg":"1tbK9","../../assets/DeliveredProject/clubhouseWebsite.png":"jvssm","./components/DeliveredCards":"fLOGe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4MxaS":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/deliveredproject.module.css":"4MxaS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../assets/DeliveredProject/ApsireMe/1.jpg":"flDTw","../../assets/DeliveredProject/ApsireMe/2.jpg":"jpYKe","../../assets/DeliveredProject/ApsireMe/3.jpg":"4UjEw","../../assets/DeliveredProject/ApsireMe/4.jpg":"dzrJR"}],"4MxaS":[function(require,module,exports) {
 module.exports["container"] = `N0LtEq_container`;
 module.exports["heading"] = `N0LtEq_heading`;
 module.exports["hr"] = `N0LtEq_hr`;
-module.exports["overallPlatformContainer"] = `N0LtEq_overallPlatformContainer`;
-module.exports["platformContainer"] = `N0LtEq_platformContainer`;
-module.exports["subHeading"] = `N0LtEq_subHeading`;
+module.exports["projectDiv"] = `N0LtEq_projectDiv`;
 
-},{}],"9xhEH":[function(require,module,exports) {
-module.exports = require("fc6688dc67af0478").getBundleURL("6EXJA") + "matchmaking.12ba2c03.png" + "?" + Date.now();
+},{}],"flDTw":[function(require,module,exports) {
+module.exports = require("d9733393747bc74d").getBundleURL("6EXJA") + "1.0d0cd0e8.jpg" + "?" + Date.now();
 
-},{"fc6688dc67af0478":"lgJ39"}],"1v7RX":[function(require,module,exports) {
-module.exports = require("740ad4d93de43d0c").getBundleURL("6EXJA") + "flutterWeatherAPp.c8526f1a.jpg" + "?" + Date.now();
+},{"d9733393747bc74d":"lgJ39"}],"jpYKe":[function(require,module,exports) {
+module.exports = require("25f1e896ad051fcd").getBundleURL("6EXJA") + "2.c6321b2d.jpg" + "?" + Date.now();
 
-},{"740ad4d93de43d0c":"lgJ39"}],"1tbK9":[function(require,module,exports) {
-module.exports = require("980d21d6597ed9e4").getBundleURL("6EXJA") + "calculator app.2e411fe4.jpg" + "?" + Date.now();
+},{"25f1e896ad051fcd":"lgJ39"}],"4UjEw":[function(require,module,exports) {
+module.exports = require("eba62ad45a1a1df8").getBundleURL("6EXJA") + "3.651437c4.jpg" + "?" + Date.now();
 
-},{"980d21d6597ed9e4":"lgJ39"}],"jvssm":[function(require,module,exports) {
-module.exports = require("366fc03a03cfd8c5").getBundleURL("6EXJA") + "clubhouseWebsite.da47b238.png" + "?" + Date.now();
+},{"eba62ad45a1a1df8":"lgJ39"}],"dzrJR":[function(require,module,exports) {
+module.exports = require("8fb045283d1368b8").getBundleURL("6EXJA") + "4.a8d3a455.jpg" + "?" + Date.now();
 
-},{"366fc03a03cfd8c5":"lgJ39"}],"fLOGe":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4e10 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4e10.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>DeliveredCards);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactBootstrap = require("react-bootstrap");
-var _commingSoonPng = require("../../../assets/DeliveredProject/commingSoon.png");
-var _commingSoonPngDefault = parcelHelpers.interopDefault(_commingSoonPng);
-var _deliveredcardModuleCss = require("../styles/deliveredcard.module.css");
-var _deliveredcardModuleCssDefault = parcelHelpers.interopDefault(_deliveredcardModuleCss);
-function DeliveredCards({ Name, githubLink, previewLink, image, description }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card), {
-            style: {
-                width: "18rem"
-            },
-            className: (0, _deliveredcardModuleCssDefault.default).card,
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Img, {
-                    variant: "top",
-                    style: {
-                        maxHeight: "20rem"
-                    },
-                    className: (0, _deliveredcardModuleCssDefault.default).img,
-                    src: image == "#" ? (0, _commingSoonPngDefault.default) : image
-                }, void 0, false, {
-                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                    lineNumber: 22,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Body, {
-                    className: (0, _deliveredcardModuleCssDefault.default).card_body,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Title, {
-                            children: Name
-                        }, void 0, false, {
-                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                            lineNumber: 29,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
-                            children: description
-                        }, void 0, false, {
-                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                            lineNumber: 30,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            id: "center",
-                            className: (0, _deliveredcardModuleCssDefault.default).center,
-                            children: [
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
-                                    className: (0, _deliveredcardModuleCssDefault.default).button,
-                                    variant: "primary",
-                                    href: githubLink,
-                                    children: githubLink.trim().length > 0 ? "Github" : "Coming Soon"
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                                    lineNumber: 33,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Button), {
-                                    className: (0, _deliveredcardModuleCssDefault.default).button,
-                                    variant: "primary",
-                                    href: previewLink == "#" ? "#" : previewLink,
-                                    children: previewLink.trim().length > 0 ? "Preview" : "Coming Soon"
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                                    lineNumber: 40,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                            lineNumber: 31,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                    lineNumber: 28,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-            lineNumber: 21,
-            columnNumber: 7
-        }, this)
-    }, void 0, false);
-}
-_c = DeliveredCards;
-var _c;
-$RefreshReg$(_c, "DeliveredCards");
-
-  $parcel$ReactRefreshHelpers$4e10.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-bootstrap":"3AD9A","../../../assets/DeliveredProject/commingSoon.png":"2ZOq7","../styles/deliveredcard.module.css":"dg07L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2ZOq7":[function(require,module,exports) {
-module.exports = require("9660ce975abcc629").getBundleURL("6EXJA") + "commingSoon.3ff86e95.png" + "?" + Date.now();
-
-},{"9660ce975abcc629":"lgJ39"}],"dg07L":[function(require,module,exports) {
-module.exports["button"] = `hlG3ma_button`;
-module.exports["card"] = `hlG3ma_card`;
-module.exports["card_body"] = `hlG3ma_card_body`;
-module.exports["center"] = `hlG3ma_center`;
-module.exports["img"] = `hlG3ma_img`;
-
-},{}],"jhDTU":[function(require,module,exports) {
+},{"8fb045283d1368b8":"lgJ39"}],"jhDTU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9751 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

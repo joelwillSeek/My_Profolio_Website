@@ -329,22 +329,6 @@ html {
   display: grid;
 }
 
-.N0LtEq_platformContainer {
-  grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 22rem));
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  display: grid;
-}
-
-.N0LtEq_overallPlatformContainer {
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
 .N0LtEq_heading {
   flex-direction: column;
   justify-content: center;
@@ -358,18 +342,6 @@ html {
 
 .N0LtEq_heading:hover {
   color: var(--bright-orange-color);
-}
-
-.N0LtEq_subHeading {
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-  padding-bottom: 3rem;
-  font-size: x-large;
-  font-weight: bold;
-  display: flex;
 }
 
 .N0LtEq_hr {
@@ -386,55 +358,12 @@ html {
   background-color: var(--bright-orange-color) !important;
 }
 
-@media screen and (width >= 767px) {
-  .N0LtEq_platformContainer {
-    gap: 1rem;
-  }
-
-  .N0LtEq_heading {
-    font-size: 4rem;
-  }
-}
-
-.hlG3ma_card {
-  margin: 1rem 0;
-  transition: border-color .3s ease-in-out;
-  border: 2px solid var(--bright-blue-color) !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.hlG3ma_card_body {
-  flex-direction: column;
-  justify-content: center;
-  display: flex;
-}
-
-.hlG3ma_card:hover {
-  border-color: var(--bright-orange-color) !important;
-}
-
-.hlG3ma_button {
-  color: #000 !important;
-  border: 2px solid var(--bright-blue-color) !important;
-  background: none !important;
-}
-
-.hlG3ma_button:hover {
-  background: var(--bright-orange-color) !important;
-  border-color: var(--bright-orange-color) !important;
-  color: #fff !important;
-}
-
-.hlG3ma_img {
-  object-fit: contain;
-}
-
-.hlG3ma_center {
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
+.N0LtEq_projectDiv {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 40%;
+  height: 100px;
 }
 
 .uV3_Ta_profileContainer {
@@ -724,7 +653,7 @@ html {
   z-index: 20;
   flex-direction: column;
   width: 100%;
-  height: 5rem;
+  height: 4.5rem;
   transition: background-color .3s ease-in-out;
   display: flex;
   justify-content: space-between !important;
@@ -739,7 +668,7 @@ html {
 }
 
 .FYDXsG_mainNav {
-  padding: .5rem 2rem;
+  padding: .5rem 2rem 0;
   display: flex;
   justify-content: space-between !important;
   align-items: center !important;

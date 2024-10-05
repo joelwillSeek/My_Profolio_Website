@@ -7,23 +7,6 @@
   text-align: center;
 }
 
-.platformContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 22rem));
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.overallPlatformContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
 .heading {
   font-size: xx-large;
   font-weight: bolder;
@@ -37,18 +20,6 @@
 
 .heading:hover {
   color: var(--bright-orange-color);
-}
-
-.subHeading {
-  font-size: x-large;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 3rem;
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hr {
@@ -65,12 +36,10 @@
   background-color: var(--bright-orange-color) !important;
 }
 
-@media screen and (min-width: 767px) {
-  .platformContainer {
-    gap: 1rem;
-  }
-
-  .heading {
-    font-size: 4rem;
-  }
+.projectDiv {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  max-width: 40%;
 }
