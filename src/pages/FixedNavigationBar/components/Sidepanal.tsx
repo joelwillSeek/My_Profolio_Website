@@ -56,9 +56,9 @@ export default function Sidepanal() {
             <ListGroup.Item onClick={() => goToSection("deliveredProject")}>
               Projects
             </ListGroup.Item>
-            <ListGroup.Item onClick={() => goToSection("testimonials")}>
+            {/* <ListGroup.Item onClick={() => goToSection("testimonials")}>
               Testimonials
-            </ListGroup.Item>
+            </ListGroup.Item> */}
 
             <ListGroup.Item
               onClick={() => goToSection("frequentlyAskedQuestion")}

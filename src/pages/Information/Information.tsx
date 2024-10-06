@@ -8,16 +8,43 @@ export default function Information() {
         <div id="container" className={informationStyle.container}>
           <ul className={informationStyle.list}>
             <li>
-              <h1>Resources Used:</h1>
+              <h1>Links</h1>
             </li>
             <li>
-              <a href="https://icons8.com/">Icons8</a>
+              <a href="/#Landing_Page">Landing Page</a>
             </li>
             <li>
-              <a href="https://www.pexels.com/">Pexels</a>
+              <a href="/#AboutUs">About Us</a>
             </li>
             <li>
-              <a href="https://react-bootstrap.netlify.app/">Bootstrap</a>
+              <a href="/#offeringServices">Services</a>
+            </li>
+
+            <li>
+              <a href="/#deliveredProject">Projects</a>
+            </li>
+
+            <li>
+              <a href="/#frequentlyAskedQuestion">FAQ</a>
+            </li>
+
+            <li>
+              <a href="/#footer">Information</a>
+            </li>
+          </ul>
+
+          <ul className={informationStyle.list}>
+            <li>
+              <h1>Have A Question?</h1>
+            </li>
+            <li>
+              <a href="#">joelthousend@gmail.com</a>
+            </li>
+            <li>
+              <a href="#">Phone: +251944032128</a>
+            </li>
+            <li>
+              <a href="#">Location: Yeka, Addis Ababa, Ethiopia </a>
             </li>
           </ul>
         </div>

@@ -5,49 +5,48 @@
   text-decoration: none;
 }
 
-.list a:hover,
-.list h1:hover {
-  color: var(--bright-orange-color);
-}
-
 .list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  margin: 0 4rem !important;
   justify-content: center;
   margin: 0;
   padding: 1rem;
+  text-align: start;
+  transition: color ease-in-out 300ms;
+}
+
+.list li a:hover {
+  color: var(--bright-orange-color);
 }
 
 .footer {
   margin: 0;
+  color: white;
   padding: 0;
 }
 
 .container {
-  background-color: var(--bright-blue-color);
+  background-color: black;
   transition: background-color ease-in-out 300ms;
-  height: 100%;
-}
-
-.container:hover {
-  background-color: var(--bright-orange-color);
-}
-
-.container:hover a,
-.container:hover h1 {
-  color: var(--bright-blue-color);
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright {
-  background-color: var(--dark-blue-color);
+  background-color: black;
+  padding: 3rem 0;
   transition: background-color ease-in-out 300ms;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 4vh;
 }
 
 .copyright p {
@@ -56,5 +55,5 @@
 
 .copyright:hover {
   background-color: var(--bright-orange-color);
-  color: var(--bright-blue-color);
+  /* color: var(--bright-blue-color); */
 }

@@ -32,10 +32,6 @@
   transition: background-color ease-in-out 300ms;
 }
 
-.heading:hover .hr {
-  background-color: var(--bright-orange-color) !important;
-}
-
 .projectLists {
   width: 100%;
   overflow-x: scroll;

@@ -55,7 +55,10 @@ export default function FrequentlyAskedQuestion() {
           id="Frequently Asked Question"
           className={frequentlyAskedStyle.container}
         >
-          <Accordion>
+          <Accordion
+            className={frequentlyAskedStyle.containerOfQuestions}
+            style={{ width: "50px" }}
+          >
             {questionsAndAnswer.length <= 0 ? (
               <h1>Coming Soon</h1>
             ) : (
