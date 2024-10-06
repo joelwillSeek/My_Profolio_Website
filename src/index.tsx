@@ -26,13 +26,14 @@ function Index() {
     <>
       {loading && (
         <div className={"loading"}>
-          <BounceLoader
+          {/* <BounceLoader
             color={"#ff9900"}
             loading={true}
             size={150}
             aria-label="Loading Spinner"
             data-testid="loader"
-          ></BounceLoader>
+          ></BounceLoader> */}
+          <h1>Hi There </h1>
         </div>
       )}
 
