@@ -1,4 +1,4 @@
-import React, { StrictMode, useState } from "react";
+import React, { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./global/global.css";
 import HomePage from "./pages/HomePage/HomePage";
@@ -12,27 +12,30 @@ import TopNavigationBar from "./pages/FixedNavigationBar/TopNavigationBar";
 
 function Index() {
   const [loading, setLoading] = useState(true);
-  function loadingComponent() {
-    window.addEventListener("load", () => {
-      setLoading(() => false);
-    });
 
-    return (
-      <div className={"loading"}>
-        <BounceLoader
-          color={"#ff9900"}
-          loading={true}
-          size={150}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        ></BounceLoader>
-      </div>
-    );
-  }
+  useEffect(() => {
+    let handleLoad = () => {
+      setLoading(() => false);
+    };
+    window.addEventListener("load", handleLoad);
+
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
 
   return (
     <>
-      {loading ? loadingComponent() : null}
+      {loading ? (
+        <div className={"loading"}>
+          <BounceLoader
+            color={"#ff9900"}
+            loading={true}
+            size={150}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          ></BounceLoader>
+        </div>
+      ) : null}
+
       <TopNavigationBar />
       <HomePage />
       <AboutMe />
