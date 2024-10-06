@@ -18,7 +18,7 @@ function Index() {
     });
 
     return (
-      <div className={"loading"}>
+      <div>
         <BounceLoader
           color={"#ff9900"}
           loading={true}
