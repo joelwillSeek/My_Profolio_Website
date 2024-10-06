@@ -5,9 +5,9 @@
 }
 
 .list div {
-  background-color: var(--bright-blue-color);
+  background-color: #fff;
   transition: background-color ease-in-out 300ms;
-  color: #fff;
+  color: white;
 }
 
 .list div:hover {
@@ -64,5 +64,15 @@
 
   .menuButton {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .list div {
+    color: black;
+  }
+
+  .list div:hover {
+    color: white;
   }
 }

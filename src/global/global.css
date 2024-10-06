@@ -35,8 +35,7 @@ body {
   padding: 0;
   border: 0;
   color: #fff;
-  max-width: 100vw;
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 html {

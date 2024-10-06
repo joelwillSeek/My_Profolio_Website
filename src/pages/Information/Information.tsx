@@ -4,7 +4,7 @@ import informationStyle from "./styles/information.module.css";
 export default function Information() {
   return (
     <>
-      <div id="footer" className={informationStyle.footer}>
+      <footer id="footer" className={informationStyle.footer}>
         <div id="container" className={informationStyle.container}>
           <ul className={informationStyle.list}>
             <li>
@@ -51,7 +51,7 @@ export default function Information() {
         <div id="copyright" className={informationStyle.copyright}>
           <p>Copyright &copy; Eyoel Seleshi</p>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

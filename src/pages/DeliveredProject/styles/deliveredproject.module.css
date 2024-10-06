@@ -5,12 +5,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 8rem 0;
 }
 
 .heading {
   font-size: xx-large;
   font-weight: bolder;
-  padding-top: 8rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,4 +37,14 @@
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    font-size: large;
+  }
 }

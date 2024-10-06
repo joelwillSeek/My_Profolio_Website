@@ -14,42 +14,46 @@ export default function HomePage() {
         }}
         className={`${landingpageStyle.landingPage}`}
       >
-        <h1 style={{ marginLeft: "1rem" }}>I Love</h1>
-      
-          <CodingLikeText delay={200} />
-      
-        {buttonsToPages()}
+        <div className={landingpageStyle.contentText}>
+          <h1>I Love &nbsp;</h1>
+          <span className={landingpageStyle.loveList}>
+            <CodingLikeText delay={200} />
+          </span>
+
+          {buttonsToPages()}
+        </div>
       </div>
     </>
   );
 }
 function buttonsToPages() {
-  return <ul className={landingpageStyle.landingList}>
-    <li>
-      <Button
-        variant="outlined"
-        className={landingpageStyle.seeMore}
-        href="/#offeringServices"
-      >
-        Service Offered
-      </Button>
-    </li>
-    <li>
-      <Button
-        variant="outlined"
-        className={landingpageStyle.contactMe}
-        href="/#contactInfo"
-      >
-        {" "}
-        Contact Me
-      </Button>
-    </li>
-    <li>
-      <Button variant="outlined" className={landingpageStyle.contactMe}>
-        {" "}
-        {/*href="/#contactInfo">*/} Products
-      </Button>
-    </li>
-  </ul>;
+  return (
+    <ul className={landingpageStyle.landingList}>
+      <li>
+        <Button
+          variant="outlined"
+          className={landingpageStyle.seeMore}
+          href="/#offeringServices"
+        >
+          Service Offered
+        </Button>
+      </li>
+      <li>
+        <Button
+          variant="outlined"
+          className={landingpageStyle.contactMe}
+          href="/#contactInfo"
+        >
+          {" "}
+          Contact Me
+        </Button>
+      </li>
+      <li>
+        <Button variant="outlined" className={landingpageStyle.contactMe}>
+          {" "}
+          {/*href="/#contactInfo">*/} Products
+        </Button>
+      </li>
+    </ul>
+  );
 }
-

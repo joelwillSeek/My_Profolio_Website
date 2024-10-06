@@ -8,6 +8,7 @@ export default function AboutMe() {
       <h1 className={ContainerStyles.about}>
         About Me <div className={ContainerStyles.hr}></div>
       </h1>
+
       <div className={ContainerStyles.container} id="AboutUs">
         <img
           src={myFacePhoto}

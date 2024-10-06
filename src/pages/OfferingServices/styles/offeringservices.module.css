@@ -37,6 +37,8 @@
   text-align: center;
   border: 2px solid black !important;
   transition: border ease-in-out 300ms;
+  align-self: center;
+  justify-self: center;
 }
 
 .cardTitle {
@@ -85,10 +87,40 @@
 .cardLink {
   text-decoration: none;
   display: inline-block;
-
+  background-color: black;
+  color: white;
   transition: color ease-in-out 300ms;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: x-small;
+  padding: 0.7rem;
+  align-self: center;
+  justify-self: center;
+  margin-left: 0;
+}
+
+.cardLink:hover {
+  background-color: var(--bright-orange-color);
 }
 
 .cardLink:hover {
   color: var(--bright-orange-color);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  p {
+    font-size: small;
+  }
 }

@@ -61,3 +61,13 @@
 
 .containerOfQuestions {
 }
+
+@media screen and (max-width: 500px) {
+  .overallContainer {
+    max-width: none !important;
+  }
+
+  .heading {
+    font-size: large;
+  }
+}

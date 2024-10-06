@@ -27334,27 +27334,38 @@ function HomePage() {
                 background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 50, 0.5)), url(${(0, _bgJpgDefault.default)})`
             },
             className: `${(0, _landingpageModuleCssDefault.default).landingPage}`,
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    style: {
-                        marginLeft: "1rem"
-                    },
-                    children: "I Love"
-                }, void 0, false, {
-                    fileName: "src/pages/HomePage/HomePage.tsx",
-                    lineNumber: 17,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _codingLikeTextDefault.default), {
-                    delay: 200
-                }, void 0, false, {
-                    fileName: "src/pages/HomePage/HomePage.tsx",
-                    lineNumber: 19,
-                    columnNumber: 11
-                }, this),
-                buttonsToPages()
-            ]
-        }, void 0, true, {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _landingpageModuleCssDefault.default).contentText,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "I Love \xa0"
+                    }, void 0, false, {
+                        fileName: "src/pages/HomePage/HomePage.tsx",
+                        lineNumber: 18,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: (0, _landingpageModuleCssDefault.default).loveList,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _codingLikeTextDefault.default), {
+                            delay: 200
+                        }, void 0, false, {
+                            fileName: "src/pages/HomePage/HomePage.tsx",
+                            lineNumber: 20,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/pages/HomePage/HomePage.tsx",
+                        lineNumber: 19,
+                        columnNumber: 11
+                    }, this),
+                    buttonsToPages()
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/HomePage/HomePage.tsx",
+                lineNumber: 17,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
             fileName: "src/pages/HomePage/HomePage.tsx",
             lineNumber: 10,
             columnNumber: 7
@@ -27374,13 +27385,13 @@ function buttonsToPages() {
                     children: "Service Offered"
                 }, void 0, false, {
                     fileName: "src/pages/HomePage/HomePage.tsx",
-                    lineNumber: 29,
-                    columnNumber: 7
+                    lineNumber: 33,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/pages/HomePage/HomePage.tsx",
-                lineNumber: 28,
-                columnNumber: 5
+                lineNumber: 32,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
@@ -27393,13 +27404,13 @@ function buttonsToPages() {
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/HomePage/HomePage.tsx",
-                    lineNumber: 38,
-                    columnNumber: 7
+                    lineNumber: 42,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/pages/HomePage/HomePage.tsx",
-                lineNumber: 37,
-                columnNumber: 5
+                lineNumber: 41,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonDefault.default), {
@@ -27411,19 +27422,19 @@ function buttonsToPages() {
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/HomePage/HomePage.tsx",
-                    lineNumber: 48,
-                    columnNumber: 7
+                    lineNumber: 52,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "src/pages/HomePage/HomePage.tsx",
-                lineNumber: 47,
-                columnNumber: 5
+                lineNumber: 51,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/pages/HomePage/HomePage.tsx",
-        lineNumber: 27,
-        columnNumber: 10
+        lineNumber: 31,
+        columnNumber: 5
     }, this);
 }
 var _c;
@@ -27474,8 +27485,10 @@ exports.getOrigin = getOrigin;
 
 },{}],"7OxB3":[function(require,module,exports) {
 module.exports["contactMe"] = `kN-f3W_contactMe`;
+module.exports["contentText"] = `kN-f3W_contentText`;
 module.exports["landingList"] = `kN-f3W_landingList`;
 module.exports["landingPage"] = `kN-f3W_landingPage`;
+module.exports["loveList"] = `kN-f3W_loveList`;
 module.exports["seeMore"] = `kN-f3W_seeMore`;
 
 },{}],"lMsx3":[function(require,module,exports) {
@@ -39779,14 +39792,14 @@ function AboutMe() {
                         alt: "Aren't I Handsome"
                     }, void 0, false, {
                         fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                        lineNumber: 12,
+                        lineNumber: 13,
                         columnNumber: 9
                     }, this),
                     rightSide()
                 ]
             }, void 0, true, {
                 fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                lineNumber: 11,
+                lineNumber: 12,
                 columnNumber: 7
             }, this)
         ]
@@ -39803,14 +39816,14 @@ function rightSide() {
                     children: "Hi There I'M Eyoel"
                 }, void 0, false, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 28,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: "I have been coding since i was 13. I love to create app, games and websites. Going thorough the process of learning to code is so satisfying and Fulfilling"
                 }, void 0, false, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 33,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39819,14 +39832,14 @@ function rightSide() {
                             children: "Date Of Birth:"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 39,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this),
                         " june 20 2001"
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 38,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39835,14 +39848,14 @@ function rightSide() {
                             children: "Address:"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 42,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this),
                         " Yeka, Addis Ababa, Ethiopia"
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39851,14 +39864,14 @@ function rightSide() {
                             children: "Zip Code:"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 46,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this),
                         " 1165"
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 45,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39867,20 +39880,20 @@ function rightSide() {
                             children: "Phone Number: "
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 50,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                             children: "+251944032128"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 51,
+                            lineNumber: 52,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 49,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39892,7 +39905,7 @@ function rightSide() {
                             children: "Contact Info"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 54,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -39903,7 +39916,7 @@ function rightSide() {
                                             children: "Telegram: "
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 63,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -39911,7 +39924,7 @@ function rightSide() {
                                             children: "(Recommended)"
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -39920,13 +39933,13 @@ function rightSide() {
                                             children: "Click Here"
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 64,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -39935,7 +39948,7 @@ function rightSide() {
                                             children: "Github: "
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 73,
+                                            lineNumber: 74,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -39944,13 +39957,13 @@ function rightSide() {
                                             children: "Click Here"
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 75,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -39959,7 +39972,7 @@ function rightSide() {
                                             children: "Email: "
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 80,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -39967,31 +39980,31 @@ function rightSide() {
                                             children: "joelthousend@gmail.com"
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 81,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 78,
+                                    lineNumber: 79,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 60,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 53,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-            lineNumber: 27,
+            lineNumber: 28,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -45606,7 +45619,7 @@ var _informationModuleCss = require("./styles/information.module.css");
 var _informationModuleCssDefault = parcelHelpers.interopDefault(_informationModuleCss);
 function Information() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
             id: "footer",
             className: (0, _informationModuleCssDefault.default).footer,
             children: [

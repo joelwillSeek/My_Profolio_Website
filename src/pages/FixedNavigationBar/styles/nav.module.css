@@ -100,3 +100,14 @@
 .logoBackground:hover {
   color: var(--bright-blue-color);
 }
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    padding-right: 0 !important;
+    margin-right: 0;
+  }
+
+  .mainNav {
+    max-width: 100%;
+  }
+}
