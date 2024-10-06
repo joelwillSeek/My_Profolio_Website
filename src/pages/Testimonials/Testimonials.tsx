@@ -45,8 +45,9 @@ export default function Testimonials() {
           {profileDetails.length <= 0 ? (
             <h1>Coming Soon</h1>
           ) : (
-            profileDetails.map((profile) => (
+            profileDetails.map((profile, index) => (
               <Profile
+                key={index}
                 Name={profile.name}
                 Workplace={profile.workplace}
                 Comment={profile.comment}

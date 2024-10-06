@@ -5,7 +5,6 @@ import HomePage from "./pages/HomePage/HomePage";
 import AboutMe from "./pages/AboutMePage/AboutMe";
 import OfferingServices from "./pages/OfferingServices/OfferingServices";
 import DeliveredProject from "./pages/DeliveredProject/DeliveredProject";
-import Testimonials from "./pages/Testimonials/Testimonials";
 import FrequentlyAskedQuestion from "./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion";
 import Information from "./pages/Information/Information";
 import { BounceLoader } from "react-spinners";
@@ -39,7 +38,7 @@ function Index() {
       <AboutMe />
       <OfferingServices />
       <DeliveredProject />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <FrequentlyAskedQuestion />
       <Information />
     </>

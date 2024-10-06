@@ -61,6 +61,7 @@ export default function FrequentlyAskedQuestion() {
             ) : (
               questionsAndAnswer.map((oneOfIt, index) => (
                 <Accordion.Item
+                  key={index}
                   eventKey={index.toString()}
                   className={frequentlyAskedStyle.questions}
                 >

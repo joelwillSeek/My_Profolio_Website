@@ -2965,8 +2965,6 @@ var _offeringServices = require("./pages/OfferingServices/OfferingServices");
 var _offeringServicesDefault = parcelHelpers.interopDefault(_offeringServices);
 var _deliveredProject = require("./pages/DeliveredProject/DeliveredProject");
 var _deliveredProjectDefault = parcelHelpers.interopDefault(_deliveredProject);
-var _testimonials = require("./pages/Testimonials/Testimonials");
-var _testimonialsDefault = parcelHelpers.interopDefault(_testimonials);
 var _frequentlyAskedQuestion = require("./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion");
 var _frequentlyAskedQuestionDefault = parcelHelpers.interopDefault(_frequentlyAskedQuestion);
 var _information = require("./pages/Information/Information");
@@ -2992,12 +2990,12 @@ function Index() {
                 "data-testid": "loader"
             }, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 23,
+                lineNumber: 22,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "src/index.tsx",
-            lineNumber: 22,
+            lineNumber: 21,
             columnNumber: 7
         }, this);
     }
@@ -3006,42 +3004,37 @@ function Index() {
             loading ? loadingComponent() : null,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _topNavigationBarDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 37,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homePageDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 38,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutMeDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 39,
+                lineNumber: 38,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offeringServicesDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 40,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredProjectDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 41,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _testimonialsDefault.default), {}, void 0, false, {
-                fileName: "src/index.tsx",
-                lineNumber: 42,
+                lineNumber: 40,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frequentlyAskedQuestionDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 43,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _informationDefault.default), {}, void 0, false, {
                 fileName: "src/index.tsx",
-                lineNumber: 44,
+                lineNumber: 43,
                 columnNumber: 7
             }, this)
         ]
@@ -3053,7 +3046,7 @@ const root = document.getElementById("root");
 if (root) (0, _client.createRoot)(root).render(//<StrictMode>
 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Index, {}, void 0, false, {
     fileName: "src/index.tsx",
-    lineNumber: 54,
+    lineNumber: 53,
     columnNumber: 5
 }, undefined));
 else {
@@ -3069,7 +3062,7 @@ $RefreshReg$(_c, "Index");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./global/global.css":"doKRF","./pages/HomePage/HomePage":"8lu1h","./pages/AboutMePage/AboutMe":"b5ZjB","./pages/OfferingServices/OfferingServices":"2NTxc","./pages/DeliveredProject/DeliveredProject":"jgkI7","./pages/Testimonials/Testimonials":"jhDTU","./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion":"jrWOl","./pages/Information/Information":"6G1wt","react-spinners":"Q9MKS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./pages/FixedNavigationBar/TopNavigationBar":"c3vq4"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./global/global.css":"doKRF","./pages/HomePage/HomePage":"8lu1h","./pages/AboutMePage/AboutMe":"b5ZjB","./pages/OfferingServices/OfferingServices":"2NTxc","./pages/DeliveredProject/DeliveredProject":"jgkI7","./pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion":"jrWOl","./pages/Information/Information":"6G1wt","react-spinners":"Q9MKS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./pages/FixedNavigationBar/TopNavigationBar":"c3vq4"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -39779,6 +39772,9 @@ function AboutMe() {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         src: (0, _myFaceJpgDefault.default),
+                        style: {
+                            borderRadius: "50%"
+                        },
                         className: (0, _containerModuleCssDefault.default).myFace,
                         alt: "Aren't I Handsome"
                     }, void 0, false, {
@@ -39807,14 +39803,14 @@ function rightSide() {
                     children: "Hi There I'M Eyoel"
                 }, void 0, false, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: "I have been coding since i was 13. I love to create app, games and websites. Going thorough the process of learning to code is so satisfying and Fulfilling"
                 }, void 0, false, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 32,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39823,14 +39819,14 @@ function rightSide() {
                             children: "Date Of Birth:"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 38,
+                            lineNumber: 39,
                             columnNumber: 11
                         }, this),
                         " june 20 2001"
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 37,
+                    lineNumber: 38,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39839,14 +39835,14 @@ function rightSide() {
                             children: "Address:"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 41,
+                            lineNumber: 42,
                             columnNumber: 11
                         }, this),
                         " Yeka, Addis Ababa, Ethiopia"
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 40,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39855,14 +39851,14 @@ function rightSide() {
                             children: "Zip Code:"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 45,
+                            lineNumber: 46,
                             columnNumber: 11
                         }, this),
                         " 1165"
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 44,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39871,20 +39867,20 @@ function rightSide() {
                             children: "Phone Number: "
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 49,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                             children: "+251944032128"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 50,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 48,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39896,7 +39892,7 @@ function rightSide() {
                             children: "Contact Info"
                         }, void 0, false, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 53,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -39907,7 +39903,7 @@ function rightSide() {
                                             children: "Telegram: "
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 62,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -39915,7 +39911,7 @@ function rightSide() {
                                             children: "(Recommended)"
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 63,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -39924,13 +39920,13 @@ function rightSide() {
                                             children: "Click Here"
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 61,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -39939,7 +39935,7 @@ function rightSide() {
                                             children: "Github: "
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 73,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -39948,13 +39944,13 @@ function rightSide() {
                                             children: "Click Here"
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 73,
+                                            lineNumber: 74,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 72,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -39963,7 +39959,7 @@ function rightSide() {
                                             children: "Email: "
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 78,
+                                            lineNumber: 79,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -39971,31 +39967,31 @@ function rightSide() {
                                             children: "joelthousend@gmail.com"
                                         }, void 0, false, {
                                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                            lineNumber: 79,
+                                            lineNumber: 80,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                                    lineNumber: 77,
+                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                            lineNumber: 59,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/AboutMePage/AboutMe.tsx",
-                    lineNumber: 52,
+                    lineNumber: 53,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/pages/AboutMePage/AboutMe.tsx",
-            lineNumber: 26,
+            lineNumber: 27,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -42304,7 +42300,976 @@ const CardTitle = /*#__PURE__*/ _react.forwardRef(({ className, bsPrefix, as: Co
 CardTitle.displayName = "CardTitle";
 exports.default = CardTitle;
 
-},{"react":"21dqq","classnames":"jocGM","./ThemeProvider":"dVixI","./divWithClassName":"eDg7t","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1wmVl":[function(require,module,exports) {
+},{"react":"21dqq","classnames":"jocGM","./ThemeProvider":"dVixI","./divWithClassName":"eDg7t","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bsGhm":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _useEventCallback = require("@restart/hooks/useEventCallback");
+var _useEventCallbackDefault = parcelHelpers.interopDefault(_useEventCallback);
+var _useUpdateEffect = require("@restart/hooks/useUpdateEffect");
+var _useUpdateEffectDefault = parcelHelpers.interopDefault(_useUpdateEffect);
+var _useCommittedRef = require("@restart/hooks/useCommittedRef");
+var _useCommittedRefDefault = parcelHelpers.interopDefault(_useCommittedRef);
+var _useTimeout = require("@restart/hooks/useTimeout");
+var _useTimeoutDefault = parcelHelpers.interopDefault(_useTimeout);
+var _anchor = require("@restart/ui/Anchor");
+var _anchorDefault = parcelHelpers.interopDefault(_anchor);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _react = require("react");
+var _uncontrollable = require("uncontrollable");
+var _carouselCaption = require("./CarouselCaption");
+var _carouselCaptionDefault = parcelHelpers.interopDefault(_carouselCaption);
+var _carouselItem = require("./CarouselItem");
+var _carouselItemDefault = parcelHelpers.interopDefault(_carouselItem);
+var _elementChildren = require("./ElementChildren");
+var _themeProvider = require("./ThemeProvider");
+var _transitionEndListener = require("./transitionEndListener");
+var _transitionEndListenerDefault = parcelHelpers.interopDefault(_transitionEndListener);
+var _triggerBrowserReflow = require("./triggerBrowserReflow");
+var _triggerBrowserReflowDefault = parcelHelpers.interopDefault(_triggerBrowserReflow);
+var _transitionWrapper = require("./TransitionWrapper");
+var _transitionWrapperDefault = parcelHelpers.interopDefault(_transitionWrapper);
+var _jsxRuntime = require("react/jsx-runtime");
+"use client";
+const SWIPE_THRESHOLD = 40;
+function isVisible(element) {
+    if (!element || !element.style || !element.parentNode || !element.parentNode.style) return false;
+    const elementStyle = getComputedStyle(element);
+    return elementStyle.display !== "none" && elementStyle.visibility !== "hidden" && getComputedStyle(element.parentNode).display !== "none";
+}
+const Carousel = /*#__PURE__*/ _react.forwardRef(({ defaultActiveIndex = 0, ...uncontrolledProps }, ref)=>{
+    const { // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
+    as: Component = "div", bsPrefix, slide = true, fade = false, controls = true, indicators = true, indicatorLabels = [], activeIndex, onSelect, onSlide, onSlid, interval = 5000, keyboard = true, onKeyDown, pause = "hover", onMouseOver, onMouseOut, wrap = true, touch = true, onTouchStart, onTouchMove, onTouchEnd, prevIcon = /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
+        "aria-hidden": "true",
+        className: "carousel-control-prev-icon"
+    }), prevLabel = "Previous", nextIcon = /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
+        "aria-hidden": "true",
+        className: "carousel-control-next-icon"
+    }), nextLabel = "Next", variant, className, children, ...props } = (0, _uncontrollable.useUncontrolled)({
+        defaultActiveIndex,
+        ...uncontrolledProps
+    }, {
+        activeIndex: "onSelect"
+    });
+    const prefix = (0, _themeProvider.useBootstrapPrefix)(bsPrefix, "carousel");
+    const isRTL = (0, _themeProvider.useIsRTL)();
+    const nextDirectionRef = (0, _react.useRef)(null);
+    const [direction, setDirection] = (0, _react.useState)("next");
+    const [paused, setPaused] = (0, _react.useState)(false);
+    const [isSliding, setIsSliding] = (0, _react.useState)(false);
+    const [renderedActiveIndex, setRenderedActiveIndex] = (0, _react.useState)(activeIndex || 0);
+    (0, _react.useEffect)(()=>{
+        if (!isSliding && activeIndex !== renderedActiveIndex) {
+            if (nextDirectionRef.current) setDirection(nextDirectionRef.current);
+            else setDirection((activeIndex || 0) > renderedActiveIndex ? "next" : "prev");
+            if (slide) setIsSliding(true);
+            setRenderedActiveIndex(activeIndex || 0);
+        }
+    }, [
+        activeIndex,
+        isSliding,
+        renderedActiveIndex,
+        slide
+    ]);
+    (0, _react.useEffect)(()=>{
+        if (nextDirectionRef.current) nextDirectionRef.current = null;
+    });
+    let numChildren = 0;
+    let activeChildInterval;
+    // Iterate to grab all of the children's interval values
+    // (and count them, too)
+    (0, _elementChildren.forEach)(children, (child, index)=>{
+        ++numChildren;
+        if (index === activeIndex) activeChildInterval = child.props.interval;
+    });
+    const activeChildIntervalRef = (0, _useCommittedRefDefault.default)(activeChildInterval);
+    const prev = (0, _react.useCallback)((event)=>{
+        if (isSliding) return;
+        let nextActiveIndex = renderedActiveIndex - 1;
+        if (nextActiveIndex < 0) {
+            if (!wrap) return;
+            nextActiveIndex = numChildren - 1;
+        }
+        nextDirectionRef.current = "prev";
+        onSelect == null || onSelect(nextActiveIndex, event);
+    }, [
+        isSliding,
+        renderedActiveIndex,
+        onSelect,
+        wrap,
+        numChildren
+    ]);
+    // This is used in the setInterval, so it should not invalidate.
+    const next = (0, _useEventCallbackDefault.default)((event)=>{
+        if (isSliding) return;
+        let nextActiveIndex = renderedActiveIndex + 1;
+        if (nextActiveIndex >= numChildren) {
+            if (!wrap) return;
+            nextActiveIndex = 0;
+        }
+        nextDirectionRef.current = "next";
+        onSelect == null || onSelect(nextActiveIndex, event);
+    });
+    const elementRef = (0, _react.useRef)();
+    (0, _react.useImperativeHandle)(ref, ()=>({
+            element: elementRef.current,
+            prev,
+            next
+        }));
+    // This is used in the setInterval, so it should not invalidate.
+    const nextWhenVisible = (0, _useEventCallbackDefault.default)(()=>{
+        if (!document.hidden && isVisible(elementRef.current)) {
+            if (isRTL) prev();
+            else next();
+        }
+    });
+    const slideDirection = direction === "next" ? "start" : "end";
+    (0, _useUpdateEffectDefault.default)(()=>{
+        if (slide) // These callbacks will be handled by the <Transition> callbacks.
+        return;
+        onSlide == null || onSlide(renderedActiveIndex, slideDirection);
+        onSlid == null || onSlid(renderedActiveIndex, slideDirection);
+    }, [
+        renderedActiveIndex
+    ]);
+    const orderClassName = `${prefix}-item-${direction}`;
+    const directionalClassName = `${prefix}-item-${slideDirection}`;
+    const handleEnter = (0, _react.useCallback)((node)=>{
+        (0, _triggerBrowserReflowDefault.default)(node);
+        onSlide == null || onSlide(renderedActiveIndex, slideDirection);
+    }, [
+        onSlide,
+        renderedActiveIndex,
+        slideDirection
+    ]);
+    const handleEntered = (0, _react.useCallback)(()=>{
+        setIsSliding(false);
+        onSlid == null || onSlid(renderedActiveIndex, slideDirection);
+    }, [
+        onSlid,
+        renderedActiveIndex,
+        slideDirection
+    ]);
+    const handleKeyDown = (0, _react.useCallback)((event)=>{
+        if (keyboard && !/input|textarea/i.test(event.target.tagName)) switch(event.key){
+            case "ArrowLeft":
+                event.preventDefault();
+                if (isRTL) next(event);
+                else prev(event);
+                return;
+            case "ArrowRight":
+                event.preventDefault();
+                if (isRTL) prev(event);
+                else next(event);
+                return;
+            default:
+        }
+        onKeyDown == null || onKeyDown(event);
+    }, [
+        keyboard,
+        onKeyDown,
+        prev,
+        next,
+        isRTL
+    ]);
+    const handleMouseOver = (0, _react.useCallback)((event)=>{
+        if (pause === "hover") setPaused(true);
+        onMouseOver == null || onMouseOver(event);
+    }, [
+        pause,
+        onMouseOver
+    ]);
+    const handleMouseOut = (0, _react.useCallback)((event)=>{
+        setPaused(false);
+        onMouseOut == null || onMouseOut(event);
+    }, [
+        onMouseOut
+    ]);
+    const touchStartXRef = (0, _react.useRef)(0);
+    const touchDeltaXRef = (0, _react.useRef)(0);
+    const touchUnpauseTimeout = (0, _useTimeoutDefault.default)();
+    const handleTouchStart = (0, _react.useCallback)((event)=>{
+        touchStartXRef.current = event.touches[0].clientX;
+        touchDeltaXRef.current = 0;
+        if (pause === "hover") setPaused(true);
+        onTouchStart == null || onTouchStart(event);
+    }, [
+        pause,
+        onTouchStart
+    ]);
+    const handleTouchMove = (0, _react.useCallback)((event)=>{
+        if (event.touches && event.touches.length > 1) touchDeltaXRef.current = 0;
+        else touchDeltaXRef.current = event.touches[0].clientX - touchStartXRef.current;
+        onTouchMove == null || onTouchMove(event);
+    }, [
+        onTouchMove
+    ]);
+    const handleTouchEnd = (0, _react.useCallback)((event)=>{
+        if (touch) {
+            const touchDeltaX = touchDeltaXRef.current;
+            if (Math.abs(touchDeltaX) > SWIPE_THRESHOLD) {
+                if (touchDeltaX > 0) prev(event);
+                else next(event);
+            }
+        }
+        if (pause === "hover") touchUnpauseTimeout.set(()=>{
+            setPaused(false);
+        }, interval || undefined);
+        onTouchEnd == null || onTouchEnd(event);
+    }, [
+        touch,
+        pause,
+        prev,
+        next,
+        touchUnpauseTimeout,
+        interval,
+        onTouchEnd
+    ]);
+    const shouldPlay = interval != null && !paused && !isSliding;
+    const intervalHandleRef = (0, _react.useRef)();
+    (0, _react.useEffect)(()=>{
+        var _ref, _activeChildIntervalR;
+        if (!shouldPlay) return undefined;
+        const nextFunc = isRTL ? prev : next;
+        intervalHandleRef.current = window.setInterval(document.visibilityState ? nextWhenVisible : nextFunc, (_ref = (_activeChildIntervalR = activeChildIntervalRef.current) != null ? _activeChildIntervalR : interval) != null ? _ref : undefined);
+        return ()=>{
+            if (intervalHandleRef.current !== null) clearInterval(intervalHandleRef.current);
+        };
+    }, [
+        shouldPlay,
+        prev,
+        next,
+        activeChildIntervalRef,
+        interval,
+        nextWhenVisible,
+        isRTL
+    ]);
+    const indicatorOnClicks = (0, _react.useMemo)(()=>indicators && Array.from({
+            length: numChildren
+        }, (_, index)=>(event)=>{
+                onSelect == null || onSelect(index, event);
+            }), [
+        indicators,
+        numChildren,
+        onSelect
+    ]);
+    return /*#__PURE__*/ (0, _jsxRuntime.jsxs)(Component, {
+        ref: elementRef,
+        ...props,
+        onKeyDown: handleKeyDown,
+        onMouseOver: handleMouseOver,
+        onMouseOut: handleMouseOut,
+        onTouchStart: handleTouchStart,
+        onTouchMove: handleTouchMove,
+        onTouchEnd: handleTouchEnd,
+        className: (0, _classnamesDefault.default)(className, prefix, slide && "slide", fade && `${prefix}-fade`, variant && `${prefix}-${variant}`),
+        children: [
+            indicators && /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                className: `${prefix}-indicators`,
+                children: (0, _elementChildren.map)(children, (_, index)=>/*#__PURE__*/ (0, _jsxRuntime.jsx)("button", {
+                        type: "button",
+                        "data-bs-target": "" // Bootstrap requires this in their css.
+                        ,
+                        "aria-label": indicatorLabels != null && indicatorLabels.length ? indicatorLabels[index] : `Slide ${index + 1}`,
+                        className: index === renderedActiveIndex ? "active" : undefined,
+                        onClick: indicatorOnClicks ? indicatorOnClicks[index] : undefined,
+                        "aria-current": index === renderedActiveIndex
+                    }, index))
+            }),
+            /*#__PURE__*/ (0, _jsxRuntime.jsx)("div", {
+                className: `${prefix}-inner`,
+                children: (0, _elementChildren.map)(children, (child, index)=>{
+                    const isActive = index === renderedActiveIndex;
+                    return slide ? /*#__PURE__*/ (0, _jsxRuntime.jsx)((0, _transitionWrapperDefault.default), {
+                        in: isActive,
+                        onEnter: isActive ? handleEnter : undefined,
+                        onEntered: isActive ? handleEntered : undefined,
+                        addEndListener: (0, _transitionEndListenerDefault.default),
+                        children: (status, innerProps)=>/*#__PURE__*/ _react.cloneElement(child, {
+                                ...innerProps,
+                                className: (0, _classnamesDefault.default)(child.props.className, isActive && status !== "entered" && orderClassName, (status === "entered" || status === "exiting") && "active", (status === "entering" || status === "exiting") && directionalClassName)
+                            })
+                    }) : /*#__PURE__*/ _react.cloneElement(child, {
+                        className: (0, _classnamesDefault.default)(child.props.className, isActive && "active")
+                    });
+                })
+            }),
+            controls && /*#__PURE__*/ (0, _jsxRuntime.jsxs)((0, _jsxRuntime.Fragment), {
+                children: [
+                    (wrap || activeIndex !== 0) && /*#__PURE__*/ (0, _jsxRuntime.jsxs)((0, _anchorDefault.default), {
+                        className: `${prefix}-control-prev`,
+                        onClick: prev,
+                        children: [
+                            prevIcon,
+                            prevLabel && /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
+                                className: "visually-hidden",
+                                children: prevLabel
+                            })
+                        ]
+                    }),
+                    (wrap || activeIndex !== numChildren - 1) && /*#__PURE__*/ (0, _jsxRuntime.jsxs)((0, _anchorDefault.default), {
+                        className: `${prefix}-control-next`,
+                        onClick: next,
+                        children: [
+                            nextIcon,
+                            nextLabel && /*#__PURE__*/ (0, _jsxRuntime.jsx)("span", {
+                                className: "visually-hidden",
+                                children: nextLabel
+                            })
+                        ]
+                    })
+                ]
+            })
+        ]
+    });
+});
+Carousel.displayName = "Carousel";
+exports.default = Object.assign(Carousel, {
+    Caption: (0, _carouselCaptionDefault.default),
+    Item: (0, _carouselItemDefault.default)
+});
+
+},{"@restart/hooks/useEventCallback":"7ONdq","@restart/hooks/useUpdateEffect":"bHP1w","@restart/hooks/useCommittedRef":"g5BYG","@restart/hooks/useTimeout":"63wsP","@restart/ui/Anchor":"cQOWi","classnames":"jocGM","react":"21dqq","uncontrollable":"b3yWY","./CarouselCaption":"dH56B","./CarouselItem":"9A3DI","./ElementChildren":"fdyAp","./ThemeProvider":"dVixI","./transitionEndListener":"68oh7","./triggerBrowserReflow":"eWjs5","./TransitionWrapper":"jKUqZ","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7ONdq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useEventCallback);
+var _react = require("react");
+var _useCommittedRef = require("./useCommittedRef");
+var _useCommittedRefDefault = parcelHelpers.interopDefault(_useCommittedRef);
+function useEventCallback(fn) {
+    const ref = (0, _useCommittedRefDefault.default)(fn);
+    return (0, _react.useCallback)(function(...args) {
+        return ref.current && ref.current(...args);
+    }, [
+        ref
+    ]);
+}
+
+},{"react":"21dqq","./useCommittedRef":"g5BYG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g5BYG":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+/**
+ * Creates a `Ref` whose value is updated in an effect, ensuring the most recent
+ * value is the one rendered with. Generally only required for Concurrent mode usage
+ * where previous work in `render()` may be discarded before being used.
+ *
+ * This is safe to access in an event handler.
+ *
+ * @param value The `Ref` value
+ */ function useCommittedRef(value) {
+    const ref = (0, _react.useRef)(value);
+    (0, _react.useEffect)(()=>{
+        ref.current = value;
+    }, [
+        value
+    ]);
+    return ref;
+}
+exports.default = useCommittedRef;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bHP1w":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+/**
+ * Runs an effect only when the dependencies have changed, skipping the
+ * initial "on mount" run. Caution, if the dependency list never changes,
+ * the effect is **never run**
+ *
+ * ```ts
+ *  const ref = useRef<HTMLInput>(null);
+ *
+ *  // focuses an element only if the focus changes, and not on mount
+ *  useUpdateEffect(() => {
+ *    const element = ref.current?.children[focusedIdx] as HTMLElement
+ *
+ *    element?.focus()
+ *
+ *  }, [focusedIndex])
+ * ```
+ * @param effect An effect to run on mount
+ *
+ * @category effects
+ */ function useUpdateEffect(fn, deps) {
+    const isFirst = (0, _react.useRef)(true);
+    (0, _react.useEffect)(()=>{
+        if (isFirst.current) {
+            isFirst.current = false;
+            return;
+        }
+        return fn();
+    }, deps);
+}
+exports.default = useUpdateEffect;
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"63wsP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useTimeout);
+var _react = require("react");
+var _useMounted = require("./useMounted");
+var _useMountedDefault = parcelHelpers.interopDefault(_useMounted);
+var _useWillUnmount = require("./useWillUnmount");
+var _useWillUnmountDefault = parcelHelpers.interopDefault(_useWillUnmount);
+/*
+ * Browsers including Internet Explorer, Chrome, Safari, and Firefox store the
+ * delay as a 32-bit signed integer internally. This causes an integer overflow
+ * when using delays larger than 2,147,483,647 ms (about 24.8 days),
+ * resulting in the timeout being executed immediately.
+ *
+ * via: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout
+ */ const MAX_DELAY_MS = 2 ** 31 - 1;
+function setChainedTimeout(handleRef, fn, timeoutAtMs) {
+    const delayMs = timeoutAtMs - Date.now();
+    handleRef.current = delayMs <= MAX_DELAY_MS ? setTimeout(fn, delayMs) : setTimeout(()=>setChainedTimeout(handleRef, fn, timeoutAtMs), MAX_DELAY_MS);
+}
+function useTimeout() {
+    const isMounted = (0, _useMountedDefault.default)();
+    // types are confused between node and web here IDK
+    const handleRef = (0, _react.useRef)();
+    (0, _useWillUnmountDefault.default)(()=>clearTimeout(handleRef.current));
+    return (0, _react.useMemo)(()=>{
+        const clear = ()=>clearTimeout(handleRef.current);
+        function set(fn, delayMs = 0) {
+            if (!isMounted()) return;
+            clear();
+            if (delayMs <= MAX_DELAY_MS) // For simplicity, if the timeout is short, just set a normal timeout.
+            handleRef.current = setTimeout(fn, delayMs);
+            else setChainedTimeout(handleRef, fn, Date.now() + delayMs);
+        }
+        return {
+            set,
+            clear,
+            handleRef
+        };
+    }, []);
+}
+
+},{"react":"21dqq","./useMounted":"iK6A1","./useWillUnmount":"2OOXI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iK6A1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useMounted);
+var _react = require("react");
+function useMounted() {
+    const mounted = (0, _react.useRef)(true);
+    const isMounted = (0, _react.useRef)(()=>mounted.current);
+    (0, _react.useEffect)(()=>{
+        mounted.current = true;
+        return ()=>{
+            mounted.current = false;
+        };
+    }, []);
+    return isMounted.current;
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2OOXI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useWillUnmount);
+var _useUpdatedRef = require("./useUpdatedRef");
+var _useUpdatedRefDefault = parcelHelpers.interopDefault(_useUpdatedRef);
+var _react = require("react");
+function useWillUnmount(fn) {
+    const onUnmount = (0, _useUpdatedRefDefault.default)(fn);
+    (0, _react.useEffect)(()=>()=>onUnmount.current(), []);
+}
+
+},{"./useUpdatedRef":"cfaLu","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cfaLu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useUpdatedRef);
+var _react = require("react");
+function useUpdatedRef(value) {
+    const valueRef = (0, _react.useRef)(value);
+    valueRef.current = value;
+    return valueRef;
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cQOWi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "isTrivialHref", ()=>isTrivialHref);
+/* eslint-disable jsx-a11y/no-static-element-interactions */ /* eslint-disable jsx-a11y/anchor-has-content */ var _react = require("react");
+var _hooks = require("@restart/hooks");
+var _button = require("./Button");
+var _jsxRuntime = require("react/jsx-runtime");
+const _excluded = [
+    "onKeyDown"
+];
+function _objectWithoutPropertiesLoose(r, e) {
+    if (null == r) return {};
+    var t = {};
+    for(var n in r)if (({}).hasOwnProperty.call(r, n)) {
+        if (e.indexOf(n) >= 0) continue;
+        t[n] = r[n];
+    }
+    return t;
+}
+function isTrivialHref(href) {
+    return !href || href.trim() === "#";
+}
+/**
+ * An generic `<a>` component that covers a few A11y cases, ensuring that
+ * cases where the `href` is missing or trivial like "#" are treated like buttons.
+ */ const Anchor = /*#__PURE__*/ _react.forwardRef((_ref, ref)=>{
+    let { onKeyDown } = _ref, props = _objectWithoutPropertiesLoose(_ref, _excluded);
+    const [buttonProps] = (0, _button.useButtonProps)(Object.assign({
+        tagName: "a"
+    }, props));
+    const handleKeyDown = (0, _hooks.useEventCallback)((e)=>{
+        buttonProps.onKeyDown(e);
+        onKeyDown == null || onKeyDown(e);
+    });
+    if (isTrivialHref(props.href) || props.role === "button") return /*#__PURE__*/ (0, _jsxRuntime.jsx)("a", Object.assign({
+        ref: ref
+    }, props, buttonProps, {
+        onKeyDown: handleKeyDown
+    }));
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)("a", Object.assign({
+        ref: ref
+    }, props, {
+        onKeyDown: onKeyDown
+    }));
+});
+Anchor.displayName = "Anchor";
+exports.default = Anchor;
+
+},{"react":"21dqq","@restart/hooks":"5ErkJ","./Button":"8YUbR","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5ErkJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "useCallbackRef", ()=>(0, _useCallbackRefDefault.default));
+parcelHelpers.export(exports, "useCommittedRef", ()=>(0, _useCommittedRefDefault.default));
+parcelHelpers.export(exports, "useEventCallback", ()=>(0, _useEventCallbackDefault.default));
+parcelHelpers.export(exports, "useEventListener", ()=>(0, _useEventListenerDefault.default));
+parcelHelpers.export(exports, "useGlobalListener", ()=>(0, _useGlobalListenerDefault.default));
+parcelHelpers.export(exports, "useInterval", ()=>(0, _useIntervalDefault.default));
+parcelHelpers.export(exports, "useRafInterval", ()=>(0, _useRafIntervalDefault.default));
+parcelHelpers.export(exports, "useMergeState", ()=>(0, _useMergeStateDefault.default));
+parcelHelpers.export(exports, "useMergeStateFromProps", ()=>(0, _useMergeStateFromPropsDefault.default));
+parcelHelpers.export(exports, "useMounted", ()=>(0, _useMountedDefault.default));
+parcelHelpers.export(exports, "usePrevious", ()=>(0, _usePreviousDefault.default));
+parcelHelpers.export(exports, "useImage", ()=>(0, _useImageDefault.default));
+parcelHelpers.export(exports, "useResizeObserver", ()=>(0, _useResizeObserverDefault.default));
+var _useCallbackRef = require("./useCallbackRef");
+var _useCallbackRefDefault = parcelHelpers.interopDefault(_useCallbackRef);
+var _useCommittedRef = require("./useCommittedRef");
+var _useCommittedRefDefault = parcelHelpers.interopDefault(_useCommittedRef);
+var _useEventCallback = require("./useEventCallback");
+var _useEventCallbackDefault = parcelHelpers.interopDefault(_useEventCallback);
+var _useEventListener = require("./useEventListener");
+var _useEventListenerDefault = parcelHelpers.interopDefault(_useEventListener);
+var _useGlobalListener = require("./useGlobalListener");
+var _useGlobalListenerDefault = parcelHelpers.interopDefault(_useGlobalListener);
+var _useInterval = require("./useInterval");
+var _useIntervalDefault = parcelHelpers.interopDefault(_useInterval);
+var _useRafInterval = require("./useRafInterval");
+var _useRafIntervalDefault = parcelHelpers.interopDefault(_useRafInterval);
+var _useMergeState = require("./useMergeState");
+var _useMergeStateDefault = parcelHelpers.interopDefault(_useMergeState);
+var _useMergeStateFromProps = require("./useMergeStateFromProps");
+var _useMergeStateFromPropsDefault = parcelHelpers.interopDefault(_useMergeStateFromProps);
+var _useMounted = require("./useMounted");
+var _useMountedDefault = parcelHelpers.interopDefault(_useMounted);
+var _usePrevious = require("./usePrevious");
+var _usePreviousDefault = parcelHelpers.interopDefault(_usePrevious);
+var _useImage = require("./useImage");
+var _useImageDefault = parcelHelpers.interopDefault(_useImage);
+var _useResizeObserver = require("./useResizeObserver");
+var _useResizeObserverDefault = parcelHelpers.interopDefault(_useResizeObserver);
+
+},{"./useCallbackRef":"82p6M","./useCommittedRef":"g5BYG","./useEventCallback":"7ONdq","./useEventListener":"dBDI3","./useGlobalListener":"iey73","./useInterval":"hnmo4","./useRafInterval":"4qbLw","./useMergeState":"7E8IK","./useMergeStateFromProps":"6f6Me","./useMounted":"iK6A1","./usePrevious":"gDCGm","./useImage":"iuAlv","./useResizeObserver":"edwGv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"82p6M":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useCallbackRef);
+var _react = require("react");
+function useCallbackRef() {
+    return (0, _react.useState)(null);
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dBDI3":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useEventListener);
+var _react = require("react");
+var _useEventCallback = require("./useEventCallback");
+var _useEventCallbackDefault = parcelHelpers.interopDefault(_useEventCallback);
+function useEventListener(eventTarget, event, listener, capture = false) {
+    const handler = (0, _useEventCallbackDefault.default)(listener);
+    (0, _react.useEffect)(()=>{
+        const target = typeof eventTarget === "function" ? eventTarget() : eventTarget;
+        target.addEventListener(event, handler, capture);
+        return ()=>target.removeEventListener(event, handler, capture);
+    }, [
+        eventTarget
+    ]);
+}
+
+},{"react":"21dqq","./useEventCallback":"7ONdq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iey73":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useGlobalListener);
+var _useEventListener = require("./useEventListener");
+var _useEventListenerDefault = parcelHelpers.interopDefault(_useEventListener);
+var _react = require("react");
+function useGlobalListener(event, handler, capture = false) {
+    const documentTarget = (0, _react.useCallback)(()=>document, []);
+    return (0, _useEventListenerDefault.default)(documentTarget, event, handler, capture);
+}
+
+},{"./useEventListener":"dBDI3","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hnmo4":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _useCommittedRef = require("./useCommittedRef");
+var _useCommittedRefDefault = parcelHelpers.interopDefault(_useCommittedRef);
+/**
+ * Creates a `setInterval` that is properly cleaned up when a component unmounted
+ *
+ * ```tsx
+ *  function Timer() {
+ *    const [timer, setTimer] = useState(0)
+ *    useInterval(() => setTimer(i => i + 1), 1000)
+ *
+ *    return <span>{timer} seconds past</span>
+ *  }
+ * ```
+ *
+ * @param fn an function run on each interval
+ * @param ms The milliseconds duration of the interval
+ */ /**
+ * Creates a pausable `setInterval` that is properly cleaned up when a component unmounted
+ *
+ * ```tsx
+ *  const [paused, setPaused] = useState(false)
+ *  const [timer, setTimer] = useState(0)
+ *
+ *  useInterval(() => setTimer(i => i + 1), 1000, paused)
+ *
+ *  return (
+ *    <span>
+ *      {timer} seconds past
+ *
+ *      <button onClick={() => setPaused(p => !p)}>{paused ? 'Play' : 'Pause' }</button>
+ *    </span>
+ * )
+ * ```
+ *
+ * @param fn an function run on each interval
+ * @param ms The milliseconds duration of the interval
+ * @param paused Whether or not the interval is currently running
+ */ /**
+ * Creates a pausable `setInterval` that _fires_ immediately and is
+ * properly cleaned up when a component unmounted
+ *
+ * ```tsx
+ *  const [timer, setTimer] = useState(-1)
+ *  useInterval(() => setTimer(i => i + 1), 1000, false, true)
+ *
+ *  // will update to 0 on the first effect
+ *  return <span>{timer} seconds past</span>
+ * ```
+ *
+ * @param fn an function run on each interval
+ * @param ms The milliseconds duration of the interval
+ * @param paused Whether or not the interval is currently running
+ * @param runImmediately Whether to run the function immediately on mount or unpause
+ * rather than waiting for the first interval to elapse
+ *
+
+ */ function useInterval(fn, ms, paused = false, runImmediately = false) {
+    let handle;
+    const fnRef = (0, _useCommittedRefDefault.default)(fn);
+    // this ref is necessary b/c useEffect will sometimes miss a paused toggle
+    // orphaning a setTimeout chain in the aether, so relying on it's refresh logic is not reliable.
+    const pausedRef = (0, _useCommittedRefDefault.default)(paused);
+    const tick = ()=>{
+        if (pausedRef.current) return;
+        fnRef.current();
+        schedule(); // eslint-disable-line no-use-before-define
+    };
+    const schedule = ()=>{
+        clearTimeout(handle);
+        handle = setTimeout(tick, ms);
+    };
+    (0, _react.useEffect)(()=>{
+        if (runImmediately) tick();
+        else schedule();
+        return ()=>clearTimeout(handle);
+    }, [
+        paused,
+        runImmediately
+    ]);
+}
+exports.default = useInterval;
+
+},{"react":"21dqq","./useCommittedRef":"g5BYG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4qbLw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _useCommittedRef = require("./useCommittedRef");
+var _useCommittedRefDefault = parcelHelpers.interopDefault(_useCommittedRef);
+function useRafInterval(fn, ms, paused = false) {
+    let handle;
+    let start = new Date().getTime();
+    const fnRef = (0, _useCommittedRefDefault.default)(fn);
+    // this ref is necessary b/c useEffect will sometimes miss a paused toggle
+    // orphaning a setTimeout chain in the aether, so relying on it's refresh logic is not reliable.
+    const pausedRef = (0, _useCommittedRefDefault.default)(paused);
+    function loop() {
+        const current = new Date().getTime();
+        const delta = current - start;
+        if (pausedRef.current) return;
+        if (delta >= ms && fnRef.current) {
+            fnRef.current();
+            start = new Date().getTime();
+        }
+        cancelAnimationFrame(handle);
+        handle = requestAnimationFrame(loop);
+    }
+    (0, _react.useEffect)(()=>{
+        handle = requestAnimationFrame(loop);
+        return ()=>cancelAnimationFrame(handle);
+    }, []);
+}
+exports.default = useRafInterval;
+
+},{"react":"21dqq","./useCommittedRef":"g5BYG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7E8IK":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useMergeState);
+var _react = require("react");
+function useMergeState(initialState) {
+    const [state, setState] = (0, _react.useState)(initialState);
+    const updater = (0, _react.useCallback)((update)=>{
+        if (update === null) return;
+        if (typeof update === "function") setState((state)=>{
+            const nextState = update(state);
+            return nextState == null ? state : Object.assign({}, state, nextState);
+        });
+        else setState((state)=>Object.assign({}, state, update));
+    }, [
+        setState
+    ]);
+    return [
+        state,
+        updater
+    ];
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6f6Me":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useMergeStateFromProps);
+var _useMergeState = require("./useMergeState");
+var _useMergeStateDefault = parcelHelpers.interopDefault(_useMergeState);
+function useMergeStateFromProps(props, gDSFP, initialState) {
+    const [state, setState] = (0, _useMergeStateDefault.default)(initialState);
+    const nextState = gDSFP(props, state);
+    if (nextState !== null) setState(nextState);
+    return [
+        state,
+        setState
+    ];
+}
+
+},{"./useMergeState":"7E8IK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gDCGm":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>usePrevious);
+var _react = require("react");
+function usePrevious(value) {
+    const ref = (0, _react.useRef)(null);
+    (0, _react.useEffect)(()=>{
+        ref.current = value;
+    });
+    return ref.current;
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iuAlv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useImage);
+var _react = require("react");
+function useImage(imageOrUrl, crossOrigin) {
+    const [state, setState] = (0, _react.useState)({
+        image: null,
+        error: null
+    });
+    (0, _react.useEffect)(()=>{
+        if (!imageOrUrl) return undefined;
+        let image;
+        if (typeof imageOrUrl === "string") {
+            image = new Image();
+            if (crossOrigin) image.crossOrigin = crossOrigin;
+            image.src = imageOrUrl;
+        } else {
+            image = imageOrUrl;
+            if (image.complete && image.naturalHeight > 0) {
+                setState({
+                    image,
+                    error: null
+                });
+                return;
+            }
+        }
+        function onLoad() {
+            setState({
+                image,
+                error: null
+            });
+        }
+        function onError(error) {
+            setState({
+                image,
+                error
+            });
+        }
+        image.addEventListener("load", onLoad);
+        image.addEventListener("error", onError);
+        return ()=>{
+            image.removeEventListener("load", onLoad);
+            image.removeEventListener("error", onError);
+        };
+    }, [
+        imageOrUrl,
+        crossOrigin
+    ]);
+    return state;
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"edwGv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>useResizeObserver);
+var _react = require("react");
+var _useIsomorphicEffect = require("./useIsomorphicEffect");
+var _useIsomorphicEffectDefault = parcelHelpers.interopDefault(_useIsomorphicEffect);
+const targetMap = new WeakMap();
+let resizeObserver;
+function getResizeObserver() {
+    // eslint-disable-next-line no-return-assign
+    return resizeObserver = resizeObserver || new window.ResizeObserver((entries)=>{
+        entries.forEach((entry)=>{
+            const handler = targetMap.get(entry.target);
+            if (handler) handler(entry.contentRect);
+        });
+    });
+}
+function useResizeObserver(element) {
+    const [rect, setRect] = (0, _react.useState)(null);
+    (0, _useIsomorphicEffectDefault.default)(()=>{
+        if (!element) return;
+        getResizeObserver().observe(element);
+        setRect(element.getBoundingClientRect());
+        targetMap.set(element, (rect)=>{
+            setRect(rect);
+        });
+        return ()=>{
+            targetMap.delete(element);
+        };
+    }, [
+        element
+    ]);
+    return rect;
+}
+
+},{"react":"21dqq","./useIsomorphicEffect":"e8blq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e8blq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var global = arguments[3];
+const isReactNative = typeof global !== "undefined" && // @ts-ignore
+global.navigator && // @ts-ignore
+global.navigator.product === "ReactNative";
+const isDOM = typeof document !== "undefined";
+/**
+ * Is `useLayoutEffect` in a DOM or React Native environment, otherwise resolves to useEffect
+ * Only useful to avoid the console warning.
+ *
+ * PREFER `useEffect` UNLESS YOU KNOW WHAT YOU ARE DOING.
+ *
+ * @category effects
+ */ exports.default = isDOM || isReactNative ? (0, _react.useLayoutEffect) : (0, _react.useEffect);
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dH56B":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _themeProvider = require("./ThemeProvider");
+var _jsxRuntime = require("react/jsx-runtime");
+"use client";
+const CarouselCaption = /*#__PURE__*/ _react.forwardRef(({ className, bsPrefix, as: Component = "div", ...props }, ref)=>{
+    bsPrefix = (0, _themeProvider.useBootstrapPrefix)(bsPrefix, "carousel-caption");
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(Component, {
+        ref: ref,
+        className: (0, _classnamesDefault.default)(className, bsPrefix),
+        ...props
+    });
+});
+CarouselCaption.displayName = "CarouselCaption";
+exports.default = CarouselCaption;
+
+},{"react":"21dqq","classnames":"jocGM","./ThemeProvider":"dVixI","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9A3DI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _classnames = require("classnames");
+var _classnamesDefault = parcelHelpers.interopDefault(_classnames);
+var _react = require("react");
+var _themeProvider = require("./ThemeProvider");
+var _jsxRuntime = require("react/jsx-runtime");
+"use client";
+const CarouselItem = /*#__PURE__*/ _react.forwardRef(({ // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
+as: Component = "div", bsPrefix, className, ...props }, ref)=>{
+    const finalClassName = (0, _classnamesDefault.default)(className, (0, _themeProvider.useBootstrapPrefix)(bsPrefix, "carousel-item"));
+    return /*#__PURE__*/ (0, _jsxRuntime.jsx)(Component, {
+        ref: ref,
+        ...props,
+        className: finalClassName
+    });
+});
+CarouselItem.displayName = "CarouselItem";
+exports.default = CarouselItem;
+
+},{"classnames":"jocGM","react":"21dqq","./ThemeProvider":"dVixI","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fdyAp":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "map", ()=>map);
+parcelHelpers.export(exports, "forEach", ()=>forEach);
+parcelHelpers.export(exports, "hasChildOfType", ()=>hasChildOfType);
+var _react = require("react");
+/**
+ * Iterates through children that are typically specified as `props.children`,
+ * but only maps over children that are "valid elements".
+ *
+ * The mapFunction provided index will be normalised to the components mapped,
+ * so an invalid component would not increase the index.
+ *
+ */ function map(children, func) {
+    let index = 0;
+    return _react.Children.map(children, (child)=>/*#__PURE__*/ _react.isValidElement(child) ? func(child, index++) : child);
+}
+/**
+ * Iterates through children that are "valid elements".
+ *
+ * The provided forEachFunc(child, index) will be called for each
+ * leaf child with the index reflecting the position relative to "valid components".
+ */ function forEach(children, func) {
+    let index = 0;
+    _react.Children.forEach(children, (child)=>{
+        if (/*#__PURE__*/ _react.isValidElement(child)) func(child, index++);
+    });
+}
+/**
+ * Finds whether a component's `children` prop includes a React element of the
+ * specified type.
+ */ function hasChildOfType(children, type) {
+    return _react.Children.toArray(children).some((child)=>/*#__PURE__*/ _react.isValidElement(child) && child.type === type);
+}
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1wmVl":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _propTypes = require("prop-types");
@@ -42769,46 +43734,7 @@ const NavItem = /*#__PURE__*/ _react.forwardRef((_ref, ref)=>{
 NavItem.displayName = "NavItem";
 exports.default = NavItem;
 
-},{"react":"21dqq","@restart/hooks/useEventCallback":"7ONdq","./NavContext":"j1SMA","./SelectableContext":"8zLqy","./Button":"8YUbR","./DataKey":"9vwZh","./TabContext":"cI3G3","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7ONdq":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>useEventCallback);
-var _react = require("react");
-var _useCommittedRef = require("./useCommittedRef");
-var _useCommittedRefDefault = parcelHelpers.interopDefault(_useCommittedRef);
-function useEventCallback(fn) {
-    const ref = (0, _useCommittedRefDefault.default)(fn);
-    return (0, _react.useCallback)(function(...args) {
-        return ref.current && ref.current(...args);
-    }, [
-        ref
-    ]);
-}
-
-},{"react":"21dqq","./useCommittedRef":"g5BYG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g5BYG":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-/**
- * Creates a `Ref` whose value is updated in an effect, ensuring the most recent
- * value is the one rendered with. Generally only required for Concurrent mode usage
- * where previous work in `render()` may be discarded before being used.
- *
- * This is safe to access in an event handler.
- *
- * @param value The `Ref` value
- */ function useCommittedRef(value) {
-    const ref = (0, _react.useRef)(value);
-    (0, _react.useEffect)(()=>{
-        ref.current = value;
-    }, [
-        value
-    ]);
-    return ref;
-}
-exports.default = useCommittedRef;
-
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9U5b8":[function(require,module,exports) {
+},{"react":"21dqq","@restart/hooks/useEventCallback":"7ONdq","./NavContext":"j1SMA","./SelectableContext":"8zLqy","./Button":"8YUbR","./DataKey":"9vwZh","./TabContext":"cI3G3","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9U5b8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _classnames = require("classnames");
@@ -43146,25 +44072,7 @@ function useMediaQuery(query, targetWindow = typeof window === "undefined" ? und
     return matches;
 }
 
-},{"./useIsomorphicEffect":"e8blq","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"e8blq":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var global = arguments[3];
-const isReactNative = typeof global !== "undefined" && // @ts-ignore
-global.navigator && // @ts-ignore
-global.navigator.product === "ReactNative";
-const isDOM = typeof document !== "undefined";
-/**
- * Is `useLayoutEffect` in a DOM or React Native environment, otherwise resolves to useEffect
- * Only useful to avoid the console warning.
- *
- * PREFER `useEffect` UNLESS YOU KNOW WHAT YOU ARE DOING.
- *
- * @category effects
- */ exports.default = isDOM || isReactNative ? (0, _react.useLayoutEffect) : (0, _react.useEffect);
-
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"crj1M":[function(require,module,exports) {
+},{"./useIsomorphicEffect":"e8blq","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"crj1M":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 /* eslint-disable @typescript-eslint/no-use-before-define, react/prop-types */ var _activeElement = require("dom-helpers/activeElement");
@@ -43448,60 +44356,7 @@ function contains(context, node) {
     if (context.compareDocumentPosition) return context === node || !!(context.compareDocumentPosition(node) & 16);
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iK6A1":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>useMounted);
-var _react = require("react");
-function useMounted() {
-    const mounted = (0, _react.useRef)(true);
-    const isMounted = (0, _react.useRef)(()=>mounted.current);
-    (0, _react.useEffect)(()=>{
-        mounted.current = true;
-        return ()=>{
-            mounted.current = false;
-        };
-    }, []);
-    return isMounted.current;
-}
-
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2OOXI":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>useWillUnmount);
-var _useUpdatedRef = require("./useUpdatedRef");
-var _useUpdatedRefDefault = parcelHelpers.interopDefault(_useUpdatedRef);
-var _react = require("react");
-function useWillUnmount(fn) {
-    const onUnmount = (0, _useUpdatedRefDefault.default)(fn);
-    (0, _react.useEffect)(()=>()=>onUnmount.current(), []);
-}
-
-},{"./useUpdatedRef":"cfaLu","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cfaLu":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>useUpdatedRef);
-var _react = require("react");
-function useUpdatedRef(value) {
-    const valueRef = (0, _react.useRef)(value);
-    valueRef.current = value;
-    return valueRef;
-}
-
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gDCGm":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>usePrevious);
-var _react = require("react");
-function usePrevious(value) {
-    const ref = (0, _react.useRef)(null);
-    (0, _react.useEffect)(()=>{
-        ref.current = value;
-    });
-    return ref.current;
-}
-
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5alMm":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5alMm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "OPEN_DATA_ATTRIBUTE", ()=>OPEN_DATA_ATTRIBUTE);
@@ -44173,7 +45028,7 @@ function CardiconList({ imagePaths }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: (0, _cardiconModuleCssDefault.default).container,
-            children: imagePaths.map((imagePath)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: imagePaths.map((imagePath, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: (0, _cardiconModuleCssDefault.default).background,
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: (0, _cardiconModuleCssDefault.default).imgIcon,
@@ -44183,7 +45038,7 @@ function CardiconList({ imagePaths }) {
                         lineNumber: 14,
                         columnNumber: 13
                     }, this)
-                }, void 0, false, {
+                }, index, false, {
                     fileName: "src/pages/OfferingServices/components/CardIconList.tsx",
                     lineNumber: 13,
                     columnNumber: 11
@@ -44298,6 +45153,12 @@ var _3Jpg = require("../../assets/DeliveredProject/ApsireMe/3.jpg");
 var _3JpgDefault = parcelHelpers.interopDefault(_3Jpg);
 var _4Jpg = require("../../assets/DeliveredProject/ApsireMe/4.jpg");
 var _4JpgDefault = parcelHelpers.interopDefault(_4Jpg);
+var _deliveredCards = require("./components/DeliveredCards");
+var _deliveredCardsDefault = parcelHelpers.interopDefault(_deliveredCards);
+var _icons8GithubSvg = require("../../assets/Icons/icons8-github.svg");
+var _icons8GithubSvgDefault = parcelHelpers.interopDefault(_icons8GithubSvg);
+var _icons8Download50Png = require("../../assets/Icons/icons8-download-50.png");
+var _icons8Download50PngDefault = parcelHelpers.interopDefault(_icons8Download50Png);
 function DeliveredProject() {
     const deliverdProjects = [
         {
@@ -44308,6 +45169,18 @@ function DeliveredProject() {
                 (0, _2JpgDefault.default),
                 (0, _3JpgDefault.default),
                 (0, _4JpgDefault.default)
+            ],
+            downloadLinks: [
+                {
+                    name: "Download",
+                    link: "https://github.com/joelwillSeek/aspireme_flutter/releases/download/android/app-arm64-v8a-release.apk",
+                    icon: (0, _icons8Download50PngDefault.default)
+                },
+                {
+                    name: "gitHubLink",
+                    link: "https://github.com/joelwillSeek/aspireme_flutter",
+                    icon: (0, _icons8GithubSvgDefault.default)
+                }
             ]
         }
     ];
@@ -44324,63 +45197,53 @@ function DeliveredProject() {
                             className: (0, _deliveredprojectModuleCssDefault.default).hr
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 22,
+                            lineNumber: 37,
                             columnNumber: 29
                         }, this),
-                        " "
+                        " ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            style: {
+                                fontWeight: "lighter",
+                                fontSize: "small",
+                                color: "red"
+                            },
+                            children: "Hover Over Them For More Details"
+                        }, void 0, false, {
+                            fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                            lineNumber: 38,
+                            columnNumber: 11
+                        }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 21,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, this),
-                deliverdProjects.map((project, index)=>{
-                    const listOfImage = project.demoImages[0];
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        style: {
-                            backgroundImage: `url(${listOfImage})`
-                        },
-                        className: (0, _deliveredprojectModuleCssDefault.default).projectDiv,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            id: "showOnHover",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: (0, _deliveredprojectModuleCssDefault.default).info,
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
-                                        children: project.Name
-                                    }, void 0, false, {
-                                        fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                        lineNumber: 37,
-                                        columnNumber: 19
-                                    }, this),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: project.description
-                                    }, void 0, false, {
-                                        fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                        lineNumber: 38,
-                                        columnNumber: 19
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                                lineNumber: 36,
-                                columnNumber: 17
-                            }, this)
-                        }, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: (0, _deliveredprojectModuleCssDefault.default).projectLists,
+                    children: deliverdProjects.map((project, index)=>{
+                        const listOfImage = project.demoImages;
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _deliveredCardsDefault.default), {
+                            listOfImages: listOfImage,
+                            name: project.Name,
+                            description: project.description,
+                            index: index,
+                            downloadLinks: project.downloadLinks
+                        }, index, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 35,
+                            lineNumber: 49,
                             columnNumber: 15
-                        }, this)
-                    }, index, false, {
-                        fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                        lineNumber: 30,
-                        columnNumber: 13
-                    }, this);
-                })
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
+                    lineNumber: 44,
+                    columnNumber: 9
+                }, this)
             ]
         }, void 0, true, {
             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-            lineNumber: 20,
+            lineNumber: 35,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -44394,11 +45257,11 @@ $RefreshReg$(_c, "DeliveredProject");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/deliveredproject.module.css":"4MxaS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../assets/DeliveredProject/ApsireMe/1.jpg":"flDTw","../../assets/DeliveredProject/ApsireMe/2.jpg":"jpYKe","../../assets/DeliveredProject/ApsireMe/3.jpg":"4UjEw","../../assets/DeliveredProject/ApsireMe/4.jpg":"dzrJR"}],"4MxaS":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./styles/deliveredproject.module.css":"4MxaS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../assets/DeliveredProject/ApsireMe/1.jpg":"flDTw","../../assets/DeliveredProject/ApsireMe/2.jpg":"jpYKe","../../assets/DeliveredProject/ApsireMe/3.jpg":"4UjEw","../../assets/DeliveredProject/ApsireMe/4.jpg":"dzrJR","./components/DeliveredCards":"fLOGe","../../assets/Icons/icons8-download-50.png":"8kdQk","../../assets/Icons/icons8-github.svg":"ahfxp"}],"4MxaS":[function(require,module,exports) {
 module.exports["container"] = `N0LtEq_container`;
 module.exports["heading"] = `N0LtEq_heading`;
 module.exports["hr"] = `N0LtEq_hr`;
-module.exports["projectDiv"] = `N0LtEq_projectDiv`;
+module.exports["projectLists"] = `N0LtEq_projectLists`;
 
 },{}],"flDTw":[function(require,module,exports) {
 module.exports = require("d9733393747bc74d").getBundleURL("6EXJA") + "1.0d0cd0e8.jpg" + "?" + Date.now();
@@ -44412,207 +45275,149 @@ module.exports = require("eba62ad45a1a1df8").getBundleURL("6EXJA") + "3.651437c4
 },{"eba62ad45a1a1df8":"lgJ39"}],"dzrJR":[function(require,module,exports) {
 module.exports = require("8fb045283d1368b8").getBundleURL("6EXJA") + "4.a8d3a455.jpg" + "?" + Date.now();
 
-},{"8fb045283d1368b8":"lgJ39"}],"jhDTU":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9751 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"8fb045283d1368b8":"lgJ39"}],"fLOGe":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4e10 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9751.prelude(module);
+$parcel$ReactRefreshHelpers$4e10.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Testimonials);
+parcelHelpers.export(exports, "default", ()=>DeliveredCards);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _profile = require("./components/Profile");
-var _profileDefault = parcelHelpers.interopDefault(_profile);
-var _testimonialsModuleCss = require("./styles/testimonials.module.css");
-var _testimonialsModuleCssDefault = parcelHelpers.interopDefault(_testimonialsModuleCss);
-function Testimonials() {
-    const profileDetails = [
-        {
-            name: "Coming Soon",
-            workplace: "Coming Soon",
-            comment: "Coming Soon",
-            image: "#"
-        },
-        {
-            name: "Coming Soon",
-            workplace: "Coming Soon",
-            comment: "Coming Soon",
-            image: "#"
-        },
-        {
-            name: "Coming Soon",
-            workplace: "Coming Soon",
-            comment: "Coming Soon",
-            image: "#"
-        },
-        {
-            name: "Coming Soon",
-            workplace: "Coming Soon",
-            comment: "Coming Soon",
-            image: "#"
-        },
-        {
-            name: "Coming Soon",
-            workplace: "Coming Soon",
-            comment: "Coming Soon",
-            image: "#"
-        }
-    ];
+var _deliveredcardModuleCss = require("../styles/deliveredcard.module.css");
+var _deliveredcardModuleCssDefault = parcelHelpers.interopDefault(_deliveredcardModuleCss);
+var _carousel = require("react-bootstrap/esm/Carousel");
+var _carouselDefault = parcelHelpers.interopDefault(_carousel);
+function DeliveredCards({ index, listOfImages, name, description, downloadLinks }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            id: "testimonials",
-            className: (0, _testimonialsModuleCssDefault.default).overAllContainer,
+            className: (0, _deliveredcardModuleCssDefault.default).container,
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: (0, _testimonialsModuleCssDefault.default).heading,
-                    children: [
-                        "Testimonials ",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: (0, _testimonialsModuleCssDefault.default).hr
-                        }, void 0, false, {
-                            fileName: "src/pages/Testimonials/Testimonials.tsx",
-                            lineNumber: 42,
-                            columnNumber: 24
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/Testimonials/Testimonials.tsx",
-                    lineNumber: 41,
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
+                    children: listOfImages.map((image, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default).Item, {
+                            interval: 2500,
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: image,
+                                    alt: "",
+                                    className: (0, _deliveredcardModuleCssDefault.default).image
+                                }, void 0, false, {
+                                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                    lineNumber: 29,
+                                    columnNumber: 17
+                                }, this)
+                            }, index, false, {
+                                fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                lineNumber: 28,
+                                columnNumber: 15
+                            }, this)
+                        }, index, false, {
+                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                            lineNumber: 27,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                    lineNumber: 25,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: (0, _testimonialsModuleCssDefault.default).container,
-                    children: profileDetails.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Coming Soon"
-                    }, void 0, false, {
-                        fileName: "src/pages/Testimonials/Testimonials.tsx",
-                        lineNumber: 46,
-                        columnNumber: 13
-                    }, this) : profileDetails.map((profile)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileDefault.default), {
-                            Name: profile.name,
-                            Workplace: profile.workplace,
-                            Comment: profile.comment,
-                            image: profile.image
+                    id: "showOnHover",
+                    className: (0, _deliveredcardModuleCssDefault.default).hoverShow,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: (0, _deliveredcardModuleCssDefault.default).dropBackground
                         }, void 0, false, {
-                            fileName: "src/pages/Testimonials/Testimonials.tsx",
-                            lineNumber: 49,
-                            columnNumber: 15
-                        }, this))
-                }, void 0, false, {
-                    fileName: "src/pages/Testimonials/Testimonials.tsx",
-                    lineNumber: 44,
+                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: (0, _deliveredcardModuleCssDefault.default).innerContent,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
+                                    className: (0, _deliveredcardModuleCssDefault.default).heading,
+                                    children: name
+                                }, void 0, false, {
+                                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    children: description
+                                }, void 0, false, {
+                                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                    lineNumber: 39,
+                                    columnNumber: 13
+                                }, this),
+                                downloadLinks.map((download, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: download.link,
+                                        className: (0, _deliveredcardModuleCssDefault.default).downloadLink,
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                src: download.icon,
+                                                alt: download.name
+                                            }, void 0, false, {
+                                                fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                                lineNumber: 47,
+                                                columnNumber: 17
+                                            }, this),
+                                            download.name
+                                        ]
+                                    }, index, true, {
+                                        fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                        lineNumber: 42,
+                                        columnNumber: 15
+                                    }, this))
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                            lineNumber: 37,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                    lineNumber: 35,
                     columnNumber: 9
                 }, this)
             ]
-        }, void 0, true, {
-            fileName: "src/pages/Testimonials/Testimonials.tsx",
-            lineNumber: 40,
+        }, index, true, {
+            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+            lineNumber: 24,
             columnNumber: 7
         }, this)
     }, void 0, false);
 }
-_c = Testimonials;
+_c = DeliveredCards;
 var _c;
-$RefreshReg$(_c, "Testimonials");
+$RefreshReg$(_c, "DeliveredCards");
 
-  $parcel$ReactRefreshHelpers$9751.postlude(module);
+  $parcel$ReactRefreshHelpers$4e10.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/Profile":"iZb0W","./styles/testimonials.module.css":"iUHbK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iZb0W":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8162 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8162.prelude(module);
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/deliveredcard.module.css":"dg07L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-bootstrap/esm/Carousel":"bsGhm"}],"dg07L":[function(require,module,exports) {
+module.exports["container"] = `hlG3ma_container`;
+module.exports["downloadLink"] = `hlG3ma_downloadLink`;
+module.exports["dropBackground"] = `hlG3ma_dropBackground`;
+module.exports["heading"] = `hlG3ma_heading`;
+module.exports["hoverShow"] = `hlG3ma_hoverShow`;
+module.exports["image"] = `hlG3ma_image`;
+module.exports["innerContent"] = `hlG3ma_innerContent`;
 
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Profile);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _unknowProfilePng = require("../../../assets/unknowProfile.png");
-var _unknowProfilePngDefault = parcelHelpers.interopDefault(_unknowProfilePng);
-var _profileModuleCss = require("../styles/profile.module.css");
-var _profileModuleCssDefault = parcelHelpers.interopDefault(_profileModuleCss);
-function Profile({ Name, Comment, Workplace, image }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            id: "profile",
-            className: (0, _profileModuleCssDefault.default).profileContainer,
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    id: "comment",
-                    className: (0, _profileModuleCssDefault.default).comment,
-                    children: Comment
-                }, void 0, false, {
-                    fileName: "src/pages/Testimonials/components/Profile.tsx",
-                    lineNumber: 19,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: image == "#" ? (0, _unknowProfilePngDefault.default) : image,
-                    className: (0, _profileModuleCssDefault.default).profilePic
-                }, void 0, false, {
-                    fileName: "src/pages/Testimonials/components/Profile.tsx",
-                    lineNumber: 22,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: Name
-                }, void 0, false, {
-                    fileName: "src/pages/Testimonials/components/Profile.tsx",
-                    lineNumber: 26,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    id: "workplace",
-                    className: (0, _profileModuleCssDefault.default).workplace,
-                    children: Workplace
-                }, void 0, false, {
-                    fileName: "src/pages/Testimonials/components/Profile.tsx",
-                    lineNumber: 27,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/pages/Testimonials/components/Profile.tsx",
-            lineNumber: 18,
-            columnNumber: 7
-        }, this)
-    }, void 0, false);
-}
-_c = Profile;
-var _c;
-$RefreshReg$(_c, "Profile");
+},{}],"8kdQk":[function(require,module,exports) {
+module.exports = require("ad62977ce0bda82c").getBundleURL("6EXJA") + "icons8-download-50.d470c29b.png" + "?" + Date.now();
 
-  $parcel$ReactRefreshHelpers$8162.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../../assets/unknowProfile.png":"ejg5j","../styles/profile.module.css":"fSIzr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ejg5j":[function(require,module,exports) {
-module.exports = require("e6acd00a892e4bf5").getBundleURL("6EXJA") + "unknowProfile.4de9a822.png" + "?" + Date.now();
+},{"ad62977ce0bda82c":"lgJ39"}],"ahfxp":[function(require,module,exports) {
+module.exports = require("52010d14d87b9f6b").getBundleURL("6EXJA") + "icons8-github.b9c98d92.svg" + "?" + Date.now();
 
-},{"e6acd00a892e4bf5":"lgJ39"}],"fSIzr":[function(require,module,exports) {
-module.exports["comment"] = `uV3_Ta_comment`;
-module.exports["profileContainer"] = `uV3_Ta_profileContainer`;
-module.exports["profilePic"] = `uV3_Ta_profilePic`;
-module.exports["workplace"] = `uV3_Ta_workplace`;
-
-},{}],"iUHbK":[function(require,module,exports) {
-module.exports["container"] = `qTmjFa_container`;
-module.exports["heading"] = `qTmjFa_heading`;
-module.exports["hr"] = `qTmjFa_hr`;
-module.exports["overAllContainer"] = `qTmjFa_overAllContainer`;
-
-},{}],"jrWOl":[function(require,module,exports) {
+},{"52010d14d87b9f6b":"lgJ39"}],"jrWOl":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8943 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -44726,22 +45531,22 @@ function FrequentlyAskedQuestion() {
                                         children: oneOfIt.question
                                     }, void 0, false, {
                                         fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 68,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Accordion).Body, {
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(oneOfIt.answer, {}, void 0, false, {
                                             fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 69,
                                             columnNumber: 36
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 69,
                                         columnNumber: 19
                                     }, this)
                                 ]
-                            }, void 0, true, {
+                            }, index, true, {
                                 fileName: "src/pages/FrequentlyAskedQuestion/FrequentlyAskedQuestion.tsx",
                                 lineNumber: 63,
                                 columnNumber: 17
@@ -45173,7 +45978,7 @@ function TopNavigationBar() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sidepanalDefault.default), {}, void 0, false, {
                         fileName: "src/pages/FixedNavigationBar/TopNavigationBar.tsx",
-                        lineNumber: 35,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this)
                 ]
@@ -45187,7 +45992,7 @@ function TopNavigationBar() {
                 className: (0, _navModuleCssDefault.default).pageProgress
             }, void 0, false, {
                 fileName: "src/pages/FixedNavigationBar/TopNavigationBar.tsx",
-                lineNumber: 38,
+                lineNumber: 37,
                 columnNumber: 7
             }, this)
         ]
@@ -45205,7 +46010,6 @@ function whenScrolling(rootElement, navRef, pageScrollProgressRef, isBackgroundA
         if (isBackgroundAnimationFinished) return;
         const scrollVal = window.scrollY || (document.documentElement || document.body.parentNode || document.body).scrollTop;
         const height = document.body.offsetHeight - window.innerHeight;
-        console.log(scrollVal);
         const getScrollProgress = Math.round(100 * scrollVal / height).toString();
         if (pageScrollProgressRef.current != null) pageScrollProgressRef.current.style.width = `${getScrollProgress}%`;
         if (scrollVal > 10) {

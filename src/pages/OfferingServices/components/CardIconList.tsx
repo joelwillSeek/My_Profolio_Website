@@ -9,8 +9,8 @@ export default function CardiconList({
   return (
     <>
       <div className={cardicon.container}>
-        {imagePaths.map((imagePath) => (
-          <div className={cardicon.background}>
+        {imagePaths.map((imagePath, index) => (
+          <div key={index} className={cardicon.background}>
             <img className={cardicon.imgIcon} src={imagePath} />
           </div>
         ))}

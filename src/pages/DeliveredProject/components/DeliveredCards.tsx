@@ -1,52 +1,56 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
-import comingSoon from "../../../assets/DeliveredProject/commingSoon.png";
-import deliveredCard from "../styles/deliveredcard.module.css";
+import deliveredCardsStyle from "../styles/deliveredcard.module.css";
+import Carousel from "react-bootstrap/esm/Carousel";
 
 export default function DeliveredCards({
-  Name,
-  githubLink,
-  previewLink,
-  image,
+  index,
+  listOfImages,
+  name,
   description,
+  downloadLinks,
 }: {
-  Name: string;
-  githubLink: string;
-  previewLink: string;
-  image: any;
+  index: number;
+  listOfImages: Array<string>;
+  name: string;
   description: string;
+  downloadLinks: Array<{
+    name: string;
+    link: string;
+    icon: string;
+  }>;
 }) {
   return (
     <>
-      <Card style={{ width: "18rem" }} className={deliveredCard.card}>
-        <Card.Img
-          variant="top"
-          style={{ maxHeight: "20rem" }}
-          className={deliveredCard.img}
-          src={image == "#" ? comingSoon : image}
-        />
-        <Card.Body className={deliveredCard.card_body}>
-          <Card.Title>{Name}</Card.Title>
-          <Card.Text>{description}</Card.Text>
-          <div id="center" className={deliveredCard.center}>
-            {" "}
-            <Button
-              className={deliveredCard.button}
-              variant="primary"
-              href={githubLink}
-            >
-              {githubLink.trim().length > 0 ? "Github" : "Coming Soon"}
-            </Button>
-            <Button
-              className={deliveredCard.button}
-              variant="primary"
-              href={previewLink == "#" ? "#" : previewLink}
-            >
-              {previewLink.trim().length > 0 ? "Preview" : "Coming Soon"}
-            </Button>
+      <div key={index} className={deliveredCardsStyle.container}>
+        <Carousel>
+          {listOfImages.map((image, index) => (
+            <Carousel.Item interval={2500} key={index}>
+              <div key={index}>
+                <img src={image} alt="" className={deliveredCardsStyle.image} />
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+
+        <div id="showOnHover" className={deliveredCardsStyle.hoverShow}>
+          <div className={deliveredCardsStyle.dropBackground}></div>
+          <div className={deliveredCardsStyle.innerContent}>
+            <h6 className={deliveredCardsStyle.heading}>{name}</h6>
+            <p>{description}</p>
+
+            {downloadLinks.map((download, index) => (
+              <a
+                href={download.link}
+                key={index}
+                className={deliveredCardsStyle.downloadLink}
+              >
+                <img src={download.icon} alt={download.name} />
+                {download.name}
+              </a>
+            ))}
           </div>
-        </Card.Body>
-      </Card>
+        </div>
+      </div>
     </>
   );
 }

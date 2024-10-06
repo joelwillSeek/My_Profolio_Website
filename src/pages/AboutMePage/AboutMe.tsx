@@ -11,6 +11,7 @@ export default function AboutMe() {
       <div className={ContainerStyles.container} id="AboutUs">
         <img
           src={myFacePhoto}
+          style={{ borderRadius: "50%" }}
           className={ContainerStyles.myFace}
           alt="Aren't I Handsome"
         />

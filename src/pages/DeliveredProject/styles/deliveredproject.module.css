@@ -36,10 +36,8 @@
   background-color: var(--bright-orange-color) !important;
 }
 
-.projectDiv {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100px;
-  max-width: 40%;
+.projectLists {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }

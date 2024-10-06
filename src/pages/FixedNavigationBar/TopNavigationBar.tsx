@@ -30,7 +30,6 @@ export default function TopNavigationBar() {
           className={`${navStyle.logoBackground} ${navStyle.bebas_neue_regular}`}
         >
           <h1>Eyoel</h1>
-          {/* <img className={navStyle.logoImage} src={logoImage} alt="logo" /> */}
         </div>
         <Sidepanal />
       </div>
@@ -55,8 +54,6 @@ function whenScrolling(
         .scrollTop;
 
     const height = document.body.offsetHeight - window.innerHeight;
-
-    console.log(scrollVal);
 
     const getScrollProgress = Math.round((100 * scrollVal) / height).toString();
 
