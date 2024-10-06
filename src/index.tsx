@@ -24,7 +24,7 @@ function Index() {
 
   return (
     <>
-      {loading ? (
+      {loading && (
         <div className={"loading"}>
           <BounceLoader
             color={"#ff9900"}
@@ -34,7 +34,7 @@ function Index() {
             data-testid="loader"
           ></BounceLoader>
         </div>
-      ) : null}
+      )}
 
       <TopNavigationBar />
       <HomePage />
