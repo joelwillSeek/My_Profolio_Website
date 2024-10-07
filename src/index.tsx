@@ -15,9 +15,15 @@ function Index() {
 
   useEffect(() => {
     let handleLoad = () => {
+      console.log("picker");
       setLoading(() => false);
     };
-    window.addEventListener("load", handleLoad);
+
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
 
     return () => window.removeEventListener("load", handleLoad);
   }, []);
@@ -26,14 +32,13 @@ function Index() {
     <>
       {loading && (
         <div className={"loading"}>
-          {/* <BounceLoader
+          <BounceLoader
             color={"#ff9900"}
             loading={true}
             size={150}
             aria-label="Loading Spinner"
             data-testid="loader"
-          ></BounceLoader> */}
-          <h1>Hi There </h1>
+          ></BounceLoader>
         </div>
       )}
 
