@@ -32,7 +32,6 @@
 .container {
   background-color: black;
   transition: background-color ease-in-out 300ms;
-  height: 40vh;
   width: 100%;
   max-width: 100%;
   display: flex;
@@ -49,7 +48,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 4vh;
 }
 
 .copyright p {
@@ -65,6 +63,7 @@
   .container {
     flex-direction: column;
     align-items: start;
+    padding: 1rem 0;
   }
 
   .list h1 {
@@ -80,9 +79,5 @@
 @media screen and (max-width: 380px) {
   .container a {
     font-size: small;
-  }
-
-  .container {
-    height: 70vh;
   }
 }
