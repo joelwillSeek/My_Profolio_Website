@@ -396,6 +396,10 @@ html {
   .-un0tq_header {
     font-size: large;
   }
+
+  .-un0tq_cardLink {
+    margin-left: 0 !important;
+  }
 }
 
 @media screen and (width <= 380px) {

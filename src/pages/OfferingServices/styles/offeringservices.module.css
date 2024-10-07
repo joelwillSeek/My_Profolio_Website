@@ -117,6 +117,10 @@
   .header {
     font-size: large;
   }
+
+  .cardLink {
+    margin-left: 0px !important;
+  }
 }
 
 @media screen and (max-width: 380px) {
