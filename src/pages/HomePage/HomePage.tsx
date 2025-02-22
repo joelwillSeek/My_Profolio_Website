@@ -49,7 +49,7 @@ function buttonsToPages() {
         </Button>
       </li>
       <li>
-        <Button variant="outlined" className={landingpageStyle.contactMe}>
+        <Button variant="outlined" className={landingpageStyle.contactMe} href="/#deliveredProject">
           {" "}
           {/*href="/#contactInfo">*/} Products
         </Button>

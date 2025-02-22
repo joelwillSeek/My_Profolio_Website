@@ -169,13 +169,7 @@ function bootstrapCardCustomized(
             {description}
           </Card.Text>
 
-          <Card.Link
-            href="/#deliveredProject"
-            className={offeringServicesStyle.cardLink}
-            style={{ textAlign: "center" }}
-          >
-            See Projects
-          </Card.Link>
+         
 
           <div className={offeringServicesStyle.cardLinkGroup}>
             {documentations.map((tool, index) => (
@@ -188,6 +182,14 @@ function bootstrapCardCustomized(
               </Card.Link>
             ))}
           </div>
+
+          <Card.Link
+            href="/#deliveredProject"
+            className={offeringServicesStyle.cardLink}
+            style={{ textAlign: "center",marginTop: "10px" }}
+          >
+            See Projects
+          </Card.Link>
         </Card.Body>
       </Card>
     </>

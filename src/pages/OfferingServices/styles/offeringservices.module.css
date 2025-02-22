@@ -75,36 +75,38 @@
 }
 
 .cardLinkGroup {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-content:center;
+  justify-items: center;
   align-content: center;
   align-items: center;
   text-align: center;
-  flex-wrap: wrap;
+  margin-top: 10px;
   gap: 10px;
 }
 
 .cardLink {
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   display: inline-block;
+  border-radius: 20px;
   background-color: black;
   color: white;
-  transition: color ease-in-out 300ms;
-  margin-top: 0.5rem;
+  transition: background-color ease-in-out 300ms;
   font-weight: bold;
   font-size: x-small;
-  padding: 0.7rem;
-  align-self: center;
-  justify-self: center;
-  margin-left: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  
 }
 
 .cardLink:hover {
   background-color: var(--bright-orange-color);
-}
-
-.cardLink:hover {
-  color: var(--bright-orange-color);
 }
 
 @media screen and (max-width: 767px) {
