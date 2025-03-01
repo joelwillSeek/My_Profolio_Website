@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Sidepanal from "./components/Sidepanal";
+import SidePanal from "./components/Sidepanal";
 import navStyle from "./styles/nav.module.css";
 
 export default function TopNavigationBar() {
@@ -31,7 +31,7 @@ export default function TopNavigationBar() {
         >
           <h1>Eyoel</h1>
         </div>
-        <Sidepanal />
+        <SidePanal />
       </div>
 
       <div ref={pageScrollProgressRef} className={navStyle.pageProgress}></div>

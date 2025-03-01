@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import offeringServicesStyle from "./styles/offeringservices.module.css";
-import CardiconList from "./components/CardIconList";
+import CardIconList from "./components/CardIconList";
 import imageImports from "./ImageImport";
 
 const {
@@ -20,7 +20,10 @@ const {
 export default function OfferingServices() {
   return (
     <>
-      <div id="offeringServices">
+      <div
+        id="offeringServices"
+        className={offeringServicesStyle.entireContainer}
+      >
         <div id="Top Text">
           <h1 className={offeringServicesStyle.header}>
             Services Offered<div className={offeringServicesStyle.hr}></div>
@@ -156,7 +159,7 @@ function bootstrapCardCustomized(
             }}
           >
             <div className={offeringServicesStyle.titleContainer}>
-              <CardiconList imagePaths={listOfImagesOfTools} />
+              <CardIconList imagePaths={listOfImagesOfTools} />
               {title}
             </div>
           </Card.Title>
@@ -168,8 +171,6 @@ function bootstrapCardCustomized(
           <Card.Text className={offeringServicesStyle.cardDescription}>
             {description}
           </Card.Text>
-
-         
 
           <div className={offeringServicesStyle.cardLinkGroup}>
             {documentations.map((tool, index) => (
@@ -186,7 +187,7 @@ function bootstrapCardCustomized(
           <Card.Link
             href="/#deliveredProject"
             className={offeringServicesStyle.cardLink}
-            style={{ textAlign: "center",marginTop: "10px" }}
+            style={{ textAlign: "center", marginTop: "10px" }}
           >
             See Projects
           </Card.Link>

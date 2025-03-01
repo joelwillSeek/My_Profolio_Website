@@ -6,6 +6,7 @@
   justify-content: space-between !important;
   position: fixed !important;
   color: white;
+  background-color: rgb(28, 28, 28) !important;
   font-size: medium !important;
   z-index: 20;
   height: 4.5rem;
@@ -23,7 +24,6 @@
   justify-content: space-between !important;
   align-items: center !important;
   padding: 0.5rem 2rem 0 2rem;
-
   width: 100% !important;
 }
 
@@ -70,10 +70,6 @@
 .svgMenu path {
   stroke: #fff;
 }
-
-/* .logoImage {
-  width: 5rem;
-} */
 
 .logoBackground {
   background-repeat: no-repeat;

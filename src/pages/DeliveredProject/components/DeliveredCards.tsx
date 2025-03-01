@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import deliveredCardsStyle from "../styles/deliveredcard.module.css";
 import Carousel from "react-bootstrap/esm/Carousel";
 import MadeFromIcons from "./madeFromIcons";
@@ -15,9 +15,9 @@ export default function DeliveredCards({
   listOfImages: Array<string>;
   name: string;
   description: string;
-  madeByImages:Array<{
-    name:string;
-    link:string
+  madeByImages: Array<{
+    name: string;
+    link: string;
   }>;
   downloadLinks: Array<{
     name: string;
@@ -25,13 +25,44 @@ export default function DeliveredCards({
     icon: string;
   }>;
 }) {
+  const dialogImage = useRef<HTMLDialogElement | null>(null);
+
   return (
     <>
-      <div key={index} className={deliveredCardsStyle.container}>
-        <Carousel >
+      <dialog ref={dialogImage}>
+        <Carousel indicators={true} controls={true}>
           {listOfImages.map((image, index) => (
-            <Carousel.Item interval={1500} key={index}>
-              <div key={index}>
+            <Carousel.Item key={index}>
+              <div key={index} onClick={(event) => {}}>
+                <img
+                  src={image}
+                  alt=""
+                  className={deliveredCardsStyle.clickedFullscreen}
+                />
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+        <button
+          className={deliveredCardsStyle.dialogClose}
+          onClick={() => {
+            dialogImage.current?.close();
+          }}
+        >
+          Close
+        </button>
+      </dialog>
+
+      <div key={index} className={deliveredCardsStyle.container}>
+        <Carousel>
+          {listOfImages.map((image, index) => (
+            <Carousel.Item key={index}>
+              <div
+                key={index}
+                onClick={(event) => {
+                  dialogImage.current?.showModal();
+                }}
+              >
                 <img src={image} alt="" className={deliveredCardsStyle.image} />
               </div>
             </Carousel.Item>
@@ -39,29 +70,28 @@ export default function DeliveredCards({
         </Carousel>
 
         {/* <div id="showOnHover" >className={deliveredCardsStyle.hoverShow} */}
-          {/* <div className={deliveredCardsStyle.dropBackground}></div> */}
-          <div className={deliveredCardsStyle.innerContent}>
-            <h6 className={deliveredCardsStyle.heading}>{name}<div className={deliveredCardsStyle.hr}/></h6>
-            
-            <p>{description}</p>
+        {/* <div className={deliveredCardsStyle.dropBackground}></div> */}
+        <div className={deliveredCardsStyle.innerContent}>
+          <h6 className={deliveredCardsStyle.heading}>
+            {name}
+            <div className={deliveredCardsStyle.hr} />
+          </h6>
 
-          
-           
-            <MadeFromIcons  imagePaths={madeByImages}/>
-            
-          
- 
-            {downloadLinks.map((download, index) => (
-              <a
-                href={download.link}
-                key={index}
-                className={deliveredCardsStyle.downloadLink}
-              >
-                <img src={download.icon} alt={download.name} />
-                {download.name}
-              </a>
-            ))}
-          </div>
+          <p>{description}</p>
+
+          <MadeFromIcons imagePaths={madeByImages} />
+
+          {downloadLinks.map((download, index) => (
+            <a
+              href={download.link}
+              key={index}
+              className={deliveredCardsStyle.downloadLink}
+            >
+              <img src={download.icon} alt={download.name} />
+              {download.name}
+            </a>
+          ))}
+        </div>
         {/* </div> */}
       </div>
     </>

@@ -290,16 +290,47 @@ html {
   align-items: center;
   gap: 10px;
   width: 100%;
+  padding-bottom: 4rem;
   display: grid;
+}
+
+.-un0tq_entireContainer {
+  background-color: #1c1c1c;
+  position: relative;
+}
+
+.-un0tq_entireContainer:before {
+  content: "";
+  background-color: #1c1c1c;
+  height: 58px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  transform: skewY(-2deg);
+  width: 100% !important;
+}
+
+.-un0tq_entireContainer:after {
+  content: "";
+  background-color: #1c1c1c;
+  height: 58px;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  transform: skewY(-2deg);
+  width: 100% !important;
 }
 
 .-un0tq_header {
   text-align: center;
-  color: #000;
+  color: #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 7rem;
+  padding-top: 2rem;
   font-size: xx-large;
   font-weight: bolder;
   transition: color .3s ease-in-out;
@@ -312,6 +343,7 @@ html {
 
 .-un0tq_textDescription {
   text-align: center;
+  color: #fff;
   margin: 1rem;
 }
 
@@ -371,7 +403,7 @@ html {
 
 .-un0tq_cardLink {
   color: #fff;
-  background-color: #000;
+  background-color: #1c1c1c;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
@@ -412,7 +444,7 @@ html {
 }
 
 .BB-Etq_background {
-  background-color: #000;
+  background-color: #1c1c1c;
   border-radius: 100%;
   margin: 0 1rem;
   transition: background-color .3s ease-in-out;
@@ -472,10 +504,12 @@ html {
 
 .N0LtEq_projectLists {
   flex-wrap: wrap;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
   justify-content: center;
   align-items: center;
   width: 100%;
-  display: flex;
+  display: grid;
   overflow: scroll hidden;
 }
 
@@ -486,8 +520,39 @@ html {
 }
 
 .hlG3ma_image {
-  object-fit: cover;
-  height: 400px;
+  object-fit: contain;
+  max-width: 100%;
+  height: 100%;
+}
+
+dialog {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+.hlG3ma_dialogClose {
+  z-index: 10;
+  color: #fff;
+  box-shadow: 0px 0px 10px var(--bright-orange-color);
+  background-color: #3c3c3c;
+  border: 0;
+  border-radius: 0 0 0 20px;
+  outline: none;
+  padding: 1rem;
+  font-weight: bold;
+  transition: background-color .3s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hlG3ma_dialogClose:hover {
+  background-color: var(--bright-orange-color);
+}
+
+.hlG3ma_clickedFullscreen {
+  height: 100%;
 }
 
 .hlG3ma_hr {
@@ -500,19 +565,21 @@ html {
   transition: background-color .3s ease-in-out;
 }
 
-.hlG3ma_carousel-control-next, .hlG3ma_carousel-control-prev, .hlG3ma_carousel-indicators {
-  display: none !important;
+.hlG3ma_carousel-control-next, .hlG3ma_carousel-control-prev {
+  filter: invert();
 }
 
 .hlG3ma_container {
   color: #000;
   border: 2.5px solid #000;
   flex-direction: row;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: stretch;
-  max-width: 23%;
+  max-width: 300px;
   height: 100%;
-  display: flex;
+  margin-left: 1rem;
+  display: grid;
   position: relative;
 }
 
@@ -529,9 +596,10 @@ html {
 .hlG3ma_innerContent {
   background-color: #fff;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
 }
 
@@ -555,7 +623,7 @@ html {
 
 .hlG3ma_downloadLink {
   color: #fff;
-  background-color: #000;
+  background-color: #1c1c1c;
   border-radius: 0;
   justify-content: center;
   align-items: center;
@@ -586,7 +654,7 @@ html {
 }
 
 .zUf5VW_background {
-  background-color: #000;
+  background-color: #1c1c1c;
   border-radius: 100%;
   padding: 4px;
   transition: background-color .3s ease-in-out;
@@ -857,6 +925,7 @@ html {
   height: 4.5rem;
   transition: background-color .3s ease-in-out;
   display: flex;
+  background-color: #1c1c1c !important;
   justify-content: space-between !important;
   font-size: medium !important;
   position: fixed !important;

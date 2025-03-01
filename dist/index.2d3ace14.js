@@ -40060,6 +40060,7 @@ function OfferingServices() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             id: "offeringServices",
+            className: (0, _offeringservicesModuleCssDefault.default).entireContainer,
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     id: "Top Text",
@@ -40072,13 +40073,13 @@ function OfferingServices() {
                                     className: (0, _offeringservicesModuleCssDefault.default).hr
                                 }, void 0, false, {
                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                    lineNumber: 26,
+                                    lineNumber: 29,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 25,
+                            lineNumber: 28,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -40086,13 +40087,13 @@ function OfferingServices() {
                             children: "The services that i can offer are listed below start from app dev to a start up company full stack website"
                         }, void 0, false, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 28,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                    lineNumber: 24,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40180,7 +40181,7 @@ function OfferingServices() {
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                    lineNumber: 34,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, this)
             ]
@@ -40214,19 +40215,19 @@ function bootstrapCardCustomized(title = "not assigned", canDeploy = "not assign
                                     imagePaths: listOfImagesOfTools
                                 }, void 0, false, {
                                     fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                    lineNumber: 159,
+                                    lineNumber: 162,
                                     columnNumber: 15
                                 }, this),
                                 title
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                            lineNumber: 158,
+                            lineNumber: 161,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                        lineNumber: 148,
+                        lineNumber: 151,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Subtitle, {
@@ -40234,7 +40235,7 @@ function bootstrapCardCustomized(title = "not assigned", canDeploy = "not assign
                         children: canDeploy
                     }, void 0, false, {
                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                        lineNumber: 163,
+                        lineNumber: 166,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Text, {
@@ -40242,7 +40243,7 @@ function bootstrapCardCustomized(title = "not assigned", canDeploy = "not assign
                         children: description
                     }, void 0, false, {
                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                        lineNumber: 168,
+                        lineNumber: 171,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40253,12 +40254,12 @@ function bootstrapCardCustomized(title = "not assigned", canDeploy = "not assign
                                 children: tool.nameOfTool
                             }, index, false, {
                                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                                lineNumber: 176,
+                                lineNumber: 177,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                        lineNumber: 174,
+                        lineNumber: 175,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Card).Link, {
@@ -40271,18 +40272,18 @@ function bootstrapCardCustomized(title = "not assigned", canDeploy = "not assign
                         children: "See Projects"
                     }, void 0, false, {
                         fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                        lineNumber: 186,
+                        lineNumber: 187,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-                lineNumber: 147,
+                lineNumber: 150,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "src/pages/OfferingServices/OfferingServices.tsx",
-            lineNumber: 146,
+            lineNumber: 149,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -40295,7 +40296,7 @@ $RefreshReg$(_c, "OfferingServices");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-bootstrap":"3AD9A","./styles/offeringservices.module.css":"hftXo","./components/CardIconList":"cxKZP","./ImageImport":"dEAYS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3AD9A":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-bootstrap":"3AD9A","./styles/offeringservices.module.css":"hftXo","./ImageImport":"dEAYS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/CardIconList":"cxKZP"}],"3AD9A":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Accordion", ()=>(0, _accordionDefault.default));
@@ -45022,65 +45023,11 @@ module.exports["cardLinkGroup"] = `-un0tq_cardLinkGroup`;
 module.exports["cardSubDescription"] = `-un0tq_cardSubDescription`;
 module.exports["cardTitle"] = `-un0tq_cardTitle`;
 module.exports["container"] = `-un0tq_container`;
+module.exports["entireContainer"] = `-un0tq_entireContainer`;
 module.exports["header"] = `-un0tq_header`;
 module.exports["hr"] = `-un0tq_hr`;
 module.exports["textDescription"] = `-un0tq_textDescription`;
 module.exports["titleContainer"] = `-un0tq_titleContainer`;
-
-},{}],"cxKZP":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0623 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0623.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>CardiconList);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _cardiconModuleCss = require("../styles/cardicon.module.css");
-var _cardiconModuleCssDefault = parcelHelpers.interopDefault(_cardiconModuleCss);
-function CardiconList({ imagePaths }) {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: (0, _cardiconModuleCssDefault.default).container,
-            children: imagePaths.map((imagePath, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: (0, _cardiconModuleCssDefault.default).background,
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: (0, _cardiconModuleCssDefault.default).imgIcon,
-                        src: imagePath
-                    }, void 0, false, {
-                        fileName: "src/pages/OfferingServices/components/CardIconList.tsx",
-                        lineNumber: 14,
-                        columnNumber: 13
-                    }, this)
-                }, index, false, {
-                    fileName: "src/pages/OfferingServices/components/CardIconList.tsx",
-                    lineNumber: 13,
-                    columnNumber: 11
-                }, this))
-        }, void 0, false, {
-            fileName: "src/pages/OfferingServices/components/CardIconList.tsx",
-            lineNumber: 11,
-            columnNumber: 7
-        }, this)
-    }, void 0, false);
-}
-_c = CardiconList;
-var _c;
-$RefreshReg$(_c, "CardiconList");
-
-  $parcel$ReactRefreshHelpers$0623.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/cardicon.module.css":"cekgs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cekgs":[function(require,module,exports) {
-module.exports["background"] = `BB-Etq_background`;
-module.exports["container"] = `BB-Etq_container`;
-module.exports["imgIcon"] = `BB-Etq_imgIcon`;
 
 },{}],"dEAYS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -45148,7 +45095,62 @@ module.exports = require("65ed4df26e3bb33c").getBundleURL("6EXJA") + "icons8-uni
 },{"65ed4df26e3bb33c":"lgJ39"}],"6CBiy":[function(require,module,exports) {
 module.exports = require("1beb3f8e420a67d3").getBundleURL("6EXJA") + "icons8-godot.a5c9263b.svg" + "?" + Date.now();
 
-},{"1beb3f8e420a67d3":"lgJ39"}],"jgkI7":[function(require,module,exports) {
+},{"1beb3f8e420a67d3":"lgJ39"}],"cxKZP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0623 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0623.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>CardiconList);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _cardiconModuleCss = require("../styles/cardicon.module.css");
+var _cardiconModuleCssDefault = parcelHelpers.interopDefault(_cardiconModuleCss);
+function CardiconList({ imagePaths }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: (0, _cardiconModuleCssDefault.default).container,
+            children: imagePaths.map((imagePath, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: (0, _cardiconModuleCssDefault.default).background,
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: (0, _cardiconModuleCssDefault.default).imgIcon,
+                        src: imagePath
+                    }, void 0, false, {
+                        fileName: "src/pages/OfferingServices/components/CardIconList.tsx",
+                        lineNumber: 14,
+                        columnNumber: 13
+                    }, this)
+                }, index, false, {
+                    fileName: "src/pages/OfferingServices/components/CardIconList.tsx",
+                    lineNumber: 13,
+                    columnNumber: 11
+                }, this))
+        }, void 0, false, {
+            fileName: "src/pages/OfferingServices/components/CardIconList.tsx",
+            lineNumber: 11,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+}
+_c = CardiconList;
+var _c;
+$RefreshReg$(_c, "CardiconList");
+
+  $parcel$ReactRefreshHelpers$0623.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../styles/cardicon.module.css":"cekgs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cekgs":[function(require,module,exports) {
+module.exports["background"] = `BB-Etq_background`;
+module.exports["container"] = `BB-Etq_container`;
+module.exports["imgIcon"] = `BB-Etq_imgIcon`;
+
+},{}],"jgkI7":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc5a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -45181,14 +45183,14 @@ function DeliveredProject() {
                             className: (0, _deliveredprojectModuleCssDefault.default).hr
                         }, void 0, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 15,
+                            lineNumber: 13,
                             columnNumber: 29
                         }, this),
                         " "
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 14,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45204,19 +45206,19 @@ function DeliveredProject() {
                             downloadLinks: project.downloadLinks
                         }, index, false, {
                             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                            lineNumber: 27,
+                            lineNumber: 21,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-                    lineNumber: 22,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/pages/DeliveredProject/DeliveredProject.tsx",
-            lineNumber: 13,
+            lineNumber: 11,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -45255,106 +45257,164 @@ var _carousel = require("react-bootstrap/esm/Carousel");
 var _carouselDefault = parcelHelpers.interopDefault(_carousel);
 var _madeFromIcons = require("./madeFromIcons");
 var _madeFromIconsDefault = parcelHelpers.interopDefault(_madeFromIcons);
+var _s = $RefreshSig$();
 function DeliveredCards({ index, listOfImages, name, description, downloadLinks, madeByImages }) {
+    _s();
+    const dialogImage = (0, _react.useRef)(null);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: (0, _deliveredcardModuleCssDefault.default).container,
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
-                    children: listOfImages.map((image, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default).Item, {
-                            interval: 1500,
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: image,
-                                    alt: "",
-                                    className: (0, _deliveredcardModuleCssDefault.default).image
-                                }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("dialog", {
+                ref: dialogImage,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
+                        indicators: true,
+                        controls: true,
+                        children: listOfImages.map((image, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default).Item, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    onClick: (event)=>{},
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: image,
+                                        alt: "",
+                                        className: (0, _deliveredcardModuleCssDefault.default).clickedFullscreen
+                                    }, void 0, false, {
+                                        fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                        lineNumber: 37,
+                                        columnNumber: 17
+                                    }, this)
+                                }, index, false, {
                                     fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                                    lineNumber: 35,
-                                    columnNumber: 17
+                                    lineNumber: 36,
+                                    columnNumber: 15
                                 }, this)
                             }, index, false, {
                                 fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                                lineNumber: 34,
-                                columnNumber: 15
-                            }, this)
-                        }, index, false, {
-                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                            lineNumber: 33,
-                            columnNumber: 13
-                        }, this))
-                }, void 0, false, {
-                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                    lineNumber: 31,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: (0, _deliveredcardModuleCssDefault.default).innerContent,
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
-                            className: (0, _deliveredcardModuleCssDefault.default).heading,
-                            children: [
-                                name,
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: (0, _deliveredcardModuleCssDefault.default).hr
-                                }, void 0, false, {
-                                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                                    lineNumber: 44,
-                                    columnNumber: 63
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                            lineNumber: 44,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: description
-                        }, void 0, false, {
-                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                            lineNumber: 46,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _madeFromIconsDefault.default), {
-                            imagePaths: madeByImages
-                        }, void 0, false, {
-                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                            lineNumber: 50,
-                            columnNumber: 13
-                        }, this),
-                        downloadLinks.map((download, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: download.link,
-                                className: (0, _deliveredcardModuleCssDefault.default).downloadLink,
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: download.icon,
-                                        alt: download.name
+                                lineNumber: 35,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: (0, _deliveredcardModuleCssDefault.default).dialogClose,
+                        onClick: ()=>{
+                            dialogImage.current?.close();
+                        },
+                        children: "Close"
+                    }, void 0, false, {
+                        fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                lineNumber: 32,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: (0, _deliveredcardModuleCssDefault.default).container,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
+                        children: listOfImages.map((image, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default).Item, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    onClick: (event)=>{
+                                        dialogImage.current?.showModal();
+                                    },
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: image,
+                                        alt: "",
+                                        className: (0, _deliveredcardModuleCssDefault.default).image
                                     }, void 0, false, {
                                         fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 66,
                                         columnNumber: 17
-                                    }, this),
-                                    download.name
-                                ]
-                            }, index, true, {
+                                    }, this)
+                                }, index, false, {
+                                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                    lineNumber: 60,
+                                    columnNumber: 15
+                                }, this)
+                            }, index, false, {
                                 fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                                lineNumber: 55,
-                                columnNumber: 15
+                                lineNumber: 59,
+                                columnNumber: 13
                             }, this))
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-                    lineNumber: 43,
-                    columnNumber: 11
-                }, this)
-            ]
-        }, index, true, {
-            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
-            lineNumber: 30,
-            columnNumber: 7
-        }, this)
-    }, void 0, false);
+                    }, void 0, false, {
+                        fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                        lineNumber: 57,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: (0, _deliveredcardModuleCssDefault.default).innerContent,
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
+                                className: (0, _deliveredcardModuleCssDefault.default).heading,
+                                children: [
+                                    name,
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: (0, _deliveredcardModuleCssDefault.default).hr
+                                    }, void 0, false, {
+                                        fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                lineNumber: 75,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: description
+                            }, void 0, false, {
+                                fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                lineNumber: 80,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _madeFromIconsDefault.default), {
+                                imagePaths: madeByImages
+                            }, void 0, false, {
+                                fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                lineNumber: 82,
+                                columnNumber: 11
+                            }, this),
+                            downloadLinks.map((download, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: download.link,
+                                    className: (0, _deliveredcardModuleCssDefault.default).downloadLink,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: download.icon,
+                                            alt: download.name
+                                        }, void 0, false, {
+                                            fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                            lineNumber: 90,
+                                            columnNumber: 15
+                                        }, this),
+                                        download.name
+                                    ]
+                                }, index, true, {
+                                    fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                                    lineNumber: 85,
+                                    columnNumber: 13
+                                }, this))
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                        lineNumber: 74,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, index, true, {
+                fileName: "src/pages/DeliveredProject/components/DeliveredCards.tsx",
+                lineNumber: 56,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
 }
+_s(DeliveredCards, "F/SPiKyfvNuugh/bBnwgg77N9F0=");
 _c = DeliveredCards;
 var _c;
 $RefreshReg$(_c, "DeliveredCards");
@@ -45368,9 +45428,10 @@ $RefreshReg$(_c, "DeliveredCards");
 module.exports["carousel"] = `hlG3ma_carousel`;
 module.exports["carousel-control-next"] = `hlG3ma_carousel-control-next`;
 module.exports["carousel-control-prev"] = `hlG3ma_carousel-control-prev`;
-module.exports["carousel-indicators"] = `hlG3ma_carousel-indicators`;
 module.exports["carousel-item"] = `hlG3ma_carousel-item`;
+module.exports["clickedFullscreen"] = `hlG3ma_clickedFullscreen`;
 module.exports["container"] = `hlG3ma_container`;
+module.exports["dialogClose"] = `hlG3ma_dialogClose`;
 module.exports["downloadLink"] = `hlG3ma_downloadLink`;
 module.exports["heading"] = `hlG3ma_heading`;
 module.exports["hr"] = `hlG3ma_hr`;
@@ -45457,6 +45518,16 @@ var _icons8GithubSvg = require("../../../assets/Icons/icons8-github.svg");
 var _icons8GithubSvgDefault = parcelHelpers.interopDefault(_icons8GithubSvg);
 var _icons8Download50Png = require("../../../assets/Icons/icons8-download-50.png");
 var _icons8Download50PngDefault = parcelHelpers.interopDefault(_icons8Download50Png);
+var _1Png = require("../../../assets/DeliveredProject/LocalLibrary/1.png");
+var _1PngDefault = parcelHelpers.interopDefault(_1Png);
+var _honour1Jpg = require("../../../assets/HonorImage/honour 1.jpg");
+var _honour1JpgDefault = parcelHelpers.interopDefault(_honour1Jpg);
+var _honour2Jpg = require("../../../assets/HonorImage/honour 2.jpg");
+var _honour2JpgDefault = parcelHelpers.interopDefault(_honour2Jpg);
+var _honour3Jpg = require("../../../assets/HonorImage/honour 3.jpg");
+var _honour3JpgDefault = parcelHelpers.interopDefault(_honour3Jpg);
+var _honour4Jpg = require("../../../assets/HonorImage/honour 4.jpg");
+var _honour4JpgDefault = parcelHelpers.interopDefault(_honour4Jpg);
 let aspireMe = ()=>{
     return {
         Name: "AspireMe",
@@ -45480,26 +45551,77 @@ let aspireMe = ()=>{
                 icon: (0, _icons8Download50PngDefault.default)
             },
             {
-                name: "gitHubLink",
+                name: "GitHub Link",
                 link: "https://github.com/joelwillSeek/aspireme_flutter",
                 icon: (0, _icons8GithubSvgDefault.default)
             }
         ]
     };
 };
-// let Calcula=()=>{
-//     return 
-//     {
-//         Name:"Calcula",
-//         de
-//     }
-//     ;
-// }
+let localLibrary = ()=>{
+    return {
+        Name: "Local Library",
+        description: "A full stack web stack based on MERN stack.",
+        demoImages: [
+            (0, _1PngDefault.default)
+        ],
+        madeFromImage: [
+            {
+                name: "Flutter",
+                link: (0, _icons8FlutterSvgDefault.default)
+            }
+        ],
+        downloadLinks: [
+            {
+                name: "Coming Soon",
+                link: "#",
+                icon: (0, _icons8Download50PngDefault.default)
+            },
+            {
+                name: "Github Link",
+                link: "https://github.com/joelwillSeek/Express_Library_JS_Odin",
+                icon: (0, _icons8GithubSvgDefault.default)
+            }
+        ]
+    };
+};
+let honour_project = ()=>{
+    return {
+        Name: "Honour",
+        description: "An app about keeping track of people and there relationships to you",
+        demoImages: [
+            (0, _honour1JpgDefault.default),
+            (0, _honour2JpgDefault.default),
+            (0, _honour3JpgDefault.default),
+            (0, _honour4JpgDefault.default)
+        ],
+        madeFromImage: [
+            {
+                name: "Flutter",
+                link: (0, _icons8FlutterSvgDefault.default)
+            }
+        ],
+        downloadLinks: [
+            {
+                name: "Coming Soon",
+                link: "#",
+                icon: (0, _icons8Download50PngDefault.default)
+            },
+            {
+                name: "Github Link",
+                link: "https://github.com/joelwillSeek/honour_flutter",
+                icon: (0, _icons8GithubSvgDefault.default)
+            }
+        ]
+    };
+};
 exports.default = [
-    aspireMe()
+    aspireMe(),
+    localLibrary(),
+    honour_project()
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../../assets/Icons/icons8-download-50.png":"8kdQk","../../../assets/Icons/icons8-github.svg":"ahfxp","../../../assets/DeliveredProject/ApsireMe/1.jpg":"flDTw","../../../assets/DeliveredProject/ApsireMe/2.jpg":"jpYKe","../../../assets/DeliveredProject/ApsireMe/3.jpg":"4UjEw","../../../assets/DeliveredProject/ApsireMe/4.jpg":"dzrJR","../../../assets/Offering Services/icons8-flutter.svg":"iqpPx"}],"8kdQk":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../../../assets/Icons/icons8-download-50.png":"8kdQk","../../../assets/Icons/icons8-github.svg":"ahfxp","../../../assets/DeliveredProject/ApsireMe/1.jpg":"flDTw","../../../assets/DeliveredProject/ApsireMe/2.jpg":"jpYKe","../../../assets/DeliveredProject/ApsireMe/3.jpg":"4UjEw","../../../assets/DeliveredProject/ApsireMe/4.jpg":"dzrJR","../../../assets/Offering Services/icons8-flutter.svg":"iqpPx","../../../assets/DeliveredProject/LocalLibrary/1.png":"kZ0a7","../../../assets/HonorImage/honour 1.jpg":"4u44b","../../../assets/HonorImage/honour 2.jpg":"fnWKq","../../../assets/HonorImage/honour 3.jpg":"i8weN","../../../assets/HonorImage/honour 4.jpg":"dpGCZ"}],"8kdQk":[function(require,module,exports) {
 module.exports = require("ad62977ce0bda82c").getBundleURL("6EXJA") + "icons8-download-50.d470c29b.png" + "?" + Date.now();
 
 },{"ad62977ce0bda82c":"lgJ39"}],"ahfxp":[function(require,module,exports) {
@@ -45517,7 +45639,22 @@ module.exports = require("eba62ad45a1a1df8").getBundleURL("6EXJA") + "3.651437c4
 },{"eba62ad45a1a1df8":"lgJ39"}],"dzrJR":[function(require,module,exports) {
 module.exports = require("8fb045283d1368b8").getBundleURL("6EXJA") + "4.a8d3a455.jpg" + "?" + Date.now();
 
-},{"8fb045283d1368b8":"lgJ39"}],"jrWOl":[function(require,module,exports) {
+},{"8fb045283d1368b8":"lgJ39"}],"kZ0a7":[function(require,module,exports) {
+module.exports = require("d1340ee2cc76cedb").getBundleURL("6EXJA") + "1.db90a0ee.png" + "?" + Date.now();
+
+},{"d1340ee2cc76cedb":"lgJ39"}],"4u44b":[function(require,module,exports) {
+module.exports = require("cb870d685759f9c").getBundleURL("6EXJA") + "honour 1.713c07ce.jpg" + "?" + Date.now();
+
+},{"cb870d685759f9c":"lgJ39"}],"fnWKq":[function(require,module,exports) {
+module.exports = require("36120ec2bf7c8236").getBundleURL("6EXJA") + "honour 2.8890c119.jpg" + "?" + Date.now();
+
+},{"36120ec2bf7c8236":"lgJ39"}],"i8weN":[function(require,module,exports) {
+module.exports = require("829e09de36f6d303").getBundleURL("6EXJA") + "honour 3.1f9654e6.jpg" + "?" + Date.now();
+
+},{"829e09de36f6d303":"lgJ39"}],"dpGCZ":[function(require,module,exports) {
+module.exports = require("c8b8d53074f01664").getBundleURL("6EXJA") + "honour 4.3d7e5b7e.jpg" + "?" + Date.now();
+
+},{"c8b8d53074f01664":"lgJ39"}],"jrWOl":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8943 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
