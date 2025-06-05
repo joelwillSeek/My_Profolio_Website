@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MobileNavbar from "./componets/MobileNavbar";
 import ColorTheme from "../Theme/ColorTheme";
-import PrettyButton from "../PrettyButton/PrettyButton";
+import PrettyButton from "./PrettyButton";
 
 export default function NormalNavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

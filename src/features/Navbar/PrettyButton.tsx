@@ -10,6 +10,7 @@ export default function PrettyButton({
   isActive: boolean;
 }) {
   return (
+    //
     <button
       //   href="#home"
       className={`hover:text-[#1C77C3] transition-colors duration-300 cursor-pointer p-1 rounded-md`}
