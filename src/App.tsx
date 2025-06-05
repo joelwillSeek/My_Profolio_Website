@@ -1,6 +1,7 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 import React, { useState } from "react";
 import NormalNavBar from "./features/Navbar/NavBar";
+import HeroPage from "./features/HeroPage/HeroPage";
 
 // Add these lines to your index.html file in the <head> section:
 
@@ -99,48 +100,7 @@ const App: React.FC = () => {
     <div className="min-h-screen font-sans text-gray-800">
       <NormalNavBar />
       {/* Hero Section */}
-      <section
-        id="home"
-        className="pt-24 pb-20 md:pt-32 md:pb-24 relative overflow-hidden"
-      >
-        <div
-          className="absolute inset-0 z-0 overflow-hidden"
-          style={{
-            backgroundImage: `url(https://readdy.ai/api/search-image?query=abstract%20geometric%20background%20with%20subtle%20gradient%20using%20light%20shades%20of%20orange%20and%20blue%2C%20modern%20minimalist%20design%20pattern%2C%20professional%20clean%20look%20suitable%20for%20portfolio%20hero%20section%20with%20text%20space%20on%20left%20side&width=1440&height=800&seq=7&orientation=landscape)`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                Hi, I'm <span className="text-[#FF6B35]">Alex</span>{" "}
-                <span className="text-[#1C77C3]">Johnson</span>
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-700 max-w-lg">
-                Full-stack developer specializing in creating beautiful,
-                functional, and user-centered digital experiences.
-              </p>
-              <a
-                href="#projects"
-                className="bg-[#FF6B35] hover:bg-[#e55a29] text-white py-3 px-8 rounded-lg transition-colors duration-300 inline-block font-medium !rounded-button whitespace-nowrap cursor-pointer"
-              >
-                View My Work
-              </a>
-            </div>
-            <div className="md:w-1/2 flex justify-center md:justify-end">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
-                <img
-                  src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20young%20male%20developer%20with%20friendly%20expression%2C%20high%20quality%20portrait%20photo%20with%20neutral%20background%2C%20professional%20lighting%2C%20suitable%20for%20portfolio%20website&width=400&height=400&seq=8&orientation=squarish"
-                  alt="Developer Portrait"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroPage />
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
