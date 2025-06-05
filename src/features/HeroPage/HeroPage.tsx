@@ -1,5 +1,4 @@
 import meImage from "../../assets/me.jpg";
-import ColorTheme from "../Theme/ColorTheme";
 
 export default function HeroPage() {
   const scrollToId = (idName: string) => {

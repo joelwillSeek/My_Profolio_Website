@@ -1,5 +1,5 @@
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
-import React, { useState } from "react";
+import React from "react";
 import NormalNavBar from "./features/Navbar/NavBar";
 import HeroPage from "./features/HeroPage/HeroPage";
 import ProjectsPage from "./features/ProjectsPage/ProjectsPage";
