@@ -1,38 +1,29 @@
 {
-  "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@mui/material": "^6.1.2",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "bootstrap": "^5.3.3",
-    "react": "^18.3.1",
-    "react-bootstrap": "^2.10.5",
-    "react-dom": "^18.3.1",
-    "react-simple-typewriter": "^5.0.1",
-    "react-spinners": "^0.14.1"
-  },
-  "name": "my_profolio_website",
-  "description": "<h1>My Profile Website</h1>",
-  "version": "1.0.0",
-  "devDependencies": {
-    "parcel": "^2.12.0",
-    "process": "^0.11.10",
-    "typescript": "^5.5.3"
-  },
+  "name": "my-profolio-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "parcel --open chrome src/index.html",
-    "build": "parcel build src/index.html  --dist-dir ./docs --public-url ./ --no-source-maps --no-scope-hoist"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joelwillSeek/My_Profolio_Website.git"
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joelwillSeek/My_Profolio_Website/issues"
-  },
-  "homepage": "https://github.com/joelwillSeek/My_Profolio_Website#readme"
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5"
+  }
 }
