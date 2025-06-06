@@ -15,9 +15,15 @@ export default function ProjectsPage() {
   return (
     <section id="projects" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          My Projects
-        </h2>
+        <div className="flex justify-center gap-1.5 items-center flex-row">
+          <h2 className="mr-1 text-orange-me text-3xl md:text-4xl font-bold text-center mb-4">
+            My
+          </h2>
+          <h2 className="text-blue-me text-3xl md:text-4xl font-bold text-center mb-4">
+            Projects
+          </h2>
+        </div>
+
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
           Here's a selection of my recent work. Each project represents my
           commitment to clean code, intuitive design, and solving real-world
@@ -80,18 +86,18 @@ function ProjectCard({ project }: { project: descriptionType }) {
           ))}
         </div>
         <div className="flex space-x-3">
-          <a
-            href="#"
-            className="bg-[#1C77C3] hover:bg-[#1a6cb0] text-white px-4 py-2 rounded text-sm !rounded-button whitespace-nowrap cursor-pointer"
-          >
-            <i className="fas fa-eye mr-2"></i>Live Demo
-          </a>
-          <a
-            href="#"
-            className="bg-[#FF6B35] hover:bg-[#e55a29] text-white px-4 py-2 rounded text-sm !rounded-button whitespace-nowrap cursor-pointer"
-          >
-            <i className="fab fa-github mr-2"></i>Code
-          </a>
+          {project.links.map((item) => (
+            <button
+              onClick={() => {
+                if (item.uriLink.trim().length <= 0) return;
+                window.open(item.uriLink, "_blank", "noopener");
+              }}
+              className="flex justify-between items-center gap-1 duration-300 ease-in-out transition hover:shadow-xl/30 bg-[#1C77C3] hover:bg-orange-me text-white px-4 py-2 rounded text-sm !rounded-button whitespace-nowrap cursor-pointer hover:-translate-y-1 hover:scale-110"
+            >
+              <i className={item.icon}></i>
+              {item.uriLink.trim().length <= 0 ? "Coming Soon" : item.linkLabel}
+            </button>
+          ))}
         </div>
       </div>
     </div>

@@ -12,8 +12,8 @@ export default function PrettyButton({
   return (
     //
     <button
-      //   href="#home"
-      className={`hover:text-[#1C77C3] transition-colors duration-300 cursor-pointer p-1 rounded-md`}
+      //   href="#home"//
+      className={`hover:text-[#1C77C3] transition-colors duration-300 font-bold cursor-pointer p-2 rounded-3xl`}
       onClick={() => onClick()}
       style={{
         backgroundColor: isActive

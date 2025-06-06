@@ -13,7 +13,7 @@ export type descriptionType={
    string,
     category: string,
     technologies: {label:string,iconName:string,}[],
-    
+    links:{icon:string; linkLabel:string; uriLink:string;}[]
 }
 
 const honourProject:descriptionType={
@@ -23,6 +23,7 @@ const honourProject:descriptionType={
     image:honourImage,
     category:category.mobile,
     technologies:[{label:"Supabase",iconName:"fa-solid fa-database"},{label:"Flutter",iconName:"fa-brands fa-flutter  mr-2"}],
+    links:[{icon:"fa-brands fa-google-play",linkLabel:"Google Playstore",uriLink:"https://play.google.com/store/apps/details?id=com.joelthousend.honour.honour&pcampaignid=web_share"},{icon:"fa-brands fa-github",linkLabel:'Github',uriLink:""}]
   
 }
 
