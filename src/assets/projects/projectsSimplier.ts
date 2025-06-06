@@ -1,4 +1,4 @@
-import honourImage from "./honour/images/1.jpg";
+import honourImage from "./honour/images/1.png";
 
 const category={
     mobile:"Mobile"
@@ -18,7 +18,7 @@ export type descriptionType={
 
 const honourProject:descriptionType={
     id:1,
-    title:"Honour Relationships: Connect Smarterr",
+    title:"Honour Relationships: Build Memorable And Honorable Relationships",
     description:"Manage your network like never before. Honour Relationships, a Flutter app, employs graph data structures to visually organize your connections. Get smart reminders for every interaction and effectively re-engage with past relationships on the Recycling Page. Build, maintain, and truly honour your relationships.",
     image:honourImage,
     category:category.mobile,
