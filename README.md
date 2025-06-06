@@ -19,7 +19,7 @@ This profile page is built with a modern, efficient, and popular tech stack:
 
 This profile page is deployed and hosted on **Netlify**. That means every time I push an update to the `main` branch of this GitHub repository, Netlify automatically triggers a new build and deploys the latest version live to the web. It's truly continuous deployment at its finest!
 
-link: [click here]()
+link: [click here](https://eyoelsprofioliowebsite.netlify.app/)
 
 ---
 
