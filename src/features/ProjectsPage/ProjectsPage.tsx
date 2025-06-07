@@ -1,12 +1,13 @@
 import { useState } from "react";
 import projectsSimplier, {
+  category,
+  categoryAsArray,
   type descriptionType,
 } from "../../assets/projects/projectsSimplier";
 
 export default function ProjectsPage() {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState(category.all);
 
-  const categories = ["All", "Web", "Mobile", "Design"];
   const filteredProjects =
     activeFilter === "All"
       ? projectsSimplier
@@ -31,7 +32,7 @@ export default function ProjectsPage() {
         </p>
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center mb-12 gap-2">
-          {categories.map((category) => (
+          {categoryAsArray.map((category) => (
             <button
               key={category}
               onClick={() => setActiveFilter(category)}
@@ -79,9 +80,14 @@ function ProjectCard({ project }: { project: descriptionType }) {
           {project.technologies.map((tech, index) => (
             <span
               key={index}
-              className="bg-[#FF6B35] bg-opacity-10 text-[#fff] font-bold text-sm px-3 py-1 rounded-full"
+              className="bg-[#FF6B35] bg-opacity-10 text-[#fff] font-bold text-sm px-3 py-1 rounded-full flex flex-row  justify-center items-center gap-2"
             >
-              <i className={tech.iconName}></i> {tech.label}
+              {tech.linksAsIconOrImage ? (
+                <img src={tech.iconName} width={20} height={20}></img>
+              ) : (
+                <i className={tech.iconName}></i>
+              )}
+              {tech.label}
             </span>
           ))}
         </div>
