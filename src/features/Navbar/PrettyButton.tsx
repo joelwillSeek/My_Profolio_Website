@@ -13,13 +13,17 @@ export default function PrettyButton({
     //
     <button
       //   href="#home"//
-      className={`hover:text-[#1C77C3] transition-colors duration-300 font-bold cursor-pointer p-2 rounded-3xl`}
+      className={`hover:text-[#1C77C3] transition-colors duration-600 font-medium cursor-pointer p-2 rounded-md shadow-md  ${
+        isActive ? "border-b-transparent" : "border-b-2"
+      }`}
       onClick={() => onClick()}
       style={{
         backgroundColor: isActive
           ? ColorTheme.orangeAccentColor
-          : "transparent",
-        color: isActive ? ColorTheme.whiteTextColor : ColorTheme.blackTextColor,
+          : ColorTheme.whiteTextColor,
+
+        //  color: isActive ?
+        color: isActive ? ColorTheme.whiteTextColor : ColorTheme.blackTextColor, //: ColorTheme.blackTextColor,
       }}
     >
       {label}
