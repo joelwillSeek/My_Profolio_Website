@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import MobileNavbar from "./componets/MobileNavbar";
 import ColorTheme from "../Theme/ColorTheme";
 import PrettyButton from "./PrettyButton";
-import { useSelector } from "react-redux";
 import { useAppDispatch, useAppSelector } from "../../core/redux/store";
 import { setLightTheme } from "../../core/redux/themeSlice";
 
