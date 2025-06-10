@@ -1,6 +1,10 @@
 import meImage from "../../assets/me.jpg";
+import { useAppSelector } from "../../core/redux/store";
 
 export default function HeroPage() {
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
   const scrollToId = (idName: string) => {
     const el = document.getElementById(idName);
     el?.scrollIntoView({ behavior: "smooth" });
@@ -40,7 +44,11 @@ export default function HeroPage() {
             </a>
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-end">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+            <div
+              className={`w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 ${
+                isLightTheme ? "border-white" : "border-gray-900"
+              } shadow-xl`}
+            >
               <img
                 src={meImage}
                 className="w-full h-full object-cover object-top"

@@ -5,6 +5,7 @@ import HeroPage from "./features/HeroPage/HeroPage";
 import ProjectsPage from "./features/ProjectsPage/ProjectsPage";
 import SkillsPage from "./features/SkillsPage/SkillsPage";
 import ContactPage from "./features/ContactPage/ContactPage";
+import "./App.css";
 
 // Add these lines to your index.html file in the <head> section:
 

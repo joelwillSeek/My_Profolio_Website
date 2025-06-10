@@ -1,8 +1,15 @@
+import { useAppSelector } from "../../core/redux/store";
 import { skills } from "./data";
 
 export default function SkillsPage() {
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
   return (
-    <section id="skills" className="py-20 bg-white">
+    <section
+      id="skills"
+      className={`py-20 ${isLightTheme ? "bg-white" : "bg-dark-nav"} `}
+    >
       <div className="container mx-auto px-6">
         <div className="flex justify-center gap-1.5 items-center flex-row">
           <h2 className="mr-1 text-orange-me text-3xl md:text-4xl font-bold text-center mb-4">
@@ -12,7 +19,11 @@ export default function SkillsPage() {
             Skills
           </h2>
         </div>
-        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-16">
+        <p
+          className={`${
+            isLightTheme ? "text-gray-600" : "text-gray-200"
+          }  text-center max-w-2xl mx-auto mb-16`}
+        >
           I've developed expertise in various technologies and tools throughout
           my career. Here's an overview of my technical skills and proficiency
           levels.
@@ -33,7 +44,9 @@ export default function SkillsPage() {
             return (
               <div
                 key={category}
-                className="bg-gray-50 rounded-lg p-6 shadow-md"
+                className={`${
+                  isLightTheme ? "bg-gray-50" : "bg-button-background"
+                } rounded-lg p-6 shadow-md`}
               >
                 <h3 className="text-xl font-bold text-[#1C77C3] mb-6 flex items-center">
                   <i

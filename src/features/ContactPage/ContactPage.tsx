@@ -1,25 +1,36 @@
 import { useState } from "react";
+import { useAppSelector } from "../../core/redux/store";
 
 export default function ContactPage() {
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section
+      id="contact"
+      className={`py-20 ${isLightTheme ? "bg-gray-50" : "bg-dark-nav"}`}
+    >
       <div className="container mx-auto px-6">
         <HeaderText />
-        <HeaderDescription />
+        <HeaderDescription isLightTheme={isLightTheme} />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <SendMessageThroughEmail />
+          <SendMessageThroughEmail isLightTheme={isLightTheme} />
           <div className="flex flex-col justify-between">
-            <ContactInfo />
-            <FollowMe />
+            <ContactInfo isLightTheme={isLightTheme} />
+            <FollowMe isLightTheme={isLightTheme} />
           </div>
         </div>
       </div>
     </section>
   );
 }
-function FollowMe() {
+function FollowMe({ isLightTheme }: { isLightTheme: boolean }) {
   return (
-    <div className="bg-white rounded-lg shadow-md p-8">
+    <div
+      className={`${
+        isLightTheme ? "bg-white" : "bg-button-background"
+      } rounded-lg shadow-md p-8`}
+    >
       <h3 className="text-xl font-bold mb-6 text-[#1C77C3]">Follow Me</h3>
       <div className="flex space-x-4">
         {[
@@ -44,9 +55,13 @@ function FollowMe() {
   );
 }
 
-function ContactInfo() {
+function ContactInfo({ isLightTheme }: { isLightTheme: boolean }) {
   return (
-    <div className="bg-white rounded-lg shadow-md p-8 mb-8">
+    <div
+      className={`${
+        isLightTheme ? "bg-white" : "bg-button-background"
+      } rounded-lg shadow-md p-8 mb-8`}
+    >
       <h3 className="text-xl font-bold mb-6 text-[#1C77C3]">
         Contact Information
       </h3>
@@ -69,6 +84,7 @@ function ContactInfo() {
           },
         ].map((item) => (
           <ContactInfoItem
+            isLightTheme={isLightTheme}
             icon={item.icon}
             text={item.text}
             headerText={item.headerText}
@@ -83,10 +99,12 @@ function ContactInfoItem({
   headerText,
   text,
   icon,
+  isLightTheme,
 }: {
   headerText: string;
   text: string;
   icon: string;
+  isLightTheme: boolean;
 }) {
   return (
     <div className="flex items-start group">
@@ -94,10 +112,18 @@ function ContactInfoItem({
         <i className={icon}></i>
       </div>
       <div>
-        <h4 className=" font-bold group-hover:text-orange-me duration-300 ease-in-out transition-all transform group-hover:-translate-y-1  group-hover:text-shadow-sm">
+        <h4
+          className={`${
+            isLightTheme ? "text-gray-600" : "text-blue-400"
+          }  font-bold group-hover:text-orange-me duration-300 ease-in-out transition-all transform group-hover:-translate-y-1  group-hover:text-shadow-sm`}
+        >
           {headerText}
         </h4>
-        <p className="text-gray-600 transform group-hover:-translate-y-1 duration-300 ease-in-out group-hover:text-shadow-sm transition-transform">
+        <p
+          className={`${
+            isLightTheme ? "text-gray-600" : "text-gray-200"
+          } transform group-hover:-translate-y-1 duration-300 ease-in-out group-hover:text-shadow-sm transition-transform`}
+        >
           {text}
         </p>
       </div>
@@ -105,7 +131,7 @@ function ContactInfoItem({
   );
 }
 
-function SendMessageThroughEmail() {
+function SendMessageThroughEmail({ isLightTheme }: { isLightTheme: boolean }) {
   const handleEmailButtonClick = (
     subject: string,
     body: string,
@@ -141,13 +167,22 @@ function SendMessageThroughEmail() {
   const [message, setMessage] = useState("");
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-8">
+    <div
+      className={` ${
+        isLightTheme ? "bg-white" : "bg-button-background"
+      } rounded-lg shadow-md p-8`}
+    >
       <h3 className="text-xl font-bold mb-6 text-[#1C77C3]">
         Send Me a Message
       </h3>
       <form>
         <div className="mb-6">
-          <label htmlFor="name" className="block text-gray-700 mb-2">
+          <label
+            htmlFor="name"
+            className={`block ${
+              isLightTheme ? "text-gray-700" : "text-gray-200"
+            } mb-2`}
+          >
             Name
           </label>
           <input
@@ -162,7 +197,12 @@ function SendMessageThroughEmail() {
           />
         </div>
         <div className="mb-6">
-          <label htmlFor="email" className="block text-gray-700 mb-2">
+          <label
+            htmlFor="email"
+            className={`block ${
+              isLightTheme ? "text-gray-700" : "text-gray-200"
+            } mb-2`}
+          >
             Email
           </label>
           <input
@@ -177,7 +217,12 @@ function SendMessageThroughEmail() {
           />
         </div>
         <div className="mb-6">
-          <label htmlFor="message" className="block text-gray-700 mb-2">
+          <label
+            htmlFor="message"
+            className={`block ${
+              isLightTheme ? "text-gray-700" : "text-gray-200"
+            } mb-2`}
+          >
             Message
           </label>
           <textarea
@@ -220,9 +265,13 @@ function SendMessageThroughEmail() {
   );
 }
 
-function HeaderDescription() {
+function HeaderDescription({ isLightTheme }: { isLightTheme: boolean }) {
   return (
-    <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+    <p
+      className={`${
+        isLightTheme ? "text-gray-600" : "text-gray-200"
+      } text-center max-w-2xl mx-auto mb-12`}
+    >
       Have a{" "}
       <span className="text-orange-me font-bold italic">project in mind </span>
       or want to discuss{" "}

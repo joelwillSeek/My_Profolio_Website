@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import MobileNavbar from "./componets/MobileNavbar";
 import ColorTheme from "../Theme/ColorTheme";
 import PrettyButton from "./PrettyButton";
+import { useSelector } from "react-redux";
+import { useAppDispatch, useAppSelector } from "../../core/redux/store";
+import { setLightTheme } from "../../core/redux/themeSlice";
 
 export default function NormalNavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +14,12 @@ export default function NormalNavBar() {
   const [active, setActive] = useState("home");
 
   const sectionIds = ["home", "projects", "skills", "contact"];
+
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
+
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,15 +61,12 @@ export default function NormalNavBar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-white shadow-md py-2" : "py-5 bg-transparent"
+        className={`${
+          isLightTheme ? "bg-white" : `bg-button-background`
+        }  fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled ? "shadow-md py-2" : "py-5 sm:bg-transparent"
         }`}
       >
-        {/* <header
-        className={`fixed w-full z-50 transition-all duration-300 ${
-          scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
-        }`}
-      > */}
         <div className="container mx-auto px-6 flex justify-between items-center">
           <a
             href="#"
@@ -75,12 +81,22 @@ export default function NormalNavBar() {
             </p>
           </a>
           <div className="hidden md:flex space-x-8">
-            {/* <a
-              href="#home"
-              className="hover:text-[#1C77C3] transition-colors duration-300 cursor-pointer"
+            <div
+              className={`hover:text-[#1C77C3] flex gap-1.5 flex-row justify-center items-center border-b-2 ${
+                isLightTheme ? "bg-white" : "bg-dark-nav"
+              }  transition-colors duration-600 font-medium cursor-pointer p-2 rounded-md shadow-md ${
+                isLightTheme ? "text-black" : "text-white"
+              }`}
+              onMouseDown={() => {
+                dispatch(setLightTheme(!isLightTheme));
+              }}
             >
-              Home
-            </a> */}
+              <i
+                className="fa-solid fa-sun "
+                style={{ color: isLightTheme ? "black" : "white" }}
+              ></i>
+              {isLightTheme ? "Light" : "Dark"}
+            </div>
             <PrettyButton
               isActive={active == sectionIds[0]}
               label="Home"
@@ -109,25 +125,6 @@ export default function NormalNavBar() {
                 scrollToId("contact");
               }}
             />
-            {/* <a
-              href="#projects"
-              className="hover:text-[#1C77C3] transition-colors duration-300 cursor-pointer"
-            >
-              Projects
-            </a>
-            <a
-              href="#skills"
-              className="hover:text-[#1C77C3] transition-colors duration-300 cursor-pointer"
-            >
-              Skills
-            </a>
-            <a
-              href="#contact"
-              className="hover:text-[#1C77C3] transition-colors duration-300 cursor-pointer"
-            >
-              Contact
-            </a>
-            */}
           </div>
           <button
             className="md:hidden text-gray-800 focus:outline-none cursor-pointer"

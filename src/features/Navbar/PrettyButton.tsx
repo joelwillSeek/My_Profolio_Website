@@ -1,3 +1,4 @@
+import { useAppSelector } from "../../core/redux/store";
 import ColorTheme from "../Theme/ColorTheme";
 
 export default function PrettyButton({
@@ -9,6 +10,9 @@ export default function PrettyButton({
   label: string;
   isActive: boolean;
 }) {
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
   return (
     //
     <button
@@ -20,10 +24,16 @@ export default function PrettyButton({
       style={{
         backgroundColor: isActive
           ? ColorTheme.orangeAccentColor
-          : ColorTheme.whiteTextColor,
+          : isLightTheme
+          ? ColorTheme.whiteTextColor
+          : ColorTheme.darkBackgroundTheme,
 
         //  color: isActive ?
-        color: isActive ? ColorTheme.whiteTextColor : ColorTheme.blackTextColor, //: ColorTheme.blackTextColor,
+        color: isActive
+          ? ColorTheme.whiteTextColor
+          : isLightTheme
+          ? ColorTheme.blackTextColor
+          : ColorTheme.whiteTextColor, //: ColorTheme.blackTextColor,
       }}
     >
       {label}
