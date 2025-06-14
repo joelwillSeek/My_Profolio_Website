@@ -3,7 +3,7 @@ import projectsSimplier, {
   category,
   categoryAsArray,
   type descriptionType,
-} from "../../assets/projects/projectsSimplier";
+} from "./projects/projectsSimplier";
 import { useAppSelector } from "../../core/redux/store";
 import scrollbar from "./scrollbar.module.css";
 

@@ -1,16 +1,16 @@
 import honourImage from "./honour/images/1.png";
 import lekirayImage from "./lekiray/images/1.png";
-import nestjs from "../nestjs.png";
-import nestjsAndLeikary from "../nestjsNandLikeray.png";
-import firebase from "../firebase.png";
+import nestjs from "../../../assets/nestjs.png";
+import nestjsAndLeikary from "../../../assets/nestjsNandLikeray.png";
+import firebase from "../../../assets/firebase.png";
 import habashalyImage from "./habeshaly/1.jpg";
-import imageOfProfile from "../../../public/vite.png"
+import imageOfProfile from "/vite.png"
 
 export const category = {
   all: "All",
   mobile: "Mobile",
   crossPlatform: "Cross Platform",
-  // design: "Design",
+  design: "Design",
   frontEnd: "Front End Web",
   backEnd: "Back End Server",
 };
@@ -19,7 +19,7 @@ export const categoryAsArray = [
   category.all,
   category.mobile,
   category.crossPlatform,
-  // category.design,
+  category.design,
   category.frontEnd,
   category.backEnd,
 ];
