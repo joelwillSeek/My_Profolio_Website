@@ -35,7 +35,10 @@ function FollowMe({ isLightTheme }: { isLightTheme: boolean }) {
       <div className="flex space-x-4">
         {[
           { icon: "fab fa-github", link: "https://github.com/joelwillSeek" },
-          { icon: "fab fa-linkedin-in", link: "#" },
+          {
+            icon: "fab fa-linkedin-in",
+            link: "https://www.linkedin.com/in/eyoel-seleshi-6511b1356",
+          },
           {
             icon: "fab fa-reddit",
             link: "https://www.reddit.com/user/joelwillseek/",
@@ -43,6 +46,7 @@ function FollowMe({ isLightTheme }: { isLightTheme: boolean }) {
         ].map((item, index) => (
           <a
             href={item.link}
+            target="_blank"
             className={`flex justify-center items-center ${
               index % 2 == 1 ? "bg-[#FF6B35]" : "bg-blue-me"
             }  text-white p-3 w-10 h-10 rounded-full transition-transform hover:scale-110 cursor-pointer`}

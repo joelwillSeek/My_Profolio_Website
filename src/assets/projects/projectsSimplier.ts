@@ -2,12 +2,15 @@ import honourImage from "./honour/images/1.png";
 import lekirayImage from "./lekiray/images/1.png";
 import nestjs from "../nestjs.png";
 import nestjsAndLeikary from "../nestjsNandLikeray.png";
+import firebase from "../firebase.png";
+import habashalyImage from "./habeshaly/1.jpg";
+import imageOfProfile from "../../../public/vite.png"
 
 export const category = {
   all: "All",
   mobile: "Mobile",
   crossPlatform: "Cross Platform",
-  design: "Design",
+  // design: "Design",
   frontEnd: "Front End Web",
   backEnd: "Back End Server",
 };
@@ -16,7 +19,7 @@ export const categoryAsArray = [
   category.all,
   category.mobile,
   category.crossPlatform,
-  category.design,
+  // category.design,
   category.frontEnd,
   category.backEnd,
 ];
@@ -26,7 +29,7 @@ export type descriptionType = {
   title: string;
   description: string;
   image: string;
-  category: string;
+  category: string[];
   technologies: {
     label: string;
     iconName: string;
@@ -41,7 +44,7 @@ const honourProject: descriptionType = {
   description:
     "Manage your network like never before. Honour Relationships, a Flutter app, employs graph data structures to visually organize your connections. Get smart reminders for every interaction and effectively re-engage with past relationships on the Recycling Page. Build, maintain, and truly honour your relationships.",
   image: honourImage,
-  category: category.crossPlatform,
+  category: [category.mobile,category.crossPlatform],
   technologies: [
     {
       linksAsIconOrImage: false,
@@ -84,7 +87,7 @@ const lekiaryProject: descriptionType = {
     "Lekiray: Ethiopian Real Estate Mobile Application (Flutter & Supabase)",
   description:
     "Developed Lekiray, a dedicated mobile application for showcasing real estate properties exclusively for the Ethiopian market. Built with Flutter for a seamless, cross-platform user experience, the app features an intuitive interface entirely in Amharic. Supabase provides a robust and secure backend, managing real-time property listings, user data, and authentication. This project demonstrates expertise in delivering localized, high-performance mobile solutions for specific market needs.",
-  category: category.crossPlatform,
+  category: [category.mobile,category.crossPlatform],
   links: [
     {
       icon: "fa-brands fa-google-play",
@@ -108,11 +111,57 @@ const backendLekiaryProject: descriptionType = {
   ],
 
   image: nestjsAndLeikary,
-  category: category.backEnd,
+  category: [category.backEnd],
   title: "Lekiary: Robust NestJS Backend Development",
   description:
     "This project focuses on building the backend infrastructure for the Lekiary application, utilizing the powerful and efficient NestJS framework. The backend will seamlessly support the existing front-end, ensuring a high-performance, scalable, and secure application.",
   links: [{ icon: "fa-brands fa-github", linkLabel: "Github", uriLink: "" }],
 };
 
-export default [honourProject, lekiaryProject, backendLekiaryProject];
+
+
+const habashApp: descriptionType = {
+  id: 4,
+  technologies: [
+     {
+      linksAsIconOrImage: false,
+      label: "Flutter",
+      iconName: "fa-brands fa-flutter",
+    },
+    {
+      linksAsIconOrImage:true,label:"Firebase",iconName:firebase
+    }
+  ],
+
+  image: habashalyImage,
+  category: [category.mobile,category.crossPlatform],
+  title: "Habashaly:a dating app for people in addis ababa, ethiopia",
+  description:
+    "Habesahly is your essential companion for navigating and enriching life in Addis Ababa! Designed specifically for the vibrant Ethiopian community, Habesahly connects you to everything that matters. From discovering the best local restaurants and hidden gems, to finding reliable services and staying informed on city events, Habesahly brings the pulse of Addis right to your fingertips. Embrace convenience, connect with your community, and experience Addis Ababa like never before. Welcome to Habesahly – Addis, simplified.",
+  links: [{ icon: "fa-brands fa-github", linkLabel: "Github", uriLink: "https://github.com/joelwillSeek/Flutter_MatchMaking_app" }],
+};
+
+
+const myProfilePic: descriptionType = {
+  id: 5,
+  technologies: [
+     {
+      linksAsIconOrImage: false,
+      label: "ReactJS",
+      iconName: "fa-brands fa-react",
+    },
+    {
+      linksAsIconOrImage:true,label:"Firebase",iconName:firebase
+    }
+  ],
+
+  image: imageOfProfile,
+  category: [category.frontEnd],
+  title: "My Own profile front end website",
+  description:
+    "Welcome to my digital space! This website isn't just a portfolio; it's a living example of my capabilities. Every element you see, from the interactive design to the responsive layout and smooth performance, showcases my expertise in [mention 1-2 key skills, e.g., 'front-end development' or 'UI/UX design']. Explore my projects to see how I translate ideas into engaging and functional experiences.",
+  links: [{ icon: "fa-brands fa-github", linkLabel: "Github", uriLink: "https://github.com/joelwillSeek/Flutter_MatchMaking_app" }],
+};
+
+
+export default [honourProject, lekiaryProject, backendLekiaryProject,habashApp,myProfilePic];

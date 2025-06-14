@@ -1,4 +1,3 @@
-
 import tailwindcss from "../../assets/tailwindcss.png";
 import react from "../../assets/react.svg";
 import typescript from "../../assets/typescriipt.png";
@@ -6,6 +5,8 @@ import mongodb from "../../assets/MongoDB.png";
 import nestjs from "../../assets/nestjs.png";
 import supabase from "../../assets/supabase.png";
 import firebase from "../../assets/firebase.png";
+import postgresql from "../../assets/postgresql.png";
+
 type skillsTypes = {
   name: string;
   level: number;
@@ -75,9 +76,16 @@ export const skills: skillsTypes[] = [
   {
     name: "MongoDB",
     level: 80,
-    category: "Backend",
+    category: "Database",
     image: true,
     icon: mongodb,
+  },
+   {
+    name: "Postgresql",
+    level: 80,
+    category: "Database",
+    image: true,
+    icon: postgresql,
   },
   // { name: "GraphQL", level: 70, category: "Backend" },
   {

@@ -36,6 +36,7 @@ export default function SkillsPage() {
             "Cross Platform",
             "DevOps",
             "Design",
+            "Database",
           ].map((category) => {
             const categorySkills = skills.filter(
               (skill) => skill.category === category

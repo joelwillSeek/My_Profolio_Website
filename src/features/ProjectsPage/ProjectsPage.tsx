@@ -17,7 +17,10 @@ export default function ProjectsPage() {
   const filteredProjects =
     activeFilter === "All"
       ? projectsSimplier
-      : projectsSimplier.filter((project) => project.category === activeFilter);
+      : projectsSimplier.filter(
+          (project) =>
+            project.category.filter((i) => i === activeFilter).length > 0
+        );
 
   return (
     <section
@@ -42,7 +45,11 @@ export default function ProjectsPage() {
           Here's a selection of my recent work. Each project represents my
           commitment to clean code, intuitive design, and solving real-world
           problems.
+          <h3 className="font-bold text-red-600 text-center mt-1">
+            !Hover on cards to see more description
+          </h3>
         </p>
+
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center mb-12 gap-2">
           {categoryAsArray.map((category) => (
@@ -107,10 +114,12 @@ function ProjectCard({ project }: { project: descriptionType }) {
         <h3 className="text-xl font-bold text-[#1C77C3] mb-2">
           {project.title}
         </h3>
-        <div className="flex flex-row">
-          <h3 className="text-sm font-bold text-white bg-orange-me mb-2 rounded-4xl p-1 pr-1.5 pl-1.5">
-            {project.category}
-          </h3>
+        <div className="flex flex-row gap-1">
+          {project.category.map((i) => (
+            <h3 className="text-sm font-bold text-white bg-orange-me mb-2 rounded-4xl p-1 pr-1.5 pl-1.5">
+              {i}
+            </h3>
+          ))}
         </div>
 
         <p className="text-gray-600 mb-4">
