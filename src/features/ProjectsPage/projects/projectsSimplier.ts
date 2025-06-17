@@ -3,7 +3,7 @@ import lekirayImage from "./lekiray/images/1.png";
 import nestjs from "../../../assets/nestjs.png";
 import nestjsAndLeikary from "../../../assets/nestjsNandLikeray.png";
 import firebase from "../../../assets/firebase.png";
-import habashalyImage from "./habeshaly/1.jpg";
+import habashalyImage from "./habeshaly/5.jpg";
 import imageOfProfile from "/vite.png"
 
 export const category = {
@@ -141,7 +141,6 @@ const habashApp: descriptionType = {
   links: [{ icon: "fa-brands fa-github", linkLabel: "Github", uriLink: "https://github.com/joelwillSeek/Flutter_MatchMaking_app" }],
 };
 
-
 const myProfilePic: descriptionType = {
   id: 5,
   technologies: [
@@ -162,6 +161,8 @@ const myProfilePic: descriptionType = {
     "Welcome to my digital space! This website isn't just a portfolio; it's a living example of my capabilities. Every element you see, from the interactive design to the responsive layout and smooth performance, showcases my expertise in [mention 1-2 key skills, e.g., 'front-end development' or 'UI/UX design']. Explore my projects to see how I translate ideas into engaging and functional experiences.",
   links: [{ icon: "fa-brands fa-github", linkLabel: "Github", uriLink: "https://github.com/joelwillSeek/Flutter_MatchMaking_app" }],
 };
+
+
 
 
 export default [honourProject, lekiaryProject, backendLekiaryProject,habashApp,myProfilePic];
