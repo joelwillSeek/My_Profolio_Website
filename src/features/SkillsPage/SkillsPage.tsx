@@ -1,3 +1,4 @@
+"use client";
 import { useThemeStore } from "../../core/store";
 import { skills } from "./data";
 import Image from "next/image";

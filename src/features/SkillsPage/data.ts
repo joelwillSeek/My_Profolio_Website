@@ -1,12 +1,3 @@
-import tailwindcss from "../../assets/tailwindcss.png";
-import react from "../../assets/react.svg";
-import typescript from "../../assets/typescriipt.png";
-import mongodb from "../../assets/MongoDB.png";
-import nestjs from "../../assets/nestjs.png";
-import supabase from "../../assets/supabase.png";
-import firebase from "../../assets/firebase.png";
-import postgresql from "../../assets/postgresql.png";
-
 type skillsTypes = {
   name: string;
   level: number;
@@ -28,14 +19,14 @@ export const skills: skillsTypes[] = [
     level: 70,
     category: "Frontend",
     image: true,
-    icon: tailwindcss,
+    icon: "/images/skills/tailwindcss.png",
   },
   {
     name: "React",
     level: 100,
     category: "Frontend",
-    icon: react,
-    image: false,
+    icon: "/images/skills/react.svg",
+    image: true,
   },
   {
     name: "Node.js",
@@ -49,22 +40,22 @@ export const skills: skillsTypes[] = [
     level: 90,
     category: "Frontend",
     image: true,
-    icon: typescript,
+    icon: "/images/skills/typescriipt.png",
   },
-  { name: "Nestjs", level: 80, category: "Backend", image: true, icon: nestjs },
+  { name: "Nestjs", level: 80, category: "Backend", image: true, icon: "/images/skills/nestjs.png" },
   {
     name: "Supabase",
     level: 80,
     category: "Backend",
     image: true,
-    icon: supabase,
+    icon: "/images/skills/supabase.png",
   },
   {
     name: "Firebase",
     level: 85,
     category: "Backend",
     image: true,
-    icon: firebase,
+    icon: "/images/skills/firebase.png",
   },
   {
     name: "UI/UX Design",
@@ -78,16 +69,15 @@ export const skills: skillsTypes[] = [
     level: 80,
     category: "Database",
     image: true,
-    icon: mongodb,
+    icon: "/images/skills/MongoDB.png",
   },
-   {
+  {
     name: "Postgresql",
     level: 80,
     category: "Database",
     image: true,
-    icon: postgresql,
+    icon: "/images/skills/postgresql.png",
   },
-  // { name: "GraphQL", level: 70, category: "Backend" },
   {
     name: "React Native",
     level: 80,
@@ -116,5 +106,4 @@ export const skills: skillsTypes[] = [
     image: false,
     icon: "fa-brands fa-docker",
   },
-  // { name: "AWS", level: 70, category: "DevOps" },
 ];

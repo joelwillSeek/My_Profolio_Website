@@ -1,4 +1,4 @@
-import meImage from "../../assets/me.jpg";
+"use client";
 import { useThemeStore } from "../../core/store";
 import Image from "next/image";
 
@@ -49,8 +49,10 @@ export default function HeroPage() {
               } shadow-xl`}
             >
               <Image
-                src={meImage}
+                src="/images/profile/me.jpg"
                 alt="Eyoel Seleshi"
+                width={400}
+                height={400}
                 className="w-full h-full object-cover object-top"
               />
             </div>
