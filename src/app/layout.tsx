@@ -1,22 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { JetBrains_Mono, Hanken_Grotesk } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Providers from "./Providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+  weight: ["400", "500", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const hankenGrotesk = Hanken_Grotesk({
+  variable: "--font-hanken-grotesk",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "Eyoel's Dev Portfolio",
-  description: "Dev Portfolio of Eyoel Seleshi",
+  title: "NEURAL_NET_v2.0 // CREATIVE_DEV",
+  description: "Portfolio of Eyoel Seleshi — Full-stack Developer",
   icons: {
     icon: "/vite.png",
   },
@@ -28,11 +30,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
+    <html lang="en" className="dark">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+      </head>
+      <body className={`${jetbrainsMono.variable} ${hankenGrotesk.variable} font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary`}>
         <Providers>
           {children}
         </Providers>

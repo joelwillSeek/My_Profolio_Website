@@ -1,64 +1,151 @@
 "use client";
-import { useThemeStore } from "../../core/store";
-import Image from "next/image";
+
+import { useEffect } from "react";
 
 export default function HeroPage() {
-  const isLightTheme = useThemeStore((state) => state.useLightTheme);
-  const scrollToId = (idName: string) => {
-    const el = document.getElementById(idName);
-    el?.scrollIntoView({ behavior: "smooth" });
-  };
+  // Mouse move background parallax
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      document.body.style.backgroundPosition = `${x}% ${y}%`;
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
   return (
-    <section
-      id="home"
-      className="pt-24 pb-20 md:pt-32 md:pb-24 relative overflow-hidden"
-    >
-      <div
-        className="absolute inset-0 z-0 overflow-hidden"
-        style={{
-          backgroundImage: `url(https://readdy.ai/api/search-image?query=abstract%20geometric%20background%20with%20subtle%20gradient%20using%20light%20shades%20of%20orange%20and%20blue%2C%20modern%20minimalist%20design%20pattern%2C%20professional%20clean%20look%20suitable%20for%20portfolio%20hero%20section%20with%20text%20space%20on%20left%20side&width=1440&height=800&seq=7&orientation=landscape)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      ></div>
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Hi, I&apos;m <span className="text-[#FF6B35]">Eyoel</span>{" "}
-              <span className="text-[#1C77C3]">Seleshi</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-700 max-w-lg">
-              Full-stack developer specializing in creating beautiful,
-              functional, and user-centered digital experiences.
-            </p>
-            <a
-              onClick={() => {
-                scrollToId("projects");
-              }}
-              className={`shadow-2xl bg-orange-me  hover:bg-blue-me text-white py-3 px-8 rounded-lg transition-colors duration-300 inline-block font-medium !rounded-button whitespace-nowrap cursor-pointer`}
-            >
-              View My Work
-            </a>
+    <>
+      {/* Scanline overlay */}
+      <div className="scanline" />
+
+      {/* Background Circuit Decoration */}
+      <div className="fixed inset-0 pointer-events-none opacity-20">
+        <div className="circuit-line w-full h-[1px] top-[20%] left-0" style={{ top: "20%" }} />
+        <div className="circuit-line w-[1px] h-full top-0" style={{ left: "15%" }} />
+        <div className="circuit-line w-[1px] h-full top-0" style={{ right: "15%" }} />
+        <div className="circuit-line w-full h-[1px] left-0" style={{ bottom: "20%" }} />
+        <div className="node-dot" style={{ top: "20%", left: "15%", boxShadow: "0 0 8px #93ccff" }} />
+        <div className="node-dot" style={{ top: "20%", right: "15%" }} />
+        <div className="node-dot" style={{ bottom: "20%", left: "15%" }} />
+        <div className="node-dot" style={{ bottom: "20%", right: "15%", boxShadow: "0 0 8px #93ccff" }} />
+      </div>
+
+      <main className="relative min-h-screen flex items-center justify-center pt-16 px-8 overflow-hidden">
+        {/* Left HUD Metadata */}
+        <div className="hidden lg:flex flex-col absolute left-8 top-1/2 -translate-y-1/2 space-y-8 border-l border-outline-variant pl-4">
+          <div className="space-y-1">
+            <p className="font-label-sm text-[12px] text-outline uppercase">Connection_Type</p>
+            <p className="font-code-snippet text-[14px] text-primary">ENCRYPTED_TUNNEL_0X</p>
           </div>
-          <div className="md:w-1/2 flex justify-center md:justify-end">
-            <div
-              className={`w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 ${
-                isLightTheme ? "border-white" : "border-gray-900"
-              } shadow-xl`}
-            >
-              <Image
-                src="/images/profile/me.jpg"
-                alt="Eyoel Seleshi"
-                width={400}
-                height={400}
-                className="w-full h-full object-cover object-top"
-              />
+          <div className="space-y-1">
+            <p className="font-label-sm text-[12px] text-outline uppercase">Local_IP</p>
+            <p className="font-code-snippet text-[14px] text-on-surface">192.168.1.104</p>
+          </div>
+          <div className="space-y-1">
+            <p className="font-label-sm text-[12px] text-outline uppercase">Server_Node</p>
+            <p className="font-code-snippet text-[14px] text-on-surface">LDN_SQR_BUNKER</p>
+          </div>
+          <div className="pt-4">
+            <div className="w-32 h-1 bg-surface-container-highest">
+              <div className="w-2/3 h-full bg-primary" style={{ boxShadow: "0 0 10px rgba(147,204,255,0.5)" }} />
+            </div>
+            <p className="font-label-sm text-[10px] mt-2 text-outline">UPSTREAM: 42.8 KB/S</p>
+          </div>
+        </div>
+
+        {/* Central Hero Content */}
+        <div className="relative z-10 text-center max-w-4xl mx-auto">
+          {/* Pulse Node Icon */}
+          <div className="relative inline-block mb-12">
+            <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full scale-150 animate-pulse" />
+            <div className="pulse-node relative w-24 h-24 border border-primary/50 flex items-center justify-center rounded-sm bg-surface/40 backdrop-blur-sm"
+              style={{ transform: "rotate(45deg)" }}>
+              <div style={{ transform: "rotate(-45deg)" }} className="flex flex-col items-center">
+                <span className="material-symbols-outlined text-primary" style={{ fontSize: 48, fontVariationSettings: "'FILL' 1" }}>
+                  hive
+                </span>
+              </div>
+            </div>
+            {/* Corner Accents */}
+            <div className="absolute -top-4 -left-4 w-6 h-6 border-t-2 border-l-2 border-primary" />
+            <div className="absolute -bottom-4 -right-4 w-6 h-6 border-b-2 border-r-2 border-primary" />
+          </div>
+
+          {/* Status Indicator */}
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="w-2 h-2 rounded-full bg-primary" style={{ boxShadow: "0 0 8px #93ccff" }} />
+            <span className="glitch-flicker font-label-sm text-[12px] text-primary tracking-[0.2em] uppercase">
+              SYSTEM_STATUS: [CONNECTED]
+            </span>
+          </div>
+
+          {/* Identity Header */}
+          <h1 className="font-headline-lg text-[32px] md:text-[64px] mb-8 leading-tight tracking-tighter">
+            <span className="text-outline-variant block font-label-sm text-[14px] mb-4">
+              IDENTITY_AUTH_SUCCESSFUL
+            </span>
+            USER_LOGIN:{" "}
+            <span className="text-primary italic">CREATIVE_DEV</span>
+          </h1>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-12">
+            <button className="group relative px-8 py-4 bg-primary text-on-primary font-label-sm text-[12px] uppercase tracking-widest overflow-hidden transition-all hover:pr-12">
+              <span className="relative z-10 flex items-center gap-2">
+                INITIALIZE_PROFILE
+                <span className="material-symbols-outlined text-[18px] group-hover:translate-x-2 transition-transform">
+                  chevron_right
+                </span>
+              </span>
+              <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform" />
+            </button>
+            <button className="px-8 py-4 border border-outline-variant text-on-surface font-label-sm text-[12px] uppercase tracking-widest hover:border-primary hover:text-primary transition-all backdrop-blur-sm">
+              VIEW_CODEBASE
+            </button>
+          </div>
+
+          {/* Sub-metadata grid */}
+          <div className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto border-t border-outline-variant/30 pt-8">
+            <div className="text-left">
+              <p className="font-label-sm text-[10px] text-outline mb-1">LATENCY</p>
+              <p className="font-code-snippet text-[14px] text-on-surface">14.02ms</p>
+            </div>
+            <div className="text-center">
+              <p className="font-label-sm text-[10px] text-outline mb-1">SESSION_TOKEN</p>
+              <p className="font-code-snippet text-[14px] text-on-surface">0x82A_99_ALPHA</p>
+            </div>
+            <div className="text-right">
+              <p className="font-label-sm text-[10px] text-outline mb-1">NODE_HEALTH</p>
+              <p className="font-code-snippet text-[14px] text-primary">OPTIMAL</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+
+        {/* Right HUD Metadata */}
+        <div className="hidden lg:flex flex-col absolute right-8 top-1/2 -translate-y-1/2 space-y-8 border-r border-outline-variant pr-4 text-right">
+          <div className="space-y-1">
+            <p className="font-label-sm text-[12px] text-outline uppercase">Active_Directives</p>
+            <p className="font-code-snippet text-[14px] text-on-surface">08_PROJECT_NEURAL</p>
+          </div>
+          <div className="space-y-1">
+            <p className="font-label-sm text-[12px] text-outline uppercase">Archive_State</p>
+            <p className="font-code-snippet text-[14px] text-on-surface">INDEXED_74%</p>
+          </div>
+          <div className="space-y-1">
+            <p className="font-label-sm text-[12px] text-outline uppercase">Auth_Level</p>
+            <p className="font-code-snippet text-[14px] text-primary">ADMIN_ROOT</p>
+          </div>
+          <div className="flex justify-end pt-4">
+            <div className="grid grid-cols-4 gap-1">
+              <div className="w-2 h-2 bg-primary" />
+              <div className="w-2 h-2 bg-primary" />
+              <div className="w-2 h-2 bg-primary/20" />
+              <div className="w-2 h-2 bg-primary/20" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </>
   );
 }
