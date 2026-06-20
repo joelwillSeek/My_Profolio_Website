@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import projectsSimplier, {
   category,
@@ -17,9 +18,9 @@ export default function ProjectsPage() {
     activeFilter === "All"
       ? projectsSimplier
       : projectsSimplier.filter(
-          (project) =>
-            project.category.filter((i) => i === activeFilter).length > 0
-        );
+        (project) =>
+          project.category.filter((i) => i === activeFilter).length > 0
+      );
 
   return (
     <section
@@ -37,9 +38,8 @@ export default function ProjectsPage() {
         </div>
 
         <p
-          className={` text-center max-w-2xl mx-auto mb-12 ${
-            isLightTheme ? "text-gray-600" : "text-gray-200"
-          }`}
+          className={` text-center max-w-2xl mx-auto mb-12 ${isLightTheme ? "text-gray-600" : "text-gray-200"
+            }`}
         >
           Here&apos;s a selection of my recent work. Each project represents my
           commitment to clean code, intuitive design, and solving real-world
@@ -55,15 +55,13 @@ export default function ProjectsPage() {
             <button
               key={category}
               onClick={() => setActiveFilter(category)}
-              className={`shadow-lg px-6 py-2 rounded-full transition-colors duration-300 !rounded-button whitespace-nowrap cursor-pointer ${
-                activeFilter === category
+              className={`shadow-lg px-6 py-2 rounded-full transition-colors duration-300 !rounded-button whitespace-nowrap cursor-pointer ${activeFilter === category
                   ? "bg-[#1C77C3] text-white"
-                  : `${
-                      isLightTheme
-                        ? "bg-white text-gray-700  "
-                        : "bg-button-background text-gray-100 "
-                    }    border-orange-me border-2 hover:bg-orange-me hover:text-white `
-              }`}
+                  : `${isLightTheme
+                    ? "bg-white text-gray-700  "
+                    : "bg-button-background text-gray-100 "
+                  }    border-orange-me border-2 hover:bg-orange-me hover:text-white `
+                }`}
             >
               {category}
             </button>
@@ -96,9 +94,8 @@ function ProjectCard({ project }: { project: descriptionType }) {
         setHover(false);
       }}
       key={project.id}
-      className={`${
-        isLightTheme ? "bg-white" : "bg-button-background"
-      } rounded-lg w-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2`}
+      className={`${isLightTheme ? "bg-white" : "bg-button-background"
+        } rounded-lg w-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2`}
     >
       <div className="h-56 overflow-hidden">
         <Image
@@ -136,7 +133,7 @@ function ProjectCard({ project }: { project: descriptionType }) {
               {tech.linksAsIconOrImage ? (
                 <Image src={tech.iconName} alt={tech.label} width={20} height={20} />
               ) : (
-                <i className={tech.iconName}></i>
+                <i className={tech.iconName as string}></i>
               )}
               {tech.label}
             </span>

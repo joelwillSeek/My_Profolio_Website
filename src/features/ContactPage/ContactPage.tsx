@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { useThemeStore } from "../../core/store";
 
@@ -25,9 +27,8 @@ export default function ContactPage() {
 function FollowMe({ isLightTheme }: { isLightTheme: boolean }) {
   return (
     <div
-      className={`${
-        isLightTheme ? "bg-white" : "bg-button-background"
-      } rounded-lg shadow-md p-8`}
+      className={`${isLightTheme ? "bg-white" : "bg-button-background"
+        } rounded-lg shadow-md p-8`}
     >
       <h3 className="text-xl font-bold mb-6 text-[#1C77C3]">Follow Me</h3>
       <div className="flex space-x-4">
@@ -46,9 +47,8 @@ function FollowMe({ isLightTheme }: { isLightTheme: boolean }) {
             key={index}
             href={item.link}
             target="_blank"
-            className={`flex justify-center items-center ${
-              index % 2 == 1 ? "bg-[#FF6B35]" : "bg-blue-me"
-            }  text-white p-3 w-10 h-10 rounded-full transition-transform hover:scale-110 cursor-pointer`}
+            className={`flex justify-center items-center ${index % 2 == 1 ? "bg-[#FF6B35]" : "bg-blue-me"
+              }  text-white p-3 w-10 h-10 rounded-full transition-transform hover:scale-110 cursor-pointer`}
           >
             <i className={item.icon}></i>
           </a>
@@ -61,9 +61,8 @@ function FollowMe({ isLightTheme }: { isLightTheme: boolean }) {
 function ContactInfo({ isLightTheme }: { isLightTheme: boolean }) {
   return (
     <div
-      className={`${
-        isLightTheme ? "bg-white" : "bg-button-background"
-      } rounded-lg shadow-md p-8 mb-8`}
+      className={`${isLightTheme ? "bg-white" : "bg-button-background"
+        } rounded-lg shadow-md p-8 mb-8`}
     >
       <h3 className="text-xl font-bold mb-6 text-[#1C77C3]">
         Contact Information
@@ -117,16 +116,14 @@ function ContactInfoItem({
       </div>
       <div>
         <h4
-          className={`${
-            isLightTheme ? "text-gray-600" : "text-blue-400"
-          }  font-bold group-hover:text-orange-me duration-300 ease-in-out transition-all transform group-hover:-translate-y-1  group-hover:text-shadow-sm`}
+          className={`${isLightTheme ? "text-gray-600" : "text-blue-400"
+            }  font-bold group-hover:text-orange-me duration-300 ease-in-out transition-all transform group-hover:-translate-y-1  group-hover:text-shadow-sm`}
         >
           {headerText}
         </h4>
         <p
-          className={`${
-            isLightTheme ? "text-gray-600" : "text-gray-200"
-          } transform group-hover:-translate-y-1 duration-300 ease-in-out group-hover:text-shadow-sm transition-transform`}
+          className={`${isLightTheme ? "text-gray-600" : "text-gray-200"
+            } transform group-hover:-translate-y-1 duration-300 ease-in-out group-hover:text-shadow-sm transition-transform`}
         >
           {text}
         </p>
@@ -172,9 +169,8 @@ function SendMessageThroughEmail({ isLightTheme }: { isLightTheme: boolean }) {
 
   return (
     <div
-      className={` ${
-        isLightTheme ? "bg-white" : "bg-button-background"
-      } rounded-lg shadow-md p-8`}
+      className={` ${isLightTheme ? "bg-white" : "bg-button-background"
+        } rounded-lg shadow-md p-8`}
     >
       <h3 className="text-xl font-bold mb-6 text-[#1C77C3]">
         Send Me a Message
@@ -183,9 +179,8 @@ function SendMessageThroughEmail({ isLightTheme }: { isLightTheme: boolean }) {
         <div className="mb-6">
           <label
             htmlFor="name"
-            className={`block ${
-              isLightTheme ? "text-gray-700" : "text-gray-200"
-            } mb-2`}
+            className={`block ${isLightTheme ? "text-gray-700" : "text-gray-200"
+              } mb-2`}
           >
             Name
           </label>
@@ -203,9 +198,8 @@ function SendMessageThroughEmail({ isLightTheme }: { isLightTheme: boolean }) {
         <div className="mb-6">
           <label
             htmlFor="email"
-            className={`block ${
-              isLightTheme ? "text-gray-700" : "text-gray-200"
-            } mb-2`}
+            className={`block ${isLightTheme ? "text-gray-700" : "text-gray-200"
+              } mb-2`}
           >
             Email
           </label>
@@ -223,9 +217,8 @@ function SendMessageThroughEmail({ isLightTheme }: { isLightTheme: boolean }) {
         <div className="mb-6">
           <label
             htmlFor="message"
-            className={`block ${
-              isLightTheme ? "text-gray-700" : "text-gray-200"
-            } mb-2`}
+            className={`block ${isLightTheme ? "text-gray-700" : "text-gray-200"
+              } mb-2`}
           >
             Message
           </label>
@@ -272,9 +265,8 @@ function SendMessageThroughEmail({ isLightTheme }: { isLightTheme: boolean }) {
 function HeaderDescription({ isLightTheme }: { isLightTheme: boolean }) {
   return (
     <p
-      className={`${
-        isLightTheme ? "text-gray-600" : "text-gray-200"
-      } text-center max-w-2xl mx-auto mb-12`}
+      className={`${isLightTheme ? "text-gray-600" : "text-gray-200"
+        } text-center max-w-2xl mx-auto mb-12`}
     >
       Have a{" "}
       <span className="text-orange-me font-bold italic">project in mind </span>

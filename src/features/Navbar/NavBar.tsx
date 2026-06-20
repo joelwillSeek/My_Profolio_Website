@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import MobileNavbar from "./componets/MobileNavbar";
 import ColorTheme from "../Theme/ColorTheme";
@@ -56,11 +57,9 @@ export default function NormalNavBar() {
   return (
     <>
       <header
-        className={`${
-          isLightTheme ? "bg-white" : `bg-button-background`
-        }  fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "shadow-md py-2" : "py-5 sm:bg-transparent"
-        }`}
+        className={`${isLightTheme ? "bg-white" : `bg-button-background`
+          }  fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "shadow-md py-2" : "py-5 sm:bg-transparent"
+          }`}
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
           <a
@@ -77,11 +76,9 @@ export default function NormalNavBar() {
           </a>
           <div className="hidden md:flex space-x-8">
             <div
-              className={`hover:text-[#1C77C3] flex gap-1.5 flex-row justify-center items-center border-b-2 ${
-                isLightTheme ? "bg-white" : "bg-dark-nav"
-              }  transition-colors duration-600 font-medium cursor-pointer p-2 rounded-md shadow-md ${
-                isLightTheme ? "text-black" : "text-white"
-              }`}
+              className={`hover:text-[#1C77C3] flex gap-1.5 flex-row justify-center items-center border-b-2 ${isLightTheme ? "bg-white" : "bg-dark-nav"
+                }  transition-colors duration-600 font-medium cursor-pointer p-2 rounded-md shadow-md ${isLightTheme ? "text-black" : "text-white"
+                }`}
               onMouseDown={() => {
                 setLightTheme(!isLightTheme);
               }}

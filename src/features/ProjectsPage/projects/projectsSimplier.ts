@@ -4,7 +4,7 @@ import nestjs from "../../../assets/nestjs.png";
 import nestjsAndLeikary from "../../../assets/nestjsNandLikeray.png";
 import firebase from "../../../assets/firebase.png";
 import habashalyImage from "./habeshaly/5.jpg";
-import imageOfProfile from "/vite.png"
+
 
 export const category = {
   all: "All",
@@ -46,7 +46,7 @@ const honourProject: descriptionType = {
   description:
     "Manage your network like never before. Honour Relationships, a Flutter app, employs graph data structures to visually organize your connections. Get smart reminders for every interaction and effectively re-engage with past relationships on the Recycling Page. Build, maintain, and truly honour your relationships.",
   image: honourImage,
-  category: [category.mobile,category.crossPlatform],
+  category: [category.mobile, category.crossPlatform],
   technologies: [
     {
       linksAsIconOrImage: false,
@@ -89,7 +89,7 @@ const lekiaryProject: descriptionType = {
     "Lekiray: Ethiopian Real Estate Mobile Application (Flutter & Supabase)",
   description:
     "Developed Lekiray, a dedicated mobile application for showcasing real estate properties exclusively for the Ethiopian market. Built with Flutter for a seamless, cross-platform user experience, the app features an intuitive interface entirely in Amharic. Supabase provides a robust and secure backend, managing real-time property listings, user data, and authentication. This project demonstrates expertise in delivering localized, high-performance mobile solutions for specific market needs.",
-  category: [category.mobile,category.crossPlatform],
+  category: [category.mobile, category.crossPlatform],
   links: [
     {
       icon: "fa-brands fa-google-play",
@@ -125,18 +125,18 @@ const backendLekiaryProject: descriptionType = {
 const habashApp: descriptionType = {
   id: 4,
   technologies: [
-     {
+    {
       linksAsIconOrImage: false,
       label: "Flutter",
       iconName: "fa-brands fa-flutter",
     },
     {
-      linksAsIconOrImage:true,label:"Firebase",iconName:firebase
+      linksAsIconOrImage: true, label: "Firebase", iconName: firebase
     }
   ],
 
   image: habashalyImage,
-  category: [category.mobile,category.crossPlatform],
+  category: [category.mobile, category.crossPlatform],
   title: "Habashaly:a dating app for people in addis ababa, ethiopia",
   description:
     "Habesahly is your essential companion for navigating and enriching life in Addis Ababa! Designed specifically for the vibrant Ethiopian community, Habesahly connects you to everything that matters. From discovering the best local restaurants and hidden gems, to finding reliable services and staying informed on city events, Habesahly brings the pulse of Addis right to your fingertips. Embrace convenience, connect with your community, and experience Addis Ababa like never before. Welcome to Habesahly – Addis, simplified.",
@@ -146,17 +146,17 @@ const habashApp: descriptionType = {
 const myProfilePic: descriptionType = {
   id: 5,
   technologies: [
-     {
+    {
       linksAsIconOrImage: false,
       label: "ReactJS",
       iconName: "fa-brands fa-react",
     },
     {
-      linksAsIconOrImage:true,label:"Firebase",iconName:firebase
+      linksAsIconOrImage: true, label: "Firebase", iconName: firebase
     }
   ],
 
-  image: imageOfProfile,
+  image: "/vite.png,",
   category: [category.frontEnd],
   title: "My Own profile front end website",
   description:
@@ -167,5 +167,5 @@ const myProfilePic: descriptionType = {
 
 
 
-const projectsList = [honourProject, lekiaryProject, backendLekiaryProject,habashApp,myProfilePic];
+const projectsList = [honourProject, lekiaryProject, backendLekiaryProject, habashApp, myProfilePic];
 export default projectsList;
