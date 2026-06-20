@@ -1,9 +1,11 @@
-import { useThemeStore } from "../../core/store";
+import { useAppSelector } from "../../core/redux/store";
 import { skills } from "./data";
 import Image from "next/image";
 
 export default function SkillsPage() {
-  const isLightTheme = useThemeStore((state) => state.useLightTheme);
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
   return (
     <section
       id="skills"
@@ -23,8 +25,8 @@ export default function SkillsPage() {
             isLightTheme ? "text-gray-600" : "text-gray-200"
           }  text-center max-w-2xl mx-auto mb-16`}
         >
-          I&apos;ve developed expertise in various technologies and tools throughout
-          my career. Here&apos;s an overview of my technical skills and proficiency
+          I've developed expertise in various technologies and tools throughout
+          my career. Here's an overview of my technical skills and proficiency
           levels.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

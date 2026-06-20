@@ -1,4 +1,4 @@
-import { useThemeStore } from "../../core/store";
+import { useAppSelector } from "../../core/redux/store";
 import ColorTheme from "../Theme/ColorTheme";
 
 export default function PrettyButton({
@@ -6,11 +6,13 @@ export default function PrettyButton({
   label,
   isActive,
 }: {
-  onClick: () => void;
+  onClick: Function;
   label: string;
   isActive: boolean;
 }) {
-  const isLightTheme = useThemeStore((state) => state.useLightTheme);
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
   return (
     //
     <button

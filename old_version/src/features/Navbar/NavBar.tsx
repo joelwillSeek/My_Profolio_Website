@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import MobileNavbar from "./componets/MobileNavbar";
 import ColorTheme from "../Theme/ColorTheme";
 import PrettyButton from "./PrettyButton";
-import { useThemeStore } from "../../core/store";
-
-const sectionIds = ["home", "projects", "skills", "contact"];
+import { useAppDispatch, useAppSelector } from "../../core/redux/store";
+import { setLightTheme } from "../../core/redux/themeSlice";
 
 export default function NormalNavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,8 +12,13 @@ export default function NormalNavBar() {
 
   const [active, setActive] = useState("home");
 
-  const isLightTheme = useThemeStore((state) => state.useLightTheme);
-  const setLightTheme = useThemeStore((state) => state.setLightTheme);
+  const sectionIds = ["home", "projects", "skills", "contact"];
+
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
+
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,7 +76,7 @@ export default function NormalNavBar() {
               className="fas fa-code mr-2"
             ></i>
             <p style={{ color: ColorTheme.orangeAccentColor }}>
-              Eyoel&apos;s Portfolio
+              Eyoel's Portfolio
             </p>
           </a>
           <div className="hidden md:flex space-x-8">
@@ -83,7 +87,7 @@ export default function NormalNavBar() {
                 isLightTheme ? "text-black" : "text-white"
               }`}
               onMouseDown={() => {
-                setLightTheme(!isLightTheme);
+                dispatch(setLightTheme(!isLightTheme));
               }}
             >
               <i

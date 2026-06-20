@@ -24,17 +24,15 @@ export const categoryAsArray = [
   category.backEnd,
 ];
 
-import { StaticImageData } from "next/image";
-
 export type descriptionType = {
   id: number;
   title: string;
   description: string;
-  image: string | StaticImageData;
+  image: string;
   category: string[];
   technologies: {
     label: string;
-    iconName: string | StaticImageData;
+    iconName: string;
     linksAsIconOrImage: boolean;
   }[];
   links: { icon: string; linkLabel: string; uriLink: string }[];
@@ -167,5 +165,4 @@ const myProfilePic: descriptionType = {
 
 
 
-const projectsList = [honourProject, lekiaryProject, backendLekiaryProject,habashApp,myProfilePic];
-export default projectsList;
+export default [honourProject, lekiaryProject, backendLekiaryProject,habashApp,myProfilePic];

@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { useThemeStore } from "../../core/store";
+import { useAppSelector } from "../../core/redux/store";
 
 export default function ContactPage() {
-  const isLightTheme = useThemeStore((state) => state.useLightTheme);
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
   return (
     <section
       id="contact"
@@ -43,7 +45,6 @@ function FollowMe({ isLightTheme }: { isLightTheme: boolean }) {
           },
         ].map((item, index) => (
           <a
-            key={index}
             href={item.link}
             target="_blank"
             className={`flex justify-center items-center ${
@@ -87,7 +88,6 @@ function ContactInfo({ isLightTheme }: { isLightTheme: boolean }) {
           },
         ].map((item) => (
           <ContactInfoItem
-            key={item.headerText}
             isLightTheme={isLightTheme}
             icon={item.icon}
             text={item.text}
@@ -282,7 +282,7 @@ function HeaderDescription({ isLightTheme }: { isLightTheme: boolean }) {
       <span className="text-blue-me font-bold italic">
         potential opportunities?
       </span>{" "}
-      Feel free to reach out. I&apos;m always open to new{" "}
+      Feel free to reach out. I'm always open to new{" "}
       <span className="text-orange-me font-bold italic">challenges</span> and{" "}
       <span className="text-blue-me font-bold italic">collaborations</span>.
     </p>

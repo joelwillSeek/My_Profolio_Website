@@ -1,9 +1,11 @@
 import meImage from "../../assets/me.jpg";
-import { useThemeStore } from "../../core/store";
+import { useAppSelector } from "../../core/redux/store";
 import Image from "next/image";
 
 export default function HeroPage() {
-  const isLightTheme = useThemeStore((state) => state.useLightTheme);
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
   const scrollToId = (idName: string) => {
     const el = document.getElementById(idName);
     el?.scrollIntoView({ behavior: "smooth" });
@@ -26,7 +28,7 @@ export default function HeroPage() {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Hi, I&apos;m <span className="text-[#FF6B35]">Eyoel</span>{" "}
+              Hi, I'm <span className="text-[#FF6B35]">Eyoel</span>{" "}
               <span className="text-[#1C77C3]">Seleshi</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-700 max-w-lg">

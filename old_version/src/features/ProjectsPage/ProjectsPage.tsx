@@ -4,14 +4,16 @@ import projectsSimplier, {
   categoryAsArray,
   type descriptionType,
 } from "./projects/projectsSimplier";
-import { useThemeStore } from "../../core/store";
+import { useAppSelector } from "../../core/redux/store";
 import scrollbar from "./scrollbar.module.css";
 import Image from "next/image";
 
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState(category.all);
 
-  const isLightTheme = useThemeStore((state) => state.useLightTheme);
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
 
   const filteredProjects =
     activeFilter === "All"
@@ -41,7 +43,7 @@ export default function ProjectsPage() {
             isLightTheme ? "text-gray-600" : "text-gray-200"
           }`}
         >
-          Here&apos;s a selection of my recent work. Each project represents my
+          Here's a selection of my recent work. Each project represents my
           commitment to clean code, intuitive design, and solving real-world
           problems.
           <h3 className="font-bold text-red-600 text-center mt-1">
@@ -75,7 +77,7 @@ export default function ProjectsPage() {
           style={scrollbar}
         >
           {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <ProjectCard project={project} />
           ))}
         </div>
       </div>
@@ -84,7 +86,9 @@ export default function ProjectsPage() {
 }
 
 function ProjectCard({ project }: { project: descriptionType }) {
-  const isLightTheme = useThemeStore((state) => state.useLightTheme);
+  const isLightTheme = useAppSelector(
+    (state) => state.themeSlice.useLightTheme
+  );
   const [hover, setHover] = useState(false);
   return (
     <div
@@ -115,7 +119,7 @@ function ProjectCard({ project }: { project: descriptionType }) {
         </h3>
         <div className="flex flex-row gap-1">
           {project.category.map((i) => (
-            <h3 key={i} className="text-sm font-bold text-white bg-orange-me mb-2 rounded-4xl p-1 pr-1.5 pl-1.5">
+            <h3 className="text-sm font-bold text-white bg-orange-me mb-2 rounded-4xl p-1 pr-1.5 pl-1.5">
               {i}
             </h3>
           ))}
@@ -145,7 +149,6 @@ function ProjectCard({ project }: { project: descriptionType }) {
         <div className="flex space-x-3">
           {project.links.map((item) => (
             <button
-              key={item.linkLabel}
               onClick={() => {
                 if (item.uriLink.trim().length <= 0) return;
                 window.open(item.uriLink, "_blank", "noopener");
