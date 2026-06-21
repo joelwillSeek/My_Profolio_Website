@@ -17,7 +17,7 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "NEURAL_NET_v2.0 // CREATIVE_DEV",
+  title: "Eyoel Seleshi",
   description: "Portfolio of Eyoel Seleshi — Full-stack Developer",
   icons: {
     icon: "/vite.png",

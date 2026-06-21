@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
+import ScrambleText from "../../components/ScrambleText";
 
 export default function NormalNavBar() {
   const [sideHudOpen, setSideHudOpen] = useState(false);
@@ -23,33 +24,24 @@ export default function NormalNavBar() {
         <div className="flex justify-between items-center w-full px-8 py-1 max-w-[1440px] mx-auto">
           {/* Brand */}
           <div className="flex items-center gap-4">
-            <span className="font-headline-md text-[20px] font-bold text-primary tracking-tighter uppercase">
-              EYOEL
+            <span className="font-headline-md flex items-center text-[20px] font-bold text-primary tracking-tighter uppercase">
+              <ScrambleText text="EyoelSeleshi" trigger="hover" speed={30} />
             </span>
-            <span className="font-label-sm text-[12px] px-2 py-0.5 bg-primary-container text-on-primary">
-              LIVE_SESSION
+            <span className="font-headline-md flex items-center font-label-sm text-[12px] px-2 py-0.5 bg-primary-container text-on-primary">
+              <ScrambleText text="LIVE_SESSION" trigger="hover" speed={40} />
             </span>
           </div>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <a
-              href="#"
-              className="text-primary border-b border-primary font-bold font-label-sm text-[12px] uppercase tracking-widest transition-transform duration-75"
-            >
-              WORKS
+            <a href="#" className="text-primary border-b border-primary font-bold font-label-sm text-[12px] uppercase tracking-widest transition-transform duration-75">
+              <ScrambleText text="WORKS" trigger="hover" />
             </a>
-            <a
-              href="#"
-              className="text-on-surface-variant font-label-sm text-[12px] uppercase tracking-widest hover:text-primary-container transition-colors duration-100"
-            >
-              ARCHIVE
+            <a href="#" className="text-on-surface-variant font-label-sm text-[12px] uppercase tracking-widest hover:text-primary-container transition-colors duration-100">
+              <ScrambleText text="ARCHIVE" trigger="hover" />
             </a>
-            <a
-              href="#"
-              className="text-on-surface-variant font-label-sm text-[12px] uppercase tracking-widest hover:text-primary-container transition-colors duration-100"
-            >
-              SIGNAL
+            <a href="#" className="text-on-surface-variant font-label-sm text-[12px] uppercase tracking-widest hover:text-primary-container transition-colors duration-100">
+              <ScrambleText text="SIGNAL" trigger="hover" />
             </a>
           </nav>
 
@@ -61,7 +53,7 @@ export default function NormalNavBar() {
               <span className="material-symbols-outlined text-[20px] hover:text-primary cursor-pointer">wifi_tethering</span>
             </div>
             <button className="bg-primary text-on-primary px-4 py-1 font-label-sm text-[12px] uppercase tracking-widest hover:bg-primary-container transition-all">
-              LOGIN_SECURE
+              <ScrambleText text="LOGIN_SECURE" trigger="hover" />
             </button>
           </div>
         </div>

@@ -59,10 +59,15 @@ export default function HeroPage() {
           {/* Pulse Node Icon */}
           <div className="relative inline-block mb-12">
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full scale-150 animate-pulse" />
-            <div className="pulse-node relative w-24 h-24 border border-primary/50 flex items-center justify-center rounded-sm bg-surface/40 backdrop-blur-sm"
-              style={{ transform: "rotate(45deg)" }}>
+            <div
+              className="pulse-node relative w-24 h-24 border border-primary/50 flex items-center justify-center rounded-sm bg-surface/40 backdrop-blur-sm"
+              style={{ transform: "rotate(45deg)" }}
+            >
               <div style={{ transform: "rotate(-45deg)" }} className="flex flex-col items-center">
-                <span className="material-symbols-outlined text-primary" style={{ fontSize: 48, fontVariationSettings: "'FILL' 1" }}>
+                <span
+                  className="material-symbols-outlined text-primary"
+                  style={{ fontSize: 48, fontVariationSettings: "'FILL' 1" }}
+                >
                   hive
                 </span>
               </div>
