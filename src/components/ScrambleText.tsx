@@ -77,6 +77,7 @@ export default function ScrambleText({
         setDisplay(text);
       }
     }, speed);
+
   }
 
   return (
