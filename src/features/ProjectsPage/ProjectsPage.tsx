@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 import projectsList, { categoryAsArray, type descriptionType } from "./projects/projectsSimplier";
 import ScrambleText from "../../components/ScrambleText";
 
@@ -54,9 +55,11 @@ export default function ProjectsPage() {
           <div className="absolute -bottom-[1px] -left-[1px] w-8 h-8 border-b-2 border-l-2 border-outline-variant" />
 
           <div className="max-h-[70vh] overflow-y-auto pr-4 space-y-12 custom-scrollbar">
-            {filteredProjects.map((project, idx) => (
-              <ProjectNode key={project.id} project={project} priority={idx === 0} />
-            ))}
+            <AnimatePresence mode="popLayout">
+              {filteredProjects.map((project, idx) => (
+                <ProjectNode key={project.id} project={project} priority={idx === 0} />
+              ))}
+            </AnimatePresence>
           </div>
         </div>
 
@@ -67,7 +70,14 @@ export default function ProjectsPage() {
 
 function ProjectNode({ project, priority = false }: { project: descriptionType; priority?: boolean }) {
   return (
-    <div className="group flex flex-col lg:flex-row gap-8 items-start border-b border-outline-variant/50 pb-12 last:border-0 last:pb-0">
+    <motion.div
+      layout
+      initial={{ opacity: 0, scale: 0.95, y: 20 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.95, y: -20 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="group flex flex-col lg:flex-row gap-8 items-start border-b border-outline-variant/50 pb-12 last:border-0 last:pb-0"
+    >
 
       {/* Image Container with Cyberpunk Frame */}
       <div className="relative w-full lg:w-1/2 aspect-video flex-shrink-0 overflow-hidden border border-outline-variant group-hover:border-primary/50 transition-colors">
@@ -137,6 +147,6 @@ function ProjectNode({ project, priority = false }: { project: descriptionType; 
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
