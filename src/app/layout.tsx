@@ -18,7 +18,7 @@ const hankenGrotesk = Hanken_Grotesk({
 
 export const metadata: Metadata = {
   title: "Eyoel Seleshi",
-  description: "Portfolio of Eyoel Seleshi — Full-stack Developer",
+  description: "Portfolio of Eyoel Seleshi — Mobile, Web, Backend, DevOps & AI Infrastructure Engineer",
   icons: {
     icon: "/vite.png",
   },

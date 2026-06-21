@@ -1,8 +1,23 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import CircuitBackground from "./components/CircuitBackground";
+import LeftHUD from "./components/LeftHUD";
+import RotatingSkills from "./components/RotatingSkills";
+import Image from "next/image";
+import { v4 as uuidv4 } from "uuid";
+import RightHUD from "./components/RightHUD";
 
 export default function HeroPage() {
+  const [latency, setLatency] = useState(14);
+  const [sessionToken, setSessionToken] = useState("0x82A_99_ALPHA");
+
+  // Client-side random generation to avoid hydration mismatch
+  useEffect(() => {
+    setLatency(Math.floor(Math.random() * 10) + 1);
+    setSessionToken(uuidv4().split("-")[0].toUpperCase());
+  }, []);
+
   // Mouse move background parallax
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -16,43 +31,11 @@ export default function HeroPage() {
 
   return (
     <>
-      {/* Scanline overlay */}
-      <div className="scanline" />
+      <CircuitBackground />
 
-      {/* Background Circuit Decoration */}
-      <div className="fixed inset-0 pointer-events-none opacity-20">
-        <div className="circuit-line w-full h-[1px] top-[20%] left-0" style={{ top: "20%" }} />
-        <div className="circuit-line w-[1px] h-full top-0" style={{ left: "15%" }} />
-        <div className="circuit-line w-[1px] h-full top-0" style={{ right: "15%" }} />
-        <div className="circuit-line w-full h-[1px] left-0" style={{ bottom: "20%" }} />
-        <div className="node-dot" style={{ top: "20%", left: "15%", boxShadow: "0 0 8px #93ccff" }} />
-        <div className="node-dot" style={{ top: "20%", right: "15%" }} />
-        <div className="node-dot" style={{ bottom: "20%", left: "15%" }} />
-        <div className="node-dot" style={{ bottom: "20%", right: "15%", boxShadow: "0 0 8px #93ccff" }} />
-      </div>
-
-      <main className="relative min-h-screen flex items-center justify-center pt-16 px-8 overflow-hidden">
+      <main className="relative min-h-screen flex items-center justify-center pt-16 px-8 overflow-hidden" id="home">
         {/* Left HUD Metadata */}
-        <div className="hidden lg:flex flex-col absolute left-8 top-1/2 -translate-y-1/2 space-y-8 border-l border-outline-variant pl-4">
-          <div className="space-y-1">
-            <p className="font-label-sm text-[12px] text-outline uppercase">Connection_Type</p>
-            <p className="font-code-snippet text-[14px] text-primary">ENCRYPTED_TUNNEL_0X</p>
-          </div>
-          <div className="space-y-1">
-            <p className="font-label-sm text-[12px] text-outline uppercase">Local_IP</p>
-            <p className="font-code-snippet text-[14px] text-on-surface">192.168.1.104</p>
-          </div>
-          <div className="space-y-1">
-            <p className="font-label-sm text-[12px] text-outline uppercase">Server_Node</p>
-            <p className="font-code-snippet text-[14px] text-on-surface">LDN_SQR_BUNKER</p>
-          </div>
-          <div className="pt-4">
-            <div className="w-32 h-1 bg-surface-container-highest">
-              <div className="w-2/3 h-full bg-primary" style={{ boxShadow: "0 0 10px rgba(147,204,255,0.5)" }} />
-            </div>
-            <p className="font-label-sm text-[10px] mt-2 text-outline">UPSTREAM: 42.8 KB/S</p>
-          </div>
-        </div>
+        <LeftHUD />
 
         {/* Central Hero Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto">
@@ -64,12 +47,19 @@ export default function HeroPage() {
               style={{ transform: "rotate(45deg)" }}
             >
               <div style={{ transform: "rotate(-45deg)" }} className="flex flex-col items-center">
-                <span
+                {/* <span
                   className="material-symbols-outlined text-primary"
                   style={{ fontSize: 48, fontVariationSettings: "'FILL' 1" }}
                 >
                   hive
-                </span>
+                </span> */}
+                <Image
+                  src="/vite.png"
+                  alt="My Project Symbol"
+                  width={64}
+                  height={64}
+                  priority
+                />
               </div>
             </div>
             {/* Corner Accents */}
@@ -86,17 +76,19 @@ export default function HeroPage() {
           </div>
 
           {/* Identity Header */}
-          <h1 className="font-headline-lg text-[32px] md:text-[64px] mb-8 leading-tight tracking-tighter">
-            <span className="text-outline-variant block font-label-sm text-[14px] mb-4">
-              IDENTITY_AUTH_SUCCESSFUL
+          <h1 className="font-headline-lg text-[28px] sm:text-[32px] md:text-[56px] lg:text-[64px] mb-8 leading-snug tracking-tighter flex flex-col items-center justify-center">
+            <span className="text-outline-variant block font-label-sm text-[12px] md:text-[14px] mb-4 tracking-normal">
+              SYSTEM_AUTH_SUCCESSFUL
             </span>
-            USER_LOGIN:{" "}
-            <span className="text-primary italic">CREATIVE_DEV</span>
+            <div className="flex flex-col md:flex-row items-center gap-4 justify-center ml-40">
+              <span className="text-2xl">SPECIALIST_IN:</span>
+              <RotatingSkills />
+            </div>
           </h1>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-12">
-            <button className="group relative px-8 py-4 bg-primary text-on-primary font-label-sm text-[12px] uppercase tracking-widest overflow-hidden transition-all hover:pr-12">
+          <div className="flex flex-col h-50 md:flex-row items-center justify-center gap-6 mt-12">
+            <a href="#projects" className="group relative px-8 py-4 bg-primary text-on-primary font-label-sm text-[12px] uppercase tracking-widest overflow-hidden transition-all hover:pr-12">
               <span className="relative z-10 flex items-center gap-2">
                 INITIALIZE_PROFILE
                 <span className="material-symbols-outlined text-[18px] group-hover:translate-x-2 transition-transform">
@@ -104,21 +96,21 @@ export default function HeroPage() {
                 </span>
               </span>
               <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform" />
-            </button>
-            <button className="px-8 py-4 border border-outline-variant text-on-surface font-label-sm text-[12px] uppercase tracking-widest hover:border-primary hover:text-primary transition-all backdrop-blur-sm">
+            </a>
+            <a href="#skills" className="px-8 py-4 border border-outline-variant text-on-surface font-label-sm text-[12px] uppercase tracking-widest hover:border-primary hover:text-primary transition-all backdrop-blur-sm">
               VIEW_CODEBASE
-            </button>
+            </a>
           </div>
 
           {/* Sub-metadata grid */}
           <div className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto border-t border-outline-variant/30 pt-8">
             <div className="text-left">
               <p className="font-label-sm text-[10px] text-outline mb-1">LATENCY</p>
-              <p className="font-code-snippet text-[14px] text-on-surface">14.02ms</p>
+              <p className="font-code-snippet text-[14px] text-on-surface">{latency}ms</p>
             </div>
             <div className="text-center">
               <p className="font-label-sm text-[10px] text-outline mb-1">SESSION_TOKEN</p>
-              <p className="font-code-snippet text-[14px] text-on-surface">0x82A_99_ALPHA</p>
+              <p className="font-code-snippet text-[14px] text-on-surface">{sessionToken}</p>
             </div>
             <div className="text-right">
               <p className="font-label-sm text-[10px] text-outline mb-1">NODE_HEALTH</p>
@@ -128,28 +120,7 @@ export default function HeroPage() {
         </div>
 
         {/* Right HUD Metadata */}
-        <div className="hidden lg:flex flex-col absolute right-8 top-1/2 -translate-y-1/2 space-y-8 border-r border-outline-variant pr-4 text-right">
-          <div className="space-y-1">
-            <p className="font-label-sm text-[12px] text-outline uppercase">Active_Directives</p>
-            <p className="font-code-snippet text-[14px] text-on-surface">08_PROJECT_NEURAL</p>
-          </div>
-          <div className="space-y-1">
-            <p className="font-label-sm text-[12px] text-outline uppercase">Archive_State</p>
-            <p className="font-code-snippet text-[14px] text-on-surface">INDEXED_74%</p>
-          </div>
-          <div className="space-y-1">
-            <p className="font-label-sm text-[12px] text-outline uppercase">Auth_Level</p>
-            <p className="font-code-snippet text-[14px] text-primary">ADMIN_ROOT</p>
-          </div>
-          <div className="flex justify-end pt-4">
-            <div className="grid grid-cols-4 gap-1">
-              <div className="w-2 h-2 bg-primary" />
-              <div className="w-2 h-2 bg-primary" />
-              <div className="w-2 h-2 bg-primary/20" />
-              <div className="w-2 h-2 bg-primary/20" />
-            </div>
-          </div>
-        </div>
+        <RightHUD />
       </main>
     </>
   );

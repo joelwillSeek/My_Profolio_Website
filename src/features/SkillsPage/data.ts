@@ -9,14 +9,21 @@ type skillsTypes = {
 export const skills: skillsTypes[] = [
   {
     name: "JavaScript",
-    level: 90,
+    level: 100,
     category: "Frontend",
     icon: "fa-brands fa-js",
     image: false,
   },
   {
+    name: "NextJS",
+    level: 100,
+    category: "Frontend",
+    icon: "/images/skills/nextjs.svg",
+    image: true,
+  },
+  {
     name: "tailwindcss",
-    level: 70,
+    level: 100,
     category: "Frontend",
     image: true,
     icon: "/images/skills/tailwindcss.png",
@@ -30,19 +37,19 @@ export const skills: skillsTypes[] = [
   },
   {
     name: "Node.js",
-    level: 90,
+    level: 80,
     category: "Backend",
     image: false,
     icon: "fa-brands fa-node-js",
   },
   {
     name: "TypeScript",
-    level: 90,
+    level: 100,
     category: "Frontend",
     image: true,
     icon: "/images/skills/typescriipt.png",
   },
-  { name: "Nestjs", level: 80, category: "Backend", image: true, icon: "/images/skills/nestjs.png" },
+  { name: "Nestjs", level: 95, category: "Backend", image: true, icon: "/images/skills/nestjs.png" },
   {
     name: "Supabase",
     level: 80,
@@ -51,8 +58,15 @@ export const skills: skillsTypes[] = [
     icon: "/images/skills/supabase.png",
   },
   {
+    name: "ExpressJs",
+    level: 75,
+    category: "Backend",
+    image: true,
+    icon: "/images/skills/expressjs.svg",
+  },
+  {
     name: "Firebase",
-    level: 85,
+    level: 80,
     category: "Backend",
     image: true,
     icon: "/images/skills/firebase.png",
@@ -80,7 +94,7 @@ export const skills: skillsTypes[] = [
   },
   {
     name: "React Native",
-    level: 80,
+    level: 100,
     category: "Cross Platform",
     image: false,
     icon: "fa-brands fa-react",
@@ -101,7 +115,7 @@ export const skills: skillsTypes[] = [
   },
   {
     name: "Docker",
-    level: 45,
+    level: 65,
     category: "DevOps",
     image: false,
     icon: "fa-brands fa-docker",

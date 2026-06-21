@@ -1,159 +1,139 @@
 "use client";
+
 import { useState } from "react";
-import projectsSimplier, {
-  category,
-  categoryAsArray,
-  type descriptionType,
-} from "./projects/projectsSimplier";
-import { useThemeStore } from "../../core/store";
-import scrollbar from "./scrollbar.module.css";
 import Image from "next/image";
+import projectsList, { categoryAsArray, type descriptionType } from "./projects/projectsSimplier";
+import ScrambleText from "../../components/ScrambleText";
 
 export default function ProjectsPage() {
-  const [activeFilter, setActiveFilter] = useState(category.all);
-
-  const isLightTheme = useThemeStore((state) => state.useLightTheme);
+  const [activeFilter, setActiveFilter] = useState("All");
 
   const filteredProjects =
     activeFilter === "All"
-      ? projectsSimplier
-      : projectsSimplier.filter(
-        (project) =>
-          project.category.filter((i) => i === activeFilter).length > 0
-      );
+      ? projectsList
+      : projectsList.filter((project) => project.category.includes(activeFilter));
 
   return (
-    <section
-      id="projects"
-      className={`py-20  ${isLightTheme ? "bg-gray-50" : "bg-dark-nav"} `}
-    >
-      <div className="container mx-auto px-6">
-        <div className="flex justify-center gap-1.5 items-center flex-row">
-          <h2 className="mr-1 text-orange-me text-3xl md:text-4xl font-bold text-center mb-4">
-            My
+    <section id="projects" className="relative min-h-screen py-24 px-8 overflow-hidden z-10 flex flex-col items-center">
+      <div className="w-full max-w-6xl mx-auto relative">
+
+        {/* Section Header */}
+        <div className="mb-12 flex items-end gap-4 border-b border-primary/30 pb-4 relative">
+          <h2 className="font-headline-lg text-4xl text-on-surface uppercase tracking-tighter">
+            <ScrambleText text="WORKS_ARCHIVE" trigger="in-view" speed={40} />
           </h2>
-          <h2 className="text-blue-me text-3xl md:text-4xl font-bold text-center mb-4">
-            Projects
-          </h2>
+          <span className="font-code-snippet text-primary text-sm mb-1">
+            [{filteredProjects.length}_ENTRIES_FOUND]
+          </span>
+          {/* Neon bottom border accent */}
+          <div className="absolute bottom-0 left-0 h-[2px] w-1/3 bg-primary" style={{ boxShadow: "0 0 15px #93ccff, 0 0 5px #93ccff" }} />
         </div>
 
-        <p
-          className={` text-center max-w-2xl mx-auto mb-12 ${isLightTheme ? "text-gray-600" : "text-gray-200"
-            }`}
-        >
-          Here&apos;s a selection of my recent work. Each project represents my
-          commitment to clean code, intuitive design, and solving real-world
-          problems.
-          <h3 className="font-bold text-red-600 text-center mt-1">
-            !Hover on cards to see more description
-          </h3>
-        </p>
-
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center mb-12 gap-2">
-          {categoryAsArray.map((category) => (
+        {/* Filter Bar */}
+        <div className="flex flex-wrap gap-4 mb-12">
+          {categoryAsArray.map((cat) => (
             <button
-              key={category}
-              onClick={() => setActiveFilter(category)}
-              className={`shadow-lg px-6 py-2 rounded-full transition-colors duration-300 !rounded-button whitespace-nowrap cursor-pointer ${activeFilter === category
-                  ? "bg-[#1C77C3] text-white"
-                  : `${isLightTheme
-                    ? "bg-white text-gray-700  "
-                    : "bg-button-background text-gray-100 "
-                  }    border-orange-me border-2 hover:bg-orange-me hover:text-white `
+              key={cat}
+              onClick={() => setActiveFilter(cat)}
+              className={`font-label-sm text-[12px] uppercase tracking-widest px-4 py-2 border transition-all duration-200 ${activeFilter === cat
+                ? "border-primary text-primary bg-primary/10 shadow-[0_0_10px_rgba(147,204,255,0.2)]"
+                : "border-outline-variant text-outline hover:border-primary/50 hover:text-on-surface"
                 }`}
             >
-              {category}
+              {cat}
             </button>
           ))}
         </div>
-        {/* Projects Grid */}
-        <div
-          className="grid grid-flow-col auto-cols-max gap-8 overflow-x-scroll "
-          style={scrollbar}
-        >
-          {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+
+        {/* Vertical Scrollable Project List */}
+        <div className="relative border border-outline-variant bg-surface/40 backdrop-blur-md p-6 lg:p-8">
+          {/* Corner Accents */}
+          <div className="absolute -top-[1px] -left-[1px] w-8 h-8 border-t-2 border-l-2 border-primary" style={{ boxShadow: "-2px -2px 10px rgba(147,204,255,0.3)" }} />
+          <div className="absolute -bottom-[1px] -right-[1px] w-8 h-8 border-b-2 border-r-2 border-primary" style={{ boxShadow: "2px 2px 10px rgba(147,204,255,0.3)" }} />
+          <div className="absolute -top-[1px] -right-[1px] w-8 h-8 border-t-2 border-r-2 border-outline-variant" />
+          <div className="absolute -bottom-[1px] -left-[1px] w-8 h-8 border-b-2 border-l-2 border-outline-variant" />
+
+          <div className="max-h-[70vh] overflow-y-auto pr-4 space-y-12 custom-scrollbar">
+            {filteredProjects.map((project, idx) => (
+              <ProjectNode key={project.id} project={project} priority={idx === 0} />
+            ))}
+          </div>
         </div>
+
       </div>
     </section>
   );
 }
 
-function ProjectCard({ project }: { project: descriptionType }) {
-  const isLightTheme = useThemeStore((state) => state.useLightTheme);
-  const [hover, setHover] = useState(false);
+function ProjectNode({ project, priority = false }: { project: descriptionType; priority?: boolean }) {
   return (
-    <div
-      onMouseEnter={() => {
-        setHover(true);
-        console.log("hi");
-      }}
-      onMouseLeave={() => {
-        setHover(false);
-      }}
-      key={project.id}
-      className={`${isLightTheme ? "bg-white" : "bg-button-background"
-        } rounded-lg w-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2`}
-    >
-      <div className="h-56 overflow-hidden">
+    <div className="group flex flex-col lg:flex-row gap-8 items-start border-b border-outline-variant/50 pb-12 last:border-0 last:pb-0">
+
+      {/* Image Container with Cyberpunk Frame */}
+      <div className="relative w-full lg:w-1/2 aspect-video flex-shrink-0 overflow-hidden border border-outline-variant group-hover:border-primary/50 transition-colors">
+        <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none mix-blend-overlay" />
         <Image
           src={project.image}
           alt={project.title}
-          width={500}
-          height={300}
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          priority={priority}
+          className="object-cover object-center  group-hover:scale-105 transition-transform duration-700"
         />
-      </div>
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-[#1C77C3] mb-2">
-          {project.title}
-        </h3>
-        <div className="flex flex-row gap-1">
-          {project.category.map((i) => (
-            <h3 key={i} className="text-sm font-bold text-white bg-orange-me mb-2 rounded-4xl p-1 pr-1.5 pl-1.5">
-              {i}
-            </h3>
-          ))}
-        </div>
-
-        <p className="text-gray-600 mb-4">
-          {hover
-            ? project.description
-            : project.description.substring(0, 200) + "..."}
-        </p>
-        <h4 className="text-blue-me font-bold mb-1 ">Tech Stack</h4>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.technologies.map((tech, index) => (
-            <span
-              key={index}
-              className="bg-[#FF6B35] bg-opacity-10 text-[#fff] font-bold text-sm px-3 py-1 rounded-full flex flex-row  justify-center items-center gap-2"
-            >
-              {tech.linksAsIconOrImage ? (
-                <Image src={tech.iconName} alt={tech.label} width={20} height={20} />
-              ) : (
-                <i className={tech.iconName as string}></i>
-              )}
-              {tech.label}
+        {/* Tech tags overlay */}
+        <div className="absolute top-4 left-4 z-20 flex flex-wrap gap-2">
+          {project.category.map((cat) => (
+            <span key={cat} className="bg-surface/80 backdrop-blur text-primary border border-primary/30 text-[10px] uppercase tracking-widest px-2 py-1 font-label-sm">
+              {cat}
             </span>
           ))}
         </div>
-        <div className="flex space-x-3">
-          {project.links.map((item) => (
-            <button
-              key={item.linkLabel}
-              onClick={() => {
-                if (item.uriLink.trim().length <= 0) return;
-                window.open(item.uriLink, "_blank", "noopener");
-              }}
-              className="flex justify-between items-center gap-1 duration-300 ease-in-out transition hover:shadow-xl/30 bg-[#1C77C3] hover:bg-orange-me text-white px-4 py-2 rounded text-sm !rounded-button whitespace-nowrap cursor-pointer hover:-translate-y-1 hover:scale-110"
+      </div>
+
+      {/* Project Details */}
+      <div className="flex flex-col flex-grow w-full">
+        <h3 className="font-headline-md text-2xl text-on-surface mb-4 group-hover:text-primary transition-colors">
+          {project.title}
+        </h3>
+        <p className="font-body-md text-on-surface-variant text-sm leading-relaxed mb-6">
+          {project.description}
+        </p>
+
+        {/* Tech Stack */}
+        <div className="mb-8">
+          <p className="font-label-sm text-[10px] text-outline uppercase tracking-widest mb-3">
+            TECH_STACK
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {project.technologies.map((tech, idx) => (
+              <div key={idx} className="flex items-center gap-2 text-on-surface-variant text-xs font-code-snippet">
+                {tech.linksAsIconOrImage ? (
+                  <Image src={tech.iconName} alt={tech.label} width={16} height={16} className="opacity-80" style={{ width: "auto", height: "20px" }} />
+                ) : (
+                  <i className={`${tech.iconName} text-primary opacity-80`} />
+                )}
+                {tech.label}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Action Links */}
+        <div className="flex gap-4 mt-auto">
+          {project.links.map((link) => (
+            <a
+              key={link.linkLabel}
+              href={link.uriLink || "#"}
+              target={link.uriLink ? "_blank" : undefined}
+              rel="noopener noreferrer"
+              className={`font-label-sm text-[12px] uppercase tracking-widest flex items-center gap-2 px-4 py-2 border transition-all ${link.uriLink
+                ? "border-primary text-primary hover:bg-primary/10 hover:shadow-[0_0_10px_rgba(147,204,255,0.2)]"
+                : "border-outline-variant text-outline opacity-50 cursor-not-allowed"
+                }`}
             >
-              <i className={item.icon}></i>
-              {item.uriLink.trim().length <= 0
-                ? "Not Available"
-                : item.linkLabel}
-            </button>
+              <i className={link.icon} />
+              {link.uriLink ? link.linkLabel : "OFFLINE"}
+            </a>
           ))}
         </div>
       </div>

@@ -39,10 +39,16 @@ const honourProject: descriptionType = {
   category: [category.mobile, category.crossPlatform],
   technologies: [
     {
-      linksAsIconOrImage: false,
-      label: "Supabase",
-      iconName: "fa-solid fa-database",
+      linksAsIconOrImage: true,
+      label: "NestJS",
+      iconName: "/images/skills/nestjs.png",
     },
+    {
+      linksAsIconOrImage: true,
+      label: "PostgreSQL",
+      iconName: "/images/skills/postgresql.png",
+    },
+
     {
       linksAsIconOrImage: false,
       label: "Flutter",
@@ -55,6 +61,12 @@ const honourProject: descriptionType = {
       linkLabel: "Google Playstore",
       uriLink:
         "https://play.google.com/store/apps/details?id=com.joelthousend.honour.honour&pcampaignid=web_share",
+    },
+    {
+      icon: "fa-solid fa-earth-americas",
+      linkLabel: "Honor Website",
+      uriLink:
+        "https://honourhq.honourrelationships.com/",
     },
     { icon: "fa-brands fa-github", linkLabel: "Github", uriLink: "" },
   ],
@@ -133,15 +145,11 @@ const myProfilePic: descriptionType = {
   id: 5,
   technologies: [
     {
-      linksAsIconOrImage: false,
-      label: "ReactJS",
-      iconName: "fa-brands fa-react",
-    },
-    {
       linksAsIconOrImage: true,
-      label: "Firebase",
-      iconName: "/images/skills/firebase.png",
+      label: "NextJs",
+      iconName: "/images/skills/nextjs.svg",
     },
+
   ],
   image: "/vite.png",
   category: [category.frontEnd],

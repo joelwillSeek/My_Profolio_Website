@@ -7,8 +7,8 @@ const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%_&-+=[]{}";
 interface ScrambleTextProps {
   text: string;
   className?: string;
-  /** "hover" = animate on hover, "mount" = animate once on load */
-  trigger?: "hover" | "mount";
+  /** "hover" = animate on hover, "mount" = animate once on load, "in-view" = animate when scrolled into view */
+  trigger?: "hover" | "mount" | "in-view";
   /** How fast each character resolves in ms */
   speed?: number;
 }
@@ -25,14 +25,28 @@ export default function ScrambleText({
   const frameRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const iterationRef = useRef(0);
 
-  // Measure and lock width after first render with real text
+  // Measure width and handle triggers
   useEffect(() => {
     if (spanRef.current) {
       setLockedWidth(spanRef.current.offsetWidth);
     }
-    // if (trigger === "mount") {
-    animate();
-    // }
+
+    if (trigger === "mount") {
+      animate();
+    } else if (trigger === "in-view" && spanRef.current) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            animate();
+            observer.disconnect(); // Only animate once when scrolled into view
+          }
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(spanRef.current);
+      return () => observer.disconnect();
+    }
+
     return () => {
       if (frameRef.current) clearInterval(frameRef.current);
     };
@@ -69,7 +83,7 @@ export default function ScrambleText({
     <span
       ref={spanRef}
       className={className}
-      onMouseEnter={trigger === "hover" ? animate : undefined}
+      onMouseEnter={trigger === "hover" || trigger === "in-view" || trigger === "mount" ? animate : undefined}
       style={{
         display: "inline-block",
         // Only lock width once measured — prevents any layout shift during scramble
