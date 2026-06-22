@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import ScrambleText from "./ScrambleText";
 import { motion, AnimatePresence } from "framer-motion";
+import SyncIcon from "@/public/icons/sync-outline.svg"
+import Image from "next/image";
 
 export default function BootScreen() {
   const [isBooting, setIsBooting] = useState(true);
@@ -54,7 +56,7 @@ export default function BootScreen() {
   return (
     <AnimatePresence>
       {isBooting && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.8, ease: "easeInOut" } }}
           className="fixed inset-0 z-[9999] bg-surface flex flex-col items-center justify-center font-code-snippet text-primary p-8 overflow-hidden"
@@ -67,7 +69,7 @@ export default function BootScreen() {
             {/* Header */}
             <div className="flex items-center justify-between border-b border-primary/30 pb-4">
               <div className="flex items-center gap-4">
-                <span className="material-symbols-outlined animate-spin text-3xl">autorenew</span>
+                <Image className="animate-spin" width={36} height={36} src={SyncIcon} alt="Sync Icon"></Image>
                 <h1 className="font-headline-lg text-2xl tracking-widest uppercase">
                   <ScrambleText text="SYSTEM_BOOT_SEQUENCE" trigger="mount" speed={30} />
                 </h1>
