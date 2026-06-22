@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Hanken_Grotesk } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
+import "material-symbols/outlined.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import Providers from "./Providers";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -31,21 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        />
-      </head>
       <body className={`${jetbrainsMono.variable} ${hankenGrotesk.variable} font-body-md text-on-surface selection:bg-primary-container selection:text-on-primary`}>
         <Providers>
           {children}
         </Providers>
-        <Script
-          src="https://kit.fontawesome.com/26cd9b30e3.js"
-          crossOrigin="anonymous"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );
