@@ -30,10 +30,12 @@ export default function HeroPage() {
   }, []);
 
   return (
-    <>
-      <CircuitBackground />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" id="home">
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <CircuitBackground />
+      </div>
 
-      <main className="relative min-h-screen flex items-center justify-center pt-16 px-8 overflow-hidden" id="home">
+      <main className="relative z-10 w-full min-h-screen flex items-center justify-center pt-16 px-8" id="home-content">
         {/* Left HUD Metadata */}
         <LeftHUD />
 
@@ -76,18 +78,20 @@ export default function HeroPage() {
           </div>
 
           {/* Identity Header */}
-          <h1 className="font-headline-lg text-[28px] sm:text-[32px] md:text-[56px] lg:text-[64px] mb-8 leading-snug tracking-tighter flex flex-col items-center justify-center">
+          <h1 className="font-headline-lg text-[28px] sm:text-[32px] md:text-[56px] lg:text-[64px] mb-8 leading-snug tracking-tighter flex flex-col items-center justify-center w-full">
             <span className="text-outline-variant block font-label-sm text-[12px] md:text-[14px] mb-4 tracking-normal">
               SYSTEM_AUTH_SUCCESSFUL
             </span>
-            <div className="flex flex-col md:flex-row items-center gap-4 justify-center ml-40">
-              <span className="text-2xl">SPECIALIST_IN:</span>
-              <RotatingSkills />
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 justify-center w-full md:ml-20 lg:ml-40 text-center">
+              <span className="text-lg sm:text-xl md:text-2xl">SPECIALIST_IN:</span>
+              <div className="mt-2  md:mt-0 text-primary">
+                <RotatingSkills />
+              </div>
             </div>
           </h1>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col h-50 md:flex-row items-center justify-center gap-6 mt-12">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mt-8 md:mt-12 w-full">
             <a href="#projects" className="group relative px-8 py-4 bg-primary text-on-primary font-label-sm text-[12px] uppercase tracking-widest overflow-hidden transition-all hover:pr-12">
               <span className="relative z-10 flex items-center gap-2">
                 INITIALIZE_PROFILE
@@ -122,6 +126,6 @@ export default function HeroPage() {
         {/* Right HUD Metadata */}
         <RightHUD />
       </main>
-    </>
+    </section>
   );
 }
