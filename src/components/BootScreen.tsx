@@ -68,8 +68,8 @@ export default function BootScreen() {
           <div className="relative z-10 w-full max-w-2xl flex flex-col gap-8">
             {/* Header */}
             <div className="flex items-center justify-between border-b border-primary/30 pb-4">
-              <div className="flex items-center gap-4">
-                <Image className="animate-spin" width={36} height={36} src={SyncIcon} alt="Sync Icon"></Image>
+              <div className="flex items-center justify-center gap-4">
+                <Image className="animate-spin" width={26} height={26} src={SyncIcon} alt="Sync Icon"></Image>
                 <h1 className="font-headline-lg text-2xl tracking-widest uppercase">
                   <ScrambleText text="SYSTEM_BOOT_SEQUENCE" trigger="mount" speed={30} />
                 </h1>
