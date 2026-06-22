@@ -129,20 +129,23 @@ function ProjectNode({ project, priority = false }: { project: descriptionType; 
         </div>
 
         {/* Action Links */}
-        <div className="flex gap-4 mt-auto">
+        <div className="flex gap-4 mt-auto flex-wrap">
           {project.links.map((link) => (
             <a
               key={link.linkLabel}
               href={link.uriLink || "#"}
               target={link.uriLink ? "_blank" : undefined}
               rel="noopener noreferrer"
-              className={`font-label-sm text-[12px] uppercase tracking-widest flex items-center gap-2 px-4 py-2 border transition-all ${link.uriLink
+              className={`font-label-sm flex text-[12px] uppercase tracking-widest items-center gap-2 px-4 py-2 border transition-all ${link.uriLink
                 ? "border-primary text-primary hover:bg-primary/10 hover:shadow-[0_0_10px_rgba(147,204,255,0.2)]"
                 : "border-outline-variant text-outline opacity-50 cursor-not-allowed"
                 }`}
             >
               <i className={link.icon} />
-              {link.uriLink ? link.linkLabel : "OFFLINE"}
+              <p className="whitespace-nowrap">
+                {link.uriLink ? link.linkLabel : "OFFLINE"}
+
+              </p>
             </a>
           ))}
         </div>

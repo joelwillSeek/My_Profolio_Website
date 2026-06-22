@@ -65,23 +65,23 @@ export default function BootScreen() {
           <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(147,204,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(147,204,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]" />
           <div className="absolute inset-0 scanline opacity-30" />
 
-          <div className="relative z-10 w-full max-w-2xl flex flex-col gap-8">
+          <div className="relative z-10 w-full max-w-2xl flex flex-col gap-6 sm:gap-8">
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-primary/30 pb-4">
-              <div className="flex items-center justify-center gap-4">
-                <Image className="animate-spin" width={26} height={26} src={SyncIcon} alt="Sync Icon"></Image>
-                <h1 className="font-headline-lg text-2xl tracking-widest uppercase">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-primary/30 pb-4 gap-2 sm:gap-0">
+              <div className="flex items-center gap-3 sm:gap-4">
+                <Image className="animate-spin w-5 h-5 sm:w-[26px] sm:h-[26px]" width={26} height={26} src={SyncIcon} alt="Sync Icon"></Image>
+                <h1 className="font-headline-lg text-sm sm:text-lg md:text-2xl tracking-widest uppercase">
                   <ScrambleText text="SYSTEM_BOOT_SEQUENCE" trigger="mount" speed={30} />
                 </h1>
               </div>
-              <span className="text-on-surface-variant">v2.0.4</span>
+              <span className="text-on-surface-variant text-xs sm:text-sm">v2.0.4</span>
             </div>
 
             {/* Logs Console */}
-            <div className="h-64 flex flex-col justify-end overflow-hidden">
+            <div className="h-48 sm:h-64 flex flex-col justify-end overflow-hidden">
               {logs.map((log, index) => (
-                <div key={index} className="flex gap-4 opacity-80 animate-pulse">
-                  <span className="text-outline-variant">[{`0.0.${index}`}]</span>
+                <div key={index} className="flex gap-2 sm:gap-4 opacity-80 animate-pulse text-xs sm:text-sm">
+                  <span className="text-outline-variant shrink-0">[{`0.0.${index}`}]</span>
                   <span>{log}</span>
                 </div>
               ))}

@@ -2,7 +2,6 @@ export const category = {
   all: "All",
   mobile: "Mobile",
   crossPlatform: "Cross Platform",
-  design: "Design",
   frontEnd: "Front End Web",
   backEnd: "Back End Server",
 };
@@ -11,7 +10,6 @@ export const categoryAsArray = [
   category.all,
   category.mobile,
   category.crossPlatform,
-  category.design,
   category.frontEnd,
   category.backEnd,
 ];
@@ -36,7 +34,7 @@ const honourProject: descriptionType = {
   description:
     "Manage your network like never before. Honour Relationships, a Flutter app, employs graph data structures to visually organize your connections. Get smart reminders for every interaction and effectively re-engage with past relationships on the Recycling Page. Build, maintain, and truly honour your relationships.",
   image: "/images/projects/honour-1.png",
-  category: [category.mobile, category.crossPlatform],
+  category: [category.mobile, category.crossPlatform, category.frontEnd, category.backEnd],
   technologies: [
     {
       linksAsIconOrImage: true,
@@ -72,6 +70,53 @@ const honourProject: descriptionType = {
   ],
 };
 
+const remytelProject: descriptionType = {
+  id: 6,
+  title: "Remytel: Send Airtime & Packages",
+  description:
+    "Fast, secure online mobile top-up and package sending service. Remytel allows you to easily send airtime to mobile numbers and manage packages globally, keeping you connected with your loved ones.",
+  image: "/images/projects/remytel.png",
+  category: [category.mobile, category.crossPlatform, category.frontEnd, category.backEnd],
+  technologies: [
+    {
+      linksAsIconOrImage: true,
+      label: "NestJS",
+      iconName: "/images/skills/nestjs.png",
+    },
+    {
+      linksAsIconOrImage: true,
+      label: "PostgreSQL",
+      iconName: "/images/skills/postgresql.png",
+    },
+    {
+      linksAsIconOrImage: false,
+      label: "Flutter",
+      iconName: "fa-brands fa-flutter",
+    },
+  ],
+  links: [
+    {
+      icon: "fa-brands fa-google-play",
+      linkLabel: "Google Playstore",
+      uriLink:
+        "https://play.google.com/store/apps/details?id=com.playstream.remytel",
+    },
+    {
+      icon: "fa-brands fa-apple",
+      linkLabel: "App Store",
+      uriLink:
+        "https://apps.apple.com/ke/app/remytel-send-airtime-package/id6756207442",
+    },
+    {
+      icon: "fa-solid fa-earth-americas",
+      linkLabel: "Remytel Website",
+      uriLink:
+        "https://remytel.com/",
+    },
+    { icon: "fa-brands fa-github", linkLabel: "Github (Incoming Soon)", uriLink: "" },
+  ],
+};
+
 const lekiaryProject: descriptionType = {
   id: 2,
   technologies: [
@@ -85,12 +130,17 @@ const lekiaryProject: descriptionType = {
       label: "Flutter",
       iconName: "fa-brands fa-flutter",
     },
+    {
+      linksAsIconOrImage: true,
+      label: "NestJs",
+      iconName: "/images/skills/nestjs.png",
+    },
   ],
   image: "/images/projects/lekiray-1.png",
-  title: "Lekiray: Ethiopian Real Estate Mobile Application (Flutter & Supabase)",
+  title: "Lekiray: Full-Stack Ethiopian Real Estate Platform",
   description:
-    "Developed Lekiray, a dedicated mobile application for showcasing real estate properties exclusively for the Ethiopian market. Built with Flutter for a seamless, cross-platform user experience, the app features an intuitive interface entirely in Amharic. Supabase provides a robust and secure backend, managing real-time property listings, user data, and authentication.",
-  category: [category.mobile, category.crossPlatform],
+    "Developed Lekiray, a comprehensive real estate platform exclusively for the Ethiopian market. Features a seamless cross-platform mobile app built with Flutter and React Native, providing an intuitive Amharic interface. The robust backend infrastructure is powered by NestJS and Supabase, efficiently managing real-time property listings, secure user data, and authentication for high performance and scalability.",
+  category: [category.mobile, category.crossPlatform, category.backEnd],
   links: [
     {
       icon: "fa-brands fa-google-play",
@@ -102,25 +152,8 @@ const lekiaryProject: descriptionType = {
   ],
 };
 
-const backendLekiaryProject: descriptionType = {
-  id: 3,
-  technologies: [
-    {
-      linksAsIconOrImage: true,
-      label: "NestJs",
-      iconName: "/images/skills/nestjs.png",
-    },
-  ],
-  image: "/images/projects/nestjsNandLikeray.png",
-  category: [category.backEnd],
-  title: "Lekiary: Robust NestJS Backend Development",
-  description:
-    "This project focuses on building the backend infrastructure for the Lekiary application, utilizing the powerful and efficient NestJS framework. The backend will seamlessly support the existing front-end, ensuring a high-performance, scalable, and secure application.",
-  links: [{ icon: "fa-brands fa-github", linkLabel: "Github", uriLink: "" }],
-};
-
 const habashApp: descriptionType = {
-  id: 4,
+  id: 3,
   technologies: [
     {
       linksAsIconOrImage: false,
@@ -142,7 +175,7 @@ const habashApp: descriptionType = {
 };
 
 const myProfilePic: descriptionType = {
-  id: 5,
+  id: 4,
   technologies: [
     {
       linksAsIconOrImage: true,
@@ -159,5 +192,5 @@ const myProfilePic: descriptionType = {
   links: [{ icon: "fa-brands fa-github", linkLabel: "Github", uriLink: "https://github.com/joelwillSeek/Flutter_MatchMaking_app" }],
 };
 
-const projectsList = [honourProject, lekiaryProject, backendLekiaryProject, habashApp, myProfilePic];
+const projectsList = [honourProject, remytelProject, lekiaryProject, habashApp, myProfilePic];
 export default projectsList;

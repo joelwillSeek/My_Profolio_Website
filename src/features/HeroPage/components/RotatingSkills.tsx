@@ -24,7 +24,7 @@ export default function RotatingSkills() {
   }, []);
 
   return (
-    <span className="text-primary italic min-w-[300px] flex items-center text-left">
+    <span className="text-primary italic min-w-[300px] justify-center md:justify-start flex items-center text-left">
       <ScrambleText
         key={SKILLS[index]} // Forces a remount to recalculate width and re-trigger mount animation
         text={SKILLS[index]}
