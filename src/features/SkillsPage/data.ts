@@ -93,6 +93,20 @@ export const skills: skillsTypes[] = [
     icon: "/images/skills/postgresql.png",
   },
   {
+    name: "Prisma",
+    level: 80,
+    category: "Database",
+    image: false,
+    icon: "fa-solid fa-database",
+  },
+  // {
+  //   name: "TypeORM",
+  //   level: 65,
+  //   category: "Database",
+  //   image: false,
+  //   icon: "fa-solid fa-table",
+  // },
+  {
     name: "React Native",
     level: 100,
     category: "Cross Platform",
